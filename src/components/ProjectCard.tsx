@@ -11,7 +11,7 @@ export default function ProjectCard({year, link, name, desc, skills, image}:{yea
                 <div className="col-span-4 flex flex-col">
                     <a href={link} target="_blank" className="hover:translate-x-1 transition-transform ease-in-out font-medium mb-1">{name}</a>
                     <div className="font-light text-sm"><div className="font-normal inline">Description: </div>{desc}</div>
-                    <div className="flex gap-1 gap-y-2 mt-4 flex-wrap">{skills.map((key, item) => <div key={key} className="text-sm bg-zinc-50 border border-zinc-300 dark:border-zinc-800 dark:bg-zinc-800 rounded-2xl px-2">{item}</div>)}</div>
+                    <div className="flex gap-1 gap-y-2 mt-4 flex-wrap">{skills.map((key, item) => <div key={item} className="text-sm bg-zinc-50 border border-zinc-300 dark:border-zinc-800 dark:bg-zinc-800 rounded-2xl px-2">{key}</div>)}</div>
                 </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@ export default function ProjectCard({year, link, name, desc, skills, image}:{yea
                 <div className="col-span-4 flex flex-col">
                     <a href={link} target="_blank" className="font-medium mb-1">{name}</a>
                     <div className="font-light text-sm"><div className="font-normal inline">Description: </div>{desc}</div>
-                    <div className="flex gap-1 gap-y-2 mt-4 flex-wrap">{skills.map((key, item) => <div key={key} className="text-sm bg-zinc-50 border border-zinc-300 dark:border-zinc-800 dark:bg-zinc-800 rounded-2xl px-2">{item}</div>)}</div>
+                    <div className="flex gap-1 gap-y-2 mt-4 flex-wrap">{skills.map((key, item) => <div key={item} className="text-sm bg-zinc-50 border border-zinc-300 dark:border-zinc-800 dark:bg-zinc-800 rounded-2xl px-2">{key}</div>)}</div>
                 </div>
                 </div>
             </div>
