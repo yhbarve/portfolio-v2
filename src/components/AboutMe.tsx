@@ -3,12 +3,11 @@
 import { useEffect, useState } from "react";
 
 export default function AboutMe(){
-    const valList:Array<string> = ["Software developer", "React.js developer", "Next.js developer", "MERN developer", "Node.js developer", "Backend developer"];
-
     const [curVal, setCurVal] = useState("Software developer");
     const [isFading, setIsFading] = useState(false);
 
     useEffect(() => {
+        const valList:Array<string> = ["Software developer", "React.js developer", "Next.js developer", "MERN developer", "Node.js developer", "Backend developer"];
         const n: number = valList.length;
         const intervalId = setInterval(() => {
             setIsFading(true);
@@ -20,7 +19,7 @@ export default function AboutMe(){
         }, 10000);
 
         return () => clearInterval(intervalId);
-    }, [valList]);
+    }, []);
 
     return (
         <div className="flex flex-col pl-2">
