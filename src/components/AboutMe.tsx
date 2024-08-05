@@ -20,7 +20,7 @@ export default function AboutMe(){
         }, 10000);
 
         return () => clearInterval(intervalId);
-    }, []);
+    }, [valList]);
 
     return (
         <div className="flex flex-col pl-2">
