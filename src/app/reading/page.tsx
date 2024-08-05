@@ -11,11 +11,11 @@ export default function Home() {
                     <h1 className="text-5xl font-semibold bg-gradient-to-r from-zinc-950 via-zinc-700 to-zinc-800 dark:from-zinc-300 dark:via-zinc-100 dark:to-zinc-400 inline-block text-transparent bg-clip-text pb-3 mt-2">Reading Collection</h1>
                 </div>
                 <div className="grid grid-cols-12 border-b-[0.5px] p-2 pb-4 pt-9 dark:border-zinc-700 dark:text-zinc-400 border-zinc-400 text-zinc-500 font-semibold">
-                        <div className="col-span-1">Sr.</div>
-                        <div className="col-span-5">Title</div>
-                        <div className="col-span-3">Author</div>
+                        <div className="lg:block hidden col-span-2 lg:col-span-1">Sr.</div>
+                        <div className="col-span-4 lg:col-span-5">Title</div>
+                        <div className="col-span-4 lg:col-span-3">Author</div>
                         <div className="col-span-2 mx-auto">Pages</div>
-                        <div className="col-span-1 mx-auto">Link</div>
+                        <div className="col-span-2 mx-auto lg:col-span-1">Link</div>
                     </div>
                 <div className="flex flex-col dark:hover:text-zinc-400 hover:text-zinc-500 pb-24">
                     <ReadListItem sr="01" title="The Rudest Book Ever" author="Shwetabh Gangwar" pages="192" link="https://www.amazon.ca/Rudest-Book-Ever-Shwetabh-Gangwar/dp/9388754433/ref=sr_1_1?crid=JAMMSUHRCNWW&dib=eyJ2IjoiMSJ9.D9uyHPH28DvTs4YOmhDn6-yeQ3Nl2uFPkfx8of5x0NZgHqtL8r6dgtmLNJ02KmoCtOIp6ulZZIK0k6tgFDY891AV5dQA6GZ_tu1jEKWybFTS4leJH2Tyfd7G-HnaUbPzMwU32BrOjqKS_Rv9OvXppNjN5yB_SuUarkYPN5J3bnUyji-3qRf-f6LZKfm80OpKdPA3o8vultfFAVhyoytUx_4XLPo3nLzE6jhP2UtFe0w.LPuSFXQtw54tizSL_UPJQjSECCcMKjl-YqT7NcT48SY&dib_tag=se&keywords=the+rudest+book+ever+dark&qid=1722827013&s=books&sprefix=the+rudest+book+ever+dark,stripbooks,84&sr=1-1" />
