@@ -6,7 +6,7 @@ export default function EducationCard({year, program, uni, courses}: {year: stri
             </div>
             <div className="col-span-4 flex flex-col">
                 <div>{program}</div>
-                <div className="mb-2">{uni}</div>
+                <div className="mb-2 font-light">{uni}</div>
                 <div className="font-light text-sm"><div className="font-normal inline">Courses taken as of today: </div>{courses}</div>
             </div>
         </div>
