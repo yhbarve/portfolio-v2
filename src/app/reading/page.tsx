@@ -43,6 +43,8 @@ export default function Home() {
                     <ReadListItem sr="12" title="The Rudest Book Ever" author="Shwetabh Gangwar" pages="192" link="https://www.amazon.ca/Rudest-Book-Ever-Shwetabh-Gangwar/dp/9388754433/ref=sr_1_1?crid=JAMMSUHRCNWW&dib=eyJ2IjoiMSJ9.D9uyHPH28DvTs4YOmhDn6-yeQ3Nl2uFPkfx8of5x0NZgHqtL8r6dgtmLNJ02KmoCtOIp6ulZZIK0k6tgFDY891AV5dQA6GZ_tu1jEKWybFTS4leJH2Tyfd7G-HnaUbPzMwU32BrOjqKS_Rv9OvXppNjN5yB_SuUarkYPN5J3bnUyji-3qRf-f6LZKfm80OpKdPA3o8vultfFAVhyoytUx_4XLPo3nLzE6jhP2UtFe0w.LPuSFXQtw54tizSL_UPJQjSECCcMKjl-YqT7NcT48SY&dib_tag=se&keywords=the+rudest+book+ever+dark&qid=1722827013&s=books&sprefix=the+rudest+book+ever+dark,stripbooks,84&sr=1-1" />
 
                     <ReadListItem sr="13" title="Grand Prix: An Illustrated History of Formula 1" author="Will Buxton" pages="240" link="https://www.amazon.ca/Grand-Prix-Illustrated-History-Formula/dp/198486324X" />
+
+                    <ReadListItem sr="14" title="The Hidden Hindu (A trilogy)" author="Akshat Gupta" pages="256" link="https://www.amazon.ae/Hidden-Hindu-Akshat-Gupta/dp/0143455699" />
                 </div>
             </div>
         </div>
