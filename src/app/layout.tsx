@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-zinc-900">
+      <head>
+        <meta name="google-site-verification" content="_PntvROD-8HejKcSOB_Wakl_2E_o992HMmMAqPFnOk8" />
+      </head>
       <body className={inter.className}>
         <Providers>
           {children}
