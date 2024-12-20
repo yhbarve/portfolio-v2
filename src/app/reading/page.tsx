@@ -45,6 +45,10 @@ export default function Home() {
                     <ReadListItem sr="13" title="Grand Prix: An Illustrated History of Formula 1" author="Will Buxton" pages="240" link="https://www.amazon.ca/Grand-Prix-Illustrated-History-Formula/dp/198486324X" />
 
                     <ReadListItem sr="14" title="The Hidden Hindu (A trilogy)" author="Akshat Gupta" pages="256" link="https://www.amazon.ae/Hidden-Hindu-Akshat-Gupta/dp/0143455699" />
+
+                    <ReadListItem sr="15" title="Surviving to Drive" author="Guenther Steiner" pages="282" link="https://www.amazon.ca/Surviving-Drive-Year-Inside-Formula/dp/0593835476?crid=19VOS7X9EA2GY&dib=eyJ2IjoiMSJ9.fPsp1Wwv1mZb4Cd5GOdjLqd9JXyX0iGMgRCAfuvNA59NAaZgdIZe3iswwXzchOUGJzKObJqy9lgNoZ7lY03K6PvYddW7Qji2OFCEl82Qjah2a5CBxEmHQMeI9kWOVkRxRbyANgRA_rpGCwLItEPIRDRIbaQzUmLfznzYCuXdEL1fMPixhndqKD_qmAMg93jD.zvKWEpGDNd2tnkWisGITnpS7ERZ4yq9gCVmDiD8kJKk&dib_tag=se&keywords=surviving+to+drive&qid=1734664852&sprefix=surviving+to+drive%2Caps%2C109&sr=8-1" />
+
+
                 </div>
             </div>
         </div>
