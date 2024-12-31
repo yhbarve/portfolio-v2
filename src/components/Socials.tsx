@@ -20,7 +20,7 @@ export default function Socials(){
             </div>
             <div className="flex items-center gap-1 text-zinc-400 dark:text-zinc-600 mt-4">
                 <ThemeSwitcher />
-                <div className="text-sm cursor-default">©2024, Yash Harshal Barve</div>
+                <div className="text-sm cursor-default">©2025, Yash Harshal Barve</div>
             </div>
         </div>
     )
