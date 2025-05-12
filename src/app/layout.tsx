@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en" className="bg-zinc-900">
       <head>
         <meta name="google-site-verification" content="_PntvROD-8HejKcSOB_Wakl_2E_o992HMmMAqPFnOk8" />
-        <meta name="description" content="Yash Barve is in his 3rd year studying CS at the University of Waterloo and BBA at Wilfrid Laurier University. With over 10 months of work experience, Yash brings to the " />
+        <meta name="description" content="Yash Barve is in his 3rd year studying CS at the University of Waterloo and BBA at Wilfrid Laurier University." />
       </head>
       <body className={inter.className}>
         <Providers>
