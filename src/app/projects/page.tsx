@@ -16,6 +16,7 @@ export default function Home() {
                         <div className="col-span-1 lg:col-span-2 mx-auto">Link</div>
                     </div>
                 <div className="flex flex-col dark:hover:text-zinc-400 hover:text-zinc-500 pb-24">
+                    <ProjectListItem year="2025" name="Chattr - Minimal real-time group chat" skills={["react.js", "typescript", "tailwindcss", "socket.io", "node.js", "express.js"]} url="https://rtc-chat-tau.vercel.app/" />
                     <ProjectListItem year="2025" name="Portolio - Your Online Photos Portfolio" skills={["react.js", "javascript", "tailwindcss", "node.js", "express", "mongodb", "imagekit", "npm"]} url="https://github.com/yhbarve/portolio-imagekit" />
                     <ProjectListItem year="2024" name="ChatYHB - An AI powered chat bot" skills={["react.js", "javascript", "tailwindcss", "node.js", "express", "mongodb", "google ai sdk", "npm"]} url="https://chatyhb.vercel.app/" />
                     <ProjectListItem year="2024" name="Scriptsync - Add transcriptions to your videos" skills={["next.js", "typescript", "tailwindcss", "aws s3", "aws transcribe", "web assembly", "ffmpeg"]} url="https://www.youtube.com/watch?v=FPEUKRfoRFQ" />
