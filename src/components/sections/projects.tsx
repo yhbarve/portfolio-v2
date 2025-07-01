@@ -3,8 +3,8 @@ import ProjectCard from "../ProjectCard";
 export default function Projects(){
     return(
         <div id="projects" className="lg:pt-24 pt-12">
-            <div className="text-sm font-bold pb-2 pl-2 cursor-default">PROJECTS</div>
-            <div className="flex flex-col gap-4 dark:hover:text-zinc-400 hover:text-zinc-500">
+            <div className="text-sm font-bold pb-2 pl-2 cursor-default text-section-header">PROJECTS</div>
+            <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
                 <ProjectCard year="2025" link="https://rtc-chat-tau.vercel.app/" name="Chattr - Minimal real-time group chat" desc="Chattr is a minimalist, real-time group chat application built with React, TypeScript, Express, and Socket.IO. It allows users to create and join public rooms using unique room codes and exchange messages instantly. Designed with clean UI and responsive interactions, Chattr focuses on delivering core functionality—message delivery, system notifications, and live presence updates—in a lightweight, deployable MVP. It lays the foundation for future enhancements like private rooms, message history, and advanced moderation." skills={["react.js", "typescript", "tailwindcss", "socket.io", "node.js", "express.js"]} image="/chattr-demo.png" />
 
                 <ProjectCard year="2025" link="https://github.com/yhbarve/portolio-imagekit" name="Portolio - Your Online Photos Portfolio" desc="A modern MERN‑stack application for users to upload and display photos. It features direct client‑to‑ImageKit uploads, JWT‑based authentication, and a responsive gallery with uniform image sizing." skills={["react.js", "javascript", "tailwindcss", "imagekit", "node.js", "express", "mongodb", "npm"]} image="/portolio-demo.png" />
@@ -21,7 +21,7 @@ export default function Projects(){
 
                 <ProjectCard year="2022" link="https://colab.research.google.com/drive/1M2HrE7dRnJhrQRM7Qn8uJ-1gzREvxCPg" name="CineMatch - Movie Recommender" desc="Can't decide which movie to watch? This interesting project solves the problem. All you have to do is enter the name of your favourite movie. The machine learning algorithm creates a feature vector for the film and compares it with all the movies in the database. After a few seconds, it shows you the 10 closest matches. The data is fetched from TMDb API. I am currently working on building a UI and publishing it as a web app." skills={["vectorization", "cosine similarity", "tmdb api", "pandas", "numpy", "difflib", "sklearn", "google colab"]} image="/movie-rec-demo.png" />
             </div>
-            <div className="mt-4 transition ease-in-out text-zinc-500 dark:text-zinc-400 dark:hover:text-zinc-50 hover:text-black hover:translate-x-1"><a href="/projects" className="">View All Projects →</a></div>
+            <div className="mt-4 transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1"><a href="/projects" className="">View All Projects →</a></div>
         </div>
     )
 }

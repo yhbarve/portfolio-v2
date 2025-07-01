@@ -12,7 +12,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="dark:text-zinc-100 text-zinc-950 dark:bg-gradient-to-tr dark:from-zinc-950 dark:to-zinc-900 bg-gradient-to-tr from-zinc-50 to-zinc-100 transition-colors duration-200 ease-in-out">
+    <div className="bg-gradient-to-br from-background-1 via-background-2 to-background-3 transition-colors duration-200 ease-in-out">
       {/* <MainNav /> */}
       <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div className="lg:flex lg:justify-between lg:gap-4">

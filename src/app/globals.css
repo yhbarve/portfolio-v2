@@ -8,94 +8,228 @@ html{
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-    --radius: 0.5rem;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
+    --background-default: 240 10% 3.9%;
+    --foreground-default: 47.9 95.8% 53.1%;
+    --border-default: 47.9 95.8% 53.1%;
+
+    --background-01: 0 0% 3.9%;
+    --background-02: 0 0% 9%;
+    --background-03: 0 0% 14.9%;
+
+    --name-foreground: 0 0% 98%;
+    --role-foreground: 0 0% 83.1%;
+    --information-foreground: 0 0% 63.9%;
+    --navigation-link-foreground: 0 0% 83.1%;
+    --socials-foreground: 0 0% 83.1%;
+    --socials-hover-background: 0 0% 14.9%;
+    --picker-background: 0 0% 25.1%;
+    --picker-hover-backround: 0 0% 14.9%;
+    --picker-text-foreground: 0 0% 89.8%;
+    --picker-border: 0 0% 25.1%;
+    --trademark-foreground: 0 0% 83.1%;
+
+    --card-foreground: 0 0% 89.8%;
+    --card-hover-foreground: 0 0% 89.8%;
+    --card-other-hover-foreground: 0 0% 63.9%;
+    --card-background: hsla(0, 0%, 0%, 0);
+    --card-hover-background: 0 0% 9%;
+    --card-border: 0 0% 0% / 0;
+    --card-hover-border: 0 0% 25.1%;
+    --card-skills-foreground: 0 0% 96.1%;
+    --card-skills-background: 0 0% 14.9%;
+    --card-skills-border: 0 0% 32.2%;
+    --card-image-border: 0 0% 89.8%;
+
+    --section-header-foreground: 0 0% 96.1%;
+    --link-to-page-foreground: 0 0% 83.1%;
+
+    --page-name-foreground: 0 0% 63.9%;
+    --page-title-foreground: 0 0% 96.1%;
+    --page-header-foreground: 0 0% 83.1%;
+    --page-header-border: 0 0% 63.9%;
+
+    --page-item-background: 0 0% 14.9%;
+    --page-item-hover-background: hsla(0, 0%, 0%, 0);
+    --page-item-border: 0 0% 0% / 0;
+    --page-item-hover-border: 0 0% 25.1%;
+    --page-item-foreground: 0 0% 96.1%;
+    --page-item-hover-foreground: 0 0% 96.1%;
+    --page-item-other-hover-foreground: 0 0% 63.9%;
+    --page-item-skills-foreground: 0 0% 96.1%;
+    --page-item-skills-background: 0 0% 14.9%;
+    --page-item-skills-border: 0 0% 32.2%;
+    --page-item-link-hover-background: 0 0% 25.1%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
+  .neon {
+    --background-default: 240 10% 3.9%;
+    --foreground-default: 47.9 95.8% 53.1%;
+    --border-default: 47.9 95.8% 53.1%;
+
+    --background-01: 0 0% 3.9%;
+    --background-02: 0 0% 3.9%;
+    --background-03: 0 0% 3.9%;
+
+    --name-foreground: 71 100% 51%;
+    --role-foreground: 0 0% 83.1%;
+    --information-foreground: 71 100% 51%;
+    --navigation-link-foreground: 71 100% 51%;
+    --socials-foreground: 71 100% 51%;
+    --socials-hover-background: 0 0% 14.9%;
+    --picker-background:71 100% 51%;
+    --picker-hover-backround: 71 100% 51%;
+    --picker-text-foreground: 0 0% 0%;
+    --picker-border: 71 100% 51%;
+    --trademark-foreground: 71 100% 51%;
+
+    --card-foreground: 0 0% 89.8%;
+    --card-hover-foreground: 71 100% 51%;
+    --card-other-hover-foreground: 0 0% 63.9%;
+    --card-background: hsla(0, 0%, 0%, 0);
+    --card-hover-background: 0 0% 0%;
+    --card-border: 0 0% 0% / 0;
+    --card-hover-border: 71 100% 51%;
+    --card-skills-foreground: 71 100% 51%;
+    --card-skills-background: 0 0% 14.9%;
+    --card-skills-border: 0 0% 0% / 0%;
+    --card-image-border: 0 0% 89.8%;
+
+    --section-header-foreground: 71 100% 51%;
+    --link-to-page-foreground: 71 100% 51%;
+
+    --page-name-foreground: 0 0% 83.1%;
+    --page-title-foreground: 71 100% 51%;
+    --page-header-foreground: 71 100% 51%;
+    --page-header-border: 71 100% 51%;
+
+    --page-item-background: 0 0% 0%;
+    --page-item-hover-background: hsla(0, 0%, 0%, 0);
+    --page-item-border: 0 0% 0% / 0;
+    --page-item-hover-border: 71 100% 51%;
+    --page-item-other-hover-foreground: 0 0% 63.9%;
+    --page-item-foreground: 0 0% 83.1%;
+    --page-item-hover-foreground: 71 100% 51%;
+    --page-item-skills-foreground: 71 100% 51%;
+    --page-item-skills-background: 0 0% 14.9%;
+    --page-item-skills-border: 0 0% 0% / 0%;
+    --page-item-link-hover-background: 0 0% 25.1%;
+  }
+
+  .orange {
+    --background-default: 20.5 90.2% 48.2%;
+    --foreground-default: 47.9 95.8% 53.1%;
+    --border-default: 47.9 95.8% 53.1%;
+
+    --background-01: 20.5 90.2% 48.2%;
+    --background-02: 17.5 88.3% 40.4%;
+    --background-03: 15 79.1% 33.7%;
+
+    --name-foreground: 33.3 100% 96.5%;
+    --role-foreground: 0 0% 3.9%;
+    --information-foreground: 33.3 100% 96.5%;
+    --navigation-link-foreground: 33.3 100% 96.5%;
+    --socials-foreground: 33.3 100% 96.5%;
+    --socials-hover-background: 0 0% 3.9%;
+    --picker-background:0 0% 3.9%;
+    --picker-hover-backround: 0 0% 3.9%;
+    --picker-text-foreground: 20.5 90.2% 48.2%;
+    --picker-border: 0 0% 3.9%;
+    --trademark-foreground: 33.3 100% 96.5%;
+
     --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --card-hover-foreground: 20.5 90.2% 48.2%;
+    --card-other-hover-foreground: 210 40% 98%;
+    --card-background: hsla(0, 0%, 0%, 0);
+    --card-hover-background: 210 40% 98%;
+    --card-border: 0 0% 0% / 0;
+    --card-hover-border: 33.3 100% 96.5%;
+    --card-skills-foreground: 20.5 90.2% 48.2%;
+    --card-skills-background: 0 0% 3.9%;
+    --card-skills-border: 0 0% 3.9%;
+    --card-image-border: 0 0% 89.8%;
+
+    --section-header-foreground: 210 40% 98%;
+    --link-to-page-foreground: 210 40% 98%;
+
+    --page-name-foreground: 0 0% 3.9%;
+    --page-title-foreground: 210 40% 98%;
+    --page-header-foreground: 210 40% 98%;
+    --page-header-border: 210 40% 98%;
+
+    --page-item-background: 210 40% 98%;
+    --page-item-hover-background: hsla(0, 0%, 0%, 0);
+    --page-item-border: 0 0% 0% / 0;
+    --page-item-hover-border: 210 40% 98%;
+    --page-item-other-hover-foreground: 210 40% 98%;
+    --page-item-foreground: 210 40% 98%;
+    --page-item-hover-foreground: 20.5 90.2% 48.2%;
+    --page-item-skills-foreground: 20.5 90.2% 48.2%;
+    --page-item-skills-background: 0 0% 3.9%;
+    --page-item-skills-border: 0 0% 3.9%;
+    --page-item-link-hover-background: 0 0% 25.1%;
   }
 
-  .baby-blue {
-    --background: 204 100% 97%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 204 100% 97%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 204 100% 97%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 211 100% 40%;
-    --primary-foreground: 210 40% 98%;
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-    --chart-1: 197 100% 64%;
-    --chart-2: 205 73% 57%;
-    --chart-3: 215 76% 57%;
-    --chart-4: 187 60% 74%;
-    --chart-5: 195 56% 68%;
+  .teal {
+    --background-default: 167.2 85.5% 89.2%;
+    --foreground-default: 47.9 95.8% 53.1%;
+    --border-default: 47.9 95.8% 53.1%;
+
+    --background-01: 167.2 85.5% 89.2%;
+    --background-02: 168.4 83.8% 78.2%;
+    --background-03: 166.2 76.5% 96.7%;
+
+    --name-foreground: 178.6 84.3% 10%;
+    --role-foreground: 175.9 60.8% 19%;
+    --information-foreground: 178.6 84.3% 10%;
+    --navigation-link-foreground: 178.6 84.3% 10%;
+    --socials-foreground: 178.6 84.3% 10%;
+    --socials-hover-background: 170.6 76.9% 64.3%;
+    --picker-background:175.3 77.4% 26.1%;
+    --picker-hover-backround: 175.3 77.4% 26.1%;
+    --picker-text-foreground: 167.2 85.5% 89.2%;
+    --picker-border: 175.3 77.4% 26.1%;
+    --trademark-foreground: 175.3 77.4% 26.1%;
+
+    --card-foreground: 178.6 84.3% 10%;
+    --card-hover-foreground: 178.6 84.3% 10%;
+    --card-other-hover-foreground: 175.3 77.4% 26.1%;
+    --card-background: hsla(0, 0%, 0%, 0);
+    --card-hover-background: 168.4 83.8% 78.2%;
+    --card-border: 0 0% 0% / 0;
+    --card-hover-border: 172.5 66% 50.4%;
+    --card-skills-foreground: 167.2 85.5% 89.2%;
+    --card-skills-background: 178.6 84.3% 10%;
+    --card-skills-border: 178.6 84.3% 10%;
+    --card-image-border: 0 0% 89.8%;
+
+    --section-header-foreground: 175.3 77.4% 26.1%;
+    --link-to-page-foreground: 175.3 77.4% 26.1%;
+
+    --page-name-foreground: 175.9 60.8% 19%;
+    --page-title-foreground: 178.6 84.3% 10%;
+    --page-header-foreground: 175.9 60.8% 19%;
+    --page-header-border: 175.9 60.8% 19%;
+
+    --page-item-background: hsla(0, 0%, 0%, 0);
+    --page-item-hover-background: 168.4 83.8% 78.2%;
+    --page-item-border: 0 0% 0% / 0;
+    --page-item-hover-border: 172.5 66% 50.4%;
+    --page-item-other-hover-foreground: 175.3 77.4% 26.1%;
+    --page-item-foreground: 175.9 60.8% 19%;
+    --page-item-hover-foreground: 175.9 60.8% 19%;
+    --page-item-skills-foreground: 167.2 85.5% 89.2%;
+    --page-item-skills-background: 178.6 84.3% 10%;
+    --page-item-skills-border: 178.6 84.3% 10%;
+    --page-item-link-hover-background: 0 0% 25.1%;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border-default;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background-default text-foreground-default;
   }
 }
 

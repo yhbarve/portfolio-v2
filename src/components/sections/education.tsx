@@ -4,8 +4,8 @@ import EducationCard from "../EducationCard";
 export default function Education(){
     return (
         <div id="education" className="pt-24">
-            <div className="text-sm font-bold pb-2 pl-2 cursor-default">EDUCATION</div>
-            <div className="flex flex-col gap-4 dark:hover:text-zinc-400 hover:text-zinc-500">
+            <div className="text-sm font-bold pb-2 pl-2 cursor-default text-section-header">EDUCATION</div>
+            <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
                 <EducationCard program="Bachelor of Computer Science with Specialization in AI" uni="University of Waterloo" year="2021 — 2026" courses="Algebra, Calculus, Linear Algebra, Optimization, Combinatorics, Probability, Statistics, Functional Programs, Algorithm Design and Data Abstraction, Object Oriented Programming, Data Structures, Algorithms, Logic and Computation, Computer Organization and Design, Sequential Programming, Introduction to Machine Learning, Operating Systems, Introduction to Artificial Intelligence, Computational Statistics and Data Analysis" />
 
                 <EducationCard program="Bachelor of Business Administration with Finance Concentration" uni="Wilfrid Laurier University" year="2021 — 2026" courses="Functional Areas of an Organization, Business Environment, Introductory Microeconomics, Introductory Macroeconomics, Financial Accounting, Business Law, Managerial Accounting, Organizational Behaviour, Human Resources Management, Financial Management, Marketing Management, Business Operations, Business Operations, Data Analytics, Strategic Management" />

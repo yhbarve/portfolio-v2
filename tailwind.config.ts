@@ -19,59 +19,81 @@ const config = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+        background: {
+          1: 'hsl(var(--background-01))',
+          2: 'hsl(var(--background-02))',
+          3: 'hsl(var(--background-03))',
+          default: 'hsl(var(--background-default))',
         },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+        foreground:{
+          default: 'hsl(var(--foreground-default))',
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+        border: {
+          default: 'hsl(var(--border-default))',
         },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+        name: {
+          foreground: 'hsl(var(--name-foreground))',
         },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+        role: {
+          foreground: 'hsl(var(--role-foreground))',
         },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+        information: {
+          foreground: 'hsl(var(--information-foreground))',
+        },
+        navigation: {
+          link: 'hsl(var(--navigation-link-foreground))',
+        },
+        socials: {
+          foreground: 'hsl(var(--socials-foreground))',
+          hoverBg: 'hsl(var(--socials-hover-background))',
+        },
+        picker: {
+          background: 'hsl(var(--picker-background))',
+          hoverBackground: 'hsl(var(--picker-hover-backround))',
+          text: 'hsl(var(--picker-text-foreground))',
+          border: 'hsl(var(--picker-border))',
+        },
+        trademark: {
+          foreground: 'hsl(var(--trademark-foreground))',
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          foreground: 'hsl(var(--card-foreground))',
+          hoverForeground: 'hsl(var(--card-hover-foreground))',
+          background: 'hsl(var(--card-background))',
+          hoverBackground: 'hsl(var(--card-hover-background))',
+          border: 'hsl(var(--card-border))',
+          hoverBorder: 'hsl(var(--card-hover-border))',
+          skillsForeground: 'hsl(var(--card-skills-foreground))',
+          skillsBackground: 'hsl(var(--card-skills-background))',
+          skillsBorder: 'hsl(var(--card-skills-border))',
+          imageBorder: 'hsl(var(--card-image-border))',
+          otherHoverForeground: 'hsl(var(--card-other-hover-foreground))',
         },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+        section: {
+          header: 'hsl(var(--section-header-foreground))',
         },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+        linkToPage: {
+          foreground: 'hsl(var(--link-to-page-foreground))',
         },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-      },
+        page: {
+          nameForeground: 'hsl(var(--page-name-foreground))',
+          titleForeground: 'hsl(var(--page-title-foreground))',
+          headerForeground: 'hsl(var(--page-header-foreground))',
+          headerBorder: 'hsl(var(--page-header-border))',
+
+          itemBackground: 'hsl(var(--page-item-background))',
+          itemHoverBackground: 'hsl(var(--page-item-hover-background))',
+          itemBorder: 'hsl(var(--page-item-border))',
+          itemHoverBorder: 'hsl(var(--page-item-hover-border))',
+          itemForeground: 'hsl(var(--page-item-foreground))',
+          itemHoverForeground: 'hsl(var(--page-item-hover-foreground))',
+          itemSkillsForeground: 'hsl(var(--page-item-skills-foreground))',
+          itemSkillsBackground: 'hsl(var(--page-item-skills-background))',
+          itemSkillsBorder: 'hsl(var(--page-item-skills-border))',
+          itemLinkHoverBackground: 'hsl(var(--page-item-link-hover-background))',
+          itemOtherHoverForeground: 'hsl(var(--page-item-other-hover-foreground))',
+        },
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

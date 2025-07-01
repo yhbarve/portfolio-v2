@@ -4,20 +4,20 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 
 export default function Home() {
     return (
-        <div className="scroll-smooth dark:text-zinc-100 text-zinc-950 dark:bg-gradient-to-tr dark:from-zinc-950 dark:to-zinc-900 bg-gradient-to-tr from-zinc-50 to-zinc-100 transition-colors duration-200 ease-in-out">
+        <div className="scroll-smooth bg-gradient-to-tr from-background-1 via-background-2 to-background-3 transition-colors duration-200 ease-in-out">
             <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
                 <div className="pt-24">
-                    <div className="hover:translate-x-1 transition-all ease-in-out"><a href="/" className="text-3xl dark:text-zinc-400 text-zinc-700 font-medium">← Yash Barve</a></div>
-                    <h1 className="text-5xl font-semibold bg-gradient-to-r from-zinc-950 via-zinc-700 to-zinc-800 dark:from-zinc-300 dark:via-zinc-100 dark:to-zinc-400 inline-block text-transparent bg-clip-text pb-3 mt-2">Reading Collection</h1>
+                    <div className="hover:translate-x-1 transition-all ease-in-out"><a href="/" className="text-3xl text-page-nameForeground font-medium">← Yash Barve</a></div>
+                    <h1 className="text-5xl font-semibold text-page-titleForeground inline-block pb-3 mt-2">Reading Collection</h1>
                 </div>
-                <div className="grid grid-cols-12 border-b-[0.5px] p-2 pb-4 pt-9 dark:border-zinc-700 dark:text-zinc-400 border-zinc-400 text-zinc-500 font-semibold">
+                <div className="grid grid-cols-12 border-b-[0.5px] p-2 pb-4 pt-9 text-page-headerForeground border-page-headerBorder font-semibold">
                         <div className="lg:block hidden col-span-2 lg:col-span-1">Sr.</div>
                         <div className="col-span-4 lg:col-span-5">Title</div>
                         <div className="col-span-4 lg:col-span-3">Author</div>
                         <div className="col-span-2 mx-auto">Pages</div>
                         <div className="col-span-2 mx-auto lg:col-span-1">Link</div>
                     </div>
-                <div className="flex flex-col-reverse dark:hover:text-zinc-400 hover:text-zinc-500 pb-24">
+                <div className="flex flex-col text-page-itemForeground hover:text-page-itemOtherHoverForeground pb-24">
                     <ReadListItem sr="01" title="Do Epic Shit" author="Ankur Warikoo" pages="312" link="https://www.amazon.ca/Do-Epic-Ankur-Warikoo/dp/9393986282/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.e4pK3ikR7MrTM5e388_v9jfrQ9H8az8k8zi0ul2lp8bmLWqV0m-QVhycUC7w9dPTzVmUOjB8SSP-7eW8wbyNdGLbpL6_16fF4q6MrEjFn-7QJHDgNB-QtV2J2C6KZmIq6AcVnyFE8U3V4hEy5p8sXb30TtKScphBuSf1aniZKds31Y4GytoEtCy0vq0Ib_Q2WCrtxUVQyUUlikgxHFUWBlgPFo6jjpvL66UyMrfFt9PhLrtVw6dzBUNPCyqvKLUC8oxjjxPT3PTRNSTJudYaTCq9_sC9MY8OteQujcxKzI8.ZZ3iYbKf4AOaIkH2owWHZBUsq1j11YjpG49JuWWRbQ0&qid=1722827367&sr=8-1" />
 
                     <ReadListItem sr="02" title="The Alchemist" author="Paulo Coelho" pages="200" link="https://www.amazon.ca/Alchemist-25th-Anniversary-Paulo-Coelho/dp/0062390627/ref=sr_1_3?crid=5HFF8ZQTL0G8&dib=eyJ2IjoiMSJ9.oUSaMmdTbyPBivuJLFm4Q37r39spfhaLSEBLasfpT4Ol0ZK8euwF2yoVhIALUuCkbm5aL_LcWx6rY-4U2VYt1WIhP4ICgO3OTUc-EZcqzQwdZpgzaBuTsDoOOdw3GXwGSyco_-YME1uF-cpoFWYXdcCL-xqT8H9rggkd4atWajnK5Nw6mVfJ_6Ym6WIWcR2jV_DoQ_oIcLIc331PW7gwuev43kKlI9TD9Yksvlh8KKhb6_M5BnLQ49V_Msv-2fI9ADTbw0P9XwHJL0PwKZkLcttjyWXqJZ6pN_dsV_WaFW4.Ck2WQWrBuSYFHNjuAt6hgDpTXoz3pAHBpBDjGZJFwEA&dib_tag=se&keywords=alchemist&qid=1722827347&sprefix=alchemist,aps,120&sr=8-3" />
