@@ -48,8 +48,8 @@ html{
     --page-header-foreground: 0 0% 83.1%;
     --page-header-border: 0 0% 63.9%;
 
-    --page-item-background: 0 0% 14.9%;
-    --page-item-hover-background: hsla(0, 0%, 0%, 0);
+    --page-item-background: hsla(0, 0%, 0%, 0);
+    --page-item-hover-background: 0 0% 14.9%;
     --page-item-border: 0 0% 0% / 0;
     --page-item-hover-border: 0 0% 25.1%;
     --page-item-foreground: 0 0% 96.1%;
@@ -102,8 +102,8 @@ html{
     --page-header-foreground: 71 100% 51%;
     --page-header-border: 71 100% 51%;
 
-    --page-item-background: 0 0% 0%;
-    --page-item-hover-background: hsla(0, 0%, 0%, 0);
+    --page-item-background: hsla(0, 0%, 0%, 0);
+    --page-item-hover-background: 0 0% 0%;
     --page-item-border: 0 0% 0% / 0;
     --page-item-hover-border: 71 100% 51%;
     --page-item-other-hover-foreground: 0 0% 63.9%;
@@ -156,8 +156,8 @@ html{
     --page-header-foreground: 210 40% 98%;
     --page-header-border: 210 40% 98%;
 
-    --page-item-background: 210 40% 98%;
-    --page-item-hover-background: hsla(0, 0%, 0%, 0);
+    --page-item-background: hsla(0, 0%, 0%, 0);
+    --page-item-hover-background: 33.3 100% 96.5%;
     --page-item-border: 0 0% 0% / 0;
     --page-item-hover-border: 210 40% 98%;
     --page-item-other-hover-foreground: 210 40% 98%;
@@ -166,7 +166,7 @@ html{
     --page-item-skills-foreground: 20.5 90.2% 48.2%;
     --page-item-skills-background: 0 0% 3.9%;
     --page-item-skills-border: 0 0% 3.9%;
-    --page-item-link-hover-background: 0 0% 25.1%;
+    --page-item-link-hover-background: 30.7 97.2% 72.4%;
   }
 
   .teal {
@@ -220,7 +220,7 @@ html{
     --page-item-skills-foreground: 167.2 85.5% 89.2%;
     --page-item-skills-background: 178.6 84.3% 10%;
     --page-item-skills-border: 178.6 84.3% 10%;
-    --page-item-link-hover-background: 0 0% 25.1%;
+    --page-item-link-hover-background: 170.6 76.9% 64.3%;
   }
 }
 
