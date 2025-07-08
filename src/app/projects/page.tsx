@@ -20,7 +20,7 @@ export default function Home() {
                     <ProjectListItem year="2025" name="Portolio - Your Online Photos Portfolio" skills={["react.js", "javascript", "tailwindcss", "node.js", "express", "mongodb", "imagekit", "npm"]} url="https://github.com/yhbarve/portolio-imagekit" />
                     <ProjectListItem year="2024" name="ChatYHB - An AI powered chat bot" skills={["react.js", "javascript", "tailwindcss", "node.js", "express", "mongodb", "google ai sdk", "npm"]} url="https://chatyhb.vercel.app/" />
                     <ProjectListItem year="2024" name="Scriptsync - Add transcriptions to your videos" skills={["next.js", "typescript", "tailwindcss", "aws s3", "aws transcribe", "web assembly", "ffmpeg"]} url="https://www.youtube.com/watch?v=FPEUKRfoRFQ" />
-                    <ProjectListItem year="2023" name="Portfolio  Website - v1" skills={["next.js", "typescript", "tailwindcss"]} url="https://yashbarve.vercel.app" />
+                    <ProjectListItem year="2023" name="Portfolio  Website - v1" skills={["next.js", "typescript", "tailwindcss"]} url="https://v0yashbarve.vercel.app" />
                     <ProjectListItem year="2023" name="Medium.com clone" skills={["react.js", "typescript", "tailwindcss", "hono", "cloudflare workers", "postgre sql", "prisma", "npm"]} url="https://medium-yb.vercel.app/" />
                     <ProjectListItem year="2023" name="BFL Player Picker" skills={["react.js", "javascript", "node.js", "express", "mongodb", "tailwindcss"]} url="https://bfl-2-fe.vercel.app/" />
                     <ProjectListItem year="2023" name="Meme Generator Application" skills={["react", "javascript", "css", "api"]} url="https://64bccbc9846f6e6ff53955ce--waibee-meme-generator.netlify.app/" />
