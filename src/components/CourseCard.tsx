@@ -3,7 +3,7 @@ export default function CourseCard({year, program, uni, desc, link}: {year: stri
     if (link == "") {
         return (
             <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
-        hover:text-card-hoverForeground transition-colors duration-200 ease-in-out rounded-md p-2 cursor-default hover:backdrop-blur-2xl">
+        hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default hover:backdrop-blur-2xl">
                 <div className="col-span-1 flex flex-col">
                     <div className="font-light max-w-[90%]">{year}</div>
                 </div>
@@ -17,7 +17,7 @@ export default function CourseCard({year, program, uni, desc, link}: {year: stri
     } else {
         return (
             <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
-        hover:text-card-hoverForeground transition-colors duration-200 ease-in-out rounded-md p-2 cursor-default hover:backdrop-blur-2xl">
+        hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default hover:backdrop-blur-2xl">
                 <div className="col-span-1 flex flex-col">
                     <div className="font-light max-w-[90%]">{year}</div>
                 </div>

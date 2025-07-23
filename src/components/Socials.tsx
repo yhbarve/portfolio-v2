@@ -8,7 +8,7 @@ export default function Socials() {
         <a
           href="https://x.com/yhbarve"
           target="_blank"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition-colors ease-in-out"
+          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ export default function Socials() {
         <a
           href="https://github.com/yhbarve"
           target="_blank"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition-colors ease-in-out"
+          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ export default function Socials() {
         <a
           href="mailto:yhbarve@uwaterloo.ca"
           target="_blank"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition-colors ease-in-out"
+          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ export default function Socials() {
         <a
           href="https://www.linkedin.com/in/yhbarve/"
           target="_blank"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition-colors ease-in-out"
+          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ export default function Socials() {
         <a
           href="https://www.instagram.com/yhbarve/"
           target="_blank"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition-colors ease-in-out"
+          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ export default function Socials() {
         <a
           href="https://leetcode.com/u/yhbarve/"
           target="_blank"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition-colors ease-in-out"
+          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -6,7 +6,7 @@ export default function Interest({interests}:{interests:Array<string>}){
             <div className="text-sm font-bold pb-4 pl-2 cursor-default text-section-header">INTERESTS</div>
             <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
                 <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
-        hover:text-card-hoverForeground transition-colors duration-200 ease-in-out rounded-md p-2 cursor-default hover:backdrop-blur-2xl">
+        hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default hover:backdrop-blur-2xl">
                     <div className="col-span-1 flex flex-col">
                         <div className="font-light max-w-[90%]">01</div>
                     </div>
@@ -18,7 +18,7 @@ export default function Interest({interests}:{interests:Array<string>}){
                 <InterestCard index="02" title="Formula 1" desc="I have been an F1 since 2018. I am a die-hard Ferrari and Charles Leclerc fan, despite the stress and frustration it gives. I understand the technical side of F1 - tracks, tyres, strategies, car upgrades. I also play F1 games on PS5 (with the pro sim setup). So, I actually know all the tracks and this makes my experience watching F1 even better." />
 
                 <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
-        hover:text-card-hoverForeground transition-colors duration-200 ease-in-out rounded-md p-2 cursor-default hover:backdrop-blur-2xl">
+        hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default hover:backdrop-blur-2xl">
                     <div className="col-span-1 flex flex-col">
                         <div className="font-light max-w-[90%]">03</div>
                     </div>

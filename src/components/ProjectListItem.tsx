@@ -13,7 +13,7 @@ export default function ProjectListItem({
     <div
       className="grid grid-cols-12 px-2 py-4 my-2 bg-page-itemBackground hover:bg-page-itemHoverBackground
       items-start font-light text-base cursor-default rounded-md border border-page-itemBorder
-      hover:border-page-itemHoverBorder transition-colors duration-200 ease-in-out hover:text-page-itemHoverForeground"
+      hover:border-page-itemHoverBorder transition duration-200 ease-in-out hover:text-page-itemHoverForeground"
     >
       <div className="col-span-2 lg:col-span-1">{year}</div>
 
@@ -36,7 +36,7 @@ export default function ProjectListItem({
         href={url}
         target="_blank"
         className="block col-span-1 lg:col-span-2 mx-auto font-normal text-sm
-        hover:bg-page-itemLinkHoverBackground p-2 rounded-md transition-colors ease-in-out"
+        hover:bg-page-itemLinkHoverBackground p-2 rounded-md transition ease-in-out"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

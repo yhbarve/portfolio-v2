@@ -14,6 +14,7 @@ export function ThemeSwitcher() {
     { name: "Neon", value: "neon" },
     { name: "Orange", value: "orange" },
     { name: "Teal", value: "teal" },
+    { name: "Lavender Mist", value: "lavender" },
   ];
 
   useEffect(() => {

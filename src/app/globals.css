@@ -222,6 +222,60 @@ html{
     --page-item-skills-border: 178.6 84.3% 10%;
     --page-item-link-hover-background: 170.6 76.9% 64.3%;
   }
+
+  .lavender {
+    --background-default: 252.5 94.7% 85.1%;
+    --foreground-default: 47.9 95.8% 53.1%;
+    --border-default: 47.9 95.8% 53.1%;
+
+    --background-01: 251.4 91.3% 95.5%;
+    --background-02: 250.5 95.2% 91.8%;
+    --background-03: 252.5 94.7% 85.1%;
+
+    --name-foreground: 263.4 70% 50.4%;
+    --role-foreground: 258.3 89.5% 66.3%;
+    --information-foreground: 263.4 69.3% 42.2%;
+    --navigation-link-foreground: 263.4 70% 50.4%;
+    --socials-foreground: 263.4 70% 50.4%;
+    --socials-hover-background: 252.5 94.7% 85.1%;
+    --picker-background:258.3 89.5% 66.3%;
+    --picker-hover-backround: 263.4 70% 50.4%;
+    --picker-text-foreground: 250 100% 97.6%;
+    --picker-border: 262.1 83.3% 57.8%;
+    --trademark-foreground: 262.1 83.3% 57.8%;
+
+    --card-foreground: 263.4 69.3% 42.2%;
+    --card-hover-foreground: 263.4 69.3% 42.2%;
+    --card-other-hover-foreground: 258.3 89.5% 66.3%;
+    --card-background: hsla(0, 0%, 0%, 0);
+    --card-hover-background: 250.5 95.2% 91.8%;
+    --card-border: 0 0% 0% / 0;
+    --card-hover-border: 252.5 94.7% 85.1%;
+    --card-skills-foreground: 250 100% 97.6%;
+    --card-skills-background: 255.1 91.7% 76.3%;
+    --card-skills-border: 255.1 91.7% 76.3%;
+    --card-image-border: 0 0% 89.8%;
+
+    --section-header-foreground: 263.4 69.3% 42.2%;
+    --link-to-page-foreground: 263.4 69.3% 42.2%;
+
+    --page-name-foreground: 263.4 69.3% 42.2%;
+    --page-title-foreground: 263.4 70% 50.4%;
+    --page-header-foreground: 263.4 69.3% 42.2%;
+    --page-header-border: 263.4 69.3% 42.2%;
+
+    --page-item-background: hsla(0, 0%, 0%, 0);
+    --page-item-hover-background: 250.5 95.2% 91.8%;
+    --page-item-border: 0 0% 0% / 0;
+    --page-item-hover-border: 252.5 94.7% 85.1%;
+    --page-item-other-hover-foreground: 258.3 89.5% 66.3%;
+    --page-item-foreground: 263.4 69.3% 42.2%;
+    --page-item-hover-foreground: 263.4 69.3% 42.2%;
+    --page-item-skills-foreground: 250 100% 97.6%;
+    --page-item-skills-background: 255.1 91.7% 76.3%;
+    --page-item-skills-border: 255.1 91.7% 76.3%;
+    --page-item-link-hover-background: 252.5 94.7% 85.1%;
+  }
 }
 
 @layer base {
