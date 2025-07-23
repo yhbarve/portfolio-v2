@@ -211,7 +211,7 @@ export default function Home() {
             year="2022"
             name="Evrab Weather - Weather Forecast Application"
             skills={["html", "css", "javascript", "api"]}
-            url="https://yashbarve.vercel.app/weather"
+            url="https://v0yashbarve.vercel.app/weather"
           />
           <ProjectListItem
             year="2022"
