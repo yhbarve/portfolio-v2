@@ -1,6 +1,8 @@
 "use client"
 
 import { useEffect, useState } from "react";
+import Navigation from "./Navigation";
+import SmallNavigation from "./SmallNavigation";
 
 export default function AboutMe(){
     const [curVal, setCurVal] = useState("Software developer");
@@ -28,6 +30,7 @@ export default function AboutMe(){
                 {curVal}
             </h1>
             <div className="text-sm lg:text-xs mt-8 w-4/5 text-information-foreground cursor-default hidden lg:block">I&apos;m a fourth-year Computer Science student at the University of Waterloo and a Business student at Wilfrid Laurier University. Since starting my full-stack development journey in 2021, I have grown especially passionate about backend technologies and scalable systems.<br /><br /> As I continue to deepen my expertise in web development, I&apos;m also exploring emerging fields like Web3 and Machine Learning. I&apos;m eager to keep learning, collaborate with brilliant minds, and gain meaningful work experience along the way.<br /><br /> Beyond tech, I&apos;m an avid reader and a huge Formula 1 fan - delusionally cheering for Scuderia Ferrari and Charles Leclerc every race weekend.</div>
+            <div className="lg:hidden"><SmallNavigation /></div>
         </div>
     );
 }
