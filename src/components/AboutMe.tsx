@@ -24,7 +24,7 @@ export default function AboutMe(){
     }, []);
 
     return (
-        <div className="flex flex-col pl-2 items-center lg:items-start">
+        <div className="flex flex-col items-center lg:items-start">
             <h1 className="text-5xl font-semibold inline-block text-name-foreground mb-2">Yash H. Barve</h1>
             <h1 className={`text-3xl font-medium text-role-foreground mt-1 transition-opacity duration-200 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
                 {curVal}
