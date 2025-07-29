@@ -12,9 +12,9 @@ export function ThemeSwitcher() {
   const themes = [
     { name: "Neutral", value: "neutral" },
     { name: "Neon", value: "neon" },
-    { name: "Orange", value: "orange" },
     { name: "Teal", value: "teal" },
     { name: "Lavender Mist", value: "lavender" },
+    { name: "Forza Ferrari", value: "ferrari"}
   ];
 
   useEffect(() => {

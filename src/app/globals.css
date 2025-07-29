@@ -276,6 +276,60 @@ html{
     --page-item-skills-border: 255.1 91.7% 76.3%;
     --page-item-link-hover-background: 252.5 94.7% 85.1%;
   }
+
+  .ferrari {
+    --background-default: 359 72% 40.6%;
+    --foreground-default: 47.9 95.8% 53.1%;
+    --border-default: 47.9 95.8% 53.1%;
+
+    --background-01: 359 78% 52%;
+    --background-02: 359 78% 52%;
+    --background-03: 359 72% 40.6%;
+
+    --name-foreground: 55 93.8% 55.5%;
+    --role-foreground: 0 0% 100%;
+    --information-foreground: 0 0% 100%;
+    --navigation-link-foreground: 0 0% 100%;
+    --socials-foreground: 55 93.8% 55.5%;
+    --socials-hover-background: 359 72% 40.6%;
+    --picker-background: 359 72% 40.6%;
+    --picker-hover-backround: 359 72% 40.6%;
+    --picker-text-foreground: 55 93.8% 55.5%;
+    --picker-border: 359 72% 40.6%;
+    --trademark-foreground: 0 0% 100%;
+
+    --card-foreground: 0 0% 100%;
+    --card-hover-foreground: 55 93.8% 55.5%;
+    --card-other-hover-foreground: 0 0% 90%;
+    --card-background: hsla(0, 0%, 0%, 0);
+    --card-hover-background: 359 72% 40.6%;
+    --card-border: 0 0% 0% / 0;
+    --card-hover-border: 359 72% 40.6%;
+    --card-skills-foreground: 0 0% 0%;
+    --card-skills-background: 55 93.8% 55.5%;
+    --card-skills-border: 55 93.8% 55.5%;
+    --card-image-border: 0 0% 89.8%;
+
+    --section-header-foreground: 55 93.8% 55.5%;
+    --link-to-page-foreground: 55 93.8% 55.5%;
+
+    --page-name-foreground: 0 0% 100%;
+    --page-title-foreground: 55 93.8% 55.5%;
+    --page-header-foreground: 0 0% 100%;
+    --page-header-border: 55 93.8% 55.5%;
+
+    --page-item-background: hsla(0, 0%, 0%, 0);
+    --page-item-hover-background: 359 72% 40.6%;
+    --page-item-border: 0 0% 0% / 0;
+    --page-item-hover-border: 359 72% 40.6%;
+    --page-item-other-hover-foreground: 0 0% 90%;
+    --page-item-foreground: 0 0% 100%;
+    --page-item-hover-foreground: 55 93.8% 55.5%;
+    --page-item-skills-foreground: 0 0% 0%;
+    --page-item-skills-background: 55 93.8% 55.5%;
+    --page-item-skills-border: 55 93.8% 55.5%;
+    --page-item-link-hover-background: 359 72% 35.6%;
+  }
 }
 
 @layer base {
