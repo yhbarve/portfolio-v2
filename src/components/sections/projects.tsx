@@ -9,7 +9,7 @@ export default function Projects() {
       <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
         <ProjectCard
           year="2025"
-          link="" // Replace with your actual project/demo link when ready
+          link="https://www.youtube.com/watch?v=_2dJb6zYpTw" // Replace with your actual project/demo link when ready
           name="Fit4Me – Personalized Fitness Tracking App (In Development)"
           desc="Fit4Me is a full-stack Android fitness application currently in development as part of a team project. Designed using Jetpack Compose, Kotlin, Node.js, Express, and PostgreSQL, it offers personalized workout planning, real-time chat, session tracking, and intelligent matchmaking based on user fitness goals, availability, and experience level. The app integrates REST APIs and WebSocket communication for a smooth and interactive user experience. Still in progress, Fit4Me aims to deliver a robust, user-centric fitness platform with both frontend polish and backend performance."
           skills={[
