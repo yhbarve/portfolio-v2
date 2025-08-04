@@ -40,7 +40,7 @@ export default function Home() {
             "socket.io",
             "jwt auth",
             ]}
-            url=""
+            url="https://www.youtube.com/watch?v=_2dJb6zYpTw"
           />
           <ProjectListItem
             year="2025"
