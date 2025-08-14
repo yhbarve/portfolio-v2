@@ -18,6 +18,7 @@ export type Post = {
   summary?: string | undefined
   published: boolean
   tags?: string[] | undefined
+  author?: string | undefined
   /** Markdown file body */
   body: Markdown
   slug: string

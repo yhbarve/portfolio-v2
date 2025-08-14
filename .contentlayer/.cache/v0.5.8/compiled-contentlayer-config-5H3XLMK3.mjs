@@ -14,7 +14,8 @@ var Post = defineDocumentType(() => ({
     date: { type: "date", required: true },
     summary: { type: "string" },
     published: { type: "boolean", default: true },
-    tags: { type: "list", of: { type: "string" } }
+    tags: { type: "list", of: { type: "string" } },
+    author: { type: "string" }
   },
   computedFields: {
     slug: {
@@ -41,4 +42,4 @@ export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-SRT34PPH.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-5H3XLMK3.mjs.map

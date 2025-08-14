@@ -29,7 +29,7 @@ export default function RootLayout({
           content="Yash is a fourth-year Computer Science student at the University of Waterloo and a Business student at Wilfrid Laurier University. Since starting his full-stack development journey in 2021, he has grown especially passionate about backend technologies and scalable systems."
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-gradient-to-tr from-background-1 via-background-2 to-background-3`}>
         <Providers>
           <Banner />
           {children}

@@ -50,9 +50,13 @@ export default function BlogsPage() {
           {posts.map((p) => (
             <div
               key={p.slug}
-              className="grid grid-cols-12 items-start px-2 py-4 my-2 bg-page-itemBackground hover:bg-page-itemHoverBackground font-light text-base cursor-default rounded-md border border-page-itemBorder hover:border-page-itemHoverBorder transition duration-200 ease-in-out hover:text-page-itemHoverForeground"
+              className="grid grid-cols-12 px-2 py-4 my-2 font-light text-base
+              items-center
+              text-page-itemForeground hover:bg-page-itemHoverBackground hover:text-page-itemHoverForeground
+              hover:border-page-itemHoverBorder cursor-default rounded-md border border-page-itemBorder
+              transition duration-200 ease-in-out"
             >
-              <div className="text-sm opacity-70 col-span-2">
+              <div className="text-sm col-span-2">
                 {new Date(p.date).toLocaleDateString("en-US", {
                   month: "short",
                   day: "numeric",
@@ -64,7 +68,7 @@ export default function BlogsPage() {
                   {p.title}
                 </a>
               </div>
-              {p.summary && <p className="col-span-5">{p.summary}</p>}
+              {p.summary && <p className="col-span-5">{(p.summary.length <= 100 ? p.summary : p.summary.slice(0, 100) + '...')}</p>}
               <a
                 href={`/blog/${p.slug}`}
                 target="_blank"

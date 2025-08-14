@@ -15,6 +15,7 @@ export const Post = defineDocumentType(() => ({
     summary: { type: "string" },
     published: { type: "boolean", default: true },
     tags: { type: "list", of: { type: "string" } },
+    author: { type: "string" }
   },
   computedFields: {
     slug: {
