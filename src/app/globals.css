@@ -441,4 +441,7 @@ html {
   .prose-no-heading-underline :where(h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover):not(:where(.not-prose *)) {
     text-decoration: none;
   }
+  .prose input[type="checkbox"] {
+  accent-color: hsl(var(--blog-body-headings-foreground));
+}
 }

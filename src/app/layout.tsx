@@ -31,7 +31,6 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-gradient-to-tr from-background-1 via-background-2 to-background-3`}>
         <Providers>
-          <Banner />
           {children}
         </Providers>
       </body>

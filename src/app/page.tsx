@@ -8,10 +8,13 @@ import Projects from "@/components/sections/projects";
 import Socials from "@/components/Socials";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
+import Banner from "@/components/ui/Banner";
 import Image from "next/image";
 
 export default function Home() {
   return (
+    <div>
+      <Banner />
     <div className="bg-gradient-to-br from-background-1 via-background-2 to-background-3 transition duration-200 ease-in-out">
       {/* <MainNav /> */}
       <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
@@ -28,6 +31,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
