@@ -1,4 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+// next.config.mjs
+import { withContentlayer } from "next-contentlayer2"
 
-export default nextConfig;
+export default withContentlayer({
+  experimental: { mdxRs: true }, // fine even if we're starting with .md
+})

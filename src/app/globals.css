@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -76,7 +76,7 @@ html{
     --navigation-link-foreground: 71 100% 51%;
     --socials-foreground: 71 100% 51%;
     --socials-hover-background: 0 0% 14.9%;
-    --picker-background:71 100% 51%;
+    --picker-background: 71 100% 51%;
     --picker-hover-backround: 71 100% 51%;
     --picker-text-foreground: 0 0% 0%;
     --picker-border: 71 100% 51%;
@@ -130,7 +130,7 @@ html{
     --navigation-link-foreground: 33.3 100% 96.5%;
     --socials-foreground: 33.3 100% 96.5%;
     --socials-hover-background: 0 0% 3.9%;
-    --picker-background:0 0% 3.9%;
+    --picker-background: 0 0% 3.9%;
     --picker-hover-backround: 0 0% 3.9%;
     --picker-text-foreground: 20.5 90.2% 48.2%;
     --picker-border: 0 0% 3.9%;
@@ -184,7 +184,7 @@ html{
     --navigation-link-foreground: 178.6 84.3% 10%;
     --socials-foreground: 178.6 84.3% 10%;
     --socials-hover-background: 170.6 76.9% 64.3%;
-    --picker-background:175.3 77.4% 26.1%;
+    --picker-background: 175.3 77.4% 26.1%;
     --picker-hover-backround: 175.3 77.4% 26.1%;
     --picker-text-foreground: 167.2 85.5% 89.2%;
     --picker-border: 175.3 77.4% 26.1%;
@@ -238,7 +238,7 @@ html{
     --navigation-link-foreground: 263.4 70% 50.4%;
     --socials-foreground: 263.4 70% 50.4%;
     --socials-hover-background: 252.5 94.7% 85.1%;
-    --picker-background:258.3 89.5% 66.3%;
+    --picker-background: 258.3 89.5% 66.3%;
     --picker-hover-backround: 263.4 70% 50.4%;
     --picker-text-foreground: 250 100% 97.6%;
     --picker-border: 262.1 83.3% 57.8%;
@@ -344,11 +344,50 @@ html{
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
- /* Hide scrollbar for IE, Edge and Firefox */
+  /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
+
+/* globals.css */
+@layer utilities {
+  .prose-color-inherit {
+    --tw-prose-body: currentColor;
+    --tw-prose-headings: currentColor;
+    --tw-prose-lead: currentColor;
+    --tw-prose-links: currentColor;
+    --tw-prose-bold: currentColor;
+    --tw-prose-counters: currentColor;
+    --tw-prose-bullets: currentColor;
+    --tw-prose-hr: currentColor;
+    --tw-prose-quotes: currentColor;
+    --tw-prose-quote-borders: currentColor;
+    --tw-prose-captions: currentColor;
+    --tw-prose-code: currentColor;
+    --tw-prose-pre-code: currentColor;
+    --tw-prose-pre-bg: transparent; /* keep your bg, no forced box */
+    --tw-prose-th-borders: currentColor;
+    --tw-prose-td-borders: currentColor;
+  }
+  /* ensure links don’t sneak in a different color */
+  .prose-color-inherit :where(a):not(:where(.not-prose *)) {
+    color: currentColor;
+    text-decoration-color: currentColor;
+  }
 }
+
+@layer utilities {
+  /* Remove underline from linked headings; keep underline on hover */
+  .prose-no-heading-underline :where(h1 a, h2 a, h3 a, h4 a, h5 a, h6 a):not(:where(.not-prose *)) {
+    text-decoration: none;
+  }
+  .prose-no-heading-underline :where(h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover):not(:where(.not-prose *)) {
+    text-decoration: underline;
+  }
+}
+
+

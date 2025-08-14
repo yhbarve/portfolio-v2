@@ -1,0 +1,35 @@
+{
+  "cacheItemsMap": {
+    "hello-world.md": {
+      "document": {
+        "title": "Getting Started with Next.js and Markdown",
+        "date": "2025-08-10T00:00:00.000Z",
+        "summary": "A beginner-friendly guide to writing, rendering, and styling Markdown content in a Next.js project.",
+        "published": true,
+        "tags": [
+          "nextjs",
+          "markdown",
+          "contentlayer",
+          "static-sites"
+        ],
+        "body": {
+          "raw": "\n## Introduction\n\nMarkdown is one of the most developer-friendly ways to write content.  \nIt’s lightweight, easy to read in raw form, and can be rendered beautifully in a web application.  \n\nIn this guide, we’ll explore:\n\n- Why Markdown is so popular\n- How to integrate it into a Next.js project\n- Using **Contentlayer** or similar tools\n- Best practices for styling\n- Example advanced Markdown features\n\n---\n\n## 1. Why Markdown?\n\nMarkdown is not just for README files.  \nIt’s used in **blogs, documentation, static sites, and even CMS-like workflows**.\n\nSome benefits include:\n\n- **Readable in raw form** — You don’t need a browser to understand it.\n- **Lightweight** — Minimal syntax for formatting.\n- **Portable** — Works in many platforms without change.\n- **Compatible** — Converts easily to HTML.\n\n---\n\n## 2. Project Setup\n\nFirst, create a Next.js project:\n\n```bash\nnpx create-next-app@latest my-blog\ncd my-blog\nnpm install\n",
+          "html": "<h2 id=\"introduction\"><a href=\"#introduction\">Introduction</a></h2>\n<p>Markdown is one of the most developer-friendly ways to write content.<br>\nIt’s lightweight, easy to read in raw form, and can be rendered beautifully in a web application.</p>\n<p>In this guide, we’ll explore:</p>\n<ul>\n<li>Why Markdown is so popular</li>\n<li>How to integrate it into a Next.js project</li>\n<li>Using <strong>Contentlayer</strong> or similar tools</li>\n<li>Best practices for styling</li>\n<li>Example advanced Markdown features</li>\n</ul>\n<hr>\n<h2 id=\"1-why-markdown\"><a href=\"#1-why-markdown\">1. Why Markdown?</a></h2>\n<p>Markdown is not just for README files.<br>\nIt’s used in <strong>blogs, documentation, static sites, and even CMS-like workflows</strong>.</p>\n<p>Some benefits include:</p>\n<ul>\n<li><strong>Readable in raw form</strong> — You don’t need a browser to understand it.</li>\n<li><strong>Lightweight</strong> — Minimal syntax for formatting.</li>\n<li><strong>Portable</strong> — Works in many platforms without change.</li>\n<li><strong>Compatible</strong> — Converts easily to HTML.</li>\n</ul>\n<hr>\n<h2 id=\"2-project-setup\"><a href=\"#2-project-setup\">2. Project Setup</a></h2>\n<p>First, create a Next.js project:</p>\n<figure data-rehype-pretty-code-figure=\"\"><pre style=\"background-color:#24292e;color:#e1e4e8\" tabindex=\"0\" data-language=\"bash\" data-theme=\"github-dark\"><code data-language=\"bash\" data-theme=\"github-dark\" style=\"display: grid;\"><span data-line=\"\"><span style=\"color:#B392F0\">npx</span><span style=\"color:#9ECBFF\"> create-next-app@latest</span><span style=\"color:#9ECBFF\"> my-blog</span></span>\n<span data-line=\"\"><span style=\"color:#79B8FF\">cd</span><span style=\"color:#9ECBFF\"> my-blog</span></span>\n<span data-line=\"\"><span style=\"color:#B392F0\">npm</span><span style=\"color:#9ECBFF\"> install</span></span></code></pre></figure>"
+        },
+        "_id": "hello-world.md",
+        "_raw": {
+          "sourceFilePath": "hello-world.md",
+          "sourceFileName": "hello-world.md",
+          "sourceFileDir": ".",
+          "contentType": "markdown",
+          "flattenedPath": "hello-world"
+        },
+        "type": "Post",
+        "slug": "hello-world"
+      },
+      "documentHash": "1755133975615",
+      "hasWarnings": false,
+      "documentTypeName": "Post"
+    }
+  }
+}
