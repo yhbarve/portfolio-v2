@@ -10,7 +10,7 @@ export default function Projects() {
         <ProjectCard
           year="2025"
           link="https://www.youtube.com/watch?v=_2dJb6zYpTw" // Replace with your actual project/demo link when ready
-          name="Fit4Me – Personalized Fitness Tracking App (In Development)"
+          name="Fit4Me – Personalized Fitness Tracking App"
           desc="Fit4Me is a full-stack Android fitness application currently in development as part of a team project. Designed using Jetpack Compose, Kotlin, Node.js, Express, and PostgreSQL, it offers personalized workout planning, real-time chat, session tracking, and intelligent matchmaking based on user fitness goals, availability, and experience level. The app integrates REST APIs and WebSocket communication for a smooth and interactive user experience. Still in progress, Fit4Me aims to deliver a robust, user-centric fitness platform with both frontend polish and backend performance."
           skills={[
             "android",
@@ -133,59 +133,6 @@ export default function Projects() {
             "ffmpeg",
           ]}
           image="/scriptsync-demo.png"
-        />
-
-        <ProjectCard
-          year="2023"
-          link="https://medium-yb.vercel.app/"
-          name="Medium.com clone"
-          desc="This project is inspired by the famous blogging platform, Medium.com, offering users a similar experience with key features tailored to their needs. Users can seamlessly add, update, and delete their blogs, empowering them with full control over their content. The authentication system enables secure login, logout, and updating of user information, ensuring a personalized experience for each user."
-          skills={[
-            "react.js",
-            "typescript",
-            "tailwindcss",
-            "hono",
-            "cloudflare workers",
-            "postgre sql",
-            "prisma",
-            "npm",
-          ]}
-          image="/medium-demo-2.png"
-        />
-
-        <ProjectCard
-          year="2022"
-          link="https://colab.research.google.com/drive/19SYI5mLiLKLGBfqJYJlG05HTFvRYO2QQ?usp=sharing"
-          name="MNIST Digit Recognizer"
-          desc="This Google Colab notebook accepts an image of a handwritten digit (0-9) and recogizes it with 95% accuracy. This project has several applications in the real-world. For example, it can be used in banks and post offices to recognize numbers on forms. With more training data and better parameter tuning, the accuracy can be increased to around 99%. I am currently working on building a UI and publishing it as a web app."
-          skills={[
-            "convulated neural nets",
-            "pandas",
-            "numpy",
-            "keras",
-            "cv2",
-            "tensorflow",
-            "google colab",
-          ]}
-          image="/mnist-demo.png"
-        />
-
-        <ProjectCard
-          year="2022"
-          link="https://colab.research.google.com/drive/1M2HrE7dRnJhrQRM7Qn8uJ-1gzREvxCPg"
-          name="CineMatch - Movie Recommender"
-          desc="Can't decide which movie to watch? This interesting project solves the problem. All you have to do is enter the name of your favourite movie. The machine learning algorithm creates a feature vector for the film and compares it with all the movies in the database. After a few seconds, it shows you the 10 closest matches. The data is fetched from TMDb API. I am currently working on building a UI and publishing it as a web app."
-          skills={[
-            "vectorization",
-            "cosine similarity",
-            "tmdb api",
-            "pandas",
-            "numpy",
-            "difflib",
-            "sklearn",
-            "google colab",
-          ]}
-          image="/movie-rec-demo.png"
         />
       </div>
       <div className="mt-4 transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1">

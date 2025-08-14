@@ -80,7 +80,6 @@ const config = {
           titleForeground: 'hsl(var(--page-title-foreground))',
           headerForeground: 'hsl(var(--page-header-foreground))',
           headerBorder: 'hsl(var(--page-header-border))',
-
           itemBackground: 'hsl(var(--page-item-background))',
           itemHoverBackground: 'hsl(var(--page-item-hover-background))',
           itemBorder: 'hsl(var(--page-item-border))',
@@ -93,10 +92,20 @@ const config = {
           itemLinkHoverBackground: 'hsl(var(--page-item-link-hover-background))',
           itemOtherHoverForeground: 'hsl(var(--page-item-other-hover-foreground))',
         },
+        blog: {
+          titleForeground: 'hsl(var(--blog-title-foreground))',
+          titleBackground: 'hsl(var(--blog-title-background))',
+          titleBorder: 'hsl(var(--blog-title-border))',
+          titleDateForeground: 'hsl(var(--blog-title-date-foreground))',
+          bodyTextForeground: 'hsl(var(--blog-body-text-foreground))',
+          bodyHeadingsForeground: 'hsl(var(--blog-body-headings-foreground))',
+          summaryForeground: 'hsl(var(--blog-summary-foreground))',
+          summaryBorder: 'hsl(var(--blog-summary-border))',
+        }
       }
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')],
 } satisfies Config
 
 export default config

@@ -10,15 +10,17 @@ export default function Experience() {
       <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
         <ExperienceCard
           year="SEP — DEC 2024"
-          title="Search Engine Optimization Co-op Student"
+          title="Software Engineer - Performance Optimization"
           org="AutoTrader - Trader Corporation"
           desc="Optimized website performance metrics, including Core Web Vitals, to enhance user experience and search engine rankings. Utilized Screaming Frog SEO Spider to collect and analyze data, identifying actionable insights and trends to inform optimization strategies. Conducted in-depth research on various social media platforms, contributing to the development and refinement of the organization's social media marketing strategy. Acquired and applied advanced SEO concepts, ensuring alignment with industry best practices and keeping pace with the latest updates in browser technologies and SEO methodologies."
           skills={[
-            "performance optimization",
-            "data analysis",
+            "javascript",
+            "angular.js",
+            "rest apis",
             "python",
             "screaming frog seo",
-            "chrome developer tools",
+            "pagespeed insights",
+            "google lighthouse",
           ]}
         />
 
@@ -30,9 +32,11 @@ export default function Experience() {
           skills={[
             "react.js",
             "javascript",
+            "rest apis",
             "tailwindcss",
-            "component building",
+            "figma",
             "git",
+            "agile methodology"
           ]}
         />
 

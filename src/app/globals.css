@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -59,6 +59,15 @@ html{
     --page-item-skills-background: 0 0% 14.9%;
     --page-item-skills-border: 0 0% 32.2%;
     --page-item-link-hover-background: 0 0% 25.1%;
+
+    --blog-title-background: 0 0% 14.9%;
+    --blog-title-foreground: 0 0% 89.8%;
+    --blog-title-border: 0 0% 63.9%;
+    --blog-title-date-foreground: 0 0% 89.8%;
+    --blog-body-text-foreground: 0 0% 89.8%;
+    --blog-body-headings-foreground: 0 0% 63.9%;
+    --blog-summary-foreground: 0 0% 63.9%;
+    --blog-summary-border: 71 100% 51%;
   }
 
   .neon {
@@ -76,7 +85,7 @@ html{
     --navigation-link-foreground: 71 100% 51%;
     --socials-foreground: 71 100% 51%;
     --socials-hover-background: 0 0% 14.9%;
-    --picker-background:71 100% 51%;
+    --picker-background: 71 100% 51%;
     --picker-hover-backround: 71 100% 51%;
     --picker-text-foreground: 0 0% 0%;
     --picker-border: 71 100% 51%;
@@ -113,6 +122,15 @@ html{
     --page-item-skills-background: 0 0% 14.9%;
     --page-item-skills-border: 0 0% 0% / 0%;
     --page-item-link-hover-background: 0 0% 25.1%;
+
+    --blog-title-background: 0 0% 14.9%;
+    --blog-title-foreground: 71 100% 51%;
+    --blog-title-border: 71 100% 51%;
+    --blog-title-date-foreground: 71 100% 51%;
+    --blog-body-text-foreground: 0 0% 96.1%;
+    --blog-body-headings-foreground: 71 100% 51%;
+    --blog-summary-foreground: 0 0% 96.1%;
+    --blog-summary-border: 71 100% 51%;
   }
 
   .orange {
@@ -130,7 +148,7 @@ html{
     --navigation-link-foreground: 33.3 100% 96.5%;
     --socials-foreground: 33.3 100% 96.5%;
     --socials-hover-background: 0 0% 3.9%;
-    --picker-background:0 0% 3.9%;
+    --picker-background: 0 0% 3.9%;
     --picker-hover-backround: 0 0% 3.9%;
     --picker-text-foreground: 20.5 90.2% 48.2%;
     --picker-border: 0 0% 3.9%;
@@ -167,6 +185,15 @@ html{
     --page-item-skills-background: 0 0% 3.9%;
     --page-item-skills-border: 0 0% 3.9%;
     --page-item-link-hover-background: 30.7 97.2% 72.4%;
+
+    --blog-title-background: 0 0% 14.9%;
+    --blog-title-foreground: 71 100% 51%;
+    --blog-title-border: 71 100% 51%;
+    --blog-title-date-foreground: 71 100% 51%;
+    --blog-body-text-foreground: 0 0% 96.1%;
+    --blog-body-headings-foreground: 0 0% 96.1%;
+    --blog-summary-foreground: 71 100% 51%;
+    --blog-summary-border: 71 100% 51%;
   }
 
   .teal {
@@ -184,7 +211,7 @@ html{
     --navigation-link-foreground: 178.6 84.3% 10%;
     --socials-foreground: 178.6 84.3% 10%;
     --socials-hover-background: 170.6 76.9% 64.3%;
-    --picker-background:175.3 77.4% 26.1%;
+    --picker-background: 175.3 77.4% 26.1%;
     --picker-hover-backround: 175.3 77.4% 26.1%;
     --picker-text-foreground: 167.2 85.5% 89.2%;
     --picker-border: 175.3 77.4% 26.1%;
@@ -221,6 +248,15 @@ html{
     --page-item-skills-background: 178.6 84.3% 10%;
     --page-item-skills-border: 178.6 84.3% 10%;
     --page-item-link-hover-background: 170.6 76.9% 64.3%;
+
+    --blog-title-background: 0 0% 14.9%;
+    --blog-title-foreground: 178.6 84.3% 10%;
+    --blog-title-border: 175.3 77.4% 26.1%;
+    --blog-title-date-foreground: 178.6 84.3% 10%;
+    --blog-body-text-foreground: 178.6 84.3% 10%;
+    --blog-body-headings-foreground: 175.3 77.4% 26.1%;
+    --blog-summary-foreground: 175.3 77.4% 26.1%;
+    --blog-summary-border: 71 100% 51%;
   }
 
   .lavender {
@@ -238,7 +274,7 @@ html{
     --navigation-link-foreground: 263.4 70% 50.4%;
     --socials-foreground: 263.4 70% 50.4%;
     --socials-hover-background: 252.5 94.7% 85.1%;
-    --picker-background:258.3 89.5% 66.3%;
+    --picker-background: 258.3 89.5% 66.3%;
     --picker-hover-backround: 263.4 70% 50.4%;
     --picker-text-foreground: 250 100% 97.6%;
     --picker-border: 262.1 83.3% 57.8%;
@@ -275,6 +311,15 @@ html{
     --page-item-skills-background: 255.1 91.7% 76.3%;
     --page-item-skills-border: 255.1 91.7% 76.3%;
     --page-item-link-hover-background: 252.5 94.7% 85.1%;
+
+    --blog-title-background: 0 0% 14.9%;
+    --blog-title-foreground: 263.4 70% 50.4%;
+    --blog-title-border: 263.4 70% 50.4%;
+    --blog-title-date-foreground: 263.4 70% 50.4%;
+    --blog-body-text-foreground: 263.4 69.3% 42.2%;
+    --blog-body-headings-foreground: 263.4 70% 50.4%;
+    --blog-summary-foreground: 263.4 69.3% 42.2%;
+    --blog-summary-border: 71 100% 51%;
   }
 
   .ferrari {
@@ -329,6 +374,15 @@ html{
     --page-item-skills-background: 55 93.8% 55.5%;
     --page-item-skills-border: 55 93.8% 55.5%;
     --page-item-link-hover-background: 359 72% 35.6%;
+
+    --blog-title-background: 0 0% 14.9%;
+    --blog-title-foreground: 55 93.8% 55.5%;
+    --blog-title-border: 55 93.8% 55.5%;
+    --blog-title-date-foreground: 55 93.8% 55.5%;
+    --blog-body-text-foreground: 0 0% 96.1%;
+    --blog-body-headings-foreground: 55 93.8% 55.5%;
+    --blog-summary-foreground: 0 0% 96.1%;
+    --blog-summary-border: 71 100% 51%;
   }
 }
 
@@ -344,11 +398,50 @@ html{
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
- /* Hide scrollbar for IE, Edge and Firefox */
+  /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+/* globals.css */
+@layer utilities {
+  .prose-color-inherit {
+    --tw-prose-body: currentColor;
+    --tw-prose-headings: currentColor;
+    --tw-prose-lead: currentColor;
+    --tw-prose-links: currentColor;
+    --tw-prose-bold: currentColor;
+    --tw-prose-counters: currentColor;
+    --tw-prose-bullets: currentColor;
+    --tw-prose-hr: currentColor;
+    --tw-prose-quotes: currentColor;
+    --tw-prose-quote-borders: currentColor;
+    --tw-prose-captions: currentColor;
+    --tw-prose-code: currentColor;
+    --tw-prose-pre-code: currentColor;
+    --tw-prose-pre-bg: transparent; /* keep your bg, no forced box */
+    --tw-prose-th-borders: currentColor;
+    --tw-prose-td-borders: currentColor;
+  }
+  /* ensure links don’t sneak in a different color */
+  .prose-color-inherit :where(a):not(:where(.not-prose *)) {
+    color: currentColor;
+    text-decoration-color: currentColor;
+  }
+}
+
+@layer utilities {
+  .prose-no-heading-underline :where(h1 a, h2 a, h3 a, h4 a, h5 a, h6 a):not(:where(.not-prose *)) {
+    text-decoration: none;
+  }
+  .prose-no-heading-underline :where(h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover):not(:where(.not-prose *)) {
+    text-decoration: none;
+  }
+  .prose input[type="checkbox"] {
+  accent-color: hsl(var(--blog-body-headings-foreground));
 }
 }
