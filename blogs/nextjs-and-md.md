@@ -1,17 +1,29 @@
 ---
 title: "Getting Started with Next.js and Markdown"
-date: "2025-08-10"
+date: "2025-08-15"
 summary: "A comprehensive guide to writing, rendering, and styling Markdown content in a Next.js project, complete with examples, best practices, and advanced formatting."
-tags: ["nextjs", "markdown", "contentlayer", "static-sites", "tailwindcss"]
+tags:
+  [
+    "nextjs",
+    "markdown",
+    "contentlayer",
+    "tailwindcss",
+    "mdx",
+    "static-site-generation",
+    "frontend-development",
+    "blog-development",
+    "web-development",
+  ]
 published: true
 author: "Yash Barve"
 source: "None"
-
 ---
 
 ## Introduction
 
-Markdown is one of the most developer-friendly ways to write content. It's lightweight, easy to read in raw form, and can be rendered beautifully in a web application.
+For my very first technical breakdown, I thought it would be nice to share how I added the **Writings** section to my website. In other words, this post is about how you’re able to read this post.
+
+Markdown is one of the most developer-friendly ways to write content. It's lightweight, easy to read in raw form, and can be rendered beautifully in a web application. I also chose this option because I wanted to actually experience setting up a personal blog without relying on a 3rd party service like Notion or Substack.
 
 In this extensive guide, we will explore:
 
@@ -112,27 +124,30 @@ Use frontmatter (the triple-dashed YAML block) to define metadata.
 **contentlayer.config.ts:**
 
 ```typescript
-import { defineDocumentType, makeSource } from 'contentlayer/source-files'
+import { defineDocumentType, makeSource } from "contentlayer/source-files";
 
 export const Post = defineDocumentType(() => ({
-  name: 'Post',
+  name: "Post",
   filePathPattern: `**/*.md`,
   fields: {
-    title: { type: 'string', required: true },
-    date: { type: 'date', required: true },
-    summary: { type: 'string' },
-    tags: { type: 'list', of: { type: 'string' } },
-    published: { type: 'boolean', default: true },
+    title: { type: "string", required: true },
+    date: { type: "date", required: true },
+    summary: { type: "string" },
+    tags: { type: "list", of: { type: "string" } },
+    published: { type: "boolean", default: true },
   },
   computedFields: {
-    url: { type: 'string', resolve: (post) => `/blog/${post._raw.flattenedPath}` },
+    url: {
+      type: "string",
+      resolve: (post) => `/blog/${post._raw.flattenedPath}`,
+    },
   },
-}))
+}));
 
 export default makeSource({
-  contentDirPath: 'blogs',
+  contentDirPath: "blogs",
   documentTypes: [Post],
-})
+});
 ```
 
 ## 6. Rendering Markdown
@@ -140,30 +155,32 @@ export default makeSource({
 **pages/blog/[slug].tsx:**
 
 ```tsx
-import { allPosts } from 'contentlayer/generated'
-import { useMDXComponent } from 'next-contentlayer/hooks'
+import { allPosts } from "contentlayer/generated";
+import { useMDXComponent } from "next-contentlayer/hooks";
 
 export async function getStaticPaths() {
   return {
-    paths: allPosts.map((post) => ({ params: { slug: post._raw.flattenedPath } })),
+    paths: allPosts.map((post) => ({
+      params: { slug: post._raw.flattenedPath },
+    })),
     fallback: false,
-  }
+  };
 }
 
 export async function getStaticProps({ params }) {
-  const post = allPosts.find((p) => p._raw.flattenedPath === params.slug)
-  return { props: { post } }
+  const post = allPosts.find((p) => p._raw.flattenedPath === params.slug);
+  return { props: { post } };
 }
 
 export default function BlogPost({ post }) {
-  const MDXContent = useMDXComponent(post.body.code)
+  const MDXContent = useMDXComponent(post.body.code);
   return (
     <article className="prose lg:prose-xl dark:prose-invert">
       <h1>{post.title}</h1>
       <time>{new Date(post.date).toLocaleDateString()}</time>
       <MDXContent />
     </article>
-  )
+  );
 }
 ```
 
@@ -188,7 +205,7 @@ export default function BlogPost({ post }) {
 ### 7.4 Tables
 
 | Feature | Supported |
-|---------|-----------|
+| ------- | --------- |
 | Tables  | ✅        |
 | Lists   | ✅        |
 | Images  | ✅        |
@@ -225,7 +242,6 @@ npm install
 
 ![Doggy](https://picsum.photos/id/237/800/400)
 
-
 ## 9. Best Practices for Markdown in Next.js
 
 - Use frontmatter for metadata
@@ -257,7 +273,7 @@ This is a custom React component rendered inside Markdown!
 ### Mixed Content
 
 > **Tip:** Use blockquotes to highlight important notes.
-> They can contain **bold text**, *italic text*, and even `inline code`.
+> They can contain **bold text**, _italic text_, and even `inline code`.
 
 ## 12. Multi-Paragraph Example
 
@@ -301,11 +317,11 @@ npm install remark-gfm rehype-autolink-headings rehype-slug
 Example **next.config.js** integration:
 
 ```javascript
-const { withContentlayer } = require('next-contentlayer')
+const { withContentlayer } = require("next-contentlayer");
 
 module.exports = withContentlayer({
   reactStrictMode: true,
-})
+});
 ```
 
 ## 15. SEO Considerations
