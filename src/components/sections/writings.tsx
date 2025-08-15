@@ -20,8 +20,8 @@ export default function Writings() {
         </div>
       </div>
       <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
-        {posts.map((p) => {
-            return (<WritingsCard title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} />)
+        {posts.map((p, key) => {
+            return (<WritingsCard key={key} title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} />)
         })}
       </div>
       <div className="transition duration-200 ease-in-out text-linkToPage-foreground mt-4 block lg:hidden">
