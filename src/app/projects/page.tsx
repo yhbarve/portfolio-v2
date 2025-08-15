@@ -4,20 +4,6 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 export default function Home() {
   return (
     <div className="scroll-smooth bg-gradient-to-tr from-background-1 via-background-2 to-background-3 transition duration-200 ease-in-out">
-      <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
-        <div className="pt-24">
-          <div className="hover:translate-x-1 transition-all ease-in-out">
-            <a
-              href="/"
-              className="text-3xl font-medium text-page-nameForeground"
-            >
-              ← Yash Barve
-            </a>
-          </div>
-          <h1 className="text-5xl font-semibold text-page-titleForeground inline-block pb-3 mt-2">
-            Projects Collection
-          </h1>
-        </div>
         <div className="grid grid-cols-12 border-b-[0.5px] p-2 pb-4 pt-9 border-page-headerBorder text-page-headerForeground font-semibold">
           <div className="col-span-2 lg:col-span-1">Year</div>
           <div className="col-span-4">Project</div>
@@ -221,6 +207,5 @@ export default function Home() {
           />
         </div>
       </div>
-    </div>
   );
 }

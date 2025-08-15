@@ -25,7 +25,7 @@ export default function Writings() {
         })}
       </div>
       <div className="transition duration-200 ease-in-out text-linkToPage-foreground mt-4 block lg:hidden">
-        <a href="/blogs" className="bg-linkToPage-buttonBackground text-linkToPage-buttonForeground px-4 py-2 rounded-md hover:opacity-80 text-sm">
+        <a href="/writings" className="bg-linkToPage-buttonBackground text-linkToPage-buttonForeground px-4 py-2 rounded-md hover:opacity-80 text-sm">
           View All Writings
         </a>
       </div>
