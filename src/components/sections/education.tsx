@@ -3,7 +3,7 @@ import EducationCard from "../EducationCard";
 
 export default function Education(){
     return (
-        <div id="education" className="pt-24">
+        <div id="education" className="pt-12">
             <div className="text-sm font-bold pb-2 pl-2 cursor-default text-section-header">EDUCATION</div>
             <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
                 <EducationCard program="Bachelor of Computer Science with Specialization in AI" uni="University of Waterloo" year="2021 — 2026" courses="Algebra, Calculus, Linear Algebra, Optimization, Combinatorics, Probability, Statistics, Functional Programs, Algorithm Design and Data Abstraction, Object Oriented Programming, Data Structures, Algorithms, Logic and Computation, Computer Organization and Design, Sequential Programming, Introduction to Machine Learning, Operating Systems, Introduction to Artificial Intelligence, Computational Statistics and Data Analysis" />

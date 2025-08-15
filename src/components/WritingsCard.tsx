@@ -1,19 +1,38 @@
-import Image from "next/image";
+function formatDateWithOrdinal(dateString: string) {
+  const date = new Date(dateString);
 
-export default function ProjectCard({
-  year,
-  link,
-  name,
-  desc,
-  skills,
-  image,
+  const day = date.getDate();
+  const ordinal =
+    day % 10 === 1 && day !== 11
+      ? "st"
+      : day % 10 === 2 && day !== 12
+      ? "nd"
+      : day % 10 === 3 && day !== 13
+      ? "rd"
+      : "th";
+
+  const formatted = date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+
+  // Insert ordinal before the comma after the day
+  return formatted.replace(/(\d{1,2})(,)/, `$1${ordinal}$2`);
+}
+
+export default function WritingsCard({
+  title,
+  summary,
+  date,
+  tags,
+  slug
 }: {
-  year: string;
-  link: string;
-  name: string;
-  desc: string;
-  skills: Array<string>;
-  image: string;
+  title: string;
+  summary: string;
+  date: string;
+  tags: string[];
+  slug: string;
 }) {
   return (
     <div>
@@ -22,30 +41,24 @@ export default function ProjectCard({
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl"
       >
         <div className="col-span-1 flex flex-col">
-          <a href={link} target="_blank">
-            <Image
-              src={image}
-              alt=""
-              width={100}
-              height={100}
-              className="rounded-md w-[90%] mt-1 brightness-[0.95] hover:brightness-[0.90] transition ease-in-out border border-card-imageBorder"
-            />
-          </a>
+          <div className="font-light max-w-[90%]">
+            {formatDateWithOrdinal(date)}
+          </div>
         </div>
         <div className="col-span-4 flex flex-col">
           <a
-            href={link}
+            href={`/blog/${slug}`}
             target="_blank"
             className="hover:translate-x-1 transition-transform ease-in-out font-medium mb-1"
           >
-            {name}
+            {title}
           </a>
           <div className="font-light text-sm">
-            <div className="font-normal inline">Description: </div>
-            {desc}
+            <div className="font-normal inline">Summary: </div>
+            {summary}
           </div>
           <div className="flex gap-1 gap-y-2 mt-4 flex-wrap">
-            {skills.map((key, item) => (
+            {tags.map((key, item) => (
               <div
                 key={item}
                 className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-2xl px-2"

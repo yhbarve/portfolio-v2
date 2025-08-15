@@ -41,9 +41,9 @@ export default function PostPage({ params }: { params: { slug: string } }) {
   if (!post) return notFound();
 
   return (
-    <article className="max-w-3xl mx-auto py-12 text-page-itemForeground">
+    <article className="max-w-3xl md:mx-auto py-12 text-page-itemForeground mx-4">
       {/* <div className="pl-4 flex gap-1 font-light mb-4">/<a className="hover:underline transition-all ease-in-out" href="/blogs">blogs</a>/<span className="italic">{post.title}</span></div> */}
-      <div className="hover:translate-x-1 transition-all ease-in-out mb-8">
+      <div className="hover:translate-x-1 transition-all ease-in-out mb-8 hidden md:block">
         <a
           href="/blogs"
           className="text-3xl font-medium text-page-nameForeground"
@@ -51,14 +51,14 @@ export default function PostPage({ params }: { params: { slug: string } }) {
           ← All Blogs
         </a>
       </div>
-      <h1 className="text-5xl text-blog-titleForeground font-normal inline-block mb-8">
+      <h1 className="text-4xl md:text-5xl text-blog-titleForeground font-normal inline-block mb-8">
         {post.title}
       </h1>
       <div className="text-blog-titleForeground border-l-4 border-blog-titleBorder px-4 flex flex-col mb-8 gap-4">
-        <div className="italic text-lg text-blog-summaryForeground font-light">
+        <div className="italic text-md md:text-lg text-blog-summaryForeground font-light">
           {post.summary}
         </div>
-        <div className="text-md italic text-blog-titleDateForeground">
+        <div className="text-sm md:text-md italic text-blog-titleDateForeground">
           {formatDateWithOrdinal(post.date)}
         </div>
       </div>

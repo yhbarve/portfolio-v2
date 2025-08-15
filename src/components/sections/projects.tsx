@@ -2,9 +2,16 @@ import ProjectCard from "../ProjectCard";
 
 export default function Projects() {
   return (
-    <div id="projects" className="lg:pt-24 pt-12">
-      <div className="text-sm font-bold pb-2 pl-2 cursor-default text-section-header">
-        PROJECTS
+    <div id="projects" className="">
+      <div className="flex items-center pl-2 pb-2 justify-between">
+        <div className="text-sm font-bold cursor-default text-section-header">
+          PROJECTS
+        </div>
+        <div className="transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1 hidden lg:block">
+          <a href="/projects" className="">
+            View All Projects →
+          </a>
+        </div>
       </div>
       <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
         <ProjectCard
@@ -135,9 +142,9 @@ export default function Projects() {
           image="/scriptsync-demo.png"
         />
       </div>
-      <div className="mt-4 transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1">
-        <a href="/projects" className="">
-          View All Projects →
+      <div className="transition duration-200 ease-in-out text-linkToPage-foreground mt-4 block lg:hidden">
+        <a href="/projects" className="bg-linkToPage-buttonBackground text-linkToPage-buttonForeground px-4 py-2 rounded-md hover:opacity-80 text-sm">
+          View All Projects
         </a>
       </div>
     </div>

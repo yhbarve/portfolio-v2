@@ -12,8 +12,8 @@ export default function LeftSide(){
            <div className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-between lg:py-24">
             <div className="sticky top-0 flex flex-col lg:h-full justify-between">
                 <AboutMe />
-                <div className="lg:block hidden"><Navigation /></div>
-                <div className="lg:block hidden"><Socials /></div>
+                <div className="lg:block hidden lg:mt-12"><Navigation /></div>
+                <div className="lg:block hidden lg:mt-24"><Socials /></div>
             </div>
           </div>
         </div>

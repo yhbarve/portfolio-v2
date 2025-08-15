@@ -13,8 +13,8 @@ export function ThemeSwitcher() {
     { name: "Neutral", value: "neutral" },
     { name: "Neon", value: "neon" },
     { name: "Teal", value: "teal" },
-    { name: "Lavender Mist", value: "lavender" },
-    { name: "Forza Ferrari", value: "ferrari"}
+    { name: "Lavender", value: "lavender" },
+    { name: "Ferrari", value: "ferrari"}
   ];
 
   useEffect(() => {
