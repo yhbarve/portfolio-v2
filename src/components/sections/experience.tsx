@@ -3,9 +3,16 @@ import ExperienceCard from "../ExperienceCard";
 
 export default function Experience() {
   return (
-    <div id="experiences" className="pt-24">
-      <div className="text-sm font-bold pb-2 pl-2 cursor-default text-section-header">
-        EXPERIENCE
+    <div id="experiences" className="pt-12">
+      <div className="flex items-center pl-2 pb-2 justify-between">
+        <div className="text-sm font-bold cursor-default text-section-header">
+          EXPERIENCE
+        </div>
+        <div className="transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1 hidden lg:block">
+          <a href="https://drive.google.com/file/d/1NGWDMo516Z43ypY47AfZoCXy88gmJBZy/view?usp=sharing" className="">
+            View Resume →
+          </a>
+        </div>
       </div>
       <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
         <ExperienceCard
@@ -62,12 +69,9 @@ export default function Experience() {
           ]}
         />
       </div>
-      <div className="mt-4 transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1">
-        <a
-          href="https://drive.google.com/file/d/1NGWDMo516Z43ypY47AfZoCXy88gmJBZy/view?usp=sharing"
-          className=""
-        >
-          View Full Resume →
+      <div className="transition duration-200 ease-in-out text-linkToPage-foreground mt-4 block lg:hidden">
+        <a href="https://drive.google.com/file/d/1NGWDMo516Z43ypY47AfZoCXy88gmJBZy/view?usp=sharing" className="bg-linkToPage-buttonBackground text-linkToPage-buttonForeground px-4 py-2 rounded-md hover:opacity-80 text-sm">
+          View Resume
         </a>
       </div>
     </div>

@@ -41,10 +41,10 @@ export default function BlogsPage() {
           </h1>
         </div>
         <div className="grid grid-cols-12 border-b-[0.5px] p-2 pb-4 pt-9 border-page-headerBorder text-page-headerForeground font-semibold">
-          <div className="col-span-2 ">Date</div>
-          <div className="col-span-4">Title</div>
-          <div className="col-span-5">Summary</div>
-          <div className="col-span-1 mx-auto">Read</div>
+          <div className="col-span-3 md:col-span-2">Date</div>
+          <div className="col-span-7 md:col-span-4">Title</div>
+          <div className="hidden md:block col-span-5">Summary</div>
+          <div className="col-span-2 md:col-span-1 mx-auto">Read</div>
         </div>
         <div className="flex flex-col text-page-itemForeground hover:text-page-itemOtherHoverForeground ">
           {posts.map((p) => (
@@ -56,23 +56,23 @@ export default function BlogsPage() {
               hover:border-page-itemHoverBorder cursor-default rounded-md border border-page-itemBorder
               transition duration-200 ease-in-out"
             >
-              <div className="text-sm col-span-2">
+              <div className="text-sm col-span-3 md:col-span-2">
                 {new Date(p.date).toLocaleDateString("en-US", {
                   month: "short",
                   day: "numeric",
                   year: "numeric",
                 })}
               </div>
-              <div className="no-underline col-span-4">
+              <div className="no-underline col-span-7 md:col-span-4">
                 <a href={`/blog/${p.slug}`} className="m-0 hover:opacity-80">
                   {p.title}
                 </a>
               </div>
-              {p.summary && <p className="col-span-5">{(p.summary.length <= 100 ? p.summary : p.summary.slice(0, 100) + '...')}</p>}
+              {p.summary && <p className="hidden md:block md:col-span-5">{(p.summary.length <= 100 ? p.summary : p.summary.slice(0, 100) + '...')}</p>}
               <a
                 href={`/blog/${p.slug}`}
                 target="_blank"
-                className="block col-span-1 mx-auto font-normal text-sm
+                className="block col-span-2 md:col-span-1 mx-auto font-normal text-sm
         hover:bg-page-itemLinkHoverBackground p-2 rounded-md transition ease-in-out"
               >
                 <svg

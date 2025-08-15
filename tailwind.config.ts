@@ -74,6 +74,8 @@ const config = {
         },
         linkToPage: {
           foreground: 'hsl(var(--link-to-page-foreground))',
+          buttonBackground: 'hsl(var(--link-to-page-button-background))',
+          buttonForeground: 'hsl(var(--link-to-page-button-foreground))',
         },
         page: {
           nameForeground: 'hsl(var(--page-name-foreground))',
@@ -101,6 +103,24 @@ const config = {
           bodyHeadingsForeground: 'hsl(var(--blog-body-headings-foreground))',
           summaryForeground: 'hsl(var(--blog-summary-foreground))',
           summaryBorder: 'hsl(var(--blog-summary-border))',
+        },
+        navButton: {
+          background: 'hsl(var(--nav-button-background))',
+          hoverBackground: 'hsl(var(--nav-button-hover-background))',
+          border: 'hsl(var(--nav-button-border))',
+          iconFill: 'hsl(var(--nav-button-icon-fill))',
+        },
+        navModal: {
+          background: 'hsl(var(--nav-modal-background))',
+          border: 'hsl(var(--nav-modal-border))',
+          headerForeground: 'hsl(var(--nav-modal-header-foreground))',
+          headerCrossHoverBackground: 'hsl(var(--nav-modal-header-cross-hover-bg))',
+          headerBorder: 'hsl(var(--nav-modal-header-border))',
+          itemBackground: 'hsl(var(--nav-modal-item-background))',
+          itemForeground: 'hsl(var(--nav-modal-item-foreground))',
+          itemHoverBackground: 'hsl(var(--nav-modal-item-hover-background))',
+          itemHoverForeground: 'hsl(var(--nav-modal-item-hover-foreground))',
+          itemBorder: 'hsl(var(--nav-modal-item-border))',
         }
       }
     },

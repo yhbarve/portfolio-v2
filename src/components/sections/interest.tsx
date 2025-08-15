@@ -2,7 +2,7 @@ import InterestCard from "../InterestCard";
 
 export default function Interest({interests}:{interests:Array<string>}){
     return (
-        <div id="interests" className="mt-24">
+        <div id="interests" className="mt-12">
             <div className="text-sm font-bold pb-4 pl-2 cursor-default text-section-header">INTERESTS</div>
             <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
                 <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
