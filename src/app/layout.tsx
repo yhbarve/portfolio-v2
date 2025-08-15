@@ -8,8 +8,30 @@ import Banner from "@/components/ui/Banner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Yash Barve",
+  title: "Yash H. Barve",
   description: "The official webpage of Yash H. Barve. Designed, developed, and occasionally debugged by yours truly.",
+  twitter: {
+    card: "summary",
+    title: "Yash H. Barve",
+    description:
+      "The official webpage of Yash H. Barve. Designed, developed, and occasionally debugged by yours truly.",
+  },
+  openGraph: {
+    title: "Yash H. Barve",
+    description:
+      "The official webpage of Yash H. Barve. Designed, developed, and occasionally debugged by yours truly.",
+    url: "https://yhbarve.me",
+    siteName: "Yash H. Barve",
+    images: [
+      {
+        url: "/yash-hero.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Yash H. Barve",
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({
