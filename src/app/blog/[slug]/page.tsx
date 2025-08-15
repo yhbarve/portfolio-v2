@@ -45,7 +45,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
       {/* <div className="pl-4 flex gap-1 font-light mb-4">/<a className="hover:underline transition-all ease-in-out" href="/blogs">blogs</a>/<span className="italic">{post.title}</span></div> */}
       <div className="hover:translate-x-1 transition-all ease-in-out mb-8 hidden md:block">
         <a
-          href="/blogs"
+          href="/writings"
           className="text-3xl font-medium text-page-nameForeground"
         >
           ← All Blogs

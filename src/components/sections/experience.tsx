@@ -16,7 +16,7 @@ export default function Experience() {
       </div>
       <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
         <ExperienceCard
-          year="SEP — DEC 2024"
+          year="SEP — DEC '24"
           title="Software Engineer - Performance Optimization"
           org="AutoTrader - Trader Corporation"
           desc="Optimized website performance metrics, including Core Web Vitals, to enhance user experience and search engine rankings. Utilized Screaming Frog SEO Spider to collect and analyze data, identifying actionable insights and trends to inform optimization strategies. Conducted in-depth research on various social media platforms, contributing to the development and refinement of the organization's social media marketing strategy. Acquired and applied advanced SEO concepts, ensuring alignment with industry best practices and keeping pace with the latest updates in browser technologies and SEO methodologies."
@@ -32,7 +32,7 @@ export default function Experience() {
         />
 
         <ExperienceCard
-          year="JAN — APR 2024"
+          year="JAN — APR '24"
           title="Software Developer Intern"
           org="Petrovision International LLC"
           desc="Contributed towards the redevelopment of the company's website. Developed frontend components using React and TailwindCSS. Regularly interacted with a team of senior developers. Performed some ad-hoc data analysis tasks. Helped in the development of training modules for the staff."
@@ -48,7 +48,7 @@ export default function Experience() {
         />
 
         <ExperienceCard
-          year="MAR — MAY 2023"
+          year="MAR — MAY '23"
           title="Data Analyst Co-op Student"
           org="Lazaridis School of Business and Economics"
           desc="Performed data gathering, cleaning and analysis for the marketing team using Microsoft Excel and Python. Used Tableau to create insightful data visualizations. Identified key trends and optimized the marketing strategy to reduce the spending by 15%."
@@ -56,7 +56,7 @@ export default function Experience() {
         />
 
         <ExperienceCard
-          year="OCT 2022 — AUG 2023"
+          year="OCT '22 — AUG '23"
           title="Executive Member - Graphic Design Team"
           org="University of Waterloo's Data Science Club"
           desc="Interacted with event organizers to understand the requirements of the design. Used Canva to create posts for Instagram, LinkedIn, Facebook, and 𝕏. Briefly contributed to the club website design using Figma."
