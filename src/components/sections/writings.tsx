@@ -14,7 +14,7 @@ export default function Writings() {
           WRITINGS
         </div>
         <div className="transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1 hidden lg:block">
-          <a href="/blogs" className="">
+          <a href="/writings" className="">
             View All Writings →
           </a>
         </div>
