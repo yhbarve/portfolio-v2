@@ -16,6 +16,13 @@ export default function Experience() {
       </div>
       <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
         <ExperienceCard
+          year="SEP — DEC '25"
+          title="Incoming Software Engineer"
+          org="Nokia"
+          desc="To be updated."
+          skills={[]}
+        />
+        <ExperienceCard
           year="SEP — DEC '24"
           title="Software Engineer - Performance Optimization"
           org="AutoTrader - Trader Corporation"
