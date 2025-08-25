@@ -9,7 +9,7 @@ export default function Experience() {
           EXPERIENCE
         </div>
         <div className="transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1 hidden lg:block">
-          <a href="https://drive.google.com/file/d/1NGWDMo516Z43ypY47AfZoCXy88gmJBZy/view?usp=sharing" className="">
+          <a href="https://drive.google.com/file/d/1rivXqVArOc4VacaS4uHX6PS2C4SpNc0Y/view?usp=sharing" className="">
             View Resume →
           </a>
         </div>
