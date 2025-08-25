@@ -77,7 +77,7 @@ export default function Experience() {
         />
       </div>
       <div className="transition duration-200 ease-in-out text-linkToPage-foreground mt-4 block lg:hidden">
-        <a href="https://drive.google.com/file/d/1NGWDMo516Z43ypY47AfZoCXy88gmJBZy/view?usp=sharing" className="bg-linkToPage-buttonBackground text-linkToPage-buttonForeground px-4 py-2 rounded-md hover:opacity-80 text-sm">
+        <a href="https://drive.google.com/file/d/1rivXqVArOc4VacaS4uHX6PS2C4SpNc0Y/view?usp=sharing" className="bg-linkToPage-buttonBackground text-linkToPage-buttonForeground px-4 py-2 rounded-md hover:opacity-80 text-sm">
           View Resume
         </a>
       </div>
