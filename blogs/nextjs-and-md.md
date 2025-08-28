@@ -16,7 +16,6 @@ tags:
   ]
 published: true
 author: "Yash Barve"
-source: "None"
 ---
 
 ## Introduction
