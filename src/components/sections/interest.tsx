@@ -15,7 +15,7 @@ export default function Interest({interests}:{interests:Array<string>}){
                         <div className="font-light text-sm"><div className="font-normal inline">Description: </div>I have been reading regularly since 2023. I try to read at least one book every month. Initially, I primarily used Audible to listen to audiobooks. Eventually, I transitioned to reading on my iPad. Usually I read non-fiction. Take a look at what I have read so far <a href="/reading" className="underline">here.</a></div>                   
                     </div>
                 </div>
-                <InterestCard index="02" title="Formula 1" desc="I have been an F1 since 2018. I am a die-hard Ferrari and Charles Leclerc fan, despite the stress and frustration it gives. I understand the technical side of F1 - tracks, tyres, strategies, car upgrades. I also play F1 games on PS5 (with the pro sim setup). So, I actually know all the tracks and this makes my experience watching F1 even better." />
+                <InterestCard index="02" title="Formula 1" desc="I have been an avid F1 fan since 2018. I am a die-hard Ferrari and Charles Leclerc fan, despite the stress and frustration it gives. I understand the technical side of F1 - tracks, tyres, strategies, car upgrades. I also play F1 games on PS5 (with the pro sim setup). So, I actually know all the tracks and this makes my experience watching F1 even better." />
 
                 <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default hover:backdrop-blur-2xl">
