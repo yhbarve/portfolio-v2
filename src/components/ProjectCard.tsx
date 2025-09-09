@@ -31,13 +31,9 @@ export default function ProjectCard(props: ProjectCardProps) {
           </a>
         </div>
         <div className="col-span-4 flex flex-col">
-          <a
-            href={link}
-            target="_blank"
-            className="hover:translate-x-1 transition-transform ease-in-out font-medium mb-1"
-          >
+          <div className="hover:translate-x-1 transition-transform ease-in-out font-medium mb-1">
             {name}
-          </a>
+          </div>
           <div className="font-light text-sm">
             <div className="font-normal inline">Description: </div>
             {desc}
