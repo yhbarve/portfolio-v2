@@ -16,7 +16,8 @@ export default function Projects() {
       <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
         <ProjectCard
           year="2025"
-          link="https://www.youtube.com/watch?v=_2dJb6zYpTw" // Replace with your actual project/demo link when ready
+          youtube="https://www.youtube.com/watch?v=_2dJb6zYpTw"
+          github="https://github.com/grace-ful/cs446-team-project"
           name="Fit4Me – Personalized Fitness Tracking App"
           desc="Fit4Me is a full-stack Android fitness application currently in development as part of a team project. Designed using Jetpack Compose, Kotlin, Node.js, Express, and PostgreSQL, it offers personalized workout planning, real-time chat, session tracking, and intelligent matchmaking based on user fitness goals, availability, and experience level. The app integrates REST APIs and WebSocket communication for a smooth and interactive user experience. Still in progress, Fit4Me aims to deliver a robust, user-centric fitness platform with both frontend polish and backend performance."
           skills={[
@@ -37,6 +38,7 @@ export default function Projects() {
         <ProjectCard
           year="2025"
           link="https://rtc-chat-tau.vercel.app/"
+          github="https://github.com/yhbarve/rtc-chat"
           name="Chattr - Minimal real-time group chat"
           desc="Chattr is a minimalist, real-time group chat application built with React, TypeScript, Express, and Socket.IO. It allows users to create and join public rooms using unique room codes and exchange messages instantly. Designed with clean UI and responsive interactions, Chattr focuses on delivering core functionality—message delivery, system notifications, and live presence updates—in a lightweight, deployable MVP. It lays the foundation for future enhancements like private rooms, message history, and advanced moderation."
           skills={[
@@ -53,6 +55,7 @@ export default function Projects() {
         <ProjectCard
           year="2025"
           link="https://github.com/yhbarve/portolio-imagekit"
+          github="https://github.com/yhbarve/portolio-imagekit"
           name="Portolio - Your Online Photos Portfolio"
           desc="A modern MERN‑stack application for users to upload and display photos. It features direct client‑to‑ImageKit uploads, JWT‑based authentication, and a responsive gallery with uniform image sizing."
           skills={[
@@ -70,7 +73,7 @@ export default function Projects() {
 
         <ProjectCard
           year="2025"
-          link="https://github.com/yhbarve/deep-image-segmentation" // Replace with your actual project/demo link if needed
+          github="https://github.com/yhbarve/deep-image-segmentation" // Replace with your actual project/demo link if needed
           name="Deep Features for Interactive Segmentation"
           desc="An interactive image segmentation tool developed as a university capstone project. Built with PyTorch and a pre-trained ResNet-50, the app extracts deep convolutional features to segment objects in complex images beyond traditional RGB-based methods. Includes an intuitive Python GUI for user-guided foreground/background selection and implements max-flow/min-cut graph algorithms for real-time, robust object segmentation. Demonstrates strong results in challenging scenarios with color ambiguity or noisy backgrounds."
           skills={[
@@ -89,7 +92,7 @@ export default function Projects() {
 
         <ProjectCard
           year="2025"
-          link="https://github.com/yhbarve/crop-yield-and-risk-mitigation" // Replace with your actual project/demo link if needed
+          github="https://github.com/yhbarve/crop-yield-and-risk-mitigation" // Replace with your actual project/demo link if needed
           name="Crop Yield Prediction & Risk Mitigation (BU425 Final Project)"
           desc="Developed a machine learning framework to predict crop yields and assess agricultural risk using real-world data on rainfall, temperature, pesticide use, and crop type. Utilized Random Forest and Lasso Regression for feature selection and interpretable yield prediction, then engineered temporal features and implemented an LSTM model for sequential analysis. Built a dynamic risk scoring system to help optimize resource allocation and provide actionable insights for farmers. This group project demonstrated the value of predictive analytics for sustainable, data-driven decision-making in agriculture."
           skills={[
@@ -110,6 +113,7 @@ export default function Projects() {
         <ProjectCard
           year="2024"
           link="https://chatyhb.vercel.app/"
+          github="https://github.com/yhbarve/chatyhb"
           name="ChatYHB - An AI powered chat bot"
           desc="ChatYHB utilizes Google's AI SDK. Users can send text-based prompts to ChatYHB, which uses Google Gemini 1.5 in the backend to provide a response. The response is well-formated, enhancing user experience. Users can see their previous prompts and responses. Additionally, users can delete all previous prompts and responses, if needed."
           skills={[
@@ -127,7 +131,7 @@ export default function Projects() {
 
         <ProjectCard
           year="2024"
-          link="https://www.youtube.com/watch?v=FPEUKRfoRFQ"
+          youtube="https://www.youtube.com/watch?v=FPEUKRfoRFQ"
           name="Scriptsync - Add transcriptions to your videos"
           desc="ScriptSync is an innovative application designed to streamline the process of adding captions to videos. Users can upload their videos, and ScriptSync automatically generates transcriptions, which can then be edited for accuracy and timing. With customizable options including font size, text color, and outline color, users can tailor the appearance of their captions to suit their preferences. Once edited, these transcriptions seamlessly integrate into the video, enhancing accessibility and engagement. Additionally, users have the option to download the finalized video for sharing across various platforms."
           skills={[
