@@ -92,7 +92,7 @@ export default function Projects() {
 
         <ProjectCard
           year="2025"
-          github="https://github.com/yhbarve/crop-yield-and-risk-mitigation" // Replace with your actual project/demo link if needed
+          github="https://github.com/yhbarve/crop-yield-and-risk-mitigation"
           name="Crop Yield Prediction & Risk Mitigation (BU425 Final Project)"
           desc="Developed a machine learning framework to predict crop yields and assess agricultural risk using real-world data on rainfall, temperature, pesticide use, and crop type. Utilized Random Forest and Lasso Regression for feature selection and interpretable yield prediction, then engineered temporal features and implemented an LSTM model for sequential analysis. Built a dynamic risk scoring system to help optimize resource allocation and provide actionable insights for farmers. This group project demonstrated the value of predictive analytics for sustainable, data-driven decision-making in agriculture."
           skills={[

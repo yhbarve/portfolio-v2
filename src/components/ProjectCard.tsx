@@ -71,7 +71,7 @@ export default function ProjectCard(props: ProjectCardProps) {
             )}
             {youtube && (
               <a
-                href={link}
+                href={youtube}
                 target="_blank"
                 className="flex gap-1 items-center text-sm px-2 bg-card-skillsBackground text-card-skillsForeground hover:bg-card-skillsBackground/70 transition ease-in-out w-fit rounded-md cursor-pointer"
               >
@@ -89,7 +89,7 @@ export default function ProjectCard(props: ProjectCardProps) {
             )}
             {github && (
               <a
-                href={link}
+                href={github}
                 target="_blank"
                 className="flex gap-1 items-center text-sm px-2 bg-card-skillsBackground text-card-skillsForeground hover:bg-card-skillsBackground/70 transition ease-in-out w-fit rounded-md cursor-pointer"
               >
