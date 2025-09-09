@@ -31,7 +31,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           </a>
         </div>
         <div className="col-span-4 flex flex-col">
-          <div className="hover:translate-x-1 transition-transform ease-in-out font-medium mb-1">
+          <div className="transition-transform ease-in-out font-medium mb-1">
             {name}
           </div>
           <div className="font-light text-sm">
