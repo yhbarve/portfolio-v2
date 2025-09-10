@@ -5,6 +5,7 @@ import Interest from "@/components/sections/interest";
 import LeftSide from "@/components/sections/left-side";
 import MainNav from "@/components/sections/main-navbar";
 import Projects from "@/components/sections/projects";
+import Skills from "@/components/sections/skills";
 import Writings from "@/components/sections/writings";
 import Socials from "@/components/Socials";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -25,6 +26,7 @@ export default function Home() {
           <div className="lg:w-7/12 lg:py-24 py-12 flex flex-col">
             <Projects />
             <Experience />
+            <Skills />
             <Education />
             <Writings />
             <Interest interests={["Formula 1", "Cricket", "Graphic Design"]} />
