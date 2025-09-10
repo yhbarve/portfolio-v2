@@ -11,7 +11,7 @@ export function Providers({children}: { children: React.ReactNode }) {
         attribute="class"
         defaultTheme="neutral"
         enableSystem={false}
-        themes={["neutral", "neon", "teal", "lavender", "ferrari"]}
+        themes={["neutral", "neon", "teal", "lavender", "ferrari", "ultramarine"]}
       >
         {children}
       </NextThemesProvider>

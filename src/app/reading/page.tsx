@@ -4,7 +4,7 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 
 export default function Home() {
   return (
-    <div className="scroll-smooth bg-gradient-to-tr from-background-1 via-background-2 to-background-3 transition duration-200 ease-in-out">
+    <div className="scroll-smooth transition duration-200 ease-in-out">
       <div className="grid grid-cols-12 border-b-[0.5px] p-2 pb-4 pt-9 text-page-headerForeground border-page-headerBorder font-semibold">
         <div className="lg:block hidden col-span-2 lg:col-span-1">Sr.</div>
         <div className="col-span-4 lg:col-span-5">Title</div>
