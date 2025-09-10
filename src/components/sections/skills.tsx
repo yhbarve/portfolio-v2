@@ -21,89 +21,89 @@ export default function Skills() {
       </div>
       <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
         <div>
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
+            <div className="grid grid-cols-1 sm:grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%]">LANGUAGES</div>
+                <div className="sm:col-span-1 flex flex-col">
+                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">LANGUAGES</div>
                 </div>
-                <div className="col-span-4 flex gap-1 gap-y-2 items-center flex-wrap">
+                <div className="sm:col-span-4 flex gap-1 gap-y-2 items-center flex-wrap">
                     {languages.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2">{key}</div>)}
                 </div>
             </div>
         </div>
         <div>
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
+            <div className="grid sm:grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%]">CORE CS</div>
+                <div className="sm:col-span-1 flex flex-col">
+                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">CORE CS</div>
                 </div>
-                <div className="col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
+                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
                     {csFundamentals.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2 h-fit">{key}</div>)}
                 </div>
             </div>
         </div>
         <div>
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
+            <div className="grid sm:grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%]">FRONTEND</div>
+                <div className="sm:col-span-1 flex flex-col">
+                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">FRONTEND</div>
                 </div>
-                <div className="col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
+                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
                     {frontend.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2 h-fit">{key}</div>)}
                 </div>
             </div>
         </div>
         <div>
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
+            <div className="grid sm:grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%]">BACKEND</div>
+                <div className="sm:col-span-1 flex flex-col">
+                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">BACKEND</div>
                 </div>
-                <div className="col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
+                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
                     {backend.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2 h-fit">{key}</div>)}
                 </div>
             </div>
         </div>
         <div>
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
+            <div className="grid sm:grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%]">DATABASE</div>
+                <div className="sm:col-span-1 flex flex-col">
+                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">DATABASE</div>
                 </div>
-                <div className="col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
+                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
                     {database.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2 h-fit">{key}</div>)}
                 </div>
             </div>
         </div>
         <div>
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
+            <div className="grid sm:grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%]">DEVOPS</div>
+                <div className="sm:col-span-1 flex flex-col">
+                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">DEVOPS</div>
                 </div>
-                <div className="col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
+                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
                     {devops.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2 h-fit">{key}</div>)}
                 </div>
             </div>
         </div>
         <div>
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
+            <div className="grid sm:grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%]">TOOLS</div>
+                <div className="sm:col-span-1 flex flex-col">
+                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">TOOLS</div>
                 </div>
-                <div className="col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
+                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
                     {tools.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2 h-fit">{key}</div>)}
                 </div>
             </div>
         </div>
         <div>
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
+            <div className="grid sm:grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%]">CLOUD</div>
+                <div className="sm:col-span-1 flex flex-col">
+                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">CLOUD</div>
                 </div>
-                <div className="col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
+                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
                     {cloud.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2 h-fit">{key}</div>)}
                 </div>
             </div>
@@ -112,7 +112,7 @@ export default function Skills() {
             <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
                 <div className="col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%]">AI & ML</div>
+                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">AI & ML</div>
                 </div>
                 <div className="col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
                     {aiMl.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2 h-fit">{key}</div>)}
@@ -120,12 +120,12 @@ export default function Skills() {
             </div>
         </div>
         <div>
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
+            <div className="grid sm:grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%]">OTHER</div>
+                <div className="sm:col-span-1 flex flex-col">
+                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">OTHER</div>
                 </div>
-                <div className="col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
+                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
                     {others.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2 h-fit">{key}</div>)}
                 </div>
             </div>

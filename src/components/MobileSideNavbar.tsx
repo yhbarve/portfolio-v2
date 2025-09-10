@@ -54,6 +54,7 @@ export default function MobileSidebarNav() {
   const links = [
     { href: "#projects", label: "Projects" },
     { href: "#experiences", label: "Experience" },
+    { href: "#skills", label: "Skills" },
     { href: "#education", label: "Education" },
     { href: "#writings", label: "Writings" },
     { href: "#interests", label: "Interests" },
