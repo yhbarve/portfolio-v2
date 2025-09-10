@@ -109,12 +109,12 @@ export default function Skills() {
             </div>
         </div>
         <div>
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
+            <div className="grid sm:grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
         hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="col-span-1 flex flex-col">
+                <div className="sm:col-span-1 flex flex-col">
                     <div className="font-light max-w-[90%] pb-2 sm:pb-0">AI & ML</div>
                 </div>
-                <div className="col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
+                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
                     {aiMl.map((key, item) => <div key={item} className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-md px-2 h-fit">{key}</div>)}
                 </div>
             </div>
