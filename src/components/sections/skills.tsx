@@ -6,7 +6,7 @@ export default function Skills() {
     const frontend: string[] = ["React.js", "Next.js", "TailwindCSS", "Bootstrap"];
     const backend: string[] = ["REST APIs", "Node.js", "Express.js", "Hono", "Websockets", "Socket.io", "Auth (JWT)", "Zod"];
     const database: string[] = ["PostgreSQL", "MongoDB", "MySQL", "Firebase"];
-    const tools: string[] = ["Prisma ORM", "Git", "Docker", "npm", "WebAssembly", "Jest", "Jira", "Tableau", "Figma"];
+    const tools: string[] = ["Prisma ORM", "Git", "Docker", "Kubernetes", "npm", "WebAssembly", "Jest", "Jira", "Tableau", "Figma"];
     const cloud: string[] = ["AWS"];
     const devops: string[] = ["GitHub Actions", "Railway", "Vercel", "Netlify", "Heroku"];
     const aiMl: string[] = ["OpenAI API", "Gemini SDK", "Codex", "Claude Code", "GitHub Copilot", "Neural Nets", "CNNs", "RNNs", "Computational Vision", "Tensorflow", "PyTorch", "Numpy", "Pandas", "Matplotlib",]
