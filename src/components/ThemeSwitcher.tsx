@@ -16,7 +16,8 @@ export function ThemeSwitcher() {
     { name: "Lavender", value: "lavender" },
     { name: "Ferrari", value: "ferrari"},
     { name: "Ultramarine", value: "ultramarine"},
-    { name: "Midnight", value: "midnight"}
+    { name: "Midnight", value: "midnight"},
+    { name: "Aston", value: "aston"}
   ];
 
   useEffect(() => {

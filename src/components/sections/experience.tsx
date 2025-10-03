@@ -19,7 +19,23 @@ export default function Experience() {
           year="SEP — DEC '25"
           title="Software Engineering Intern"
           org="Nokia"
-          desc="To be updated."
+          desc="[As of Oct 2, 2025] I worked with Docker, Kubernetes, and DevSpace to set up a hot-reloading development environment with per-developer clusters, boosting productivity. I built FastAPI endpoints, automated model fetching from LLM Gateway with a custom download strategy, and contributed fixes to the Model Registry GUI."
+          skills={[
+            "docker",
+            "kubernetes",
+            "devspace",
+            "python",
+            "fastapi",
+            "mysql",
+            "javascript",
+            "react"
+          ]}
+        />
+        <ExperienceCard
+          year="SEP — DEC '25"
+          title="Engineering Director"
+          org="UW Product Management Club"
+          desc="To be updated"
           skills={[]}
         />
         <ExperienceCard
@@ -32,6 +48,7 @@ export default function Experience() {
             "angular.js",
             "rest apis",
             "python",
+            "data analysis",
             "screaming frog seo",
             "pagespeed insights",
             "google lighthouse",
@@ -64,8 +81,8 @@ export default function Experience() {
 
         <ExperienceCard
           year="OCT '22 — AUG '23"
-          title="Web Designer"
-          org="University of Waterloo's Data Science Club"
+          title="Web Designer Executive"
+          org="UW Data Science Club"
           desc="Interacted with event organizers to understand the requirements of the design. Used Canva to create posts for Instagram, LinkedIn, Facebook, and 𝕏. Briefly contributed to the club website design using Figma."
           skills={[
             "canva",

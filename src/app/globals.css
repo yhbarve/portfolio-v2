@@ -654,6 +654,87 @@ html {
     --nav-modal-item-hover-background: 238 0% 50.6% / 0.86;
     --nav-modal-item-border: 238 0% 50.6%;
   }
+
+  .aston {
+    --background-default: 173 100% 10%;
+    --foreground-default: 146 100% 90%;
+    --border-default: 206 97% 15%;
+
+    --background-01: 173 100% 10%;
+    --background-02: 173 100% 10%;
+    --background-03: 173 100% 17%;
+
+    --name-foreground: 64 100% 43%;
+    --role-foreground: 0 0% 100%;
+    --information-foreground: 64 100% 43%;
+    --navigation-link-foreground: 0 0% 100%;
+    --socials-foreground: 64 100% 43%;
+    --socials-hover-background: 173 100% 17% / 0.39;
+    --picker-background: 173 100% 17% / 0.39;
+    --picker-hover-backround: 173 100% 17%;
+    --picker-text-foreground: 64 100% 43%;
+    --picker-border: 173 100% 17%;
+    --trademark-foreground: 0 0% 100%;
+
+    --card-foreground: 64 100% 43%;
+    --card-hover-foreground: 64 100% 43%;
+    --card-other-hover-foreground: 64 100% 43% / 0.80;
+    --card-background: hsla(0, 0%, 0%, 0);
+    --card-hover-background: 173 100% 17% / 0.1;
+    --card-border: 0 0% 0% / 0;
+    --card-hover-border: 173 100% 17%;
+    --card-skills-foreground: 0 0% 100%;
+    --card-skills-background: 64 100% 43% / 0.10;
+    --card-skills-border: 173 100% 17%;
+    --card-image-border: 173 100% 17%;
+
+    --section-header-foreground: 0 0% 100%;
+    --link-to-page-foreground: 0 0% 100%;
+    --link-to-page-button-background: 173 100% 17% / 0.46;
+    --link-to-page-button-foreground: 0 0% 100%;
+
+    --page-name-foreground: 0 0% 100%;
+    --page-title-foreground: 64 100% 43%;
+    --page-header-foreground: 0 0% 100%;
+    --page-header-border: 64 100% 43%;
+
+    --page-item-background: hsla(0, 0%, 0%, 0);
+    --page-item-hover-background: 173 100% 17% / 0.1;
+    --page-item-border: 0 0% 0% / 0;
+    --page-item-hover-border: 173 100% 17%;
+    --page-item-other-hover-foreground: 64 100% 43% / 0.80;
+    --page-item-foreground: 64 100% 43%;
+    --page-item-hover-foreground: 64 100% 43%;
+    --page-item-skills-foreground: 0 0% 100%;
+    --page-item-skills-background: 64 100% 43% / 0.10;
+    --page-item-skills-border: 173 100% 17%;
+    --page-item-link-hover-background: 173 100% 17% / 0.80;
+
+    --blog-title-background: 238 0% 78.6%;
+    --blog-title-foreground: 64 100% 43%;
+    --blog-title-border: 64 100% 43%;
+    --blog-title-date-foreground: 0 0% 100%;
+    --blog-body-text-foreground: 0 0% 100%;
+    --blog-body-headings-foreground: 64 100% 43%;
+    --blog-summary-foreground: 64 100% 43%;
+    --blog-summary-border: 64 100% 43%;
+
+    --nav-button-background: 173 100% 17% / 0.46;
+    --nav-button-hover-background: 173 100% 17% / 0.66;
+    --nav-button-border: 173 100% 17%;
+    --nav-button-icon-fill: 64 100% 43%;
+
+    --nav-modal-background: 173 100% 17% / 0.90;
+    --nav-modal-border: 173 100% 17%;
+    --nav-modal-header-foreground: 64 100% 43%;
+    --nav-modal-header-cross-hover-bg: 173 100% 17%;
+    --nav-modal-header-border: 64 100% 43%;
+    --nav-modal-item-foreground: 64 100% 43%;
+    --nav-modal-item-hover-foreground: 64 100% 43%;
+    --nav-modal-item-background: 173 100% 10% / 0.66;
+    --nav-modal-item-hover-background: 173 100% 17% / 0.86;
+    --nav-modal-item-border: 64 100% 43%;
+  }
 }
 
 @layer base {
