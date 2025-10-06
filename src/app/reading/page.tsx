@@ -140,6 +140,14 @@ export default function Home() {
           pages="352"
           link="https://www.amazon.ca/Inside-Mercedes-F1-Life-Fast/dp/0593735641"
         />
+
+        <ReadListItem
+          sr="17"
+          title="Dark Matter"
+          author="Blake Crouch"
+          pages="342"
+          link="https://www.amazon.ca/Dark-Matter-Novel-Blake-Crouch/dp/1101904240"
+        />
       </div>
     </div>
   );
