@@ -4,7 +4,7 @@ import ExperienceCard from "../ExperienceCard";
 export default function Skills() {
     const languages: string[] = ["C", "C++", "Bash", "Go", "Python", "HTML", "CSS", "Javascript", "Typescript", "SQL", "Kotlin"];
     const frontend: string[] = ["React.js", "Next.js", "TailwindCSS", "Bootstrap"];
-    const backend: string[] = ["REST APIs", "Node.js", "Express.js", "Hono", "Websockets", "Socket.io", "Auth (JWT)", "Zod"];
+    const backend: string[] = ["REST APIs", "Node.js", "Express.js", "FastAPI (Python)", "Hono", "Websockets", "Socket.io", "Auth (JWT)", "Zod"];
     const database: string[] = ["PostgreSQL", "MongoDB", "MySQL", "Firebase"];
     const tools: string[] = ["Prisma ORM", "Git", "Docker", "Kubernetes", "npm", "WebAssembly", "Jest", "Jira", "Tableau", "Figma"];
     const cloud: string[] = ["AWS"];
