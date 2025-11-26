@@ -115,7 +115,7 @@ export default function Socials() {
           </svg>
         </a>
       </div>
-      <div className="flex items-center gap-1 mt-4">
+      <div className="flex items-center gap-1 mt-[3vh]">
         <ThemeSwitcher />
         <div className="text-sm cursor-default text-trademark-foreground">©2025, Yash Harshal Barve</div>
       </div>
