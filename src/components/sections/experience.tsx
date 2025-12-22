@@ -9,7 +9,7 @@ export default function Experience() {
           EXPERIENCE
         </div>
         <div className="transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1 hidden lg:block">
-          <a href="https://drive.google.com/file/d/1yor8WNfL9d3gA2jWWV5LRjzjHUybynDO/view?usp=sharing" className="">
+          <a href="https://drive.google.com/file/d/1oO_z0Pz-CMLYhW1WbsqDduptITErZg_D/view?usp=sharing" className="">
             View Resume →
           </a>
         </div>
@@ -153,7 +153,7 @@ export default function Experience() {
 
       </div>
       <div className="transition duration-200 ease-in-out text-linkToPage-foreground mt-4 block lg:hidden">
-        <a href="https://drive.google.com/file/d/1yor8WNfL9d3gA2jWWV5LRjzjHUybynDO/view?usp=sharing" className="bg-linkToPage-buttonBackground text-linkToPage-buttonForeground px-4 py-2 rounded-md hover:opacity-80 text-sm">
+        <a href="https://drive.google.com/file/d/1oO_z0Pz-CMLYhW1WbsqDduptITErZg_D/view?usp=sharing" className="bg-linkToPage-buttonBackground text-linkToPage-buttonForeground px-4 py-2 rounded-md hover:opacity-80 text-sm">
           View Resume
         </a>
       </div>
