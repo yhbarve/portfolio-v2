@@ -49,7 +49,7 @@ export default function WritingsCard({
           <a
             href={`/blog/${slug}`}
             target="_blank"
-            className="hover:translate-x-1 transition-transform ease-in-out font-medium mb-1"
+            className="hover:translate-x-1 transition-transform ease-in-out font-medium mb-1 text-section-header"
           >
             {title}
           </a>

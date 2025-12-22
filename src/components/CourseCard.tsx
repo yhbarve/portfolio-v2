@@ -8,8 +8,8 @@ export default function CourseCard({year, program, uni, desc, link}: {year: stri
                     <div className="font-light max-w-[90%]">{year}</div>
                 </div>
                 <div className="col-span-4 flex flex-col">
-                    <div className="font-medium">{program}</div>
-                    <div className="mb-2 font-light text-section-header">{uni}</div>
+                    <div className="font-medium text-section-header">{program}</div>
+                    <div className="mb-2 font-light">{uni}</div>
                     <div className="font-light text-sm"><div className="font-normal inline">Description: </div>{desc}</div>                   
                 </div>
             </div>
@@ -22,8 +22,8 @@ export default function CourseCard({year, program, uni, desc, link}: {year: stri
                     <div className="font-light max-w-[90%]">{year}</div>
                 </div>
                 <div className="col-span-4 flex flex-col justify-start">
-                    <div className="font-medium">{program}</div>
-                    <div className="mb-2 font-light text-section-header">{uni}</div>
+                    <div className="font-medium text-section-header">{program}</div>
+                    <div className="mb-2 font-light">{uni}</div>
                     <div className="font-light text-sm mb-2"><div className="font-normal inline">Description: </div>{desc}</div>
                     <a href={link} target="_blank" className="font-regular text-sm underline">Certificate of completion</a>
                 </div>

@@ -25,6 +25,9 @@ const config = {
           3: 'hsl(var(--background-03))',
           default: 'hsl(var(--background-default))',
         },
+        bullet: {
+          color: 'hsl(var(--bullet-color))',
+        },
         foreground:{
           default: 'hsl(var(--foreground-default))',
         },

@@ -86,6 +86,8 @@ html {
     --nav-modal-item-background: 0 0% 25.1%;
     --nav-modal-item-hover-background: 0 0% 14.9%;
     --nav-modal-item-border: 0 0% 25.1%;
+
+    --bullet-color: 0 0% 96.1%;
   }
 
   .neon {
@@ -167,6 +169,8 @@ html {
     --nav-modal-item-background: 0 0% 14.9%;
     --nav-modal-item-hover-background: 0 0% 25.1%;
     --nav-modal-item-border: 0 0% 25.1%;
+
+    --bullet-color: 71 100% 51%;
   }
 
   .orange {
@@ -248,6 +252,8 @@ html {
     --nav-modal-item-background: 0 0% 89.8%;
     --nav-modal-item-hover-background: 0 0% 25.1%;
     --nav-modal-item-border: 0 0% 25.1%;
+
+    --bullet-color: 20.5 90.2% 48.2%;
   }
 
   .teal {
@@ -329,6 +335,8 @@ html {
     --nav-modal-item-background: 167.2 85.5% 89.2%;
     --nav-modal-item-hover-background: 168.4 83.8% 78.2%;
     --nav-modal-item-border: 178.6 84.3% 10%;
+
+    --bullet-color: 178.6 84.3% 10%;
   }
 
   .lavender {
@@ -410,6 +418,8 @@ html {
     --nav-modal-item-background: 252.5 94.7% 85.1%;
     --nav-modal-item-hover-background: 263.4 69.3% 42.2%;
     --nav-modal-item-border: 0 0% 25.1%;
+
+    --bullet-color: 255.1 91.7% 76.3%;
   }
 
   .ferrari {
@@ -491,6 +501,8 @@ html {
     --nav-modal-item-background: 359 78% 52%;
     --nav-modal-item-hover-background: 55 93.8% 55.5%;
     --nav-modal-item-border: 0 0% 25.1%;
+
+    --bullet-color: 55 93.8% 55.5%;
   }
 
   .ultramarine {
@@ -572,6 +584,8 @@ html {
     --nav-modal-item-background: 205 98% 20%;
     --nav-modal-item-hover-background: 205 98% 20%;
     --nav-modal-item-border: 205 98% 20%;
+
+    --bullet-color: 195 54% 78%;
   }
 
   .midnight {
@@ -653,6 +667,8 @@ html {
     --nav-modal-item-background: 238 0% 50.6% / 0.66;
     --nav-modal-item-hover-background: 238 0% 50.6% / 0.86;
     --nav-modal-item-border: 238 0% 50.6%;
+
+    --bullet-color: 238 0% 78.6%;
   }
 
   .aston {
@@ -734,6 +750,8 @@ html {
     --nav-modal-item-background: 173 100% 10% / 0.66;
     --nav-modal-item-hover-background: 173 100% 17% / 0.86;
     --nav-modal-item-border: 64 100% 43%;
+
+    --bullet-color: 0 0% 100%;
   }
 }
 

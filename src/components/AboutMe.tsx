@@ -20,12 +20,11 @@ function usePrefersReducedMotion() {
 export default function AboutMe() {
   const roles = useMemo(
     () => [
-      "Software developer",
-      "React.js developer",
-      "Next.js developer",
-      "MERN developer",
-      "Node.js developer",
-      "Backend developer",
+      "Software engineer",
+      "Backend engineer",
+      "Full-stack engineer",
+      "AI engineer",
+      "Cloud engineer"
     ],
     []
   );

@@ -19,7 +19,13 @@ export default function Projects() {
           youtube="https://www.youtube.com/watch?v=_2dJb6zYpTw"
           github="https://github.com/grace-ful/cs446-team-project"
           name="Fit4Me – Personalized Fitness Tracking App"
-          desc="Fit4Me is a full-stack Android fitness application currently in development as part of a team project. Designed using Jetpack Compose, Kotlin, Node.js, Express, and PostgreSQL, it offers personalized workout planning, real-time chat, session tracking, and intelligent matchmaking based on user fitness goals, availability, and experience level. The app integrates REST APIs and WebSocket communication for a smooth and interactive user experience. Still in progress, Fit4Me aims to deliver a robust, user-centric fitness platform with both frontend polish and backend performance."
+          desc={[
+            "Full-stack Android fitness app (team project) built with Kotlin + Jetpack Compose and a Node.js/Express backend with PostgreSQL.",
+            "Delivers personalized workout planning and session tracking with a focus on a smooth, user-centric experience.",
+            "Includes real-time chat using Socket.IO alongside REST APIs for core app functionality.",
+            "Implements intelligent matchmaking based on user goals, availability, and experience level.",
+            "In active development with an emphasis on frontend polish and backend performance."
+          ]}
           skills={[
             "android",
             "jetpack compose",
@@ -29,9 +35,12 @@ export default function Projects() {
             "typescript",
             "postgresql",
             "prisma",
+            "rest apis",
             "socket.io",
-            "jwt auth",
+            "jwt",
+            "websockets"
           ]}
+
           image="/fit4me-demo.png" // Replace with your actual demo image path
         />
 
@@ -40,7 +49,13 @@ export default function Projects() {
           link="https://rtc-chat-tau.vercel.app/"
           github="https://github.com/yhbarve/rtc-chat"
           name="Chattr - Minimal real-time group chat"
-          desc="Chattr is a minimalist, real-time group chat application built with React, TypeScript, Express, and Socket.IO. It allows users to create and join public rooms using unique room codes and exchange messages instantly. Designed with clean UI and responsive interactions, Chattr focuses on delivering core functionality—message delivery, system notifications, and live presence updates—in a lightweight, deployable MVP. It lays the foundation for future enhancements like private rooms, message history, and advanced moderation."
+          desc={[
+            "Minimalist real-time group chat app built with React, TypeScript, Express, and Socket.IO.",
+            "Supports creating and joining public rooms via unique room codes and instant message delivery.",
+            "Includes system notifications and live presence updates for a responsive chat experience.",
+            "Designed as a lightweight, deployable MVP with clean UI and responsive interactions.",
+            "Built to extend into features like private rooms, message history, and moderation."
+          ]}
           skills={[
             "react.js",
             "typescript",
@@ -48,6 +63,8 @@ export default function Projects() {
             "socket.io",
             "node.js",
             "express.js",
+            "rest apis",
+            "websockets"
           ]}
           image="/chattr-demo.png"
         />
@@ -57,16 +74,21 @@ export default function Projects() {
           link="https://github.com/yhbarve/portolio-imagekit"
           github="https://github.com/yhbarve/portolio-imagekit"
           name="Portolio - Your Online Photos Portfolio"
-          desc="A modern MERN‑stack application for users to upload and display photos. It features direct client‑to‑ImageKit uploads, JWT‑based authentication, and a responsive gallery with uniform image sizing."
+          desc={[
+            "Modern MERN-stack photo gallery app for uploading and showcasing images.",
+            "Implements direct client-to-ImageKit uploads for fast, scalable media handling.",
+            "Uses JWT-based authentication for secure access and user sessions.",
+            "Built a responsive gallery layout with uniform image sizing for a clean UI."
+          ]}
           skills={[
             "react.js",
             "javascript",
             "tailwindcss",
-            "imagekit",
             "node.js",
-            "express",
+            "express.js",
             "mongodb",
-            "npm",
+            "imagekit",
+            "jwt"
           ]}
           image="/portolio-demo.png"
         />
@@ -75,17 +97,24 @@ export default function Projects() {
           year="2025"
           github="https://github.com/yhbarve/deep-image-segmentation" // Replace with your actual project/demo link if needed
           name="Deep Features for Interactive Segmentation"
-          desc="An interactive image segmentation tool developed as a university capstone project. Built with PyTorch and a pre-trained ResNet-50, the app extracts deep convolutional features to segment objects in complex images beyond traditional RGB-based methods. Includes an intuitive Python GUI for user-guided foreground/background selection and implements max-flow/min-cut graph algorithms for real-time, robust object segmentation. Demonstrates strong results in challenging scenarios with color ambiguity or noisy backgrounds."
+          desc={[
+            "Interactive image segmentation tool built as a university capstone project using PyTorch and a pre-trained ResNet-50.",
+            "Extracts deep convolutional features to segment objects in complex images beyond traditional RGB-based approaches.",
+            "Provides a Python GUI for user-guided foreground/background selection to steer segmentation.",
+            "Implements max-flow/min-cut graph cut algorithms for robust, near real-time object segmentation.",
+            "Performs well in challenging scenarios with color ambiguity and noisy backgrounds."
+          ]}
           skills={[
             "python",
             "pytorch",
             "resnet-50",
+            "computer vision",
             "graph cuts",
+            "max-flow min-cut",
             "numpy",
             "matplotlib",
             "scikit-image",
-            "gui",
-            "computer vision",
+            "python gui"
           ]}
           image="/uw-math-logo.png" // Replace with your actual demo image path
         />
@@ -94,18 +123,24 @@ export default function Projects() {
           year="2025"
           github="https://github.com/yhbarve/crop-yield-and-risk-mitigation"
           name="Crop Yield Prediction & Risk Mitigation (BU425 Final Project)"
-          desc="Developed a machine learning framework to predict crop yields and assess agricultural risk using real-world data on rainfall, temperature, pesticide use, and crop type. Utilized Random Forest and Lasso Regression for feature selection and interpretable yield prediction, then engineered temporal features and implemented an LSTM model for sequential analysis. Built a dynamic risk scoring system to help optimize resource allocation and provide actionable insights for farmers. This group project demonstrated the value of predictive analytics for sustainable, data-driven decision-making in agriculture."
+          desc={[
+            "Built a machine learning framework to predict crop yields and assess agricultural risk using real-world climate and farming inputs (rainfall, temperature, pesticide use, crop type).",
+            "Trained interpretable yield models using Random Forest and Lasso Regression for feature selection and prediction.",
+            "Engineered temporal features and implemented an LSTM model for sequential yield analysis.",
+            "Designed a dynamic risk scoring system to support resource allocation and deliver actionable insights for farmers.",
+            "Collaborated as part of a group project focused on sustainable, data-driven decision-making."
+          ]}
           skills={[
             "python",
             "pandas",
             "scikit-learn",
             "random forest",
             "lasso regression",
-            "recurrent neural networks",
-            "lstm",
-            "tensorflow",
-            "data visualization",
             "feature engineering",
+            "tensorflow",
+            "lstm",
+            "rnn",
+            "data visualization"
           ]}
           image="/laz-logo.png" // Replace with your actual demo image path
         />
@@ -115,16 +150,21 @@ export default function Projects() {
           link="https://chatyhb.vercel.app/"
           github="https://github.com/yhbarve/chatyhb"
           name="ChatYHB - An AI powered chat bot"
-          desc="ChatYHB utilizes Google's AI SDK. Users can send text-based prompts to ChatYHB, which uses Google Gemini 1.5 in the backend to provide a response. The response is well-formated, enhancing user experience. Users can see their previous prompts and responses. Additionally, users can delete all previous prompts and responses, if needed."
+          desc={[
+            "Built a web chat app using Google’s AI SDK with Gemini 1.5 powering backend responses.",
+            "Supports text-based prompts with clean, well-formatted outputs for a better reading experience.",
+            "Persists conversation history so users can revisit previous prompts and responses.",
+            "Includes a one-click option to clear all stored prompts and responses when needed."
+          ]}
           skills={[
             "react.js",
             "javascript",
             "tailwindcss",
             "node.js",
-            "express",
+            "express.js",
             "mongodb",
             "google ai sdk",
-            "npm",
+            "gemini 1.5"
           ]}
           image="/chatyhb-demo.png"
         />
@@ -133,15 +173,22 @@ export default function Projects() {
           year="2024"
           youtube="https://www.youtube.com/watch?v=FPEUKRfoRFQ"
           name="Scriptsync - Add transcriptions to your videos"
-          desc="ScriptSync is an innovative application designed to streamline the process of adding captions to videos. Users can upload their videos, and ScriptSync automatically generates transcriptions, which can then be edited for accuracy and timing. With customizable options including font size, text color, and outline color, users can tailor the appearance of their captions to suit their preferences. Once edited, these transcriptions seamlessly integrate into the video, enhancing accessibility and engagement. Additionally, users have the option to download the finalized video for sharing across various platforms."
+          desc={[
+            "Built an end-to-end captioning tool that generates subtitles from uploaded videos and lets users edit text, timing, and accuracy.",
+            "Provides caption styling controls (font size, text color, outline) to customize the final look.",
+            "Burns captions into the video using ffmpeg (via WebAssembly) for a fully client-side editing experience.",
+            "Supports exporting/downloading the finalized captioned video for sharing across platforms.",
+            "Uses AWS S3 for storage and AWS Transcribe for automatic speech-to-text."
+          ]}
           skills={[
             "next.js",
             "typescript",
             "tailwindcss",
             "aws s3",
             "aws transcribe",
-            "web assembly",
+            "webassembly",
             "ffmpeg",
+            "ffmpeg.wasm"
           ]}
           image="/scriptsync-demo.png"
         />

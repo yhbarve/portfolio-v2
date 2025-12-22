@@ -4,7 +4,7 @@ type ProjectCardProps = {
   year: string;
   link?: string;
   name: string;
-  desc: string;
+  desc: Array<string>;
   skills: Array<string>;
   image: string;
   youtube?: string;
@@ -31,13 +31,10 @@ export default function ProjectCard(props: ProjectCardProps) {
           </a>
         </div>
         <div className="col-span-4 flex flex-col">
-          <div className="transition-transform ease-in-out font-medium mb-1">
+          <div className="transition-transform ease-in-out font-medium mb-1 text-section-header">
             {name}
           </div>
-          <div className="font-light text-sm">
-            <div className="font-normal inline">Description: </div>
-            {desc}
-          </div>
+          <div className="font-light text-sm flex flex-col gap-2">{desc.map((d) => <div className="flex gap-2 text-bullet-color">· <div className="text-card-foreground">{d}</div></div>)}</div>
           <div className="flex gap-1 gap-y-2 mt-4 flex-wrap">
             {skills.map((key, item) => (
               <div

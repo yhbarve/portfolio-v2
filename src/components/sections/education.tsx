@@ -6,9 +6,52 @@ export default function Education(){
         <div id="education" className="pt-12">
             <div className="text-sm font-bold pb-2 pl-2 cursor-default text-section-header">EDUCATION</div>
             <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
-                <EducationCard program="Bachelor of Computer Science with Specialization in AI" uni="University of Waterloo" year="2021 — 2026" courses="Algebra, Calculus, Linear Algebra, Optimization, Combinatorics, Probability, Statistics, Functional Programs, Algorithm Design and Data Abstraction, Object Oriented Programming, Data Structures, Algorithms, Logic and Computation, Computer Organization and Design, Sequential Programming, Introduction to Machine Learning, Operating Systems, Introduction to Artificial Intelligence, Computational Statistics and Data Analysis" />
+                <EducationCard program="Bachelor of Computer Science with Specialization in AI" uni="University of Waterloo" year="2021 — 2026" courses={[
+                    "Algebra",
+                    "Calculus",
+                    "Linear Algebra",
+                    "Optimization",
+                    "Combinatorics",
+                    "Probability",
+                    "Statistics",
+                    "Functional Programming",
+                    "Algorithm Design and Data Abstraction",
+                    "Object Oriented Programming",
+                    "Data Structures",
+                    "Algorithms",
+                    "Logic and Computation",
+                    "Computer Organization and Design",
+                    "Sequential Programming",
+                    "Introduction to Machine Learning",
+                    "Operating Systems",
+                    "User-Interfaces",
+                    "Computational Vision",
+                    "Information Systems Management",
+                    "Software Design and Architectures",
+                    "Distributed Systems",
+                    "Computer Networks",
+                    "The Social Implications of Computing"
+                ]} />
 
-                <EducationCard program="Bachelor of Business Administration with Finance Concentration" uni="Wilfrid Laurier University" year="2021 — 2026" courses="Functional Areas of an Organization, Business Environment, Introductory Microeconomics, Introductory Macroeconomics, Financial Accounting, Business Law, Managerial Accounting, Organizational Behaviour, Human Resources Management, Financial Management, Marketing Management, Business Operations, Business Operations, Data Analytics, Strategic Management" />
+                <EducationCard program="Bachelor of Business Administration with Finance Concentration" uni="Wilfrid Laurier University" year="2021 — 2026" courses={[
+                    "Functional Areas of an Organization",
+                    "Business Environment",
+                    "Introductory Microeconomics",
+                    "Introductory Macroeconomics",
+                    "Financial Accounting",
+                    "Business Law",
+                    "Managerial Accounting",
+                    "Organizational Behaviour",
+                    "Human Resources Management",
+                    "Marketing Management",
+                    "Business Operations",
+                    "Data Analytics",
+                    "Strategic Management",
+                    "Financial Management",
+                    "Risk Management & Insurance",
+                    "Options, Futures and Swaps",
+                    "Personal Finance Management"
+                ]} />
 
                 <CourseCard program="Full Stack Web Development Cohort" uni="100xDevs by Harkirat Singh" year="2023 — 2024" desc="This 8-month cohort transforms you from a 1x engineer to a 100x engineer. Some of the important concepts taught are MERN stack, Next.js, PostgreSQL, DevOps, WebRTC, and advanced web development. Additionally, there are several open-source projects to apply your knowledge." link="https://drive.google.com/file/d/1jZlAZPMfhcVqfnnf89OMrTWNbfenRogY/view?usp=sharing" />
 
