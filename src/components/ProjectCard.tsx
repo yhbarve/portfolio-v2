@@ -23,7 +23,7 @@ export default function ProjectCard(props: ProjectCardProps) {
           <a href={link} target="_blank">
             <Image
               src={image}
-              alt=""
+              alt={name}
               width={100}
               height={100}
               className="rounded-md w-[90%] mt-1 brightness-[0.95] hover:brightness-[0.90] transition ease-in-out border border-card-imageBorder"

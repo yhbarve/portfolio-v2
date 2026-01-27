@@ -8,6 +8,7 @@ export default function Socials() {
         <a
           href="https://x.com/yhbarve"
           target="_blank"
+          aria-label="Visit my X profile"
           className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
@@ -25,6 +26,7 @@ export default function Socials() {
         <a
           href="https://github.com/yhbarve"
           target="_blank"
+          aria-label="Visit my GitHub profile"
           className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
@@ -42,6 +44,7 @@ export default function Socials() {
         <a
           href="mailto:yhbarve@uwaterloo.ca"
           target="_blank"
+          aria-label="Send me an email"
           className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
@@ -66,6 +69,7 @@ export default function Socials() {
         <a
           href="https://www.linkedin.com/in/yhbarve/"
           target="_blank"
+          aria-label="Visit my LinkedIn profile"
           className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
@@ -83,6 +87,7 @@ export default function Socials() {
         <a
           href="https://www.instagram.com/yhbarve/"
           target="_blank"
+          aria-label="Visit my Instagram profile"
           className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
@@ -100,6 +105,7 @@ export default function Socials() {
         <a
           href="https://leetcode.com/u/yhbarve/"
           target="_blank"
+          aria-label="Visit my LeetCode profile"
           className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
         >
           <svg
@@ -114,6 +120,7 @@ export default function Socials() {
             <path d="M19.34 12.84h-8.45a1.12 1.12 0 0 0 0 2.24h8.45a1.12 1.12 0 0 0 0-2.24"></path>
           </svg>
         </a>
+
       </div>
       <div className="flex items-center gap-1 mt-[3vh]">
         <ThemeSwitcher />

@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Providers } from "./providers";
 import Banner from "@/components/ui/Banner";
+import PageAnimation from "@/components/PageAnimation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,10 +29,25 @@ export default function RootLayout({
           name="description"
           content="Yash is a fourth-year Computer Science student at the University of Waterloo and a Business student at Wilfrid Laurier University. Since starting his full-stack development journey in 2021, he has grown especially passionate about backend technologies and scalable systems."
         />
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        {/* TODO: Replace with your actual domain URL */}
+        <meta property="og:url" content="https://yhbarve.me/" />
+        <meta property="og:title" content={metadata.title as string} />
+        <meta property="og:description" content={metadata.description as string} />
+        {/* Make sure to replace with a full URL to your image */}
+        <meta property="og:image" content="https://yhbarve.me/yb-logo.webp" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://yhbarve.me/" />
+        <meta property="twitter:title" content={metadata.title as string} />
+        <meta property="twitter:description" content={metadata.description as string} />
+        <meta property="twitter:image" content="https://yhbarve.me/yb-logo.webp" />
       </head>
       <body className={`${inter.className} bg-gradient-to-tr from-background-1 via-background-2 to-background-3`}>
         <Providers>
-          {children}
+          <PageAnimation>{children}</PageAnimation>
         </Providers>
       </body>
     </html>
