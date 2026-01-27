@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Yash Barve's Personal Portfolio
+
+This repository contains the source code for my personal portfolio website, available at [yhbarve.me](https://yhbarve.me).
+
+This project is built from the ground up as a showcase of my skills in modern web development, with a focus on performance, responsive design, and a clean user experience.
+
+## Technical Stack
+
+The portfolio is built with a modern, type-safe, and performant stack:
+
+*   **Framework:** [Next.js](https://nextjs.org/) (App Router)
+*   **Language:** [TypeScript](https://www.typescriptlang.org/)
+*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+*   **UI Components:** [shadcn/ui](https://ui.shadcn.com/)
+*   **Content:** [Contentlayer](https://www.contentlayer.dev/) for managing blog posts written in Markdown.
+*   **Animations:** [Framer Motion](https://www.framer.com/motion/) for page transitions and on-scroll animations.
+
+## Features
+
+*   **Dynamic Theming:** Multiple themes that a user can switch between.
+*   **Blog Engine:** Blog posts are written in simple Markdown files and processed into static pages at build time using Contentlayer.
+*   **On-Scroll Animations:** Components and sections animate into view as the user scrolls, implemented with Framer Motion.
+*   **SEO & Social Previews:** Includes Open Graph and Twitter meta tags for rich link previews when shared on social media.
+*   **Responsive Design:** A mobile-first approach to ensure a seamless experience on all device sizes.
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/yhbarve/yb-portfolio-v2.git
+    cd yb-portfolio-v2
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
+## Future Enhancements
 
-To learn more about Next.js, take a look at the following resources:
+*   **Command Palette:** An upcoming feature will be a `Cmd+K` style command palette for quick navigation and searching.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Have a nice day :\)
