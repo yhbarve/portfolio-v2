@@ -10,8 +10,8 @@ export function ThemeSwitcher() {
   const [selectedTheme, setSelectedTheme] = useState("");
 
   const themes = [
-    { name: "Quartz", value: "quartz" },
     { name: "Neon", value: "neon" },
+    { name: "Quartz", value: "quartz" },
     { name: "Ferrari HP", value: "ferrari-hp"}
   ];
 
@@ -37,7 +37,7 @@ export function ThemeSwitcher() {
   return (
     <div className="relative">
       <select
-        value={selectedTheme || theme || "quartz"}
+        value={selectedTheme || theme || "neon"}
         onChange={(e) => {
           setSelectedTheme(e.target.value);
           handleThemeChange(e.target.value);
