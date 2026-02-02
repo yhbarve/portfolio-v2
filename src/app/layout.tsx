@@ -37,14 +37,14 @@ export default function RootLayout({
         <meta property="og:title" content={metadata.title as string} />
         <meta property="og:description" content={metadata.description as string} />
         {/* Make sure to replace with a full URL to your image */}
-        <meta property="og:image" content="https://yhbarve.me/yb-logo.webp" />
+        <meta property="og:image" content="https://yhbarve.me/yb-bg-logo.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://yhbarve.me/" />
         <meta property="twitter:title" content={metadata.title as string} />
         <meta property="twitter:description" content={metadata.description as string} />
-        <meta property="twitter:image" content="https://yhbarve.me/yb-logo.webp" />
+        <meta property="twitter:image" content="https://yhbarve.me/yb-bg-logo.png" />
       </head>
       <body className={`${inter.className} bg-gradient-to-tr from-background-1 via-background-2 to-background-3`}>
         <CommandMenu />
