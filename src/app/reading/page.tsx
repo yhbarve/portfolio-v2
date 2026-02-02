@@ -4,18 +4,18 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 
 export default function Home() {
   return (
-    <div className="scroll-smooth transition duration-200 ease-in-out">
-      <div className="grid grid-cols-12 border-b-[0.5px] p-2 pb-4 pt-9 text-page-headerForeground border-page-headerBorder font-semibold">
+    <div>
+      <div className="grid grid-cols-12 p-2 pb-4 pt-9 text-accent font-semibold">
         <div className="lg:block hidden col-span-2 lg:col-span-1">Sr.</div>
         <div className="col-span-4 lg:col-span-5">Title</div>
         <div className="col-span-4 lg:col-span-3">Author</div>
         <div className="col-span-2 mx-auto">Pages</div>
         <div className="col-span-2 mx-auto lg:col-span-1">Link</div>
       </div>
-      <div className="flex flex-col text-page-itemForeground hover:text-page-itemOtherHoverForeground pb-24">
+      <div className="flex flex-col-reverse">
         <ReadListItem
           sr="01"
-          title="Do Epic Shit"
+          title="Do Epic Sh*t"
           author="Ankur Warikoo"
           pages="312"
           link="https://www.amazon.ca/Do-Epic-Ankur-Warikoo/dp/9393986282/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.e4pK3ikR7MrTM5e388_v9jfrQ9H8az8k8zi0ul2lp8bmLWqV0m-QVhycUC7w9dPTzVmUOjB8SSP-7eW8wbyNdGLbpL6_16fF4q6MrEjFn-7QJHDgNB-QtV2J2C6KZmIq6AcVnyFE8U3V4hEy5p8sXb30TtKScphBuSf1aniZKds31Y4GytoEtCy0vq0Ib_Q2WCrtxUVQyUUlikgxHFUWBlgPFo6jjpvL66UyMrfFt9PhLrtVw6dzBUNPCyqvKLUC8oxjjxPT3PTRNSTJudYaTCq9_sC9MY8OteQujcxKzI8.ZZ3iYbKf4AOaIkH2owWHZBUsq1j11YjpG49JuWWRbQ0&qid=1722827367&sr=8-1"

@@ -11,9 +11,11 @@ export default function ProjectListItem({
 }) {
   return (
     <div
-      className="grid grid-cols-12 px-2 py-4 my-2 bg-page-itemBackground hover:bg-page-itemHoverBackground
-      items-start font-light text-base cursor-default rounded-md border border-page-itemBorder
-      hover:border-page-itemHoverBorder transition duration-200 ease-in-out hover:text-page-itemHoverForeground"
+      className="grid grid-cols-12 px-2 py-4 my-2 font-light text-base
+              items-center
+              text-text-1 hover:shadow-lg bg-surface-1
+              hover:border-page-itemHoverBorder cursor-default rounded-md border border-border/5
+              transition duration-200 ease-in-out"
     >
       <div className="col-span-2 lg:col-span-1">{year}</div>
 
@@ -24,7 +26,7 @@ export default function ProjectListItem({
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="text-sm bg-page-itemSkillsBackground text-page-itemSkillsForeground border border-page-itemSkillsBorder rounded-2xl px-2"
+              className="text-sm bg-surface-3 text-accent-soft border border-border/20 rounded-2xl px-2"
             >
               {skill}
             </div>
@@ -36,7 +38,7 @@ export default function ProjectListItem({
         href={url}
         target="_blank"
         className="block col-span-1 lg:col-span-2 mx-auto font-normal text-sm
-        hover:bg-page-itemLinkHoverBackground p-2 rounded-md transition ease-in-out"
+        hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

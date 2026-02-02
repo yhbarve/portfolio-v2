@@ -7,20 +7,20 @@ export default function BlogsPage() {
 
   return (
     <>
-      <div className="grid grid-cols-12 border-b-[0.5px] p-2 pb-4 pt-9 border-page-headerBorder text-page-headerForeground font-semibold">
+      <div className="grid grid-cols-12 p-2 pb-4 pt-9 text-accent font-semibold">
         <div className="col-span-3 md:col-span-2">Date</div>
         <div className="col-span-7 md:col-span-4">Title</div>
         <div className="hidden md:block col-span-5">Summary</div>
         <div className="col-span-2 md:col-span-1 mx-auto">Read</div>
       </div>
-      <div className="flex flex-col text-page-itemForeground hover:text-page-itemOtherHoverForeground">
+      <div className="flex flex-col">
         {posts.map((p) => (
           <div
             key={p.slug}
             className="grid grid-cols-12 px-2 py-4 my-2 font-light text-base
               items-center
-              text-page-itemForeground hover:bg-page-itemHoverBackground hover:text-page-itemHoverForeground
-              hover:border-page-itemHoverBorder cursor-default rounded-md border border-page-itemBorder
+              text-text-1 hover:shadow-lg bg-surface-1
+              hover:border-page-itemHoverBorder cursor-default rounded-md border border-border/5
               transition duration-200 ease-in-out"
           >
             <div className="text-sm col-span-3 md:col-span-2">
@@ -31,7 +31,7 @@ export default function BlogsPage() {
               })}
             </div>
             <div className="no-underline col-span-7 md:col-span-4 pr-2">
-              <a href={`/blog/${p.slug}`} className="m-0 hover:opacity-80">
+              <a href={`/blog/${p.slug}`} className="m-0 hover:text-accent-foreground" target="_blank">
                 {p.title}
               </a>
             </div>
@@ -46,7 +46,7 @@ export default function BlogsPage() {
               href={`/blog/${p.slug}`}
               target="_blank"
               className="block col-span-2 md:col-span-1 mx-auto font-normal text-sm
-                hover:bg-page-itemLinkHoverBackground p-2 rounded-md transition ease-in-out"
+                p-2 rounded-md transition ease-in-out"
             >
               {/* icon */}
               <svg
@@ -54,7 +54,7 @@ export default function BlogsPage() {
                 width="1em"
                 height="1em"
                 viewBox="0 0 256 256"
-                className="text-inherit"
+                className="text-inherit hover:text-accent-foreground"
               >
                 <path
                   fill="currentColor"

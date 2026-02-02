@@ -2,13 +2,13 @@ export default function CourseCard({year, program, uni, desc, link}: {year: stri
 
     if (link == "") {
         return (
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
-        hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
+            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
+        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
                 <div className="col-span-1 flex flex-col">
                     <div className="font-light max-w-[90%]">{year}</div>
                 </div>
                 <div className="col-span-4 flex flex-col">
-                    <div className="font-medium text-section-header">{program}</div>
+                    <div className="font-medium text-text-1">{program}</div>
                     <div className="mb-2 font-light">{uni}</div>
                     <div className="font-light text-sm"><div className="font-normal inline">Description: </div>{desc}</div>                   
                 </div>
@@ -16,16 +16,16 @@ export default function CourseCard({year, program, uni, desc, link}: {year: stri
         );
     } else {
         return (
-            <div className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
-        hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
+            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
+        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
                 <div className="col-span-1 flex flex-col">
                     <div className="font-light max-w-[90%]">{year}</div>
                 </div>
                 <div className="col-span-4 flex flex-col justify-start">
-                    <div className="font-medium text-section-header">{program}</div>
+                    <div className="font-medium text-text-1">{program}</div>
                     <div className="mb-2 font-light">{uni}</div>
                     <div className="font-light text-sm mb-2"><div className="font-normal inline">Description: </div>{desc}</div>
-                    <a href={link} target="_blank" className="font-regular text-sm underline">Certificate of completion</a>
+                    <a href={link} target="_blank" className="font-regular text-sm underline hover:text-accent-foreground">Certificate of completion</a>
                 </div>
             </div>
         )

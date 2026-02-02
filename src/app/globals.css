@@ -8,759 +8,100 @@ html {
 
 @layer base {
   :root {
-    --background-default: 240 10% 3.9%;
-    --foreground-default: 47.9 95.8% 53.1%;
-    --border-default: 47.9 95.8% 53.1%;
+    --background-1: 0 0% 91%;
+    --background-2: 0 0% 91%;
+    --background-3: 0 0% 96%;
 
-    --background-01: 0 0% 3.9%;
-    --background-02: 0 0% 9%;
-    --background-03: 0 0% 14.9%;
+    --border: 0 96% 37%;
+    --ring: 0 0% 50%;
 
-    --name-foreground: 0 0% 98%;
-    --role-foreground: 0 0% 83.1%;
-    --information-foreground: 0 0% 63.9%;
-    --navigation-link-foreground: 0 0% 83.1%;
-    --socials-foreground: 0 0% 83.1%;
-    --socials-hover-background: 0 0% 14.9%;
-    --picker-background: 0 0% 25.1%;
-    --picker-hover-backround: 0 0% 14.9%;
-    --picker-text-foreground: 0 0% 89.8%;
-    --picker-border: 0 0% 25.1%;
-    --trademark-foreground: 0 0% 83.1%;
+    --surface-1: 0 0% 91%;
+    --surface-2: 0 0% 91%;
+    --surface-3: 0 0% 91%;
 
-    --card-foreground: 0 0% 89.8%;
-    --card-hover-foreground: 0 0% 89.8%;
-    --card-other-hover-foreground: 0 0% 63.9%;
-    --card-background: hsla(0, 0%, 0%, 0);
-    --card-hover-background: 0 0% 9%;
-    --card-border: 0 0% 0% / 0;
-    --card-hover-border: 0 0% 25.1%;
-    --card-skills-foreground: 0 0% 96.1%;
-    --card-skills-background: 0 0% 14.9%;
-    --card-skills-border: 0 0% 32.2%;
-    --card-image-border: 0 0% 89.8%;
+    --text-1: 0 0% 20%;
+    --text-2: 0 100% 30%;
+    --text-3: 0 0% 20%;
 
-    --section-header-foreground: 0 0% 96.1%;
-    --link-to-page-foreground: 0 0% 83.1%;
-    --link-to-page-button-background: 0 0% 14.9%;
-    --link-to-page-button-foreground: 0 0% 89.8%;
+    --accent: 0 96% 37%;
+    --accent-soft: 0 100% 30%;
+    --accent-foreground: 0 96% 37%;
+    --shadow: 0 96% 37%;
+  }
 
-    --page-name-foreground: 0 0% 63.9%;
-    --page-title-foreground: 0 0% 96.1%;
-    --page-header-foreground: 0 0% 83.1%;
-    --page-header-border: 0 0% 63.9%;
+  .quartz {
+    --background-1: 0 0% 91%;
+    --background-2: 0 0% 91%;
+    --background-3: 0 0% 96%;
 
-    --page-item-background: hsla(0, 0%, 0%, 0);
-    --page-item-hover-background: 0 0% 14.9%;
-    --page-item-border: 0 0% 0% / 0;
-    --page-item-hover-border: 0 0% 25.1%;
-    --page-item-foreground: 0 0% 96.1%;
-    --page-item-hover-foreground: 0 0% 96.1%;
-    --page-item-other-hover-foreground: 0 0% 63.9%;
-    --page-item-skills-foreground: 0 0% 96.1%;
-    --page-item-skills-background: 0 0% 14.9%;
-    --page-item-skills-border: 0 0% 32.2%;
-    --page-item-link-hover-background: 0 0% 25.1%;
+    --border: 0 96% 37%;
+    --ring: 0 0% 50%;
 
-    --blog-title-background: 0 0% 14.9%;
-    --blog-title-foreground: 0 0% 89.8%;
-    --blog-title-border: 0 0% 63.9%;
-    --blog-title-date-foreground: 0 0% 89.8%;
-    --blog-body-text-foreground: 0 0% 89.8%;
-    --blog-body-headings-foreground: 0 0% 63.9%;
-    --blog-summary-foreground: 0 0% 63.9%;
-    --blog-summary-border: 71 100% 51%;
+    --surface-1: 0 0% 91%;
+    --surface-2: 0 0% 91%;
+    --surface-3: 0 0% 91%;
 
-    --nav-button-background: 0 0% 14.9%;
-    --nav-button-hover-background: 0 0% 25.1%;
-    --nav-button-border: 0 0% 25.1%;
-    --nav-button-icon-fill: 0 0% 89.8%;
+    --text-1: 0 0% 20%;
+    --text-2: 0 100% 30%;
+    --text-3: 0 0% 20%;
 
-    --nav-modal-background: 0 0% 3.9%;
-    --nav-modal-border: 0 0% 25.1%;
-    --nav-modal-header-foreground: 0 0% 89.8%;
-    --nav-modal-header-cross-hover-bg: 0 0% 25.1%;
-    --nav-modal-header-border: 0 0% 25.1%;
-    --nav-modal-item-foreground: 0 0% 89.8%;
-    --nav-modal-item-hover-foreground: 0 0% 89.8%;
-    --nav-modal-item-background: 0 0% 25.1%;
-    --nav-modal-item-hover-background: 0 0% 14.9%;
-    --nav-modal-item-border: 0 0% 25.1%;
-
-    --bullet-color: 0 0% 96.1%;
+    --accent: 0 96% 37%;
+    --accent-soft: 0 100% 30%;
+    --accent-foreground: 0 100% 30%;
+    --shadow: 0 96% 37%;
   }
 
   .neon {
-    --background-default: 240 10% 3.9%;
-    --foreground-default: 47.9 95.8% 53.1%;
-    --border-default: 47.9 95.8% 53.1%;
+    --background-1: 0 0% 5%;
+    --background-2: 0 0% 5%;
+    --background-3: 0 0% 8%;
 
-    --background-01: 0 0% 3.9%;
-    --background-02: 0 0% 3.9%;
-    --background-03: 0 0% 3.9%;
+    --border: 71 100% 50%;
+    --ring: 0 0% 50%;
 
-    --name-foreground: 71 100% 51%;
-    --role-foreground: 0 0% 83.1%;
-    --information-foreground: 71 100% 51%;
-    --navigation-link-foreground: 71 100% 51%;
-    --socials-foreground: 71 100% 51%;
-    --socials-hover-background: 0 0% 14.9%;
-    --picker-background: 71 100% 51%;
-    --picker-hover-backround: 71 100% 51%;
-    --picker-text-foreground: 0 0% 0%;
-    --picker-border: 71 100% 51%;
-    --trademark-foreground: 71 100% 51%;
+    --surface-1: 0 0% 8%;
+    --surface-2: 0 0% 8%;
+    --surface-3: 0 0% 8%;
 
-    --card-foreground: 0 0% 89.8%;
-    --card-hover-foreground: 71 100% 51%;
-    --card-other-hover-foreground: 0 0% 63.9%;
-    --card-background: hsla(0, 0%, 0%, 0);
-    --card-hover-background: 0 0% 0%;
-    --card-border: 0 0% 0% / 0;
-    --card-hover-border: 71 100% 51%;
-    --card-skills-foreground: 71 100% 51%;
-    --card-skills-background: 0 0% 14.9%;
-    --card-skills-border: 0 0% 0% / 0%;
-    --card-image-border: 0 0% 89.8%;
+    --text-1: 0 0% 96%;
+    --text-2: 0 100% 30%;
+    --text-3: 0 0% 20%;
 
-    --section-header-foreground: 71 100% 51%;
-    --link-to-page-foreground: 71 100% 51%;
-    --link-to-page-button-background: 71 100% 51%;
-    --link-to-page-button-foreground: 0 0% 3.9%;
-
-    --page-name-foreground: 0 0% 83.1%;
-    --page-title-foreground: 71 100% 51%;
-    --page-header-foreground: 71 100% 51%;
-    --page-header-border: 71 100% 51%;
-
-    --page-item-background: hsla(0, 0%, 0%, 0);
-    --page-item-hover-background: 0 0% 0%;
-    --page-item-border: 0 0% 0% / 0;
-    --page-item-hover-border: 71 100% 51%;
-    --page-item-other-hover-foreground: 0 0% 63.9%;
-    --page-item-foreground: 0 0% 83.1%;
-    --page-item-hover-foreground: 71 100% 51%;
-    --page-item-skills-foreground: 71 100% 51%;
-    --page-item-skills-background: 0 0% 14.9%;
-    --page-item-skills-border: 0 0% 0% / 0%;
-    --page-item-link-hover-background: 0 0% 25.1%;
-
-    --blog-title-background: 0 0% 14.9%;
-    --blog-title-foreground: 71 100% 51%;
-    --blog-title-border: 71 100% 51%;
-    --blog-title-date-foreground: 71 100% 51%;
-    --blog-body-text-foreground: 0 0% 96.1%;
-    --blog-body-headings-foreground: 71 100% 51%;
-    --blog-summary-foreground: 0 0% 96.1%;
-    --blog-summary-border: 71 100% 51%;
-
-    --nav-button-background: 0 0% 0%;
-    --nav-button-hover-background: 0 0% 14.9%;
-    --nav-button-border: 0 0% 0%;
-    --nav-button-icon-fill: 71 100% 51%;
-
-    --nav-modal-background: 0 0% 0%;
-    --nav-modal-border: 71 100% 51%;
-    --nav-modal-header-foreground: 71 100% 51%;
-    --nav-modal-header-cross-hover-bg: 0 0% 25.1%;
-    --nav-modal-header-border: 71 100% 51%;
-    --nav-modal-item-foreground: 0 0% 89.8%;
-    --nav-modal-item-hover-foreground: 71 100% 51%;
-    --nav-modal-item-background: 0 0% 14.9%;
-    --nav-modal-item-hover-background: 0 0% 25.1%;
-    --nav-modal-item-border: 0 0% 25.1%;
-
-    --bullet-color: 71 100% 51%;
+    --accent: 71 100% 50%;
+    --accent-soft: 71 100% 50%;
+    --accent-foreground: 71 100% 50%;
+    --shadow: 71 100% 50%;
   }
 
-  .orange {
-    --background-default: 20.5 90.2% 48.2%;
-    --foreground-default: 47.9 95.8% 53.1%;
-    --border-default: 47.9 95.8% 53.1%;
-
-    --background-01: 20.5 90.2% 48.2%;
-    --background-02: 17.5 88.3% 40.4%;
-    --background-03: 15 79.1% 33.7%;
-
-    --name-foreground: 33.3 100% 96.5%;
-    --role-foreground: 0 0% 3.9%;
-    --information-foreground: 33.3 100% 96.5%;
-    --navigation-link-foreground: 33.3 100% 96.5%;
-    --socials-foreground: 33.3 100% 96.5%;
-    --socials-hover-background: 0 0% 3.9%;
-    --picker-background: 0 0% 3.9%;
-    --picker-hover-backround: 0 0% 3.9%;
-    --picker-text-foreground: 20.5 90.2% 48.2%;
-    --picker-border: 0 0% 3.9%;
-    --trademark-foreground: 33.3 100% 96.5%;
-
-    --card-foreground: 210 40% 98%;
-    --card-hover-foreground: 20.5 90.2% 48.2%;
-    --card-other-hover-foreground: 210 40% 98%;
-    --card-background: hsla(0, 0%, 0%, 0);
-    --card-hover-background: 210 40% 98%;
-    --card-border: 0 0% 0% / 0;
-    --card-hover-border: 33.3 100% 96.5%;
-    --card-skills-foreground: 20.5 90.2% 48.2%;
-    --card-skills-background: 0 0% 3.9%;
-    --card-skills-border: 0 0% 3.9%;
-    --card-image-border: 0 0% 89.8%;
-
-    --section-header-foreground: 210 40% 98%;
-    --link-to-page-foreground: 210 40% 98%;
-    --link-to-page-button-background: 0 0% 14.9%;
-    --link-to-page-button-foreground: 0 0% 89.8%;
-
-    --page-name-foreground: 0 0% 3.9%;
-    --page-title-foreground: 210 40% 98%;
-    --page-header-foreground: 210 40% 98%;
-    --page-header-border: 210 40% 98%;
-
-    --page-item-background: hsla(0, 0%, 0%, 0);
-    --page-item-hover-background: 33.3 100% 96.5%;
-    --page-item-border: 0 0% 0% / 0;
-    --page-item-hover-border: 210 40% 98%;
-    --page-item-other-hover-foreground: 210 40% 98%;
-    --page-item-foreground: 210 40% 98%;
-    --page-item-hover-foreground: 20.5 90.2% 48.2%;
-    --page-item-skills-foreground: 20.5 90.2% 48.2%;
-    --page-item-skills-background: 0 0% 3.9%;
-    --page-item-skills-border: 0 0% 3.9%;
-    --page-item-link-hover-background: 30.7 97.2% 72.4%;
-
-    --blog-title-background: 0 0% 14.9%;
-    --blog-title-foreground: 71 100% 51%;
-    --blog-title-border: 71 100% 51%;
-    --blog-title-date-foreground: 71 100% 51%;
-    --blog-body-text-foreground: 0 0% 96.1%;
-    --blog-body-headings-foreground: 0 0% 96.1%;
-    --blog-summary-foreground: 71 100% 51%;
-    --blog-summary-border: 71 100% 51%;
-
-    --nav-button-background: 0 0% 14.9%;
-    --nav-button-hover-background: 0 0% 25.1%;
-    --nav-button-border: 0 0% 25.1%;
-    --nav-button-icon-fill: 0 0% 89.8%;
-
-    --nav-modal-background: 0 0% 14.9%;
-    --nav-modal-border: 0 0% 25.1%;
-    --nav-modal-header-foreground: 0 0% 89.8%;
-    --nav-modal-header-cross-hover-bg: 0 0% 89.8%;
-    --nav-model-header-border: 0 0% 25.1%;
-    --nav-modal-item-foreground: 0 0% 89.8%;
-    --nav-modal-item-hover-foreground: 0 0% 89.8%;
-    --nav-modal-item-background: 0 0% 89.8%;
-    --nav-modal-item-hover-background: 0 0% 25.1%;
-    --nav-modal-item-border: 0 0% 25.1%;
-
-    --bullet-color: 20.5 90.2% 48.2%;
-  }
-
-  .teal {
-    --background-default: 167.2 85.5% 89.2%;
-    --foreground-default: 47.9 95.8% 53.1%;
-    --border-default: 47.9 95.8% 53.1%;
-
-    --background-01: 167.2 85.5% 89.2%;
-    --background-02: 168.4 83.8% 78.2%;
-    --background-03: 166.2 76.5% 96.7%;
-
-    --name-foreground: 178.6 84.3% 10%;
-    --role-foreground: 175.9 60.8% 19%;
-    --information-foreground: 178.6 84.3% 10%;
-    --navigation-link-foreground: 178.6 84.3% 10%;
-    --socials-foreground: 178.6 84.3% 10%;
-    --socials-hover-background: 170.6 76.9% 64.3%;
-    --picker-background: 175.3 77.4% 26.1%;
-    --picker-hover-backround: 175.3 77.4% 26.1%;
-    --picker-text-foreground: 167.2 85.5% 89.2%;
-    --picker-border: 175.3 77.4% 26.1%;
-    --trademark-foreground: 175.3 77.4% 26.1%;
-
-    --card-foreground: 178.6 84.3% 10%;
-    --card-hover-foreground: 178.6 84.3% 10%;
-    --card-other-hover-foreground: 175.3 77.4% 26.1%;
-    --card-background: hsla(0, 0%, 0%, 0);
-    --card-hover-background: 168.4 83.8% 78.2%;
-    --card-border: 0 0% 0% / 0;
-    --card-hover-border: 172.5 66% 50.4%;
-    --card-skills-foreground: 167.2 85.5% 89.2%;
-    --card-skills-background: 178.6 84.3% 10%;
-    --card-skills-border: 178.6 84.3% 10%;
-    --card-image-border: 0 0% 89.8%;
-
-    --section-header-foreground: 175.3 77.4% 26.1%;
-    --link-to-page-foreground: 175.3 77.4% 26.1%;
-    --link-to-page-button-background: 178.6 84.3% 10%;
-    --link-to-page-button-foreground: 167.2 85.5% 89.2%;
-
-    --page-name-foreground: 175.9 60.8% 19%;
-    --page-title-foreground: 178.6 84.3% 10%;
-    --page-header-foreground: 175.9 60.8% 19%;
-    --page-header-border: 175.9 60.8% 19%;
-
-    --page-item-background: hsla(0, 0%, 0%, 0);
-    --page-item-hover-background: 168.4 83.8% 78.2%;
-    --page-item-border: 0 0% 0% / 0;
-    --page-item-hover-border: 172.5 66% 50.4%;
-    --page-item-other-hover-foreground: 175.3 77.4% 26.1%;
-    --page-item-foreground: 175.9 60.8% 19%;
-    --page-item-hover-foreground: 175.9 60.8% 19%;
-    --page-item-skills-foreground: 167.2 85.5% 89.2%;
-    --page-item-skills-background: 178.6 84.3% 10%;
-    --page-item-skills-border: 178.6 84.3% 10%;
-    --page-item-link-hover-background: 170.6 76.9% 64.3%;
-
-    --blog-title-background: 0 0% 14.9%;
-    --blog-title-foreground: 178.6 84.3% 10%;
-    --blog-title-border: 175.3 77.4% 26.1%;
-    --blog-title-date-foreground: 178.6 84.3% 10%;
-    --blog-body-text-foreground: 178.6 84.3% 10%;
-    --blog-body-headings-foreground: 175.3 77.4% 26.1%;
-    --blog-summary-foreground: 175.3 77.4% 26.1%;
-    --blog-summary-border: 71 100% 51%;
-
-    --nav-button-background: 178.6 84.3% 10%;
-    --nav-button-hover-background: 178.6 84.3% 10%;
-    --nav-button-border: 178.6 84.3% 10%;
-    --nav-button-icon-fill: 166.2 76.5% 96.7%;
-
-    --nav-modal-background: 166.2 76.5% 96.7%;
-    --nav-modal-border: 166.2 76.5% 96.7%;
-    --nav-modal-header-foreground: 178.6 84.3% 10%;
-    --nav-modal-header-cross-hover-bg: 167.2 85.5% 89.2%;
-    --nav-modal-header-border: 178.6 84.3% 10%;
-    --nav-modal-item-foreground: 178.6 84.3% 10%;
-    --nav-modal-item-hover-foreground: 178.6 84.3% 10%;
-    --nav-modal-item-background: 167.2 85.5% 89.2%;
-    --nav-modal-item-hover-background: 168.4 83.8% 78.2%;
-    --nav-modal-item-border: 178.6 84.3% 10%;
-
-    --bullet-color: 178.6 84.3% 10%;
-  }
-
-  .lavender {
-    --background-default: 252.5 94.7% 85.1%;
-    --foreground-default: 47.9 95.8% 53.1%;
-    --border-default: 47.9 95.8% 53.1%;
-
-    --background-01: 251.4 91.3% 95.5%;
-    --background-02: 250.5 95.2% 91.8%;
-    --background-03: 252.5 94.7% 85.1%;
-
-    --name-foreground: 263.4 70% 50.4%;
-    --role-foreground: 258.3 89.5% 66.3%;
-    --information-foreground: 263.4 69.3% 42.2%;
-    --navigation-link-foreground: 263.4 70% 50.4%;
-    --socials-foreground: 263.4 70% 50.4%;
-    --socials-hover-background: 252.5 94.7% 85.1%;
-    --picker-background: 258.3 89.5% 66.3%;
-    --picker-hover-backround: 263.4 70% 50.4%;
-    --picker-text-foreground: 250 100% 97.6%;
-    --picker-border: 262.1 83.3% 57.8%;
-    --trademark-foreground: 262.1 83.3% 57.8%;
-
-    --card-foreground: 263.4 69.3% 42.2%;
-    --card-hover-foreground: 263.4 69.3% 42.2%;
-    --card-other-hover-foreground: 258.3 89.5% 66.3%;
-    --card-background: hsla(0, 0%, 0%, 0);
-    --card-hover-background: 250.5 95.2% 91.8%;
-    --card-border: 0 0% 0% / 0;
-    --card-hover-border: 252.5 94.7% 85.1%;
-    --card-skills-foreground: 250 100% 97.6%;
-    --card-skills-background: 255.1 91.7% 76.3%;
-    --card-skills-border: 255.1 91.7% 76.3%;
-    --card-image-border: 0 0% 89.8%;
-
-    --section-header-foreground: 263.4 69.3% 42.2%;
-    --link-to-page-foreground: 263.4 69.3% 42.2%;
-    --link-to-page-button-background: 263.4 69.3% 42.2%;
-    --link-to-page-button-foreground: 0 0% 89.8%;
-
-    --page-name-foreground: 263.4 69.3% 42.2%;
-    --page-title-foreground: 263.4 70% 50.4%;
-    --page-header-foreground: 263.4 69.3% 42.2%;
-    --page-header-border: 263.4 69.3% 42.2%;
-
-    --page-item-background: hsla(0, 0%, 0%, 0);
-    --page-item-hover-background: 250.5 95.2% 91.8%;
-    --page-item-border: 0 0% 0% / 0;
-    --page-item-hover-border: 252.5 94.7% 85.1%;
-    --page-item-other-hover-foreground: 258.3 89.5% 66.3%;
-    --page-item-foreground: 263.4 69.3% 42.2%;
-    --page-item-hover-foreground: 263.4 69.3% 42.2%;
-    --page-item-skills-foreground: 250 100% 97.6%;
-    --page-item-skills-background: 255.1 91.7% 76.3%;
-    --page-item-skills-border: 255.1 91.7% 76.3%;
-    --page-item-link-hover-background: 252.5 94.7% 85.1%;
-
-    --blog-title-background: 0 0% 14.9%;
-    --blog-title-foreground: 263.4 70% 50.4%;
-    --blog-title-border: 263.4 70% 50.4%;
-    --blog-title-date-foreground: 263.4 70% 50.4%;
-    --blog-body-text-foreground: 263.4 69.3% 42.2%;
-    --blog-body-headings-foreground: 263.4 70% 50.4%;
-    --blog-summary-foreground: 263.4 69.3% 42.2%;
-    --blog-summary-border: 71 100% 51%;
-
-    --nav-button-background: 251.4 91.3% 95.5%;
-    --nav-button-hover-background: 251.4 91.3% 95.5%;
-    --nav-button-border: 251.4 91.3% 95.5%;
-    --nav-button-icon-fill: 263.4 69.3% 42.2%;
-
-    --nav-modal-background: 251.4 91.3% 95.5%;
-    --nav-modal-border: 251.4 91.3% 95.5%;
-    --nav-modal-header-foreground: 263.4 69.3% 42.2%;
-    --nav-modal-header-cross-hover-bg: 255.1 91.7% 76.3%;
-    --nav-modal-header-border: 263.4 69.3% 42.2%;
-    --nav-modal-item-foreground: 263.4 69.3% 42.2%;
-    --nav-modal-item-hover-foreground: 252.5 94.7% 85.1%;
-    --nav-modal-item-background: 252.5 94.7% 85.1%;
-    --nav-modal-item-hover-background: 263.4 69.3% 42.2%;
-    --nav-modal-item-border: 0 0% 25.1%;
-
-    --bullet-color: 255.1 91.7% 76.3%;
-  }
-
-  .ferrari {
-    --background-default: 359 72% 40.6%;
-    --foreground-default: 47.9 95.8% 53.1%;
-    --border-default: 47.9 95.8% 53.1%;
-
-    --background-01: 359 78% 52%;
-    --background-02: 359 78% 52%;
-    --background-03: 359 72% 40.6%;
-
-    --name-foreground: 55 93.8% 55.5%;
-    --role-foreground: 0 0% 100%;
-    --information-foreground: 0 0% 100%;
-    --navigation-link-foreground: 0 0% 100%;
-    --socials-foreground: 55 93.8% 55.5%;
-    --socials-hover-background: 359 72% 40.6%;
-    --picker-background: 359 72% 40.6%;
-    --picker-hover-backround: 359 72% 40.6%;
-    --picker-text-foreground: 55 93.8% 55.5%;
-    --picker-border: 359 72% 40.6%;
-    --trademark-foreground: 0 0% 100%;
-
-    --card-foreground: 0 0% 100%;
-    --card-hover-foreground: 55 93.8% 55.5%;
-    --card-other-hover-foreground: 0 0% 90%;
-    --card-background: hsla(0, 0%, 0%, 0);
-    --card-hover-background: 359 72% 40.6%;
-    --card-border: 0 0% 0% / 0;
-    --card-hover-border: 359 72% 40.6%;
-    --card-skills-foreground: 0 0% 0%;
-    --card-skills-background: 55 93.8% 55.5%;
-    --card-skills-border: 55 93.8% 55.5%;
-    --card-image-border: 0 0% 89.8%;
-
-    --section-header-foreground: 55 93.8% 55.5%;
-    --link-to-page-foreground: 55 93.8% 55.5%;
-    --link-to-page-button-background: 359 72% 40.6%;
-    --link-to-page-button-foreground: 55 93.8% 55.5%;
-
-    --page-name-foreground: 0 0% 100%;
-    --page-title-foreground: 55 93.8% 55.5%;
-    --page-header-foreground: 0 0% 100%;
-    --page-header-border: 55 93.8% 55.5%;
-
-    --page-item-background: hsla(0, 0%, 0%, 0);
-    --page-item-hover-background: 359 72% 40.6%;
-    --page-item-border: 0 0% 0% / 0;
-    --page-item-hover-border: 359 72% 40.6%;
-    --page-item-other-hover-foreground: 0 0% 90%;
-    --page-item-foreground: 0 0% 100%;
-    --page-item-hover-foreground: 55 93.8% 55.5%;
-    --page-item-skills-foreground: 0 0% 0%;
-    --page-item-skills-background: 55 93.8% 55.5%;
-    --page-item-skills-border: 55 93.8% 55.5%;
-    --page-item-link-hover-background: 359 72% 35.6%;
-
-    --blog-title-background: 0 0% 14.9%;
-    --blog-title-foreground: 55 93.8% 55.5%;
-    --blog-title-border: 55 93.8% 55.5%;
-    --blog-title-date-foreground: 55 93.8% 55.5%;
-    --blog-body-text-foreground: 0 0% 96.1%;
-    --blog-body-headings-foreground: 55 93.8% 55.5%;
-    --blog-summary-foreground: 0 0% 96.1%;
-    --blog-summary-border: 71 100% 51%;
-
-    --nav-button-background: 55 93.8% 55.5%;
-    --nav-button-hover-background: 55 93.8% 55.5%;
-    --nav-button-border: 55 93.8% 55.5%;
-    --nav-button-icon-fill: 359 78% 52%;
-
-    --nav-modal-background: 359 72% 40.6%;
-    --nav-modal-border: 359 72% 40.6%;
-    --nav-modal-header-foreground: 55 93.8% 55.5%;
-    --nav-modal-header-cross-hover-bg: 359 78% 52%;
-    --nav-modal-header-border: 55 93.8% 55.5%;
-    --nav-modal-item-foreground: 55 93.8% 55.5%;
-    --nav-modal-item-hover-foreground: 359 72% 40.6%;
-    --nav-modal-item-background: 359 78% 52%;
-    --nav-modal-item-hover-background: 55 93.8% 55.5%;
-    --nav-modal-item-border: 0 0% 25.1%;
-
-    --bullet-color: 55 93.8% 55.5%;
-  }
-
-  .ultramarine {
-    --background-default: 206 97% 15%;
-    --foreground-default: 206 97% 15%;
-    --border-default: 206 97% 15%;
-
-    --background-01: 206 97% 15%;
-    --background-02: 206 97% 15%;
-    --background-03: 205 98% 20%;
-
-    --name-foreground: 190 74% 59%;
-    --role-foreground: 197 51% 69%;
-    --information-foreground: 195 54% 78%;
-    --navigation-link-foreground: 195 54% 78%;
-    --socials-foreground: 190 74% 59%;
-    --socials-hover-background: 205 98% 20%;
-    --picker-background: 205 98% 20%;
-    --picker-hover-backround: 205 98% 20%;
-    --picker-text-foreground: 190 74% 59%;
-    --picker-border: 205 98% 20%;
-    --trademark-foreground: 195 54% 78%;
-
-    --card-foreground: 195 54% 78%;
-    --card-hover-foreground: 195 54% 78%;
-    --card-other-hover-foreground: 198 44% 57%;
-    --card-background: hsla(0, 0%, 0%, 0);
-    --card-hover-background: 205 98% 17.5%;
-    --card-border: 0 0% 0% / 0;
-    --card-hover-border: 205 98% 17.5%;
-    --card-skills-foreground: 195 54% 78%;
-    --card-skills-background: 205 99% 26%;
-    --card-skills-border: 202 56% 38%;
-    --card-image-border: 0 0% 89.8%;
-
-    --section-header-foreground: 190 74% 59%;
-    --link-to-page-foreground: 190 74% 59%;
-    --link-to-page-button-background: 205 99% 26%;
-    --link-to-page-button-foreground: 195 54% 78%;
-
-    --page-name-foreground: 197 51% 69%;
-    --page-title-foreground: 190 74% 59%;
-    --page-header-foreground: 197 51% 69%;
-    --page-header-border: 190 74% 59%;
-
-    --page-item-background: hsla(0, 0%, 0%, 0);
-    --page-item-hover-background: 205 98% 17.5%;
-    --page-item-border: 0 0% 0% / 0;
-    --page-item-hover-border: 205 98% 17.5%;
-    --page-item-other-hover-foreground: 198 44% 57%;
-    --page-item-foreground: 195 54% 78%;
-    --page-item-hover-foreground: 195 54% 78%;
-    --page-item-skills-foreground: 195 54% 78%;
-    --page-item-skills-background: 205 99% 26%;
-    --page-item-skills-border: 202 56% 38%;
-    --page-item-link-hover-background: 205 98% 20%;
-
-    --blog-title-background: 197 51% 69%;
-    --blog-title-foreground: 190 74% 59%;
-    --blog-title-border: 190 74% 59%;
-    --blog-title-date-foreground: 190 74% 59%;
-    --blog-body-text-foreground: 190 77% 88%;
-    --blog-body-headings-foreground: 190 74% 59%;
-    --blog-summary-foreground: 190 77% 88%;
-    --blog-summary-border: 195 54% 78%;
-
-    --nav-button-background: 190 74% 59%;
-    --nav-button-hover-background: 190 74% 59% / 20;
-    --nav-button-border: 190 74% 59%;
-    --nav-button-icon-fill: 206 97% 15%;
-
-    --nav-modal-background: 206 97% 15%;
-    --nav-modal-border: 206 97% 15%;
-    --nav-modal-header-foreground: 190 74% 59%;
-    --nav-modal-header-cross-hover-bg: 205 98% 20%;
-    --nav-modal-header-border: 190 74% 59%;
-    --nav-modal-item-foreground: 190 74% 59%;
-    --nav-modal-item-hover-foreground: 190 74% 59%;
-    --nav-modal-item-background: 205 98% 20%;
-    --nav-modal-item-hover-background: 205 98% 20%;
-    --nav-modal-item-border: 205 98% 20%;
-
-    --bullet-color: 195 54% 78%;
-  }
-
-  .midnight {
-    --background-default: 238 100% 5.7%;
-    --foreground-default: 206 97% 15%;
-    --border-default: 206 97% 15%;
-
-    --background-01: 238 100% 5.7%;
-    --background-02: 238 100% 3.5%;
-    --background-03: 238 100% 5.7%;
-
-    --name-foreground: 238 0% 78.6%;
-    --role-foreground: 238 0% 61.7%;
-    --information-foreground: 238 0% 78.6%;
-    --navigation-link-foreground: 238 0% 78.6%;
-    --socials-foreground: 238 0% 78.6%;
-    --socials-hover-background: 238 0% 17.8% / 0.39;
-    --picker-background: 238 0% 17.8% / 0.39;
-    --picker-hover-backround: 238 100% 3.5%;
-    --picker-text-foreground: 238 0% 78.6%;
-    --picker-border: 238 0% 17.8%;
-    --trademark-foreground: 238 0% 78.6%;
-
-    --card-foreground: 238 0% 78.6%;
-    --card-hover-foreground: 238 0% 78.6%;
-    --card-other-hover-foreground: 238 0% 61.7%;
-    --card-background: hsla(0, 0%, 0%, 0);
-    --card-hover-background: 238 0% 23.9% / 0.1;
-    --card-border: 0 0% 0% / 0;
-    --card-hover-border: 238 0% 23.9%;
-    --card-skills-foreground: 238 0% 78.6%;
-    --card-skills-background: 238 0% 23.9% / 0.46;
-    --card-skills-border: 238 0% 23.9%;
-    --card-image-border: 238 0% 23.9%;
-
-    --section-header-foreground: 238 0% 61.7%;
-    --link-to-page-foreground: 238 0% 61.7%;
-    --link-to-page-button-background: 238 0% 23.9% / 0.46;
-    --link-to-page-button-foreground: 238 0% 78.6%;
-
-    --page-name-foreground: 238 0% 61.7%;
-    --page-title-foreground: 238 0% 78.6%;
-    --page-header-foreground: 238 0% 78.6%;
-    --page-header-border: 238 0% 61.7%;
-
-    --page-item-background: hsla(0, 0%, 0%, 0);
-    --page-item-hover-background: 238 0% 23.9% / 0.1;
-    --page-item-border: 0 0% 0% / 0;
-    --page-item-hover-border: 238 0% 23.9%;
-    --page-item-other-hover-foreground: 238 0% 61.7%;
-    --page-item-foreground: 238 0% 78.6%;
-    --page-item-hover-foreground: 238 0% 78.6%;
-    --page-item-skills-foreground: 238 0% 78.6%;
-    --page-item-skills-background: 238 0% 23.9% / 0.46;
-    --page-item-skills-border: 238 0% 23.9%;
-    --page-item-link-hover-background: 238 0% 17.8% / 0.39;
-
-    --blog-title-background: 238 0% 78.6%;
-    --blog-title-foreground: 238 0% 78.6%;
-    --blog-title-border: 238 0% 78.6%;
-    --blog-title-date-foreground: 238 0% 78.6%;
-    --blog-body-text-foreground: 238 0% 78.6%;
-    --blog-body-headings-foreground: 238 0% 61.7%;
-    --blog-summary-foreground: 238 0% 61.7%;
-    --blog-summary-border: 195 54% 78%;
-
-    --nav-button-background: 238 0% 23.9% / 0.46;
-    --nav-button-hover-background: 238 0% 23.9% / 0.66;
-    --nav-button-border: 238 0% 23.9%;
-    --nav-button-icon-fill: 238 0% 78.6%;
-
-    --nav-modal-background: 238 0% 34.1% / 0.5;
-    --nav-modal-border: 238 0% 50.6%;
-    --nav-modal-header-foreground: 238 0% 78.6%;
-    --nav-modal-header-cross-hover-bg: 238 0% 24.1%;
-    --nav-modal-header-border: 238 0% 50.6%;
-    --nav-modal-item-foreground: 238 0% 78.6%;
-    --nav-modal-item-hover-foreground: 238 0% 78.6%;
-    --nav-modal-item-background: 238 0% 50.6% / 0.66;
-    --nav-modal-item-hover-background: 238 0% 50.6% / 0.86;
-    --nav-modal-item-border: 238 0% 50.6%;
-
-    --bullet-color: 238 0% 78.6%;
-  }
-
-  .aston {
-    --background-default: 173 100% 10%;
-    --foreground-default: 146 100% 90%;
-    --border-default: 206 97% 15%;
-
-    --background-01: 173 100% 10%;
-    --background-02: 173 100% 10%;
-    --background-03: 173 100% 17%;
-
-    --name-foreground: 64 100% 43%;
-    --role-foreground: 0 0% 100%;
-    --information-foreground: 64 100% 43%;
-    --navigation-link-foreground: 0 0% 100%;
-    --socials-foreground: 64 100% 43%;
-    --socials-hover-background: 173 100% 17% / 0.39;
-    --picker-background: 173 100% 17% / 0.39;
-    --picker-hover-backround: 173 100% 17%;
-    --picker-text-foreground: 64 100% 43%;
-    --picker-border: 173 100% 17%;
-    --trademark-foreground: 0 0% 100%;
-
-    --card-foreground: 64 100% 43%;
-    --card-hover-foreground: 64 100% 43%;
-    --card-other-hover-foreground: 64 100% 43% / 0.80;
-    --card-background: hsla(0, 0%, 0%, 0);
-    --card-hover-background: 173 100% 17% / 0.1;
-    --card-border: 0 0% 0% / 0;
-    --card-hover-border: 173 100% 17%;
-    --card-skills-foreground: 0 0% 100%;
-    --card-skills-background: 64 100% 43% / 0.10;
-    --card-skills-border: 173 100% 17%;
-    --card-image-border: 173 100% 17%;
-
-    --section-header-foreground: 0 0% 100%;
-    --link-to-page-foreground: 0 0% 100%;
-    --link-to-page-button-background: 173 100% 17% / 0.46;
-    --link-to-page-button-foreground: 0 0% 100%;
-
-    --page-name-foreground: 0 0% 100%;
-    --page-title-foreground: 64 100% 43%;
-    --page-header-foreground: 0 0% 100%;
-    --page-header-border: 64 100% 43%;
-
-    --page-item-background: hsla(0, 0%, 0%, 0);
-    --page-item-hover-background: 173 100% 17% / 0.1;
-    --page-item-border: 0 0% 0% / 0;
-    --page-item-hover-border: 173 100% 17%;
-    --page-item-other-hover-foreground: 64 100% 43% / 0.80;
-    --page-item-foreground: 64 100% 43%;
-    --page-item-hover-foreground: 64 100% 43%;
-    --page-item-skills-foreground: 0 0% 100%;
-    --page-item-skills-background: 64 100% 43% / 0.10;
-    --page-item-skills-border: 173 100% 17%;
-    --page-item-link-hover-background: 173 100% 17% / 0.80;
-
-    --blog-title-background: 238 0% 78.6%;
-    --blog-title-foreground: 64 100% 43%;
-    --blog-title-border: 64 100% 43%;
-    --blog-title-date-foreground: 0 0% 100%;
-    --blog-body-text-foreground: 0 0% 100%;
-    --blog-body-headings-foreground: 64 100% 43%;
-    --blog-summary-foreground: 64 100% 43%;
-    --blog-summary-border: 64 100% 43%;
-
-    --nav-button-background: 173 100% 17% / 0.46;
-    --nav-button-hover-background: 173 100% 17% / 0.66;
-    --nav-button-border: 173 100% 17%;
-    --nav-button-icon-fill: 64 100% 43%;
-
-    --nav-modal-background: 173 100% 17% / 0.90;
-    --nav-modal-border: 173 100% 17%;
-    --nav-modal-header-foreground: 64 100% 43%;
-    --nav-modal-header-cross-hover-bg: 173 100% 17%;
-    --nav-modal-header-border: 64 100% 43%;
-    --nav-modal-item-foreground: 64 100% 43%;
-    --nav-modal-item-hover-foreground: 64 100% 43%;
-    --nav-modal-item-background: 173 100% 10% / 0.66;
-    --nav-modal-item-hover-background: 173 100% 17% / 0.86;
-    --nav-modal-item-border: 64 100% 43%;
-
-    --bullet-color: 0 0% 100%;
+  .ferrari-hp {
+    --background-1: 351 100% 36%;
+    --background-2: 351 100% 36%;
+    --background-3: 352 96% 45%;
+
+    --border: 0 0% 100%;
+    --ring: 0 0% 50%;
+
+    --surface-1: 351 100% 32%;
+    --surface-2: 351 100% 32%;
+    --surface-3: 214 85% 39%;
+
+    --text-1: 0 0% 100%;
+    --text-2: 0 100% 30%;
+    --text-3: 0 0% 20%;
+
+    --accent: 0 0% 100%;
+    --accent-soft: 0 0% 100%;
+    --accent-foreground: 46 100% 50%;
+    --shadow: 0 0% 100%;
   }
 }
 
 @layer base {
   * {
-    @apply border-border-default;
+    @apply border-border;
   }
   body {
-    @apply bg-background-default text-foreground-default;
+    @apply bg-background-1 text-text-1;
   }
 }
 
@@ -811,6 +152,6 @@ html {
     text-decoration: none;
   }
   .prose input[type="checkbox"] {
-  accent-color: hsl(var(--blog-body-headings-foreground));
+  accent-color: hsl(var(--accent));
 }
 }

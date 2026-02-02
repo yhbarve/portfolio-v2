@@ -9,7 +9,7 @@ export default function Socials() {
           href="https://x.com/yhbarve"
           target="_blank"
           aria-label="Visit my X profile"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ export default function Socials() {
           href="https://github.com/yhbarve"
           target="_blank"
           aria-label="Visit my GitHub profile"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ export default function Socials() {
           href="mailto:yhbarve@uwaterloo.ca"
           target="_blank"
           aria-label="Send me an email"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function Socials() {
           href="https://www.linkedin.com/in/yhbarve/"
           target="_blank"
           aria-label="Visit my LinkedIn profile"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ export default function Socials() {
           href="https://www.instagram.com/yhbarve/"
           target="_blank"
           aria-label="Visit my Instagram profile"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ export default function Socials() {
           href="https://leetcode.com/u/yhbarve/"
           target="_blank"
           aria-label="Visit my LeetCode profile"
-          className="hover:bg-socials-hoverBg p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +124,7 @@ export default function Socials() {
       </div>
       <div className="flex items-center gap-1 mt-[3vh]">
         <ThemeSwitcher />
-        <div className="text-sm cursor-default text-trademark-foreground">©2026, Yash Harshal Barve</div>
+        <div className="text-sm cursor-default text-text-1">©2026, Yash Harshal Barve</div>
       </div>
     </div>
   );

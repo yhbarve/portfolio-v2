@@ -16,8 +16,8 @@ export default function ProjectCard(props: ProjectCardProps) {
   return (
     <div>
       <div
-        className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
-        hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl"
+        className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
+        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg"
       >
         <div className="col-span-1 flex flex-col">
           <a href={link} target="_blank">
@@ -26,20 +26,20 @@ export default function ProjectCard(props: ProjectCardProps) {
               alt={name}
               width={100}
               height={100}
-              className="rounded-md w-[90%] mt-1 brightness-[0.95] hover:brightness-[0.90] transition ease-in-out border border-card-imageBorder"
+              className="rounded-md w-[90%] mt-1 brightness-[0.95] hover:brightness-[0.90] transition ease-in-out border border-border"
             />
           </a>
         </div>
         <div className="col-span-4 flex flex-col">
-          <div className="transition-transform ease-in-out font-medium mb-1 text-section-header">
+          <div className="transition-transform ease-in-out font-medium mb-1 text-text-1">
             {name}
           </div>
-          <div className="font-light text-sm flex flex-col gap-2">{desc.map((d, item) => <div key={item} className="flex gap-2 text-bullet-color">· <div className="text-card-foreground">{d}</div></div>)}</div>
+          <div className="font-light text-sm flex flex-col gap-2">{desc.map((d, item) => <div key={item} className="flex gap-2 text-accent">· <div className="text-text-1">{d}</div></div>)}</div>
           <div className="flex gap-1 gap-y-2 mt-4 flex-wrap">
             {skills.map((key, item) => (
               <div
                 key={item}
-                className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-2xl px-2"
+                className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2"
               >
                 {key}
               </div>
@@ -51,7 +51,7 @@ export default function ProjectCard(props: ProjectCardProps) {
               <a
                 href={link}
                 target="_blank"
-                className="flex gap-1 items-center text-sm px-2 bg-card-skillsBackground text-card-skillsForeground hover:bg-card-skillsBackground/70 transition ease-in-out w-fit rounded-md cursor-pointer"
+                className="flex gap-1 items-center text-sm px-2 text-text-1 hover:text-accent-foreground transition ease-in-out w-fit rounded-md cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function ProjectCard(props: ProjectCardProps) {
               <a
                 href={youtube}
                 target="_blank"
-                className="flex gap-1 items-center text-sm px-2 bg-card-skillsBackground text-card-skillsForeground hover:bg-card-skillsBackground/70 transition ease-in-out w-fit rounded-md cursor-pointer"
+                className="flex gap-1 items-center text-sm px-2 text-text-1 hover:text-accent-foreground transition ease-in-out w-fit rounded-md cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ export default function ProjectCard(props: ProjectCardProps) {
               <a
                 href={github}
                 target="_blank"
-                className="flex gap-1 items-center text-sm px-2 bg-card-skillsBackground text-card-skillsForeground hover:bg-card-skillsBackground/70 transition ease-in-out w-fit rounded-md cursor-pointer"
+                className="flex gap-1 items-center text-sm px-2 text-text-1 hover:text-accent-foreground transition ease-in-out w-fit rounded-md cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

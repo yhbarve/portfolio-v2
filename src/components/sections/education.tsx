@@ -4,8 +4,8 @@ import EducationCard from "../EducationCard";
 export default function Education(){
     return (
         <div id="education" className="pt-12">
-            <div className="text-sm font-bold pb-2 pl-2 cursor-default text-section-header">EDUCATION</div>
-            <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
+            <div className="text-sm font-bold pb-2 pl-2 cursor-default text-text-1">EDUCATION</div>
+            <div className="flex flex-col gap-4 text-text-1 hover:text-text-1">
                 <EducationCard program="Bachelor of Computer Science with Specialization in AI" uni="University of Waterloo" year="2021 — 2026" courses={[
                     "Algebra",
                     "Calculus",

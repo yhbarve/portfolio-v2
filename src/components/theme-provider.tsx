@@ -6,7 +6,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   return (
     <NextThemesProvider
       attribute="class"
-      defaultTheme="neutral"
+      defaultTheme="quartz"
       enableSystem={false}
       {...props}
     >

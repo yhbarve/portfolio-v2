@@ -10,14 +10,9 @@ export function ThemeSwitcher() {
   const [selectedTheme, setSelectedTheme] = useState("");
 
   const themes = [
-    { name: "Neutral", value: "neutral" },
+    { name: "Quartz", value: "quartz" },
     { name: "Neon", value: "neon" },
-    { name: "Teal", value: "teal" },
-    { name: "Lavender", value: "lavender" },
-    { name: "Ferrari", value: "ferrari"},
-    { name: "Ultramarine", value: "ultramarine"},
-    { name: "Midnight", value: "midnight"},
-    { name: "Aston", value: "aston"}
+    { name: "Ferrari HP", value: "ferrari-hp"}
   ];
 
   useEffect(() => {
@@ -42,12 +37,12 @@ export function ThemeSwitcher() {
   return (
     <div className="relative">
       <select
-        value={selectedTheme || theme || "neutral"}
+        value={selectedTheme || theme || "quartz"}
         onChange={(e) => {
           setSelectedTheme(e.target.value);
           handleThemeChange(e.target.value);
         }}
-        className="text-xs py-0.5 border rounded-md bg-picker-background hover:bg-picker-hoverBackground border-picker-border text-picker-text cursor-pointer transition"
+        className="text-xs py-0.5 border rounded-md bg-surface-1 hover:bg-surface-1/50 border-border text-accent cursor-pointer transition"
       >
         {themes.map((t) => (
           <option key={t.value} value={t.value}>

@@ -4,16 +4,16 @@ export default function Projects() {
   return (
     <div id="projects" className="">
       <div className="flex items-center pl-2 pb-2 justify-between">
-        <div className="text-sm font-bold cursor-default text-section-header">
+        <div className="text-sm font-bold cursor-default text-accent">
           PROJECTS
         </div>
-        <div className="transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1 hidden lg:block">
+        <div className="transition duration-200 ease-in-out text-accent hover:translate-x-1 hidden lg:block">
           <a href="/projects" className="">
             View All Projects →
           </a>
         </div>
       </div>
-      <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
+      <div className="flex flex-col gap-4 text-text-1 hover:text-text-1">
         <ProjectCard
           year="2025"
           youtube="https://www.youtube.com/watch?v=_2dJb6zYpTw"
@@ -71,7 +71,6 @@ export default function Projects() {
 
         <ProjectCard
           year="2025"
-          link="https://github.com/yhbarve/portolio-imagekit"
           github="https://github.com/yhbarve/portolio-imagekit"
           name="Portolio - Your Online Photos Portfolio"
           desc={[
@@ -193,8 +192,8 @@ export default function Projects() {
           image="/scriptsync-demo.png"
         />
       </div>
-      <div className="transition duration-200 ease-in-out text-linkToPage-foreground mt-4 block lg:hidden">
-        <a href="/projects" className="bg-linkToPage-buttonBackground text-linkToPage-buttonForeground px-4 py-2 rounded-md hover:opacity-80 text-sm">
+      <div className="transition duration-200 ease-in-out text-text-1 mt-4 block lg:hidden">
+        <a href="/projects" className="bg-background-3 text-text-1 px-4 py-2 rounded-md hover:opacity-80 text-sm">
           View All Projects
         </a>
       </div>

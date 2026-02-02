@@ -5,16 +5,16 @@ export default function Experience() {
   return (
     <div id="experiences" className="pt-12">
       <div className="flex items-center pl-2 pb-2 justify-between">
-        <div className="text-sm font-bold cursor-default text-section-header">
+        <div className="text-sm font-bold cursor-default text-accent">
           EXPERIENCE
         </div>
-        <div className="transition duration-200 ease-in-out text-linkToPage-foreground hover:translate-x-1 hidden lg:block">
+        <div className="transition duration-200 ease-in-out text-accent hover:translate-x-1 hidden lg:block">
           <a href="https://drive.google.com/file/d/1oO_z0Pz-CMLYhW1WbsqDduptITErZg_D/view?usp=sharing" className="">
             View Resume →
           </a>
         </div>
       </div>
-      <div className="flex flex-col gap-4 text-card-foreground hover:text-card-otherHoverForeground">
+      <div className="flex flex-col gap-4 text-text-1 hover:text-text-1">
         <ExperienceCard
           year="SEP — DEC '25"
           title="Software Engineering Intern"
@@ -152,8 +152,8 @@ export default function Experience() {
         />
 
       </div>
-      <div className="transition duration-200 ease-in-out text-linkToPage-foreground mt-4 block lg:hidden">
-        <a href="https://drive.google.com/file/d/1oO_z0Pz-CMLYhW1WbsqDduptITErZg_D/view?usp=sharing" className="bg-linkToPage-buttonBackground text-linkToPage-buttonForeground px-4 py-2 rounded-md hover:opacity-80 text-sm">
+      <div className="transition duration-200 ease-in-out text-text-1 mt-4 block lg:hidden">
+        <a href="https://drive.google.com/file/d/1oO_z0Pz-CMLYhW1WbsqDduptITErZg_D/view?usp=sharing" className="bg-background-3 text-text-1 px-4 py-2 rounded-md hover:opacity-80 text-sm">
           View Resume
         </a>
       </div>

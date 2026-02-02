@@ -13,7 +13,6 @@ function formatDateWithOrdinal(dateString: string) {
 
   const formatted = date.toLocaleDateString("en-US", {
     month: "short",
-    day: "numeric",
     year: "numeric",
   });
 
@@ -37,19 +36,19 @@ export default function WritingsCard({
   return (
     <div>
       <div
-        className="grid grid-cols-5 border border-card-border hover:border-card-hoverBorder bg-card-background hover:bg-card-hoverBackground
-        hover:text-card-hoverForeground transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl"
+        className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-1
+        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg"
       >
         <div className="col-span-1 flex flex-col">
           <div className="font-light max-w-[90%]">
-            {formatDateWithOrdinal(date)}
+            {formatDateWithOrdinal(date).toUpperCase()}
           </div>
         </div>
         <div className="col-span-4 flex flex-col">
           <a
             href={`/blog/${slug}`}
             target="_blank"
-            className="hover:translate-x-1 transition-transform ease-in-out font-medium mb-1 text-section-header"
+            className="hover:translate-x-1 transition-transform ease-in-out font-medium mb-1 text-text-1"
           >
             {title}
           </a>
@@ -61,7 +60,7 @@ export default function WritingsCard({
             {tags.map((key, item) => (
               <div
                 key={item}
-                className="text-sm bg-card-skillsBackground border border-card-skillsBorder text-card-skillsForeground rounded-2xl px-2"
+                className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2"
               >
                 {key}
               </div>
