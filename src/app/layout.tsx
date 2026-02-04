@@ -28,7 +28,7 @@ export default function RootLayout({
         />
         <meta
           name="description"
-          content="Yash is a fourth-year Computer Science student at the University of Waterloo and a Business student at Wilfrid Laurier University. Since starting his full-stack development journey in 2021, he has grown especially passionate about backend technologies and scalable systems."
+          content="Yash is a fifth-year Computer Science student at the University of Waterloo and a Business student at Wilfrid Laurier University. Since starting his full-stack development journey in 2021, he has grown especially passionate about backend technologies and scalable systems."
         />
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
