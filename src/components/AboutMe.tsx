@@ -61,7 +61,7 @@ export default function AboutMe() {
   }, [curVal, roles, reducedMotion]);
 
   return (
-    <div className="flex flex-col items-center lg:items-start">
+    <div className="flex flex-col items-start">
       <h1 className="text-5xl font-semibold inline-block text-text-1 mb-2">
         Yash H. Barve
       </h1>
@@ -74,7 +74,7 @@ export default function AboutMe() {
         {curVal}
       </h1>
 
-      <div className="text-xs mt-4 w-4/5 text-text-1 cursor-default hidden lg:block">
+      <div className="text-sm font-light lg:font-normal lg:text-xs mt-8 lg:mt-4 w-4/5 text-text-1 cursor-default block">
         I&apos;m a fifth-year Computer Science student at the University of Waterloo and a Business student at
         Wilfrid Laurier University. Since starting my full-stack development journey in 2021, I have grown especially
         passionate about backend technologies and scalable systems. I am currently on my 4th work term working as a Software Engineer at Nokia.<br /><br />

@@ -77,7 +77,7 @@ export default function MobileSidebarNav() {
           console.log("Button is now ", open);
         }}
         className="fixed top-[calc(16px+env(safe-area-inset-top))] right-4 z-[10000] lg:hidden
-                   rounded-2xl px-4 py-2 text-xs font-medium shadow-lg border border-navButton-border bg-navButton-background hover:bg-navButton-hoverBackground backdrop-blur-2xl opacity-90 text-navButton-iconFill hover:opacity-80 active:scale-95 transition"
+                   rounded-2xl px-4 py-2 text-xs font-medium shadow-lg border border-border bg-surface-3 backdrop-blur-2xl text-navButton-iconFill active:scale-95 transition"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ export default function MobileSidebarNav() {
           width="15"
           height="15"
           viewBox="0 0 50 50"
-          className="h-[15px] w-[15px] fill-navButton-iconFill text-navigation-link"
+          className="h-[15px] w-[15px] fill-accent-soft"
         >
           <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
         </svg>
@@ -122,8 +122,8 @@ export default function MobileSidebarNav() {
                           }`}
             >
               <div
-                className={`bg-background shadow-2xl rounded-2xl w-[70vw] max-w-[420px]
-                            transform transition-transform duration-200 bg-navModal-background border-2 border-navModal-border
+                className={`bg-surface-3 shadow-2xl rounded-2xl w-[70vw] max-w-[420px]
+                            transform transition-transform duration-200 border-2 border-border
                             ${open ? "scale-100" : "scale-95"}`}
                 style={{
                   paddingTop: "calc(env(safe-area-inset-top))",
@@ -131,15 +131,15 @@ export default function MobileSidebarNav() {
                 }}
               >
                 {/* Header */}
-                <div className="flex items-center justify-between px-4 py-4 border-b border-navModal-headerBorder">
-                  <span className="text-base font-semibold text-navModal-headerForeground">
+                <div className="flex items-center justify-between px-4 py-4 border-b border-accent-soft">
+                  <span className="text-text-1 font-semibold">
                     Navigation
                   </span>
                   <button
                     type="button"
                     aria-label="Close navigation"
                     onClick={() => setOpen(false)}
-                    className="rounded-lg px-2 hover:bg-navModal-headerCrossHoverBackground text-navModal-headerForeground"
+                    className="rounded-lg px-2 text-text-1"
                   >
                     ✕
                   </button>
@@ -163,7 +163,7 @@ export default function MobileSidebarNav() {
                             }
                             setOpen(false);
                           }}
-                          className="block rounded-xl px-4 py-3 text-base bg-navModal-itemBackground text-navModal-itemForeground hover:bg-navModal-itemHoverBackground hover:text-navModal-itemHoverForeground focus:outline-none text-center"
+                          className="block rounded-xl px-4 py-3 text-base text-accent-soft bg-accent/5 focus:outline-none text-center"
                         >
                           {l.label}
                         </a>

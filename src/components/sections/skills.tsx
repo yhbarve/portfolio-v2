@@ -1,5 +1,6 @@
 import React from "react";
 import ExperienceCard from "../ExperienceCard";
+import SkillsCard from "../SkillsCard";
 
 export default function Skills() {
     const languages: string[] = ["C", "C++", "Bash", "Go", "Python", "HTML", "CSS", "Javascript", "Typescript", "SQL", "Kotlin"];
@@ -20,116 +21,16 @@ export default function Skills() {
         </div>
       </div>
       <div className="flex flex-col gap-4 text-text-1 hover:text-text-1">
-        <div>
-            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                <div className="sm:col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">LANGUAGES</div>
-                </div>
-                <div className="sm:col-span-4 flex gap-1 gap-y-2 items-center flex-wrap">
-                    {languages.map((key, item) => <div key={item} className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2">{key}</div>)}
-                </div>
-            </div>
-        </div>
-        <div>
-            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                <div className="sm:col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">CORE CS</div>
-                </div>
-                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
-                    {csFundamentals.map((key, item) => <div key={item} className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 h-fit">{key}</div>)}
-                </div>
-            </div>
-        </div>
-        <div>
-            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                <div className="sm:col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">FRONTEND</div>
-                </div>
-                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
-                    {frontend.map((key, item) => <div key={item} className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 h-fit">{key}</div>)}
-                </div>
-            </div>
-        </div>
-        <div>
-            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                <div className="sm:col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">BACKEND</div>
-                </div>
-                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
-                    {backend.map((key, item) => <div key={item} className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 h-fit">{key}</div>)}
-                </div>
-            </div>
-        </div>
-        <div>
-            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl">
-                <div className="sm:col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">DATABASE</div>
-                </div>
-                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
-                    {database.map((key, item) => <div key={item} className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 h-fit">{key}</div>)}
-                </div>
-            </div>
-        </div>
-        <div>
-            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                <div className="sm:col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">DEVOPS</div>
-                </div>
-                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
-                    {devops.map((key, item) => <div key={item} className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 h-fit">{key}</div>)}
-                </div>
-            </div>
-        </div>
-        <div>
-            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                <div className="sm:col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">TOOLS</div>
-                </div>
-                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
-                    {tools.map((key, item) => <div key={item} className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 h-fit">{key}</div>)}
-                </div>
-            </div>
-        </div>
-        <div>
-            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                <div className="sm:col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">CLOUD</div>
-                </div>
-                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
-                    {cloud.map((key, item) => <div key={item} className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 h-fit">{key}</div>)}
-                </div>
-            </div>
-        </div>
-        <div>
-            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                <div className="sm:col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">AI & ML</div>
-                </div>
-                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
-                    {aiMl.map((key, item) => <div key={item} className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 h-fit">{key}</div>)}
-                </div>
-            </div>
-        </div>
-        <div>
-            <div className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                <div className="sm:col-span-1 flex flex-col">
-                    <div className="font-light max-w-[90%] pb-2 sm:pb-0">OTHER</div>
-                </div>
-                <div className="sm:col-span-4 flex gap-1 gap-y-2 flex-wrap items-center">
-                    {others.map((key, item) => <div key={item} className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 h-fit">{key}</div>)}
-                </div>
-            </div>
-        </div>
+        <SkillsCard category="LANGUAGES" skills={languages}/>
+        <SkillsCard category="CORE CS" skills={csFundamentals}/>
+        <SkillsCard category="FRONTEND" skills={frontend}/>
+        <SkillsCard category="BACKEND" skills={backend}/>
+        <SkillsCard category="DATABASE" skills={database}/>
+        <SkillsCard category="DEVOPS" skills={devops}/>
+        <SkillsCard category="TOOLS" skills={tools}/>
+        <SkillsCard category="CLOUD" skills={cloud}/>
+        <SkillsCard category="AI & ML" skills={aiMl}/>
+        <SkillsCard category="OTHER" skills={others}/>
       </div>
     </div>
   );

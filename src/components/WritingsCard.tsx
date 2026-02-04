@@ -36,10 +36,10 @@ export default function WritingsCard({
   return (
     <div>
       <div
-        className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-1
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg"
+        className="flex flex-col lg:grid lg:grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
+            hover:text-text-1 transition duration-200 ease-in-out rounded-md px-5 py-5 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg"
       >
-        <div className="col-span-1 flex flex-col">
+        <div className="hidden lg:col-span-1 lg:flex flex-col">
           <div className="font-light max-w-[90%]">
             {formatDateWithOrdinal(date).toUpperCase()}
           </div>
@@ -52,6 +52,7 @@ export default function WritingsCard({
           >
             {title}
           </a>
+          <div className="mb-1 font-light">{formatDateWithOrdinal(date).toUpperCase()}</div>
           <div className="font-light text-sm">
             <div className="font-normal inline">Summary: </div>
             {summary}
