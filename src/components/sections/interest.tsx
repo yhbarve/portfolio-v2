@@ -3,7 +3,7 @@ import InterestCard from "../InterestCard";
 export default function Interest({interests}:{interests:Array<string>}){
     return (
         <div id="interests" className="mt-12">
-            <div className="text-sm font-bold pb-4 pl-2 cursor-default text-accent">INTERESTS</div>
+            <div className="text-sm font-bold pb-2 cursor-default text-accent">INTERESTS</div>
             <div className="flex flex-col gap-4 text-text-1">
                 <div className="flex flex-col lg:grid lg:grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
             hover:text-text-1 transition duration-200 ease-in-out rounded-md px-5 py-5 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">

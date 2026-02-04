@@ -15,7 +15,7 @@ export default function Skills() {
     const others: string[] = ["Agile Methodology", "Scrum", "Jetpack Compose (Android)", "Retrofit (Android)"]
   return (
     <div id="skills" className="pt-12">
-      <div className="flex items-center pl-2 pb-2 justify-between">
+      <div className="flex items-center pb-2 justify-between">
         <div className="text-sm font-bold cursor-default text-accent">
           SKILLS
         </div>

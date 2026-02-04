@@ -9,7 +9,7 @@ export default function Writings() {
 
   return (
     <div id="writings" className="pt-12">
-      <div className="flex items-center pl-2 pb-2 justify-between">
+      <div className="flex items-center pb-2 justify-between">
         <div className="text-sm font-bold cursor-default text-accent">
           WRITINGS
         </div>
