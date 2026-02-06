@@ -29,7 +29,7 @@ html {
     --shadow: 0 96% 37%;
   }
 
-  .quartz {
+  html.quartz {
     --background-1: 0 0% 91%;
     --background-2: 0 0% 91%;
     --background-3: 0 0% 96%;
@@ -51,7 +51,7 @@ html {
     --shadow: 0 96% 37%;
   }
 
-  .neon {
+  html.neon {
     --background-1: 0 0% 5%;
     --background-2: 0 0% 5%;
     --background-3: 0 0% 8%;
@@ -73,7 +73,7 @@ html {
     --shadow: 71 100% 50%;
   }
 
-  .ferrari-hp {
+  html.ferrari-hp {
     --background-1: 351 100% 36%;
     --background-2: 351 100% 36%;
     --background-3: 352 96% 45%;
