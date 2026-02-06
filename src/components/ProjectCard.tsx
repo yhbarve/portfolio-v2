@@ -17,7 +17,7 @@ export default function ProjectCard(props: ProjectCardProps) {
     <div>
       <div
         className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-2 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg"
+        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-5 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg"
       >
         <div className="col-span-1 flex flex-col">
           <a href={link} target="_blank">

@@ -2,5 +2,6 @@
 
 import nextjsAndMdMd from './nextjs-and-md.md.json' with { type: 'json' }
 import oopWithCppMd from './oop-with-cpp.md.json' with { type: 'json' }
+import illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd from './illusion-of-ownership-and-the-rise-of-digital-gatekeepers.md.json' with { type: 'json' }
 
-export const allPosts = [nextjsAndMdMd, oopWithCppMd]
+export const allPosts = [nextjsAndMdMd, oopWithCppMd, illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd]

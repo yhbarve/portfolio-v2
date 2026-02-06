@@ -90,14 +90,14 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     /* headings */
     prose-headings:font-semibold
     prose-headings:tracking-tight
-    prose-headings:text-blog-bodyHeadingsForeground
-    prose-h1:mb-3 prose-h1:text-blog-titleForeground
+    prose-headings:text-accent-soft
+    prose-h1:mb-3 prose-h1:text-accent-soft
     prose-h2:mt-8 prose-h2:mb-2
     prose-h3:mt-6 prose-h3:mb-2
 
     /* body text */
     prose-p:leading-7 prose-p:my-3
-    prose-p:text-blog-bodyTextForeground
+    prose-p:text-text-1
 
     /* links */
     prose-a:underline-offset-4
