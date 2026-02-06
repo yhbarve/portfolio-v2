@@ -3,11 +3,92 @@ import { Command } from 'cmdk'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 import { RESUME_URL } from './data'
+import { useTheme } from 'next-themes'
 
 export const CommandMenu = () => {
     const [open, setOpen] = React.useState(false)
+    const [selectedIndex, setSelectedIndex] = React.useState(0)
+    const { theme, setTheme } = useTheme();
+    const listRef = React.useRef<HTMLDivElement>(null);
+    const itemRefs = React.useRef<(HTMLDivElement | null)[]>([]);
+    const [mounted, setMounted] = React.useState(false);
+
+    React.useEffect(() => setMounted(true), []);
 
     const router = useRouter();
+
+    const commandGroups = {
+        'Quick Navigation': [
+            { text: '🏠 Go Home', shortcut: 'H', action: () => router.push('/') },
+            { text: '🧑🏻‍💻 See All Projects', shortcut: 'P', action: () => router.push('/projects') },
+            { text: '✍️ See All Writings', shortcut: 'W', action: () => router.push('/writings') },
+            { text: '📄 See Resume*', shortcut: 'R', action: () => router.push(RESUME_URL) },
+            { text: '📚 See Books Read', shortcut: 'B', action: () => router.push('/reading') },
+        ],
+        'Actions': [
+            { text: '🎨 Switch to Neon Theme', shortcut: 'N', action: () => setTimeout(() => setTheme('neon'), 0) },
+            { text: '🎨 Switch to Quartz Theme', shortcut: 'Q', action: () => setTimeout(() => setTheme('quartz'), 0) },
+            { text: '🎨 Switch to Ferrari HP Theme', shortcut: 'F', action: () => setTimeout(() => setTheme('ferrari-hp'), 0) },
+            { text: '✉️ Copy Email Address', shortcut: 'M', action: () => {
+                navigator.clipboard.writeText('yhbarve@uwaterloo.ca');
+                alert('Email address copied to clipboard!'); // Provide feedback to the user
+            } },
+        ],
+        'Navigation': [
+            { text: '💻 Go to Projects', shortcut: 'K', action: () => router.push('/#projects') },
+            { text: '💼 Go to Experience', shortcut: 'E', action: () => router.push('/#experiences') },
+            { text: '💡 Go to Skills', shortcut: 'S', action: () => router.push('/#skills') },
+            { text: '🎓 Go to Education', shortcut: 'D', action: () => router.push('/#education') },
+            { text: '✍🏻 Go to Writings', shortcut: 'T', action: () => router.push('/#writings') },
+            { text: '♥️ Go to Interests', shortcut: 'I', action: () => router.push('/#interests') },
+        ],
+        'Socials': [
+            { text: '🔗 Go to GitHub*', shortcut: 'G', action: () => window.open('https://github.com/yhbarve', '_blank') },
+            { text: '🔗 Go to LinkedIn*', shortcut: 'L', action: () => window.open('https://www.linkedin.com/in/yhbarve/', '_blank') },
+            { text: '🔗 Go to X (Twitter)*', shortcut: 'X', action: () => window.open('https://x.com/yhbarve', '_blank') },
+            // { text: '🔗 Go to Instagram*', shortcut: 'I', action: () => window.open('https://www.instagram.com/yhbarve/', '_blank') },
+            { text: '🔗 Go to LeetCode*', shortcut: 'C', action: () => window.open('https://leetcode.com/u/yhbarve/', '_blank') },
+        ]
+    };
+
+    const commandItems = Object.values(commandGroups).flat();
+
+    React.useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (!open) return;
+
+            // Handle navigation and Enter
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                setSelectedIndex((prevIndex) => (prevIndex + 1) % commandItems.length);
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                setSelectedIndex((prevIndex) => (prevIndex - 1 + commandItems.length) % commandItems.length);
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                commandItems[selectedIndex].action();
+                setOpen(false);
+            } else {
+                // Handle shortcuts
+                const shortcut = e.key.toUpperCase();
+                const item = commandItems.find(item => 'shortcut' in item && item.shortcut === shortcut);
+                if (item) {
+                    e.preventDefault();
+                    item.action();
+                    setOpen(false);
+                }
+            }
+        };
+
+        document.addEventListener('keydown', handleKeyDown);
+        return () => document.removeEventListener('keydown', handleKeyDown);
+    }, [open, selectedIndex, commandItems]);
+
+    React.useEffect(() => {
+        if (open && itemRefs.current[selectedIndex]) {
+            itemRefs.current[selectedIndex]?.scrollIntoView({ block: 'nearest' });
+        }
+    }, [selectedIndex, open]);
 
     // Toggle the menu when ⌘K is pressed
     React.useEffect(() => {
@@ -22,7 +103,7 @@ export const CommandMenu = () => {
         return () => document.removeEventListener('keydown', down)
     }, [])
 
-    if (!open) {
+    if (!open || !mounted) {
         return null
     }
 
@@ -40,37 +121,39 @@ export const CommandMenu = () => {
                 onClick={(e) => e.stopPropagation()}
             >
                 <Command
-                    className="bg-name-foreground border border-accent rounded-lg shadow-lg"
+                    className="bg-surface-3 border-2 border-border shadow-2xl rounded-2xl"
                 >
-                    <Command.List className="p-2 max-h-[300px] overflow-y-auto">
-                        {/* <Command.Empty className="p-4 text-text-1 text-text-1 text-text-1">No results found.</Command.Empty> */}
-                        <p className='mx-4 py-2 text-text-1 font-semibold border-accent'>⌘ Command Centre</p>
-                        <Command.Group className="text-text-1 mx-2 py-1">
-                            <Command.Item className="p-2 my-1 rounded-md cursor-pointer hover:bg-surface-1 text-text-1" onSelect={() => {
-                                setOpen(false);
-                                router.push('/');
-                            }}>🏠 Go Home</Command.Item>
-
-                            <Command.Item className="p-2 my-1 rounded-md cursor-pointer hover:bg-surface-1 text-text-1" onSelect={() => {
-                                setOpen(false);
-                                router.push('/projects');
-                            }}>🧑🏻‍💻 See All Projects</Command.Item>
-
-                            <Command.Item className="p-2 my-1 rounded-md cursor-pointer hover:bg-surface-1 text-text-1" onSelect={() => {
-                                setOpen(false);
-                                router.push('/writings');
-                            }}>✍️ See All Writings</Command.Item>
-
-                            <Command.Item className="p-2 my-1 rounded-md cursor-pointer hover:bg-surface-1 text-text-1" onSelect={() => {
-                                setOpen(false);
-                                router.push(RESUME_URL);
-                            }}>📄 See Resume</Command.Item>
-
-                            <Command.Item className="p-2 my-1 rounded-md cursor-pointer hover:bg-surface-1 text-text-1" onSelect={() => {
-                                setOpen(false);
-                                router.push('/reading');
-                            }}>📚 See Reading List</Command.Item>
-                        </Command.Group>
+                        <div className='mx-5 py-5 border-b border-border mb-5'>
+                            <p className='text-text-1 font-semibold text-xl'>⌘ Command Centre</p>
+                            <div className='flex justify-between'>
+                                <p className='text-sm text-text-1/50 font-bold '>Use ↑ & ↓ keys to navigate or shortcuts</p>
+                                <p className='text-sm text-text-1/50 font-bold italic'>* external link</p>
+                            </div>
+                        </div>
+                    <Command.List ref={listRef} className="px-2 pb-2 max-h-[500px] overflow-y-auto">
+                        {Object.entries(commandGroups).map(([groupName, items]) => (
+                            <Command.Group key={groupName} heading={groupName} className="text-accent-soft font-semibold mx-2 py-1">
+                                {items.map((item) => {
+                                    const itemIndex = commandItems.findIndex(ci => ci.text === item.text);
+                                    return (
+                                        <Command.Item
+                                            ref={(el) => {
+                                                if (el) itemRefs.current[itemIndex] = el;
+                                            }}
+                                            key={item.text}
+                                            className={`font-normal p-2 my-1 text-text-1 rounded-md cursor-pointer hover:bg-accent/5 hover:text-accent-soft transition duration-200 ease-in-outext-text-1 flex justify-between items-center ${selectedIndex === itemIndex ? 'bg-accent/5 text-accent-soft' : ''}`}
+                                            onSelect={() => {
+                                                item.action();
+                                                setOpen(false);
+                                            }}
+                                        >
+                                            <span>{item.text}</span>
+                                            {item.shortcut && <div cmdk-shortcuts="" className='text-sm font-bold text-text-1/50'><span className='font-normal'>Type </span> {item.shortcut}</div>}
+                                        </Command.Item>
+                                    )
+                                })}
+                            </Command.Group>
+                        ))}
                     </Command.List>
                 </Command>
             </div>
