@@ -74,16 +74,16 @@ html {
   }
 
   html.ferrari-hp {
-    --background-1: 351 100% 36%;
-    --background-2: 351 100% 36%;
-    --background-3: 352 96% 45%;
+    --background-1: 351 100% 28%;
+    --background-2: 351 100% 28%;
+    --background-3: 352 96% 32%;
 
     --border: 0 0% 100%;
     --ring: 0 0% 50%;
 
-    --surface-1: 351 100% 32%;
-    --surface-2: 351 100% 32%;
-    --surface-3: 214 85% 39%;
+    --surface-1: 351 100% 28%;
+    --surface-2: 351 100% 28%;
+    --surface-3: 214 85% 36%;
 
     --text-1: 0 0% 100%;
     --text-2: 0 100% 30%;
