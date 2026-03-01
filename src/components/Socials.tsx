@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ThemeSwitcher } from "./ThemeSwitcher";
+import Watering from "@/lib/Watering";
 
 export default function Socials() {
   return (
@@ -106,7 +107,7 @@ export default function Socials() {
           href="https://leetcode.com/u/yhbarve/"
           target="_blank"
           aria-label="Visit my LeetCode profile"
-          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out mr-8"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -120,6 +121,8 @@ export default function Socials() {
             <path d="M19.34 12.84h-8.45a1.12 1.12 0 0 0 0 2.24h8.45a1.12 1.12 0 0 0 0-2.24"></path>
           </svg>
         </a>
+
+        <Watering />
 
       </div>
       <div className="flex items-center gap-1 mt-[3vh]">

@@ -3,5 +3,6 @@
 import illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd from './illusion-of-ownership-and-the-rise-of-digital-gatekeepers.md.json' with { type: 'json' }
 import nextjsAndMdMd from './nextjs-and-md.md.json' with { type: 'json' }
 import oopWithCppMd from './oop-with-cpp.md.json' with { type: 'json' }
+import pragmaticExcellenceMd from './pragmatic-excellence.md.json' with { type: 'json' }
 
-export const allPosts = [illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, nextjsAndMdMd, oopWithCppMd]
+export const allPosts = [illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, nextjsAndMdMd, oopWithCppMd, pragmaticExcellenceMd]
