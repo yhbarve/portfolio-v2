@@ -1,20 +1,16 @@
 ---
 title: "Position Paper: Defense of Proprietary AI-Trading Algorithms Against Mandatory Disclosure"
 date: "2026-03-12"
-summary: "This paper argues that organizations should be allowed to keep proprietary AI-designed trading algorithms private rather than disclose them publicly. The authors claim these algorithms qualify as trade secrets because they are valuable, confidential, and developed through significant investment. Public disclosure could increase market instability by making trading behavior predictable and easier to exploit, while also reducing incentives for firms to innovate. Instead, the paper proposes confidential regulatory transparency, where algorithms are shared only with regulators, allowing oversight without sacrificing intellectual property protection. Note: This paper was written for CS492, a CS ethics course at the University of Waterloo."
+summary: "This paper argues that organizations should be allowed to keep proprietary AI-designed trading algorithms private rather than disclose them publicly. Public disclosure could increase market instability by making trading behavior predictable and easier to exploit, while also reducing incentives for firms to innovate. Instead, the paper proposes confidential regulatory transparency, where algorithms are shared only with regulators, allowing oversight without sacrificing intellectual property protection. Note: This paper was written for CS492, a CS ethics course at the University of Waterloo."
 tags:
   [
     "AI trading algorithms",
-    "algorithmic trading",
     "trade secrets",
     "intellectual property",
     "financial market regulation",
     "algorithmic transparency",
     "market stability",
-    "high-frequency trading",
     "innovation incentives",
-    "confidential regulatory oversight",
-    "financial technology",
     "AI governance",
   ]
 published: true

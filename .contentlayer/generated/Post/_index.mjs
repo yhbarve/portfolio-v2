@@ -4,5 +4,6 @@ import illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd from './illusion-of-o
 import nextjsAndMdMd from './nextjs-and-md.md.json' with { type: 'json' }
 import oopWithCppMd from './oop-with-cpp.md.json' with { type: 'json' }
 import pragmaticExcellenceMd from './pragmatic-excellence.md.json' with { type: 'json' }
+import selectiveRegulatoryTransparencyMd from './selective-regulatory-transparency.md.json' with { type: 'json' }
 
-export const allPosts = [illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, nextjsAndMdMd, oopWithCppMd, pragmaticExcellenceMd]
+export const allPosts = [illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, nextjsAndMdMd, oopWithCppMd, pragmaticExcellenceMd, selectiveRegulatoryTransparencyMd]

@@ -7,7 +7,7 @@ export default function BlogsPage() {
 
   return (
     <>
-      <div className="grid grid-cols-12 p-2 pb-4 pt-9 text-accent font-semibold">
+      <div className="grid grid-cols-12 p-4 pb-4 pt-9 text-accent font-semibold">
         <div className="col-span-3 md:col-span-2">Date</div>
         <div className="col-span-7 md:col-span-4">Title</div>
         <div className="hidden md:block col-span-5">Summary</div>
@@ -17,8 +17,8 @@ export default function BlogsPage() {
         {posts.map((p) => (
           <div
             key={p.slug}
-            className="grid grid-cols-12 px-2 py-4 my-2 font-light text-base
-              items-center
+            className="grid grid-cols-12 p-4 my-2 font-light text-base
+              items-start
               text-text-1 hover:shadow-lg bg-surface-1
               hover:border-page-itemHoverBorder cursor-default rounded-md border border-border/5
               transition duration-200 ease-in-out"
