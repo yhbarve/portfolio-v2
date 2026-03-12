@@ -144,34 +144,34 @@ By revealing algorithms only to appropriate regulatory boards, firms can ensure 
 
 # Works Cited
 
-Boldrin, M., & Levine, D. K. (2013). _The case against patents._ Journal of Economic Perspectives, 27(1), 3–22.  
+- Boldrin, M., & Levine, D. K. (2013). _The case against patents._ Journal of Economic Perspectives, 27(1), 3–22.  
 https://www.aeaweb.org/articles?id=10.1257/jep.27.1.3
 
-Budish, E., Cramton, P., & Shim, J. (2015). _The high-frequency trading arms race: Frequent batch auctions as a market design response._ The Quarterly Journal of Economics, 130(4), 1547–1621.  
+- Budish, E., Cramton, P., & Shim, J. (2015). _The high-frequency trading arms race: Frequent batch auctions as a market design response._ The Quarterly Journal of Economics, 130(4), 1547–1621.  
 https://doi.org/10.1093/qje/qjv027
 
-European Parliament & Council of the European Union. (2024). _Artificial Intelligence Act._  
+- European Parliament & Council of the European Union. (2024). _Artificial Intelligence Act._  
 https://artificialintelligenceact.eu/
 
-Hendershott, T., Jones, C. M., & Menkveld, A. J. (2011). _Does algorithmic trading improve liquidity?_ The Journal of Finance, 66(1), 1–33.  
+- Hendershott, T., Jones, C. M., & Menkveld, A. J. (2011). _Does algorithmic trading improve liquidity?_ The Journal of Finance, 66(1), 1–33.  
 https://doi.org/10.1111/j.1540-6261.2010.01624.x
 
-Lerner, J. (2009). _The empirical impact of intellectual property rights on innovation: Puzzles and clues._ American Economic Review, 99(2), 343–348.  
+- Lerner, J. (2009). _The empirical impact of intellectual property rights on innovation: Puzzles and clues._ American Economic Review, 99(2), 343–348.  
 https://www.aeaweb.org/articles?id=10.1257/aer.99.2.343
 
-Ontario Securities Act, R.S.O. 1990, c. S.5.  
+- Ontario Securities Act, R.S.O. 1990, c. S.5.  
 https://www.ontario.ca/laws/statute/90s05
 
-Securities and Exchange Commission. (2014). _Regulation Systems Compliance and Integrity (Regulation SCI)._  
+- Securities and Exchange Commission. (2014). _Regulation Systems Compliance and Integrity (Regulation SCI)._  
 https://www.sec.gov/rules/final/2014/34-73639.pdf
 
-Securities and Exchange Commission & Commodity Futures Trading Commission. (2010). _Findings regarding the market events of May 6, 2010._  
+- Securities and Exchange Commission & Commodity Futures Trading Commission. (2010). _Findings regarding the market events of May 6, 2010._  
 https://www.sec.gov/files/marketevents-report.pdf
 
-United States v. Agrawal, 726 F.3d 235 (2013).  
+- United States v. Agrawal, 726 F.3d 235 (2013).  
 https://law.justia.com/cases/federal/appellate-courts/ca2/11-1074/11-1074-2013-08-01.html
 
-World Intellectual Property Organization. (n.d.). _Frequently Asked Questions: Trade Secrets._  
+- World Intellectual Property Organization. (n.d.). _Frequently Asked Questions: Trade Secrets._  
 https://www.wipo.int/en/web/trade-secrets/tradesecrets_faqs
 
 ---
