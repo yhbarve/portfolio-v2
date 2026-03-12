@@ -48,12 +48,7 @@ From the court case and the WIPO definition, it is clear to see that all intelle
 
 Beyond their legal protection, proprietary AI trading algorithms play an important functional role in preserving systemic resilience within financial markets. While critics argue that automated systems can amplify volatility, empirical research suggests that algorithmic trading frequently improves liquidity and enhances price discovery under normal conditions (Hendershott et al., 2011).
 
-Firms develop these systems independently using different:
-
-- datasets
-- model architectures
-- execution speeds
-- risk tolerances
+Firms develop these systems independently using different datasets, model architectures, execution speeds, and risk tolerances.
 
 This variation in strategy reduces the probability that all market participants will react identically to the same signal at the same time. Financial markets operate as complex adaptive systems, and stability within such systems depends on decentralized decision-making rather than uniform behavior.
 
@@ -67,11 +62,7 @@ For these reasons, preserving proprietary independence while maintaining structu
 
 ## Inequality Creates Innovation
 
-Proprietary algorithmic trading systems represent the output of enormous capital investment that goes into:
-
-- data infrastructure
-- hiring the best talent
-- iterative development
+Proprietary algorithmic trading systems represent the output of enormous capital investment that goes into data infrastructure, hiring the best talent, and iterative development.
 
 Organizations undertake this investment precisely because it offers a competitive advantage in return.
 
@@ -93,23 +84,11 @@ We understand that the concerns driving calls for mandatory disclosure are legit
 
 Our position is not that algorithmic trading should operate without any oversight, but that the correct approach is **confidential regulatory transparency**.
 
-Organizations should be required to submit their:
-
-- algorithmic logic
-- parameters
-- research documentation
-
-directly to relevant regulatory bodies, such as:
-
-- the **SEC** and **CFTC** in the United States
-- the **OSC** in Canada
+Organizations should be required to submit their algorithmic logic, parameters, research documentation, and any relevant data directly to relevant regulatory bodies, such as the **SEC** and **CFTC** in the United States, or the **OSC** in Canada.
 
 These bodies already enforce **Regulation SCI, market access rules, and anti-manipulation provisions** that give regulators meaningful supervisory power (SEC, 2014; Ontario Securities Act, 1990).
 
-There should be binding confidentiality agreements in place to prevent any misuse or transfer of that information. This way:
-
-- regulators gain access needed to identify systemic risks
-- firms retain protection over the competitive value of their proprietary systems
+There should be binding confidentiality agreements in place to prevent any misuse or transfer of that information. This way regulators gain access needed to identify systemic risks. At the same time, firms retain protection over the competitive value of their proprietary systems.
 
 This approach is already the standard in other industries.
 
@@ -142,7 +121,7 @@ By revealing algorithms only to appropriate regulatory boards, firms can ensure 
 
 ---
 
-# Works Cited
+## Works Cited
 
 - Boldrin, M., & Levine, D. K. (2013). _The case against patents._ Journal of Economic Perspectives, 27(1), 3–22.  
 https://www.aeaweb.org/articles?id=10.1257/jep.27.1.3
@@ -176,7 +155,7 @@ https://www.wipo.int/en/web/trade-secrets/tradesecrets_faqs
 
 ---
 
-# Collaborators
+## Collaborators
 1. Yash Barve - yhbarve[at]uwaterloo[dot]ca
 2. Nicholas Rebello - nrebello[at]uwaterloo[dot]ca
 3. Roman Guevarra - raguevar[at]uwaterloo[dot]ca
