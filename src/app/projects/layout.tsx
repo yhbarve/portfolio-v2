@@ -2,11 +2,11 @@ import type { ReactNode } from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects Collection – Yash Barve",
+  title: "Yash's Projects",
   description:
     "A showcase of projects by Yash Barve — featuring software development, design, and creative work built with modern technologies.",
   openGraph: {
-    title: "Projects Collection – Yash Barve",
+    title: "Yash's Projects",
     description:
       "A showcase of projects by Yash Barve — featuring software development, design, and creative work built with modern technologies.",
     url: "https://yashbarve.vercel.app/projects",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Projects Collection – Yash Barve",
+    title: "Yash's Projects",
     description:
       "A showcase of projects by Yash Barve — featuring software development, design, and creative work built with modern technologies.",
   },

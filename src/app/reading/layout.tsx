@@ -2,22 +2,22 @@ import type { ReactNode } from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Readings Collection – Yash Barve",
+  title: "Yash's Bookshelf",
   description:
-    "A curated collection of readings, articles, and reflections by Yash Barve — exploring technology, development, design, and personal insights.",
+    "A curated collection of books read by Yash Barve — exploring technology, development, design, and personal insights.",
   openGraph: {
-    title: "Readings Collection – Yash Barve",
+    title: "Yash's Bookshelf",
     description:
-      "A curated collection of readings, articles, and reflections by Yash Barve — exploring technology, development, design, and personal insights.",
+      "A curated collection of books read by Yash Barve — exploring technology, development, design, and personal insights.",
     url: "https://yashbarve.vercel.app/readings",
     siteName: "Yash Barve",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Readings Collection – Yash Barve",
+    title: "Yash's Bookshelf",
     description:
-      "A curated collection of readings, articles, and reflections by Yash Barve — exploring technology, development, design, and personal insights.",
+      "A curated collection of books read by Yash Barve — exploring technology, development, design, and personal insights.",
   },
 };
 
@@ -36,7 +36,7 @@ export default function ReadingLayout({ children }: { children: ReactNode }) {
             </a>
           </div>
           <h1 className="text-5xl font-semibold text-page-titleForeground inline-block pb-3 mt-2">
-            Readings Collection
+            Bookshelf
           </h1>
         </div>
 
