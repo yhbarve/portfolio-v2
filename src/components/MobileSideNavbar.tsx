@@ -41,7 +41,7 @@ export default function MobileSidebarNav() {
 
   // Close on route change (/blogs etc.)
   useEffect(() => {
-    if (open) setOpen(false);
+    setOpen(false);
   }, [pathname]);
 
   // Close on hash change (#projects etc.)

@@ -7,6 +7,7 @@ import Banner from "@/components/ui/Banner";
 import PageAnimation from "@/components/PageAnimation";
 import { CommandMenu } from "@/lib/CommandMenu";
 import { ThemeProvider } from "@/components/theme-provider";
+import SplashScreen from "@/components/SplashScreen";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,8 +49,9 @@ export default function RootLayout({
         <meta property="twitter:image" content="https://yhbarve.me/yb-bg-logo.png" />
       </head>
       <body className={`${inter.className} bg-gradient-to-tr from-background-1 via-background-2 to-background-3`}>
-        <Banner />
         <ThemeProvider>
+          <SplashScreen holdMs={2000} />
+          <Banner />
           <CommandMenu />
           <Providers>
             <PageAnimation>{children}</PageAnimation>
