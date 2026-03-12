@@ -156,6 +156,6 @@ https://www.wipo.int/en/web/trade-secrets/tradesecrets_faqs
 ---
 
 ## Collaborators
-1. Yash Barve - yhbarve[at]uwaterloo[dot]ca
-2. Nicholas Rebello - nrebello[at]uwaterloo[dot]ca
-3. Roman Guevarra - raguevar[at]uwaterloo[dot]ca
+1. Yash Barve – [yhbarve@uwaterloo.ca](mailto:yhbarve@uwaterloo.ca)
+2. Nicholas Rebello - [nrebello@uwaterloo.ca](mailto:nrebello@uwaterloo.ca)
+3. Roman Guevarra - [raguevar@uwaterloo.ca](mailto:roguevar@uwaterloo.ca)
