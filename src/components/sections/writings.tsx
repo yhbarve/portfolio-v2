@@ -6,7 +6,7 @@ export default function Writings() {
   const posts = allPosts
     .filter((p) => p.published)
     .sort((a, b) => +new Date(b.date) - +new Date(a.date))
-    .slice(0, 5);
+    .slice(0, 4);
 
   return (
     <div id="writings" className="pt-12">

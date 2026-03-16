@@ -1,7 +1,7 @@
 ---
 title: "Outsourcing the Mind: Cognitive Friction and the Evolution of Human Intelligence"
 date: "2026-03-16"
-summary: "Computer technology has progressively eliminated the cognitive friction required to learn - from books, to search engines, to AI that now delivers pre-synthesized answers on demand. While the efficiency gains are undeniable, the essay argues that friction was the very mechanism through which knowledge was deeply encoded, and that outsourcing it entirely risks turning users into passive validators rather than active thinkers."
+summary: "Computer technology has progressively eliminated the cognitive friction required to learn - from books, to search engines, to AI that now delivers pre-synthesized answers on demand. While the efficiency gains are undeniable, the essay argues that friction was the very mechanism through which knowledge was deeply encoded, and that outsourcing it entirely risks turning users into passive validators rather than active thinkers. Note: This essay was written for CS492, a CS ethics course at the University of Waterloo."
 tags:
   [
     "technology",

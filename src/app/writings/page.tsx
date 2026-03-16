@@ -9,11 +9,10 @@ export default function BlogsPage() {
     <>
       <div className="grid grid-cols-12 p-4 pb-4 pt-9 text-accent font-semibold">
         <div className="col-span-3 md:col-span-2">Date</div>
-        <div className="col-span-7 md:col-span-4">Title</div>
-        <div className="hidden md:block col-span-5">Summary</div>
+        <div className="col-span-7 md:col-span-9">Title</div>
         <div className="col-span-2 md:col-span-1 mx-auto">Read</div>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col mb-12">
         {posts.map((p) => (
           <div
             key={p.slug}
@@ -30,18 +29,11 @@ export default function BlogsPage() {
                 year: "numeric",
               })}
             </div>
-            <div className="no-underline col-span-7 md:col-span-4 pr-2">
+            <div className="no-underline col-span-7 md:col-span-9 pr-2">
               <a href={`/blog/${p.slug}`} className="m-0 hover:text-accent-foreground" target="_blank">
                 {p.title}
               </a>
             </div>
-            {p.summary && (
-              <p className="hidden md:block md:col-span-5 pr-2">
-                {p.summary.length <= 100
-                  ? p.summary
-                  : p.summary.slice(0, 100) + "..."}
-              </p>
-            )}
             <a
               href={`/blog/${p.slug}`}
               target="_blank"
