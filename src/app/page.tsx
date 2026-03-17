@@ -23,7 +23,7 @@ export default function Home() {
             <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:w-4/12">
               <LeftSide />
             </div>
-            <div className="lg:w-7/12 lg:py-24 py-12 flex flex-col">
+            <div className="lg:w-7/12 lg:py-16 py-12 flex flex-col">
               <AnimatedSection>
                 <Projects />
               </AnimatedSection>

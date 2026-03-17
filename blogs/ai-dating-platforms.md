@@ -18,6 +18,7 @@ tags:
   ]
 published: true
 author: "Yash Barve"
+category: "University"
 ---
 
 Most people are terrible at writing about themselves. Dating profiles are a perfect example — users either undersell themselves with a vague three-liner, or overcorrect with something that sounds like a LinkedIn bio. What if a Large Language Model (LLM) could help bridge that gap?

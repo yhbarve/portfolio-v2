@@ -17,6 +17,7 @@ tags:
   ]
 published: true
 author: "Yash Barve"
+category: "University"
 ---
 
 Social Networking Technologies (SNTs), such as Facebook, LinkedIn, Twitter (now X), and enterprise tools such as Slack and Microsoft Teams, have transformed how organizations communicate, collaborate, and engage with customers. At their core, SNTs allow users to create profiles, connect with peers, share content, and form communities in real time from the comfort of their homes.

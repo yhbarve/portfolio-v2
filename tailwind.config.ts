@@ -18,6 +18,19 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        "xanh-mono": ['"Xanh Mono"', "monospace"],
+        "instrument-serif": ['"Instrument Serif"', "serif"],
+        "space-mono": ['"Space Mono"', "monospace"],
+        "vend-sans": ['"Vend Sans"', "sans-serif"],
+        "vend-sans-italic": ['"Vend Sans"', "italic"],
+        "vend-sans-bold": ['"Vend Sans"', "bold"],
+        "vend-sans-bold-italic": ['"Vend Sans"', "bold italic"],
+        "vend-sans-light": ['"Vend Sans"', "light"],
+        "vend-sans-light-italic": ['"Vend Sans"', "light italic"],
+        "vend-sans-medium": ['"Vend Sans"', "medium"],
+        "vend-sans-medium-italic": ['"Vend Sans"', "medium italic"],
+      },
       colors: {
         background: {
           1: "hsl(var(--background-1) / <alpha-value>)",

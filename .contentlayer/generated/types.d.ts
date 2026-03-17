@@ -19,6 +19,7 @@ export type Post = {
   published: boolean
   tags?: string[] | undefined
   author?: string | undefined
+  category?: string | undefined
   /** Markdown file body */
   body: Markdown
   slug: string

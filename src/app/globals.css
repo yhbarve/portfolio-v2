@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Xanh+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,7 +29,7 @@ html {
 
     --accent: 0 96% 37%;
     --accent-soft: 0 100% 30%;
-    --accent-foreground: 0 96% 37%;
+    --accent-foreground: 0 0% 91%;
     --shadow: 0 96% 37%;
   }
 
@@ -47,7 +51,7 @@ html {
 
     --accent: 0 96% 37%;
     --accent-soft: 0 100% 30%;
-    --accent-foreground: 0 100% 30%;
+    --accent-foreground: 0 0% 91%;
     --shadow: 0 96% 37%;
   }
 
@@ -69,7 +73,7 @@ html {
 
     --accent: 71 100% 50%;
     --accent-soft: 71 100% 50%;
-    --accent-foreground: 71 100% 50%;
+    --accent-foreground: 0 0% 5%;
     --shadow: 71 100% 50%;
   }
 
@@ -91,7 +95,7 @@ html {
 
     --accent: 0 0% 100%;
     --accent-soft: 0 0% 100%;
-    --accent-foreground: 46 100% 50%;
+    --accent-foreground: 351 100% 28%;
     --shadow: 0 0% 100%;
   }
 }

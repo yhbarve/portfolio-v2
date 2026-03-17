@@ -16,6 +16,7 @@ tags:
   ]
 published: true
 author: "Yash Barve"
+category: "Technical"
 ---
 
 ## Introduction

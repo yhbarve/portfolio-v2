@@ -1,11 +1,11 @@
 export default function Watering() {
     return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-        <a href='https://cs.uwatering.com/#https://yhbarve.me?nav=prev' className="text-accent-foreground pr-1">←</a>
+        <a href='https://cs.uwatering.com/#https://yhbarve.me?nav=prev' className="text-accent pr-1">←</a>
         <a href='https://cs.uwatering.com/#https://yhbarve.me' target='_blank' className="text-text-1 block w-5 h-5 shrink-0 opacity-90" aria-label="CS Webring">
             <LionIcon />
         </a>
-        <a href='https://cs.uwatering.com/#https://yhbarve.me?nav=next' className="text-accent-foreground">→</a>
+        <a href='https://cs.uwatering.com/#https://yhbarve.me?nav=next' className="text-accent">→</a>
     </div>
     );
 }
