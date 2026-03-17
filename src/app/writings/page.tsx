@@ -1,14 +1,7 @@
 import Link from "next/link";
 import { allPosts } from "../../../.contentlayer/generated";
 import { cn } from "@/lib/utils";
-
-export const WRITING_CATEGORIES = [
-  "Reflections",
-  "University",
-  "Technical",
-] as const;
-
-export type WritingCategory = (typeof WRITING_CATEGORIES)[number];
+import { WRITING_CATEGORIES, type WritingCategory } from "@/lib/writings";
 
 interface WritingsPageProps {
   searchParams: Promise<{ category?: string }>;
