@@ -85,7 +85,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     /* base size tuned down for readability */
     prose prose-base md:prose-lg
     prose-color-inherit prose-no-heading-underline
-    max-w-none leading-relaxed pb-24
+    max-w-none leading-relaxed
 
     /* headings */
     prose-headings:font-semibold

@@ -66,8 +66,6 @@ export default function Interest({
 }: {
   interests?: string[];
 }) {
-  const [active, setActive] = useState<InterestInfo | null>(null);
-
   const items: InterestInfo[] = interests?.length
     ? interests.map((label) => {
         const found = INTEREST_DETAILS.find((d) => d.label === label);
@@ -79,6 +77,8 @@ export default function Interest({
         );
       })
     : INTEREST_DETAILS;
+
+  const [active, setActive] = useState<InterestInfo | null>(() => items[0] ?? null);
 
   return (
     <div id="interests" className="mt-12 mb-24">
@@ -93,17 +93,13 @@ export default function Interest({
             <button
               key={interest.label}
               type="button"
-              onClick={() =>
-                setActive((prev) =>
-                  prev?.label === interest.label ? null : interest,
-                )
-              }
+              onClick={() => setActive(interest)}
               className={[
                 "rounded-full border px-4 py-2 text-sm font-medium shadow-sm transition-colors",
                 "focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-3",
                 isActive
                     ? "text-accent border border-accent"
-                    : "text-text-1 bg-surface-1 border border-border/30"
+                    : "text-text-1 bg-surface-1 border border-border/30 hover:bg-surface-2 hover:border-accent/60 hover:text-accent-soft",
               ].join(" ")}
             >
               {interest.label}

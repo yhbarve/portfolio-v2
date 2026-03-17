@@ -45,8 +45,8 @@ export default function ProjectsLayout({ children }: { children: ReactNode }) {
         {/* Page content */}
         {children}
 
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

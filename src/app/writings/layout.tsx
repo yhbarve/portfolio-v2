@@ -44,9 +44,9 @@ export default function BlogsLayout({ children }: { children: ReactNode }) {
 
         {/* Page content */}
         {children}
-
-        <Footer />
+    
       </div>
+      <Footer />
     </div>
   );
 }

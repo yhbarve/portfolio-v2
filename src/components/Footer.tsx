@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-border/20 py-4 mx-auto fixed bottom-0 left-0 right-0 bg-background-1 px-6">
+    <footer className="mt-16 border-t border-border/20 py-4 bg-background-1">
       <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between max-w-screen-xl mx-auto">
         <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-text-1/80">
           <Link href="/" className="hover:text-accent transition-colors">
@@ -17,7 +17,7 @@ export default function Footer() {
           <Link href="/reading" className="hover:text-accent transition-colors">
             Reading
           </Link>
-          <span className="hidden md:inline text-border/60">•</span>
+          <span className="hidden md:inline text-border">•</span>
           <span>©{new Date().getFullYear()}, Yash Harshal Barve</span>
         </div>
 
