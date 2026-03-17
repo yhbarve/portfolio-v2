@@ -40,7 +40,7 @@ export default function Home() {
                 <Writings />
               </AnimatedSection>
               <AnimatedSection>
-                <Interest interests={["Formula 1", "Cricket", "Graphic Design"]} />
+                <Interest interests={["Reading", "Formula 1", "Music", "Movies & TV", "Sports", "Graphic Design"]} />
               </AnimatedSection>
               <div className="lg:hidden block mt-12 mx-auto">
                 <Socials />
