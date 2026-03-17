@@ -90,6 +90,27 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     "caption": "Sunset at the Beach",
     "date": "August 7, 2022",
     "layout": "normal"
-  }
+  },
+  {
+    "src": "/gallery/20240926_01.jpg",
+    "alt": "20240926_01.jpg",
+    "caption": "Fall Sunsets",
+    "date": "September 26, 2024",
+    "layout": "normal"
+  },
+  {
+    "src": "/gallery/20240425_01.jpeg",
+    "alt": "20240425_01.jpeg",
+    "caption": "Reflections",
+    "date": "April 25, 2024",
+    "layout": "normal"
+  },
+  {
+    "src": "/gallery/20250721_01.jpg",
+    "alt": "20250721_01.jpg",
+    "caption": "Forza Ferrari ♥️",
+    "date": "July 21, 2025",
+    "layout": "normal"
+  },
 ];
 
