@@ -38,7 +38,7 @@ const INTEREST_DETAILS: InterestInfo[] = [
   {
     label: "Movies & TV",
     description:
-      "Massive fan of the Mission: Impossible franchise. Drawn to thriller,sci-fi and dystopian genres that explore complex future worlds and technological shifts.",
+      "Massive fan of the Mission: Impossible franchise. Drawn to thriller, sci-fi and dystopian genres that explore complex future worlds and technological shifts.",
   },
   {
     label: "Sports",
@@ -83,7 +83,7 @@ export default function Interest({
   return (
     <div id="interests" className="mt-12 mb-24">
       <div className="text-sm font-bold pb-2 cursor-default text-accent flex items-center gap-2">
-        <span className="text-base">INTERESTS</span>
+        <span className="text-base">HOBBIES & INTERESTS</span>
         <span className="text-xs font-normal text-text-1">(Click to view more)</span>
       </div>
       <div className="flex flex-wrap gap-2 text-text-1">
