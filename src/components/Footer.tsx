@@ -15,7 +15,10 @@ export default function Footer() {
             Writings
           </Link>
           <Link href="/reading" className="hover:text-accent transition-colors">
-            Reading
+            Bookshelf
+          </Link>
+          <Link href="/gallery" className="hover:text-accent transition-colors">
+            Gallery
           </Link>
           <span className="hidden md:inline text-border">•</span>
           <span>©{new Date().getFullYear()}, Yash Harshal Barve</span>
