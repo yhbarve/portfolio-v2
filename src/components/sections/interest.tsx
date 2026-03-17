@@ -61,8 +61,16 @@ const INTEREST_DETAILS: InterestInfo[] = [
   },
 ];
 
-export default function Interest() {
+export default function Interest({
+  interests,
+}: {
+  interests?: string[];
+}) {
   const [active, setActive] = useState<InterestInfo | null>(null);
+
+  const details = interests?.length
+    ? INTEREST_DETAILS.filter((d) => interests.includes(d.label))
+    : INTEREST_DETAILS;
 
   return (
     <div id="interests" className="mt-12 mb-24">
@@ -71,7 +79,7 @@ export default function Interest() {
         <span className="text-xs font-normal text-text-1">(Click to view more)</span>
       </div>
       <div className="flex flex-wrap gap-2 text-text-1">
-        {INTEREST_DETAILS.map((interest) => {
+        {details.map((interest) => {
           const isActive = active?.label === interest.label;
           return (
             <button
