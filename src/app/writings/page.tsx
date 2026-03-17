@@ -24,7 +24,7 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
     .sort((a, b) => +new Date(b.date) - +new Date(a.date));
 
   return (
-    <>
+    <div className="pb-24">
       <div className="flex flex-wrap gap-2 pb-6 pt-2">
         <Link
           href="/writings"
@@ -112,6 +112,6 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
           );
         })}
       </div>
-    </>
+    </div>
   );
 }

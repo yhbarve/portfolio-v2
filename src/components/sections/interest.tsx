@@ -1,34 +1,109 @@
-import InterestCard from "../InterestCard";
+ "use client";
 
-export default function Interest({interests}:{interests:Array<string>}){
-    return (
-        <div id="interests" className="mt-12">
-            <div className="text-sm font-bold pb-2 cursor-default text-accent">INTERESTS</div>
-            <div className="flex flex-col gap-4 text-text-1">
-                <div className="flex flex-col lg:grid lg:grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-            hover:text-text-1 transition duration-200 ease-in-out rounded-md px-5 py-5 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                    <div className="hidden lg:col-span-1 lg:flex flex-col">
-                        <div className="font-light max-w-[90%]">01</div>
-                    </div>
-                    <div className="col-span-4 flex flex-col">
-                        <div className="text-text-1 font-medium">Reading</div>
-                        <div className="font-light text-sm"><div className="font-normal inline">Description: </div>Since 2023, I&apos;ve been trying to read as many books. However, I&apos;ve been on and off. Recently, I got a Kindle to make reading more fun and convenient. I usually read fiction, with an occasional non-fiction read. Here&apos;s my <a href="/reading" className="underline hover:text-accent-foreground">bookshelf</a>. Book recommendations are welcome!</div>                   
-                    </div>
-                </div>
-                <InterestCard index="02" title="Formula 1" desc="I have been an avid Formula 1 fan since 2018. The first race I watched live on TV was the 2018 Belgian Grand Prix, and since then I haven't missed a single one. I also watched several older races and watched a lot of documentaries. So now I know about F1 history right from the 70s and 80s. My all-time favorite driver is Sebastian Vettel. Since his retirement, I've been supporting Charles Leclerc and Scuderia Ferrari, despite the constant stress and heartbreaks that come with it. Next year for sure is our year! Beyond just watching, I love understanding the technical side of F1, like tyre choices, race strategies, and car setups. I've also been playing F1 games on PS5 with a professional sim setup, so I also know all the track layouts which makes the races even more immersive and exciting for me!" />
+import { useState, type ReactNode } from "react";
+import Link from "next/link";
 
-                <div className="flex flex-col lg:grid lg:grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-            hover:text-text-1 transition duration-200 ease-in-out rounded-md px-5 py-5 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg">
-                    <div className="hidden lg:col-span-1 lg:flex flex-col">
-                        <div className="font-light max-w-[90%]">03</div>
-                    </div>
-                    <div className="col-span-4 flex flex-col">
-                        <div className="text-text-1 font-medium">Graphic Design</div>
-                        <div className="font-light text-sm"><div className="font-normal inline">Description: </div>I think I have strong attention to detail. I managed an F1 Instagram page called <a href="https://www.instagram.com/onef1_official/" className="underline hover:text-accent-foreground">OneF1</a> in 2022 and 2023. The page grew to nearly 100 followers. I used Canva to make posts covering race weeks, driver standings, track stats, and F1 news. I constantly experimented with layouts, templates, and colors, and refined the quality over time. Eventually, I found it difficult to manage OneF1 along with my studies and internships. So, I decided to call it a day ahead of the 2024 season. I had fun during the 2 years, and definitely learnt more about social media content creation.
-                        </div>                   
-                    </div>
-                </div>
-            </div>
+type InterestInfo = {
+  label: string;
+  description: ReactNode;
+};
+
+const INTEREST_DETAILS: InterestInfo[] = [
+  {
+    label: "Reading",
+    description: (
+      <>
+        Mostly fiction with occasional non‑fiction. I’m trying to read more
+        consistently, and I keep a running log on the{" "}
+        <Link
+          href="/reading"
+          className="underline underline-offset-4 hover:text-accent"
+        >
+          Bookshelf
+        </Link>{" "}
+        page.
+      </>
+    ),
+  },
+  {
+    label: "Formula 1",
+    description:
+      "Watched every race since Spa 2018. Member of the Tifosi. Delusionally supporting Scuderia Ferrari and Charles Leclerc. Intrigued by the technical and strategic sides of the sport as much as the racing.",
+  },
+  {
+    label: "Music",
+    description:
+      "Don't think I could live without music. Almost always plugged in to my headphones. My go-to genres are lofi hip-hop, movie scores, classical, and Arijit Singh. Love to curate my own playlists for every mood.",
+  },
+  {
+    label: "Movies & TV",
+    description:
+      "Massive fan of the Mission: Impossible franchise. Drawn to thriller,sci-fi and dystopian genres that explore complex future worlds and technological shifts.",
+  },
+  {
+    label: "Sports",
+    description:
+      "Love swimming, and playing cricket & table tennis. Can play badminton, tennis, and football (soccer).",
+  },
+  {
+    label: "Graphic Design",
+    description:
+      <>
+        Enjoy experimenting with layouts, color, and typography. Ran a small F1 Instagram page (
+        <Link
+          href="https://www.instagram.com/onef1_official/"
+          className="underline underline-offset-4 hover:text-accent"
+        >
+          OneF1
+        </Link>
+        ) for a while, creating race and stats graphics.
+      </>,
+  },
+];
+
+export default function Interest() {
+  const [active, setActive] = useState<InterestInfo | null>(null);
+
+  return (
+    <div id="interests" className="mt-12 mb-24">
+      <div className="text-sm font-bold pb-2 cursor-default text-accent flex items-center gap-2">
+        <span className="text-base">INTERESTS</span>
+        <span className="text-xs font-normal text-text-1">(Click to view more)</span>
+      </div>
+      <div className="flex flex-wrap gap-2 text-text-1">
+        {INTEREST_DETAILS.map((interest) => {
+          const isActive = active?.label === interest.label;
+          return (
+            <button
+              key={interest.label}
+              type="button"
+              onClick={() =>
+                setActive((prev) =>
+                  prev?.label === interest.label ? null : interest,
+                )
+              }
+              className={[
+                "rounded-full border px-4 py-2 text-sm font-medium shadow-sm transition-colors",
+                "focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-3",
+                isActive
+                    ? "text-accent border border-accent"
+                    : "text-text-1 bg-surface-1 border border-border/30"
+              ].join(" ")}
+            >
+              {interest.label}
+            </button>
+          );
+        })}
+      </div>
+
+      {active && (
+        <div className="mt-4 w-full max-w-xl rounded-lg border border-border/30 bg-surface-1/80 p-4 text-sm text-text-1 shadow-md backdrop-blur-sm">
+          <div className="mb-1 text-xs font-semibold tracking-wide text-accent">
+            {active.label.toUpperCase()}
+          </div>
+          <p className="leading-relaxed">{active.description}</p>
         </div>
-    )
+      )}
+    </div>
+  );
 }

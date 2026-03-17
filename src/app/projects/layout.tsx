@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 
+import Footer from "@/components/Footer";
+
 export const metadata: Metadata = {
   title: "Yash's Projects",
   description:
@@ -42,6 +44,8 @@ export default function ProjectsLayout({ children }: { children: ReactNode }) {
 
         {/* Page content */}
         {children}
+
+        <Footer />
       </div>
     </div>
   );

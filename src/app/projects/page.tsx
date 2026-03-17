@@ -3,7 +3,7 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 
 export default function Home() {
   return (
-    <div className="scroll-smooth transition duration-200 ease-in-out">
+    <div className="pb-24">
         <div className="grid grid-cols-12 p-2 pb-4 pt-9 text-accent font-semibold">
           <div className="col-span-2 lg:col-span-1">Year</div>
           <div className="col-span-4">Project</div>
