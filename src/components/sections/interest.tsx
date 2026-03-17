@@ -63,7 +63,7 @@ const INTEREST_DETAILS: InterestInfo[] = [
     label: "Photography",
     description: (
       <>
-        Use my phone's camera to capture memories and beautiful moments I see around me. Check out some my best captures on the <Link href="/gallery" className="underline underline-offset-4 hover:text-accent">Gallery</Link> page.
+        Use my phone&apos;s camera to capture memories and beautiful moments I see around me. Check out some my best captures on the <Link href="/gallery" className="underline underline-offset-4 hover:text-accent">Gallery</Link> page.
       </>
     ),
   },
