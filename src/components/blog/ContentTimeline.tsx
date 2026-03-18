@@ -66,9 +66,9 @@ export default function ContentTimeline({
 
   return (
     <div className="lg:sticky lg:top-24">
-      <div className="rounded-xl border border-border/20 bg-surface-1/70 p-4">
-        {/* <div className="mb-3 text-sm font-regular tracking-wide text-accent">On this page</div> */}
-        <nav className="space-y-1">
+      <div className="">
+        <div className="mb-3 text-sm font-regular tracking-wide text-accent">CONTENTS</div>
+        <nav className="space-y-1 border-l-2 border-border pl-4">
           {headings.map((h) => {
             const isActive = h.id === activeId;
             return (

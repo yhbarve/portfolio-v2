@@ -7,7 +7,7 @@ export default function SkillsCard({category, skills}: {category: string, skills
                     <div className="mb-2 lg:mb-0 text-sm lg:text-base text-center lg:text-left font-medium lg:font-light">{category}</div>
                 </div>
                 <div className="lg:col-span-4 flex gap-1 gap-y-2 items-center flex-wrap justify-center lg:justify-start">
-                    {skills.map((key, item) => <div key={item} className="text-xs bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2">{key}</div>)}
+                    {skills.map((key, item) => <div key={item} className="text-xs lg:text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 font-normal lg:font-light">{key}</div>)}
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@ export default function EducationCard({year, program, uni, courses}: {year: stri
             <div className="col-span-4 flex flex-col items-center lg:items-start justify-center lg:justify-start">
                 <div className="text-text-1 text-base mb-1 text-center font-medium lg:text-left">{program}</div>
                 <div className="lg:font-light font-normal text-accent mb-4 text-center">{uni}<span className="inline lg:hidden"> · {year}</span></div>
-                <div className="font-normal flex flex-wrap text-xs gap-2 items-center justify-center lg:justify-start"><div className="font-normal inline ">Courses completed: </div>{courses.map((c, item) => <div key={item} className="font-normal bg-surface-3 border border-border/20 text-accent-soft rounded-2xl px-1 self-center text-xs">{c}</div>)}</div>
+                <div className="font-normal flex flex-wrap text-xs gap-2 items-center justify-center lg:justify-start"><div className="font-normal inline ">Courses completed: </div>{courses.map((c, item) => <div key={item} className="font-normal lg:font-light bg-surface-3 border border-border/20 text-accent-soft rounded-2xl px-1 self-center text-xs lg:text-sm">{c}</div>)}</div>
             </div>
         </div>
     )

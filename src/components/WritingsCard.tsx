@@ -53,7 +53,7 @@ export default function WritingsCard({
             {title}
           </a>
           <div className="mb-1 font-normal text-base text-accent lg:text-left hidden lg:block">{formatDateWithOrdinal(date).toUpperCase()}</div>
-          <div className="font-normal text-xs text-justify lg:text-left">
+          <div className="font-normal lg:font-light text-xs lg:text-sm text-justify lg:text-left">
             <div className="font-semibold inline">Summary: </div>
             {summary}
           </div>
