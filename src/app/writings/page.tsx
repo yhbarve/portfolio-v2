@@ -77,7 +77,7 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
                   year: "numeric",
                 })}
               </div>
-              <div className="no-underline col-span-8 md:col-span-8 pr-2 text-xs lg:text-base font-medium lg:font-semibold">
+              <div className="no-underline col-span-8 md:col-span-8 pr-2 text-xs lg:text-base font-medium lg:font-medium">
                 <a
                   href={`/blog/${p.slug}`}
                   className="m-0 lg:hover:text-accent"
@@ -85,7 +85,7 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
                   {p.title}
                 </a>
               </div>
-              <div className="col-span-2 md:col-span-2 text-xs lg:text-base text-accent-foreground font-medium mx-auto bg-accent border border-border/30 rounded-full px-1 lg:px-2 py-1 lg:py-2">
+              <div className="col-span-2 md:col-span-2 text-xs lg:text-sm text-accent-foreground font-medium mx-auto bg-accent border border-border/30 rounded-full px-1 lg:px-2 py-1 lg:py-2">
                 {postCategory ?? "—"}
               </div>
               {/* <a

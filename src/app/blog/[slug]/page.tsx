@@ -48,7 +48,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
   };
 
   return (
-    <article className="lg:max-w-3xl md:mx-auto lg:py-12 text-page-itemForeground lg:mx-4">
+    <article className="mx-auto max-w-4xl px-1 lg:px-0 lg:py-12 text-page-itemForeground">
       {/* <div className="pl-4 flex gap-1 font-light mb-4">/<a className="hover:underline transition-all ease-in-out" href="/blogs">blogs</a>/<span className="italic">{post.title}</span></div> */}
       <div className="hover:translate-x-1 transition-all ease-in-out mb-4 hidden md:block">
         <a
@@ -62,10 +62,10 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         {post.title}
       </h1>
       <div className="flex flex-col mb-8 gap-4">
-        <div className="text-sm md:text-lg text-accent text-justify lg:text-left">
+        <div className="text-sm md:text-lg text-accent-soft text-justify lg:text-left">
           {post.summary}
         </div>
-        <div className="text-sm md:text-md lg:w-fit lg:mx-auto text-text-1 text-center lg:text-left">
+        <div className="text-sm md:text-md lg:w-fit text-text-1 text-center lg:text-left">
           {formatDateWithOrdinal(post.date)}
         </div>
       </div>
@@ -121,7 +121,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     /* base size tuned down for readability */
     prose prose-base md:prose-lg
     prose-color-inherit prose-no-heading-underline
-    max-w-prose md:max-w-[65ch] leading-relaxed break-words
+    max-w-prose md:max-w-[90ch] leading-relaxed break-words
 
     /* headings */
     prose-headings:font-semibold
@@ -134,7 +134,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     /* body text */
     lg:prose-p:leading-7 lg:prose-p:my-3
     prose-p:text-text-1 text-justify lg:text-left
-    text-sm lg:text-base
+    text-sm lg:text-lg
 
     /* links */
     prose-a:underline-offset-4
