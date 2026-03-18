@@ -1,5 +1,5 @@
 ---
-title: "Newcomb’s Paradox: The Logic of the Locked Box"
+title: "Newcomb's Paradox: The Game Where Thinking Too Hard Loses"
 date: "2026-03-18"
 summary: "What does your decision-making style say about you? Newcomb's Paradox is a thought experiment involving a near-perfect Predictor and two boxes. You're forced to choose between two equally intuitive but conflicting strategies. This essay explores both options, and makes the case for the one I'd pick."
 tags:
@@ -17,7 +17,7 @@ tags:
   ]
 published: true
 author: "Yash Barve"
-category: ""
+category: "Explore"
 coverImage: "/blog/newcombs-paradox.png"
 coverImageCreditText: "Medium"
 coverImageCreditLink: "https://miro.medium.com/1*YZ3qcaFHb51qHJsvwi4NYw.png"
@@ -25,16 +25,13 @@ coverImageCreditLink: "https://miro.medium.com/1*YZ3qcaFHb51qHJsvwi4NYw.png"
 
 ## Introduction
 
-Our lives are the sum of our choices. Each decision builds a system of thinking,
-much like training a machine learning model. We often only understand the "accuracy"
-of these weights after the results come in. As Kierkegaard said, *"Life can only be
-understood backwards; but it must be lived forwards."*
+There are two boxes in front of you. Box A is transparent and has $1,000. Box B is opaque. It has either $1,000,000 or nothing. A near-perfect Predictor has already decided what's inside, based on a model of how *you* think. It's left the room. The contents are locked.
 
-This essay explores Newcomb's Paradox, a thought experiment that forces a choice
-between two equally intuitive but conflicting logics. Your answer reveals the core
-of your decision-making framework. In the following sections, I will present my own
-choice and the thought process behind it. While I will explore the opposing view, I
-intend to show why I don't quite agree with it.
+What do you do?
+
+That's Newcomb's Paradox, and how you answer it reveals something uncomfortable about the way you make decisions. Every choice you've ever made has quietly shaped a system inside you, much like training a machine learning model. Your instincts, your risk tolerance, your relationship with certainty — all of it encoded, weight by weight, decision by decision. You rarely get to access these weights directly. Newcomb's Paradox is one of the few thought experiments that forces you to.
+
+In this essay, I'll walk through both strategies and make my case for the one I'd choose. Even after running the paradox through six AI models, I'm not changing my answer.
 
 ---
 
@@ -177,7 +174,7 @@ Two-Box. This way, your total payout would be $1,001,000.
 
 ---
 
-## Will I Change My Stance?
+## Am I Switching to One-Boxing?
 
 I will not. The fact that I immediately thought about Two-Boxing aligns with how I
 approach decision-making in life. I like to deeply analyze all the alternatives before
@@ -404,7 +401,7 @@ converge. I was expecting at least one model to Two-Box — but that didn't happ
 
 ---
 
-## Do I Change My Stance Now?
+## Do I Feel Convinced Enough to Switch?
 
 Not quite — but I'm not as stubborn as before. I'm starting to see why One-Boxing
 might work. With Two-Boxing, my maximum reward is most likely capped at $1,000. But
@@ -422,3 +419,10 @@ maximising certainty. To One-Box wouldn't just be a choice — it would require 
 complete re-training of my decision-making model.
 
 Until then, I'll take the $1,000.
+
+---
+
+## References
+- Veritasium, This Paradox Splits Smart People 50/50 (https://www.youtube.com/watch?v=Ol18JoeXlVI&t=51s)
+- Computerphile, LLMs and Newcomb's Problem (https://www.youtube.com/watch?v=bdbhKoypnFI)
+- Medium.com, Newcomb's Paradox... (https://benvanlier.substack.com/p/newcombs-paradox)

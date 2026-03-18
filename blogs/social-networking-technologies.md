@@ -17,7 +17,7 @@ tags:
   ]
 published: true
 author: "Yash Barve"
-category: "University"
+category: "Explore"
 coverImage: "/blog/social-network.jpg"
 coverImageCreditText: "The New York Times"
 coverImageCreditLink: "https://static01.nyt.com/images/2020/10/05/arts/05social-network01/05social-network01-superJumbo-v3.jpg"

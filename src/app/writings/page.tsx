@@ -59,7 +59,7 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
         {/* <div className="col-span-1 mx-auto">Read</div> */}
       </div>
       <div className="flex flex-col mb-12">
-        {posts.map((p) => {
+        {posts.length > 0 ? posts.map((p) => {
           const postCategory = (p as { category?: string }).category;
           return (
             <div
@@ -85,7 +85,7 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
                   {p.title}
                 </a>
               </div>
-              <div className="col-span-2 md:col-span-2 text-xs lg:text-sm text-accent-foreground font-medium mx-auto bg-accent border border-border/30 rounded-full px-1 lg:px-2 py-1 lg:py-2">
+              <div className="col-span-2 md:col-span-2 text-xs lg:text-sm text-accent font-medium mx-auto px-1 lg:px-2">
                 {postCategory ?? "—"}
               </div>
               {/* <a
@@ -109,7 +109,9 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
               </a> */}
             </div>
           );
-        })}
+        }) : (
+          <div className="text-center text-text-1 font-light py-24">Coming soon...</div>
+        )}
       </div>
     </div>
   );

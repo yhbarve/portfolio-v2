@@ -15,7 +15,7 @@ tags:
   ]
 published: true
 author: "Yash Barve"
-category: "University"
+category: "Explore"
 coverImage: "/blog/project-management.jpg"
 coverImageCreditText: "Wallpapers.com"
 coverImageCreditLink: "https://wallpapers.com/images/featured/project-management-wfbuewoquiigeuht.jpg"

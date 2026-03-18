@@ -18,7 +18,7 @@ tags:
   ]
 published: true
 author: "Yash Barve"
-category: "University"
+category: "Explore"
 coverImage: "/blog/ai-dating.gif"
 coverImageCreditText: "Bloomberg"
 coverImageCreditLink: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i6gOQzxSV3RQ/v1/-999x-999.gif"

@@ -16,7 +16,7 @@ tags:
   ]
 published: true
 author: "Yash Barve"
-category: "Technical"
+category: "Build"
 coverImage: "/blog/markdown-blog.jpg"
 coverImageCreditText: "Medium"
 coverImageCreditLink: "https://miro.medium.com/v2/resize:fit:1400/0*wmXQfUuyN2IhVDg3"
