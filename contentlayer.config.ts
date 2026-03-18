@@ -17,6 +17,9 @@ export const Post = defineDocumentType(() => ({
     tags: { type: "list", of: { type: "string" } },
     author: { type: "string" },
     category: { type: "string" }, // e.g. "Personal", "For Uni", "Technical", "Essays"
+    coverImage: { type: "string" }, // e.g. "/blog-covers/my-post.jpg"
+    coverImageCreditText: { type: "string" },
+    coverImageCreditLink: { type: "string" },
   },
   computedFields: {
     slug: {

@@ -24,37 +24,36 @@ export default function ProjectCardMobile({
   return (
     <div>
       <div
-        className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-            hover:text-text-1 transition duration-200 ease-in-out rounded-md px-5 py-5 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg"
+        className="grid grid-cols-6 border border-border/5 bg-surface-1 transition duration-200 ease-in-out rounded-md p-3 cursor-default"
       >
-        <div className="col-span-5">
-          <div className="transition-transform ease-in-out font-medium mb-2 text-text-1 text-lg flex items-center">
-            <div className="">{name}</div>
+        <div className="col-span-6">
+          <div className="transition-transform ease-in-out font-medium mb-3 text-accent text-base flex items-center justify-center">
+            <div>{name}</div>
           </div>
-          <div className="font-light text-sm flex flex-col gap-2">
+          <div className="font-normal text-xs flex flex-col gap-1 text-justify">
             {desc.map((d, item) => (
               <div key={item} className="flex gap-2 text-accent">
                 · <div className="text-text-1">{d}</div>
               </div>
             ))}
           </div>
-          <div className="flex gap-1 gap-y-2 mt-4 flex-wrap">
+          <div className="flex gap-1 gap-y-2 mt-4 flex-wrap justify-center">
             {skills.map((key, item) => (
               <div
                 key={item}
-                className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2"
+                className="text-xs bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2"
               >
                 {key}
               </div>
             ))}
           </div>
-          <div className="flex gap-1 items-center mt-6">
-            <div className="font-normal text-sm">Check it out:</div>
+          <div className="flex gap-1 items-center mt-6 justify-center">
+            <div className="font-normal text-xs">Check it out:</div>
             {link && (
               <a
                 href={link}
                 target="_blank"
-                className="flex gap-1 items-center text-sm px-2 text-text-1 border border-border/20 hover:text-accent-foreground transition ease-in-out w-fit rounded-2xl cursor-pointer"
+                className="flex gap-1 items-center text-xs px-2 text-text-1 underline-offset-2 underline"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +72,7 @@ export default function ProjectCardMobile({
               <a
                 href={youtube}
                 target="_blank"
-                className="flex gap-1 items-center text-sm px-2 text-text-1 border border-border/20 hover:text-accent-foreground transition ease-in-out w-fit rounded-2xl cursor-pointer"
+                className="flex gap-1 items-center text-xs px-2 text-text-1 underline-offset-2 underline"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +90,7 @@ export default function ProjectCardMobile({
               <a
                 href={github}
                 target="_blank"
-                className="flex gap-1 items-center text-sm px-2 text-text-1 border border-border/20 hover:text-accent-foreground transition ease-in-out w-fit rounded-2xl cursor-pointer"
+                className="flex gap-1 items-center text-xs px-2 text-text-1 underline-offset-2 underline"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

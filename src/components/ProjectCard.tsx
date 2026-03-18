@@ -51,7 +51,7 @@ export default function ProjectCard(props: ProjectCardProps) {
               <a
                 href={link}
                 target="_blank"
-                className="flex gap-1 items-center text-sm px-2 text-text-1 hover:text-accent-foreground transition ease-in-out w-fit rounded-md cursor-pointer"
+                className="flex gap-1 items-center text-sm px-2 text-text-1 hover:text-accent transition ease-in-out w-fit rounded-md cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function ProjectCard(props: ProjectCardProps) {
               <a
                 href={youtube}
                 target="_blank"
-                className="flex gap-1 items-center text-sm px-2 text-text-1 hover:text-accent-foreground transition ease-in-out w-fit rounded-md cursor-pointer"
+                className="flex gap-1 items-center text-sm px-2 text-text-1 hover:text-accent transition ease-in-out w-fit rounded-md cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ export default function ProjectCard(props: ProjectCardProps) {
               <a
                 href={github}
                 target="_blank"
-                className="flex gap-1 items-center text-sm px-2 text-text-1 hover:text-accent-foreground transition ease-in-out w-fit rounded-md cursor-pointer"
+                className="flex gap-1 items-center text-sm px-2 text-text-1 hover:text-accent transition ease-in-out w-fit rounded-md cursor-pointer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

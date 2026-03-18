@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <div id="experiences" className="pt-12">
       <div className="flex items-center pb-2 justify-between">
-        <div className="text-sm font-bold cursor-default text-accent">
+        <div className="text-accent-foreground lg:text-accent font-black lg:font-bold cursor-default bg-accent lg:bg-transparent p-1 lg:p-0 rounded-lg lg:rounded-none w-full lg:w-auto text-center lg:text-left">
           EXPERIENCE
         </div>
         <div className="transition duration-200 ease-in-out text-accent hover:translate-x-1 hidden lg:block">
@@ -60,15 +60,12 @@ export default function Experience() {
             "typescript",
             "tailwindcss",
             "supabase",
-            "postgresql",
-            "database design",
-            "api integration",
-            "data modeling"
+            "postgresql"
           ]}
         />
         <ExperienceCard
           year="SEP — DEC '24"
-          title="Software Engineering Intern (Performance Optimization)"
+          title="Software Engineering Intern"
           org="AutoTrader.ca"
           desc={[
             "Profiled and optimized frontend performance for a high-traffic marketplace, reducing Largest Contentful Paint (LCP) by 28% through JavaScript refactoring, async asset loading, and image compression.",
@@ -76,21 +73,15 @@ export default function Experience() {
             "Analyzed site structure and crawl data using Screaming Frog SEO Spider, identifying trends and high-impact issues to prioritize fixes.",
             "Improved scalability for 15K+ dynamic URLs by refining server-side rendering, optimizing API responses, and removing redundant scripts",
             "Automated site audit workflows using Python + REST APIs to streamline reporting and recurring checks.",
-            "Researched platform-specific best practices and contributed insights to refine the organization’s social media marketing strategy."
           ]}
           skills={[
             "javascript",
             "web performance",
             "core web vitals",
-            "pagespeed insights",
-            "google lighthouse",
-            "chrome devtools",
             "seo",
-            "screaming frog seo spider",
             "python",
             "rest apis",
             "data analysis",
-            "server-side rendering"
           ]}
 
         />
@@ -200,15 +191,12 @@ export default function Experience() {
             "typescript",
             "tailwindcss",
             "supabase",
-            "postgresql",
-            "database design",
-            "api integration",
-            "data modeling"
+            "postgresql"
           ]}
         />
         <ExperienceCardMobile
           year="Sep — Dec '24"
-          title="Software Engineering Intern (Performance Optimization)"
+          title="Software Engineering Intern"
           org="AutoTrader.ca"
           desc={[
             "Profiled and optimized frontend performance for a high-traffic marketplace, reducing Largest Contentful Paint (LCP) by 28% through JavaScript refactoring, async asset loading, and image compression.",
@@ -216,21 +204,15 @@ export default function Experience() {
             "Analyzed site structure and crawl data using Screaming Frog SEO Spider, identifying trends and high-impact issues to prioritize fixes.",
             "Improved scalability for 15K+ dynamic URLs by refining server-side rendering, optimizing API responses, and removing redundant scripts",
             "Automated site audit workflows using Python + REST APIs to streamline reporting and recurring checks.",
-            "Researched platform-specific best practices and contributed insights to refine the organization’s social media marketing strategy."
           ]}
           skills={[
             "javascript",
             "web performance",
             "core web vitals",
-            "pagespeed insights",
-            "google lighthouse",
-            "chrome devtools",
             "seo",
-            "screaming frog seo spider",
             "python",
             "rest apis",
             "data analysis",
-            "server-side rendering"
           ]}
 
         />
@@ -293,8 +275,8 @@ export default function Experience() {
         />
 
       </div>
-      <div className="transition duration-200 ease-in-out text-text-1 mt-4 block lg:hidden">
-        <a href="https://drive.google.com/file/d/1oO_z0Pz-CMLYhW1WbsqDduptITErZg_D/view?usp=sharing" className="bg-background-3 text-text-1 px-4 py-2 rounded-md hover:text-accent-soft text-sm">
+      <div className="transition duration-200 ease-in-out text-text-1 mt-4 block lg:hidden text-center">
+        <a href="https://drive.google.com/file/d/1oO_z0Pz-CMLYhW1WbsqDduptITErZg_D/view?usp=sharing" className="text-accent px-4 py-2 rounded-md hover:text-accent-soft text-sm underline-offset-2 underline lg:no-underline">
           View Resume
         </a>
       </div>

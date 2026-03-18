@@ -16,7 +16,7 @@ export default function Skills() {
   return (
     <div id="skills" className="pt-12">
       <div className="flex items-center pb-2 justify-between">
-        <div className="text-sm font-bold cursor-default text-accent">
+        <div className="text-accent-foreground lg:text-accent font-black lg:font-bold cursor-default bg-accent lg:bg-transparent p-1 lg:p-0 rounded-lg lg:rounded-none w-full lg:w-auto text-center lg:text-left">
           TECHNICAL SKILLS & TOOLS
         </div>
       </div>

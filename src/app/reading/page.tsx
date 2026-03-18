@@ -4,13 +4,18 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 
 export default function Home() {
   return (
-    <div className="pb-24">
-      <div className="grid grid-cols-12 p-2 pb-4 pt-9 text-accent font-semibold">
-        <div className="lg:block hidden col-span-2 lg:col-span-1">Sr.</div>
-        <div className="col-span-4 lg:col-span-5">Title</div>
-        <div className="col-span-4 lg:col-span-3">Author</div>
-        <div className="col-span-2 mx-auto">Pages</div>
-        <div className="col-span-2 mx-auto lg:col-span-1">Link</div>
+    <div className="lg:pb-24">
+      <div className="grid grid-cols-12 pb-2 pt-2 text-accent font-semibold">
+        <div className="hidden lg:block lg:col-span-1 text-xs lg:text-sm text-center">
+          Sr.
+        </div>
+        <div className="col-span-6 lg:col-span-5 text-xs lg:text-sm px-2 lg:px-0">
+          Title
+        </div>
+        <div className="col-span-4 lg:col-span-4 text-xs lg:text-sm px-2 lg:px-0">
+          Author
+        </div>
+        <div className="col-span-2 text-xs lg:text-sm text-center">Pages</div>
       </div>
       <div className="flex flex-col-reverse">
         <ReadListItem

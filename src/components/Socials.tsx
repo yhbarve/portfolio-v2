@@ -4,13 +4,13 @@ import Watering from "@/lib/Watering";
 
 export default function Socials() {
   return (
-    <div className="flex flex-col items-center lg:items-start text-socials-foreground">
-      <div className="flex gap-4 lg:gap-0">
+    <div className="flex flex-col items-center lg:items-start text-socials-foreground mt-4 lg:mt-0">
+      <div className="flex gap-4 lg:gap-0 justify-center lg:justify-start">
         <a
           href="https://x.com/yhbarve"
           target="_blank"
           aria-label="Visit my X profile"
-          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ export default function Socials() {
           href="https://github.com/yhbarve"
           target="_blank"
           aria-label="Visit my GitHub profile"
-          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export default function Socials() {
           href="mailto:yhbarve@uwaterloo.ca"
           target="_blank"
           aria-label="Send me an email"
-          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ export default function Socials() {
           href="https://www.linkedin.com/in/yhbarve/"
           target="_blank"
           aria-label="Visit my LinkedIn profile"
-          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out"
+          className="hover:text-accent p-2 rounded-md transition ease-in-out"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +107,7 @@ export default function Socials() {
           href="https://leetcode.com/u/yhbarve/"
           target="_blank"
           aria-label="Visit my LeetCode profile"
-          className="hover:text-accent-foreground p-2 rounded-md transition ease-in-out mr-8"
+          className="hover:text-accent p-2 rounded-md transition ease-in-out lg:mr-8"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -121,11 +121,10 @@ export default function Socials() {
             <path d="M19.34 12.84h-8.45a1.12 1.12 0 0 0 0 2.24h8.45a1.12 1.12 0 0 0 0-2.24"></path>
           </svg>
         </a>
-
         <Watering />
 
       </div>
-      <div className="flex items-center gap-1 mt-[3vh]">
+      <div className="flex items-center gap-1 mt-2 lg:mt-[3vh]">
         <ThemeSwitcher />
         <div className="text-sm cursor-default text-text-1">©2026, Yash Harshal Barve</div>
       </div>

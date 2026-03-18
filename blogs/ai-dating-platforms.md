@@ -19,7 +19,12 @@ tags:
 published: true
 author: "Yash Barve"
 category: "University"
+coverImage: "/blog/ai-dating.gif"
+coverImageCreditText: "Bloomberg"
+coverImageCreditLink: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i6gOQzxSV3RQ/v1/-999x-999.gif"
 ---
+
+## Introduction
 
 Most people are terrible at writing about themselves. Dating profiles are a perfect example — users either undersell themselves with a vague three-liner, or overcorrect with something that sounds like a LinkedIn bio. What if a Large Language Model (LLM) could help bridge that gap?
 

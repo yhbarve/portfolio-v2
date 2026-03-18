@@ -18,6 +18,9 @@ tags:
 published: true
 author: "Yash Barve"
 category: "University"
+coverImage: "/blog/outsourcing-intelligence.jpg"
+coverImageCreditText: "TechNewsWorld"
+coverImageCreditLink: "https://www.technewsworld.com/wp-content/uploads/sites/3/2024/12/ai-brain-1.jpg"
 ---
 
 ## Introduction

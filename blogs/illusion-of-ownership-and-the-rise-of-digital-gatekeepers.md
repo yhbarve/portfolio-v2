@@ -18,6 +18,9 @@ tags:
 published: true
 author: "Yash Barve"
 category: "University"
+coverImage: "/blog/digital-gatekeeping.webp"
+coverImageCreditText: "Arts Foundation"
+coverImageCreditLink: "https://d2935izqpq0pg2.cloudfront.net/transforms/_1920x1440_crop_center-center_75_none_ns/18804/6720111797183600244ab767.webp"
 ---
 
 ### A Frictionless Future… Until It Breaks

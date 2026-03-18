@@ -18,6 +18,9 @@ tags:
 published: true
 author: "Yash Barve"
 category: "University"
+coverImage: "/blog/social-network.jpg"
+coverImageCreditText: "The New York Times"
+coverImageCreditLink: "https://static01.nyt.com/images/2020/10/05/arts/05social-network01/05social-network01-superJumbo-v3.jpg"
 ---
 
 Social Networking Technologies (SNTs), such as Facebook, LinkedIn, Twitter (now X), and enterprise tools such as Slack and Microsoft Teams, have transformed how organizations communicate, collaborate, and engage with customers. At their core, SNTs allow users to create profiles, connect with peers, share content, and form communities in real time from the comfort of their homes.
@@ -100,7 +103,7 @@ Looking ahead, the next generation of social tools will emphasize co-creation, g
 
 ## References
 
-Boyd, D. M., & Ellison, N. B. (2007). Social network sites: Definition, history, and scholarship. *Journal of Computer-Mediated Communication*. https://academic.oup.com/jcmc/article/13/1/210/4583062
+- Boyd, D. M., & Ellison, N. B. (2007). Social network sites: Definition, history, and scholarship. *Journal of Computer-Mediated Communication*. https://academic.oup.com/jcmc/article/13/1/210/4583062
 
 - Kaplan, A. M., & Haenlein, M. (2010). Users of the world, unite! The challenges and opportunities of social media. *Business Horizons*. https://www.sciencedirect.com/science/article/abs/pii/S0007681309001232
 

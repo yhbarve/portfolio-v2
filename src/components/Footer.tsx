@@ -1,36 +1,38 @@
 import Link from "next/link";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-border/20 py-4 bg-background-1">
-      <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between max-w-screen-xl mx-auto">
-        <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-text-1/80">
-          <Link href="/" className="hover:text-accent transition-colors">
+    <footer className="mt-8 lg:mt-16 border-t border-border/20 py-4 bg-background-1">
+      <div className="flex flex-col gap-3 lg:gap-6 md:flex-row md:items-center md:justify-between max-w-screen-xl mx-auto">
+        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 lg:gap-x-5 text-sm text-text-1/80">
+          <Link href="/" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
             Home
           </Link>
-          <Link href="/projects" className="hover:text-accent transition-colors">
+          <Link href="/projects" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
             Projects
           </Link>
-          <Link href="/writings" className="hover:text-accent transition-colors">
+          <Link href="/writings" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
             Writings
           </Link>
-          <Link href="/reading" className="hover:text-accent transition-colors">
+          <Link href="/reading" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
             Bookshelf
           </Link>
-          <Link href="/gallery" className="hover:text-accent transition-colors">
+          <Link href="/gallery" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
             Gallery
           </Link>
           <span className="hidden md:inline text-border">•</span>
           <span>©{new Date().getFullYear()}, Yash Harshal Barve</span>
         </div>
 
-        <div className="flex items-center gap-3 text-text-1/80">
+        <div className="flex items-center gap-3 text-text-1/80 justify-center lg:justify-start">
+          <ThemeSwitcher />
           <a
             href="https://x.com/yhbarve"
             target="_blank"
             rel="noreferrer"
             aria-label="Visit my X profile"
-            className="hover:text-accent transition-colors p-2 rounded-md"
+            className="lg:hover:text-accent transition-colors p-2 rounded-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +49,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="Visit my GitHub profile"
-            className="hover:text-accent transition-colors p-2 rounded-md"
+            className="lg:hover:text-accent transition-colors p-2 rounded-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +66,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="Send me an email"
-            className="hover:text-accent transition-colors p-2 rounded-md"
+            className="lg:hover:text-accent transition-colors p-2 rounded-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +92,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="Visit my LinkedIn profile"
-            className="hover:text-accent transition-colors p-2 rounded-md"
+            className="lg:hover:text-accent transition-colors p-2 rounded-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +109,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="Visit my LeetCode profile"
-            className="hover:text-accent transition-colors p-2 rounded-md"
+            className="lg:hover:text-accent transition-colors p-2 rounded-md"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

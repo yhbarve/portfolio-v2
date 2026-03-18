@@ -1,5 +1,6 @@
 import { allPosts } from "../../../../.contentlayer/generated";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 
 export const generateStaticParams = () =>
   allPosts.map((p) => ({ slug: p.slug }));
@@ -40,28 +41,63 @@ export default function PostPage({ params }: { params: { slug: string } }) {
   const post = allPosts.find((p) => p.slug === params.slug);
   if (!post) return notFound();
 
+  const { coverImage, coverImageCreditText, coverImageCreditLink } = post as {
+    coverImage?: string;
+    coverImageCreditText?: string;
+    coverImageCreditLink?: string;
+  };
+
   return (
-    <article className="max-w-3xl md:mx-auto py-12 text-page-itemForeground mx-4">
+    <article className="lg:max-w-3xl md:mx-auto lg:py-12 text-page-itemForeground lg:mx-4">
       {/* <div className="pl-4 flex gap-1 font-light mb-4">/<a className="hover:underline transition-all ease-in-out" href="/blogs">blogs</a>/<span className="italic">{post.title}</span></div> */}
       <div className="hover:translate-x-1 transition-all ease-in-out mb-4 hidden md:block">
         <a
           href="/writings"
-          className="text-3xl text-page-nameForeground"
+          className="text-3xl text-page-nameForeground lg:text-left"
         >
           ← All Blogs
         </a>
       </div>
-      <h1 className="text-4xl md:text-5xl text-blog-titleForeground inline-block mb-8">
+      <h1 className="text-2xl md:text-5xl text-blog-titleForeground inline-block mb-8 text-center lg:text-left">
         {post.title}
       </h1>
-      <div className="text-blog-titleForeground border-l-4 border-blog-titleBorder px-4 flex flex-col mb-8 gap-4">
-        <div className="text-md italic md:text-lg text-blog-summaryForeground">
+      <div className="flex flex-col mb-8 gap-4">
+        <div className="text-sm md:text-lg text-accent text-justify lg:text-left">
           {post.summary}
         </div>
-        <div className="text-sm md:text-md text-blog-titleDateForeground">
+        <div className="text-sm md:text-md lg:w-fit lg:mx-auto text-text-1 text-center lg:text-left">
           {formatDateWithOrdinal(post.date)}
         </div>
       </div>
+      {coverImage ? (
+        <div className="relative mb-8 w-full overflow-hidden rounded-xl border border-border/20 bg-surface-1 shadow-sm">
+          <div className="relative h-[200px] md:h-[300px] lg:h-[400px] w-full">
+            <Image
+              src={coverImage}
+              alt=""
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+              priority
+            />
+            {coverImageCreditText && coverImageCreditLink ? (
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent px-4 pb-1 pt-8">
+                <div className="pointer-events-auto text-[11px] font-light text-white/85 text-right">
+                  <span>Image credit: </span>
+                  <a
+                    href={coverImageCreditLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline underline-offset-2 hover:text-white"
+                  >
+                    {coverImageCreditText}
+                  </a>
+                </div>
+              </div>
+            ) : null}
+          </div>
+        </div>
+      ) : null}
       {/* 0 0% 14.9% */}
       {/* Contentlayer (markdown) gives you HTML */}
       {/* <div
@@ -85,7 +121,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     /* base size tuned down for readability */
     prose prose-base md:prose-lg
     prose-color-inherit prose-no-heading-underline
-    max-w-none leading-relaxed
+    max-w-prose md:max-w-[65ch] leading-relaxed break-words
 
     /* headings */
     prose-headings:font-semibold
@@ -96,12 +132,14 @@ export default function PostPage({ params }: { params: { slug: string } }) {
     prose-h3:mt-6 prose-h3:mb-2
 
     /* body text */
-    prose-p:leading-7 prose-p:my-3
-    prose-p:text-text-1
+    lg:prose-p:leading-7 lg:prose-p:my-3
+    prose-p:text-text-1 text-justify lg:text-left
+    text-sm lg:text-base
 
     /* links */
     prose-a:underline-offset-4
     prose-a:decoration-1
+    prose-a:break-words
 
     /* lists */
     prose-ul:my-3 prose-ol:my-3

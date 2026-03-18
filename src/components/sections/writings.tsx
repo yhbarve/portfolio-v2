@@ -11,7 +11,7 @@ export default function Writings() {
   return (
     <div id="writings" className="pt-12">
       <div className="flex items-center pb-2 justify-between">
-        <div className="text-sm font-bold cursor-default text-accent">
+        <div className="text-accent-foreground lg:text-accent font-black lg:font-bold cursor-default bg-accent lg:bg-transparent p-1 lg:p-0 rounded-lg lg:rounded-none w-full lg:w-auto text-center lg:text-left">
           WRITINGS
         </div>
         <div className="transition duration-200 ease-in-out text-accent hover:translate-x-1 hidden lg:block">
@@ -25,8 +25,8 @@ export default function Writings() {
             return (<WritingsCard key={key} title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} />)
         })}
       </div>
-      <div className="transition duration-200 ease-in-out text-text-1 mt-4 block lg:hidden">
-        <a href="/writings" className="bg-background-3 text-text-1 px-4 py-2 rounded-md hover:text-accent-soft text-sm">
+      <div className="transition duration-200 ease-in-out text-text-1 mt-4 block lg:hidden text-center">
+        <a href="/writings" className="text-accent px-4 py-2 rounded-md hover:text-accent-soft text-sm underline-offset-2 underline lg:no-underline">
           View All Writings
         </a>
       </div>

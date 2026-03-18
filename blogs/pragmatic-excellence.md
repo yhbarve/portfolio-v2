@@ -16,6 +16,9 @@ tags:
 published: true
 author: "Yash Barve"
 category: "University"
+coverImage: "/blog/ethics-of-coding.jpg"
+coverImageCreditText: "TechDemand"
+coverImageCreditLink: "https://d2qt3hjxf3fk7j.cloudfront.net/wp-content/uploads/2023/10/31131030/ethics-of-coding.jpg"
 ---
 
 ## Introduction

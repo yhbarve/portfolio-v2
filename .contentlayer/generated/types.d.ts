@@ -20,6 +20,9 @@ export type Post = {
   tags?: string[] | undefined
   author?: string | undefined
   category?: string | undefined
+  coverImage?: string | undefined
+  coverImageCreditText?: string | undefined
+  coverImageCreditLink?: string | undefined
   /** Markdown file body */
   body: Markdown
   slug: string

@@ -3,14 +3,19 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 
 export default function Home() {
   return (
-    <div className="pb-24">
-        <div className="grid grid-cols-12 p-2 pb-4 pt-9 text-accent font-semibold">
-          <div className="col-span-2 lg:col-span-1">Year</div>
-          <div className="col-span-4">Project</div>
-          <div className="col-span-5">Built with</div>
-          <div className="col-span-1 lg:col-span-2 mx-auto">Link</div>
+    <div className="lg:pb-24">
+      <div className="grid grid-cols-12 pb-2 pt-2 text-accent font-semibold">
+        <div className="hidden lg:block lg:col-span-2 lg:px-2 text-xs lg:text-sm text-left">
+          Year
         </div>
-        <div className="flex flex-col">
+        <div className="col-span-4 lg:col-span-6 text-xs lg:text-sm px-2 ">
+          Project
+        </div>
+        <div className="col-span-8 lg:col-span-4 text-xs lg:text-sm px-2">
+          Built with
+        </div>
+      </div>
+      <div className="flex flex-col">
           <ProjectListItem
             year="2025"
             name="Fit4Me – Personalized Fitness Tracking App (In Development)"

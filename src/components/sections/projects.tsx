@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div id="projects" className="">
       <div className="flex items-center pb-2 justify-between">
-        <div className="text-sm font-bold cursor-default text-accent">
+        <div className="text-accent-foreground lg:text-accent font-black lg:font-bold cursor-default bg-accent lg:bg-transparent p-1 lg:p-0 rounded-lg lg:rounded-none w-full lg:w-auto text-center lg:text-left">
           PROJECTS
         </div>
         <div className="transition duration-200 ease-in-out text-accent hover:translate-x-1 hidden lg:block">
@@ -376,9 +376,9 @@ export default function Projects() {
         />
       </div>
 
-      <div className="transition duration-200 ease-in-out text-text-1 mt-4 block lg:hidden">
-        <a href="/projects" className="bg-background-3 text-text-1 px-4 py-2 rounded-md hover:text-accent-soft text-sm">
-          View All Projects
+      <div className="transition duration-200 ease-in-out text-text-1 mt-4 block lg:hidden text-center">
+        <a href="/projects" className="text-accent px-4 py-2 rounded-md hover:text-accent-soft text-sm underline-offset-2 underline lg:no-underline">
+          View All Projects 
         </a>
       </div>
     </div>

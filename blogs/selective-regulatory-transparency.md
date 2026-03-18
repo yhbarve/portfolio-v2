@@ -16,6 +16,9 @@ tags:
 published: true
 author: "Yash Barve"
 category: "University"
+coverImage: "/blog/ai-trading-algorithms.avif"
+coverImageCreditText: "Built In"
+coverImageCreditLink: "https://cdn.builtin.com/cdn-cgi/image/f=auto,fit=cover,w=1200,h=635,q=80/sites/www.builtin.com/files/2022-07/ai-graphs-ai-trading-stock-market-tech.png"
 ---
 
 ## Introduction

@@ -16,8 +16,12 @@ var Post = defineDocumentType(() => ({
     published: { type: "boolean", default: true },
     tags: { type: "list", of: { type: "string" } },
     author: { type: "string" },
-    category: { type: "string" }
+    category: { type: "string" },
     // e.g. "Personal", "For Uni", "Technical", "Essays"
+    coverImage: { type: "string" },
+    // e.g. "/blog-covers/my-post.jpg"
+    coverImageCreditText: { type: "string" },
+    coverImageCreditLink: { type: "string" }
   },
   computedFields: {
     slug: {
@@ -44,4 +48,4 @@ export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-UD2Z4ZZG.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-6A5OZM67.mjs.map

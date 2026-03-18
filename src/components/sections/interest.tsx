@@ -91,12 +91,12 @@ export default function Interest({
   const [active, setActive] = useState<InterestInfo | null>(() => items[0] ?? null);
 
   return (
-    <div id="interests" className="mt-12 mb-24">
-      <div className="text-sm font-bold pb-2 cursor-default text-accent flex items-center gap-2">
-        <span className="text-base">HOBBIES & INTERESTS</span>
-        <span className="text-xs font-normal text-text-1">(Click to view more)</span>
+    <div id="interests" className="mt-12">
+      <div className="text-accent-foreground lg:text-accent font-black lg:font-bold cursor-default bg-accent lg:bg-transparent p-1 lg:p-0 rounded-lg lg:rounded-none w-full lg:w-auto text-center lg:text-left mb-4 lg:mb-0 flex items-center justify-center lg:justify-start">
+        <span className="lg:pr-3">HOBBIES & INTERESTS</span>
+        <span className="text-xs font-normal text-text-1 lg:text-left hidden lg:inline-block">(Click to view more)</span>
       </div>
-      <div className="flex flex-wrap gap-2 text-text-1">
+      <div className="flex flex-wrap gap-2 text-text-1 mt-4">
         {items.map((interest) => {
           const isActive = active?.label === interest.label;
           return (
@@ -105,7 +105,7 @@ export default function Interest({
               type="button"
               onClick={() => setActive(interest)}
               className={[
-                "rounded-full border px-4 py-2 text-sm font-medium shadow-sm transition-colors",
+                "rounded-full border px-4 py-2 lg:text-sm text-xs font-medium shadow-sm transition-colors",
                 "focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-3",
                 isActive
                     ? "text-accent border border-accent"
@@ -120,10 +120,10 @@ export default function Interest({
 
       {active && (
         <div className="mt-4 w-full max-w-xl rounded-lg border border-border/30 bg-surface-1/80 p-4 text-sm text-text-1 shadow-md backdrop-blur-sm">
-          <div className="mb-1 text-xs font-semibold tracking-wide text-accent">
+          <div className="mb-1 lg:text-xs text-xs font-semibold tracking-wide text-accent">
             {active.label.toUpperCase()}
           </div>
-          <p className="leading-relaxed">{active.description}</p>
+          <p className="leading-relaxed lg:text-xs text-xs">{active.description}</p>
         </div>
       )}
     </div>

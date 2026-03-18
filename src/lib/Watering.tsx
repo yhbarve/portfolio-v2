@@ -1,6 +1,6 @@
 export default function Watering() {
     return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+    <div className="flex items-center gap-1 lg:gap-2">
         <a href='https://cs.uwatering.com/#https://yhbarve.me?nav=prev' className="text-accent pr-1">←</a>
         <a href='https://cs.uwatering.com/#https://yhbarve.me' target='_blank' className="text-text-1 block w-5 h-5 shrink-0 opacity-90" aria-label="CS Webring">
             <LionIcon />

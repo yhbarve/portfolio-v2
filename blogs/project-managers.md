@@ -16,6 +16,9 @@ tags:
 published: true
 author: "Yash Barve"
 category: "University"
+coverImage: "/blog/project-management.jpg"
+coverImageCreditText: "Wallpapers.com"
+coverImageCreditLink: "https://wallpapers.com/images/featured/project-management-wfbuewoquiigeuht.jpg"
 ---
 
 Project managers (PMs) serve as the linchpin that transforms organizational strategy into tangible outcomes. In the broadest sense, PMs are responsible for planning, organizing, and directing the completion of specific projects for an organization while ensuring that the projects are on time, within budget, and within scope. The exact duties of a project manager depend on the industry, organization, and the types of projects a PM is tasked with overseeing. But across the board, all PMs share responsibilities across what's commonly referred to as the "project life cycle."

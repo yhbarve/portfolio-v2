@@ -17,6 +17,9 @@ tags:
 published: true
 author: "Yash Barve"
 category: "Technical"
+coverImage: "/blog/cpp-oop.png"
+coverImageCreditText: "Reddit"
+coverImageCreditLink: "https://www.reddit.com/r/wallpaper/comments/okkzb3/hello_world_python_html_c_3840_x_2160/"
 ---
 
 ## Introduction

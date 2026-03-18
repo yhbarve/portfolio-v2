@@ -24,15 +24,15 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
     .sort((a, b) => +new Date(b.date) - +new Date(a.date));
 
   return (
-    <div className="pb-24">
+    <div className="lg:pb-24">
       <div className="flex flex-wrap gap-2 pb-6 pt-2">
         <Link
           href="/writings"
           className={cn(
-            "rounded-full px-4 py-2 text-sm font-medium transition-colors",
+            "rounded-full px-2 lg:px-4 py-1 lg:py-2 text-xs lg:text-sm font-medium transition-colors",
             !categoryFilter
               ? "text-accent border border-accent"
-              : "text-text-1 bg-surface-1 border border-border/30"
+              : "text-text-1 bg-surface-1 border border-border/30 lg:hover:text-accent-soft lg:hover:bg-surface-2 lg:hover:border-accent/60"
           )}
         >
           All
@@ -42,20 +42,20 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
             key={cat}
             href={`/writings?category=${encodeURIComponent(cat)}`}
             className={cn(
-              "rounded-full px-4 py-2 text-sm font-medium transition-colors",
+              "rounded-full px-4 py-1 lg:py-2 text-xs lg:text-sm font-medium transition-colors",
               categoryFilter === cat
                 ? "text-accent border border-accent"
-                : "text-text-1 bg-surface-1 border border-border/30"
+                : "text-text-1 bg-surface-1 border border-border/30 lg:hover:text-accent-soft lg:hover:bg-surface-2 lg:hover:border-accent/60"
             )}
           >
             {cat}
           </Link>
         ))}
       </div>
-      <div className="grid grid-cols-12 p-4 pb-4 pt-2 text-accent font-semibold">
-        <div className="col-span-3 md:col-span-2">Date</div>
-        <div className="col-span-6 md:col-span-8">Title</div>
-        <div className="col-span-3 md:col-span-2 mx-auto">Category</div>
+      <div className="grid grid-cols-12 p-4 pb-2 pt-2 text-accent font-semibold">
+        <div className="col-span-2 md:col-span-2 text-xs lg:text-base">Date</div>
+        <div className="col-span-8 md:col-span-8 text-xs lg:text-base">Title</div>
+        <div className="col-span-2 md:col-span-2 mx-auto text-xs lg:text-base">Category</div>
         {/* <div className="col-span-1 mx-auto">Read</div> */}
       </div>
       <div className="flex flex-col mb-12">
@@ -66,27 +66,26 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
               key={p.slug}
               className="grid grid-cols-12 p-4 my-2 font-light text-base
                 items-start
-                text-text-1 hover:shadow-lg bg-surface-1
-                hover:border-page-itemHoverBorder cursor-default rounded-md border border-border/5
+                text-text-1 lg:hover:shadow-lg bg-surface-1
+                lg:hover:border-page-itemHoverBorder cursor-default rounded-md border border-border/5
                 transition duration-200 ease-in-out"
             >
-              <div className="text-sm col-span-3 md:col-span-2">
+              <div className="text-xs lg:text-base col-span-2 md:col-span-2">
                 {new Date(p.date).toLocaleDateString("en-US", {
                   month: "short",
                   day: "numeric",
                   year: "numeric",
                 })}
               </div>
-              <div className="no-underline col-span-6 md:col-span-8 pr-2">
+              <div className="no-underline col-span-8 md:col-span-8 pr-2 text-xs lg:text-base font-medium lg:font-semibold">
                 <a
                   href={`/blog/${p.slug}`}
-                  className="m-0 hover:text-accent"
-                  target="_blank"
+                  className="m-0 lg:hover:text-accent"
                 >
                   {p.title}
                 </a>
               </div>
-              <div className="col-span-3 md:col-span-2 text-sm text-accent-foreground font-medium mx-auto bg-accent border border-border/30 rounded-full px-2 py-1">
+              <div className="col-span-2 md:col-span-2 text-xs lg:text-base text-accent-foreground font-medium mx-auto bg-accent border border-border/30 rounded-full px-1 lg:px-2 py-1 lg:py-2">
                 {postCategory ?? "—"}
               </div>
               {/* <a

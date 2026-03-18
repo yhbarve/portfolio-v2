@@ -1,7 +1,7 @@
 ---
-title: "Getting Started with Next.js and Markdown"
+title: "Building a Markdown Blog with Next.js and Contentlayer"
 date: "2025-08-15"
-summary: "A comprehensive guide to writing, rendering, and styling Markdown content in a Next.js project, complete with examples, best practices, and advanced formatting."
+summary: "In this technical breakdown, I share how I built my website's Writings section by integrating a custom Markdown blog using Next.js and Contentlayer. Moving away from third-party platforms like Notion, I implemented a developer-friendly workflow that treats content as type-safe data, styled efficiently with Tailwind CSS. The guide covers everything from project configuration and frontmatter metadata to rendering advanced features like MDX components and syntax-highlighted code blocks, resulting in a fast, SEO-optimized, and fully self-hosted blogging experience."
 tags:
   [
     "nextjs",
@@ -17,6 +17,9 @@ tags:
 published: true
 author: "Yash Barve"
 category: "Technical"
+coverImage: "/blog/markdown-blog.jpg"
+coverImageCreditText: "Medium"
+coverImageCreditLink: "https://miro.medium.com/v2/resize:fit:1400/0*wmXQfUuyN2IhVDg3"
 ---
 
 ## Introduction

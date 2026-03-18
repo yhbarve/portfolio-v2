@@ -20,11 +20,11 @@ function usePrefersReducedMotion() {
 export default function AboutMe() {
   const roles = useMemo(
     () => [
-      "Software engineer",
-      "Backend engineer",
-      "Full-stack engineer",
-      "AI engineer",
-      "Cloud engineer"
+      "Software Engineer",
+      "Backend Engineer",
+      "Full-Stack Engineer",
+      "AI Engineer",
+      "Cloud Engineer"
     ],
     []
   );
@@ -61,20 +61,20 @@ export default function AboutMe() {
   }, [curVal, roles, reducedMotion]);
 
   return (
-    <div className="flex flex-col items-start">
-      <h1 className="text-5xl font-semibold inline-block text-text-1 mb-2">
+    <div className="flex flex-col items-center lg:items-start">
+      <h1 className="text-5xl font-semibold inline-block text-accent-foreground lg:text-text-1 bg-accent lg:bg-transparent p-2 lg:p-0 lg:rounded-none w-full lg:w-auto text-center lg:text-start">
         Yash H. Barve
       </h1>
 
       <h1
-        className={`text-3xl font-medium text-accent mt-1 transition-opacity duration-300 ${
+        className={`text-3xl font-medium text-accent mt-4 transition-opacity duration-300 ${
           isFading ? "opacity-0" : "opacity-100"
         }`}
       >
         {curVal}
       </h1>
 
-      <div className="text-sm font-light lg:font-normal lg:text-xs mt-8 lg:mt-4 w-4/5 text-text-1 cursor-default block">
+      <div className="w-full text-xs font-medium mt-8 lg:mt-4 text-text-1 cursor-default text-justify px-3 lg:text-left lg:px-0">
         I&apos;m a fifth-year Computer Science student at the University of Waterloo and a Business student at
         Wilfrid Laurier University. Since starting my full-stack development journey in 2021, I have grown especially
         passionate about backend technologies and scalable systems. I am currently on my 4th work term working as a Software Engineer at Nokia.<br /><br />
