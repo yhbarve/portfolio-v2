@@ -373,7 +373,7 @@
     },
     "newcombs-paradox.md": {
       "document": {
-        "title": "Newcomb's Paradox: The Game Where Thinking Too Hard Loses",
+        "title": "Newcomb’s Paradox: The Wrong Choice I’d Still Make",
         "date": "2026-03-18T00:00:00.000Z",
         "summary": "What does your decision-making style say about you? Newcomb's Paradox is a thought experiment involving a near-perfect Predictor and two boxes. You're forced to choose between two equally intuitive but conflicting strategies. This essay explores both options, and makes the case for the one I'd pick.",
         "published": true,
@@ -409,7 +409,7 @@
         "type": "Post",
         "slug": "newcombs-paradox"
       },
-      "documentHash": "1773877422030",
+      "documentHash": "1773878872913",
       "hasWarnings": false,
       "documentTypeName": "Post"
     }

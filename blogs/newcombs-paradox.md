@@ -1,5 +1,5 @@
 ---
-title: "Newcomb's Paradox: The Game Where Thinking Too Hard Loses"
+title: "Newcomb’s Paradox: The Wrong Choice I’d Still Make"
 date: "2026-03-18"
 summary: "What does your decision-making style say about you? Newcomb's Paradox is a thought experiment involving a near-perfect Predictor and two boxes. You're forced to choose between two equally intuitive but conflicting strategies. This essay explores both options, and makes the case for the one I'd pick."
 tags:
