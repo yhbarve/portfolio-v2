@@ -19,7 +19,7 @@ export default function Home() {
     <div>
       <div className="bg-gradient-to-br from-background-1 via-background-2 to-background-3 transition duration-200 ease-in-out">
         {/* <MainNav /> */}
-        <div className="mx-auto min-h-screen max-w-screen-xl pt-8 lg:py-12 font-sans md:px-12 lg:px-24">
+        <div className="mx-auto min-h-screen max-w-screen-xl pt-8 font-sans md:px-12 lg:px-24">
           <div className="lg:flex lg:justify-between lg:gap-4">
             <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:w-4/12 mt-8 lg:mt-0">
               <LeftSide />
@@ -44,7 +44,7 @@ export default function Home() {
                 <Interest interests={["Reading", "Formula 1", "Music", "Movies & TV", "Sports", "Graphic Design", "Photography"]} />
               </AnimatedSection>
             </div>
-            <div className="lg:hidden block lg:mt-12 mx-auto w-full">
+            <div className="lg:hidden block mx-auto w-full">
                 <Footer />
               </div>
           </div>
