@@ -217,7 +217,7 @@ Newcomb's Paradox using LLM chatbots.
 
 I chose **Gemini 3** as the Predictor. Next, I picked six participants:
 
-- Gemini 3 (itself)
+- Gemini 3 (the predictor itself)
 - ChatGPT 5.3
 - Claude Sonnet 4.6
 - Grok Expert 4.2
