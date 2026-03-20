@@ -51,7 +51,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-gradient-to-tr from-background-1 via-background-2 to-background-3`}>
         <ThemeProvider>
           <SplashScreen holdMs={2000} />
-          <Banner />
+          {/* <Banner /> */}
           <CommandMenu />
           <Providers>
             <PageAnimation>{children}</PageAnimation>

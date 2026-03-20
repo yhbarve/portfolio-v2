@@ -2,6 +2,7 @@
 
 import aiDatingPlatformsMd from './ai-dating-platforms.md.json' with { type: 'json' }
 import illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd from './illusion-of-ownership-and-the-rise-of-digital-gatekeepers.md.json' with { type: 'json' }
+import newcombsParadoxMd from './newcombs-paradox.md.json' with { type: 'json' }
 import nextjsAndMdMd from './nextjs-and-md.md.json' with { type: 'json' }
 import oopWithCppMd from './oop-with-cpp.md.json' with { type: 'json' }
 import outsourcingTheMindMd from './outsourcing-the-mind.md.json' with { type: 'json' }
@@ -9,6 +10,5 @@ import pragmaticExcellenceMd from './pragmatic-excellence.md.json' with { type: 
 import projectManagersMd from './project-managers.md.json' with { type: 'json' }
 import selectiveRegulatoryTransparencyMd from './selective-regulatory-transparency.md.json' with { type: 'json' }
 import socialNetworkingTechnologiesMd from './social-networking-technologies.md.json' with { type: 'json' }
-import newcombsParadoxMd from './newcombs-paradox.md.json' with { type: 'json' }
 
-export const allPosts = [aiDatingPlatformsMd, illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, nextjsAndMdMd, oopWithCppMd, outsourcingTheMindMd, pragmaticExcellenceMd, projectManagersMd, selectiveRegulatoryTransparencyMd, socialNetworkingTechnologiesMd, newcombsParadoxMd]
+export const allPosts = [aiDatingPlatformsMd, illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, newcombsParadoxMd, nextjsAndMdMd, oopWithCppMd, outsourcingTheMindMd, pragmaticExcellenceMd, projectManagersMd, selectiveRegulatoryTransparencyMd, socialNetworkingTechnologiesMd]

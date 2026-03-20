@@ -4,7 +4,7 @@ import Watering from "@/lib/Watering";
 
 export default function Socials() {
   return (
-    <div className="flex flex-col items-center lg:items-start text-socials-foreground mt-4 lg:mt-0 lg:pb-16">
+    <div className="flex flex-col items-center lg:items-start text-socials-foreground mt-4 lg:mt-0">
       <div className="flex gap-4 lg:gap-0 justify-center lg:justify-start">
         <a
           href="https://x.com/yhbarve"
