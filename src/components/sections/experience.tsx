@@ -10,7 +10,7 @@ export default function Experience() {
           EXPERIENCE
         </div>
         <div className="transition duration-200 ease-in-out text-accent hover:translate-x-1 hidden lg:block">
-          <a href="https://drive.google.com/file/d/1oO_z0Pz-CMLYhW1WbsqDduptITErZg_D/view?usp=sharing" className="">
+          <a href="https://drive.google.com/file/d/1YJJYrwnyrJ2f5UM66BvJUOp2G_HR6RhY/view?usp=sharing" className="">
             View Resume →
           </a>
         </div>
@@ -276,7 +276,7 @@ export default function Experience() {
 
       </div>
       <div className="transition duration-200 ease-in-out text-text-1 mt-4 block lg:hidden text-center">
-        <a href="https://drive.google.com/file/d/1oO_z0Pz-CMLYhW1WbsqDduptITErZg_D/view?usp=sharing" className="text-accent px-4 py-2 rounded-md hover:text-accent-soft text-sm underline-offset-2 underline lg:no-underline">
+        <a href="https://drive.google.com/file/d/1YJJYrwnyrJ2f5UM66BvJUOp2G_HR6RhY/view?usp=sharing" className="text-accent px-4 py-2 rounded-md hover:text-accent-soft text-sm underline-offset-2 underline lg:no-underline">
           View Resume
         </a>
       </div>
