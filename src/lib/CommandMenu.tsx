@@ -20,10 +20,12 @@ export const CommandMenu = () => {
     const commandGroups = {
         'Quick Navigation': [
             { text: '🏠 Go Home', shortcut: 'H', action: () => router.push('/') },
-            { text: '🧑🏻‍💻 See All Projects', shortcut: 'P', action: () => router.push('/projects') },
-            { text: '✍️ See All Writings', shortcut: 'W', action: () => router.push('/writings') },
-            { text: '📄 See Resume*', shortcut: 'R', action: () => router.push(RESUME_URL) },
-            { text: '📚 See Books Read', shortcut: 'B', action: () => router.push('/reading') },
+            { text: '🧑🏻‍💻 Go to Projects', shortcut: 'P', action: () => router.push('/projects') },
+            { text: '✍️ Go to Writings', shortcut: 'W', action: () => router.push('/writings') },
+            { text: '📄 Go to Resume*', shortcut: 'R', action: () => router.push(RESUME_URL) },
+            { text: '📚 Go to Bookshelf', shortcut: 'B', action: () => router.push('/reading') },   
+            { text: '📸 Go to Gallery', shortcut: 'A', action: () => router.push('/gallery') },
+            { text: '🎵 Go to Music', shortcut: 'U', action: () => router.push('/music') },
         ],
         'Actions': [
             { text: '🎨 Switch to Neon Theme', shortcut: 'N', action: () => setTimeout(() => setTheme('neon'), 0) },
@@ -35,19 +37,19 @@ export const CommandMenu = () => {
             } },
         ],
         'Navigation': [
-            { text: '💻 Go to Projects', shortcut: 'K', action: () => router.push('/#projects') },
-            { text: '💼 Go to Experience', shortcut: 'E', action: () => router.push('/#experiences') },
-            { text: '💡 Go to Skills', shortcut: 'S', action: () => router.push('/#skills') },
-            { text: '🎓 Go to Education', shortcut: 'D', action: () => router.push('/#education') },
-            { text: '✍🏻 Go to Writings', shortcut: 'T', action: () => router.push('/#writings') },
-            { text: '♥️ Go to Interests', shortcut: 'I', action: () => router.push('/#interests') },
+            { text: '💻 See Projects', shortcut: 'K', action: () => router.push('/#projects') },
+            { text: '💼 See Experience', shortcut: 'E', action: () => router.push('/#experiences') },
+            { text: '💡 See Skills', shortcut: 'S', action: () => router.push('/#skills') },
+            { text: '🎓 See Education', shortcut: 'D', action: () => router.push('/#education') },
+            { text: '✍🏻 See Writings', shortcut: 'T', action: () => router.push('/#writings') },
+            { text: '♥️ See Interests', shortcut: 'I', action: () => router.push('/#interests') },
         ],
         'Socials': [
-            { text: '🔗 Go to GitHub*', shortcut: 'G', action: () => window.open('https://github.com/yhbarve', '_blank') },
-            { text: '🔗 Go to LinkedIn*', shortcut: 'L', action: () => window.open('https://www.linkedin.com/in/yhbarve/', '_blank') },
-            { text: '🔗 Go to X (Twitter)*', shortcut: 'X', action: () => window.open('https://x.com/yhbarve', '_blank') },
-            // { text: '🔗 Go to Instagram*', shortcut: 'I', action: () => window.open('https://www.instagram.com/yhbarve/', '_blank') },
-            { text: '🔗 Go to LeetCode*', shortcut: 'C', action: () => window.open('https://leetcode.com/u/yhbarve/', '_blank') },
+            { text: '🔗 Visit GitHub*', shortcut: 'G', action: () => window.open('https://github.com/yhbarve', '_blank') },
+            { text: '🔗 Visit LinkedIn*', shortcut: 'L', action: () => window.open('https://www.linkedin.com/in/yhbarve/', '_blank') },
+            { text: '🔗 Visit X (Twitter)*', shortcut: 'X', action: () => window.open('https://x.com/yhbarve', '_blank') },
+            // { text: '🔗 Visit Instagram*', shortcut: 'I', action: () => window.open('https://www.instagram.com/yhbarve/', '_blank') },
+            { text: '🔗 Visit LeetCode*', shortcut: 'C', action: () => window.open('https://leetcode.com/u/yhbarve/', '_blank') },
         ]
     };
 
