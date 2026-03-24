@@ -29,8 +29,13 @@ function formatDateWithOrdinal(dateString: string) {
   return formatted.replace(/(\d{1,2})(,)/, `$1${ordinal}$2`);
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = allPosts.find((p) => p.slug === params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const post = allPosts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
     title: post.title,
@@ -38,8 +43,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function PostPage({ params }: { params: { slug: string } }) {
-  const post = allPosts.find((p) => p.slug === params.slug);
+export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = allPosts.find((p) => p.slug === slug);
   if (!post) return notFound();
 
   const { coverImage, coverImageCreditText, coverImageCreditLink } = post as {
