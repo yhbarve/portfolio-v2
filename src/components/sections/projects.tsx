@@ -20,13 +20,12 @@ export default function Projects() {
           year="2025"
           youtube="https://www.youtube.com/watch?v=_2dJb6zYpTw"
           github="https://github.com/grace-ful/cs446-team-project"
-          name="Fit4Me – Personalized Fitness Tracking App"
+          name="Fit4Me – Personalized Fitness Tracking Android App"
           desc={[
             "Full-stack Android fitness app (team project) built with Kotlin + Jetpack Compose and a Node.js/Express backend with PostgreSQL.",
             "Delivers personalized workout planning and session tracking with a focus on a smooth, user-centric experience.",
             "Includes real-time chat using Socket.IO alongside REST APIs for core app functionality.",
             "Implements intelligent matchmaking based on user goals, availability, and experience level.",
-            "In active development with an emphasis on frontend polish and backend performance."
           ]}
           skills={[
             "android",
@@ -46,29 +45,32 @@ export default function Projects() {
           image="/fit4me-demo.png" // Replace with your actual demo image path
         />
 
-        <ProjectCard
-          year="2025"
-          link="https://rtc-chat-tau.vercel.app/"
-          github="https://github.com/yhbarve/rtc-chat"
-          name="Chattr - Minimal real-time group chat"
+<ProjectCard
+          year="2026"
+          url="https://drive.google.com/file/d/1Z14nWh6FLG-L847TwjiappyPKTWj7A97/view?usp=sharing"
+          name="WatDFS - Distributed File System"
           desc={[
-            "Minimalist real-time group chat app built with React, TypeScript, Express, and Socket.IO.",
-            "Supports creating and joining public rooms via unique room codes and instant message delivery.",
-            "Includes system notifications and live presence updates for a responsive chat experience.",
-            "Designed as a lightweight, deployable MVP with clean UI and responsive interactions.",
-            "Built to extend into features like private rooms, message history, and moderation."
+            "Distributed file system (client-server) built using C++ and the FUSE framework.",
+            "Implements network transparency, allowing remote files to be accessed and modified via standard Linux system calls.",
+            "Features a robust cache coherence protocol (Open-to-Close consistency) to synchronize file states between clients and server.",
+            "Engineered a custom RPC (Remote Procedure Call) layer to handle low-latency file transfers and metadata operations.",
+            "Designed for fault tolerance, ensuring data integrity during network timeouts and server-side concurrency challenges."
           ]}
           skills={[
-            "react.js",
-            "typescript",
-            "tailwindcss",
-            "socket.io",
-            "node.js",
-            "express.js",
-            "rest apis",
-            "websockets"
+            "c++",
+            "distributed systems",
+            "fuse",
+            "rpc",
+            "linux",
+            "concurrency",
+            "sockets",
+            "file systems",
+            "cache consistency",
+            "make/cmake",
+            "multithreading"
           ]}
-          image="/chattr-demo.png"
+
+          image="/projects/watdfs.png" // Replace with your actual demo image path
         />
 
         <ProjectCard
@@ -144,30 +146,6 @@ export default function Projects() {
             "data visualization"
           ]}
           image="/laz-logo.png" // Replace with your actual demo image path
-        />
-
-        <ProjectCard
-          year="2024"
-          link="https://chatyhb.vercel.app/"
-          github="https://github.com/yhbarve/chatyhb"
-          name="ChatYHB - An AI powered chat bot"
-          desc={[
-            "Built a web chat app using Google’s AI SDK with Gemini 1.5 powering backend responses.",
-            "Supports text-based prompts with clean, well-formatted outputs for a better reading experience.",
-            "Persists conversation history so users can revisit previous prompts and responses.",
-            "Includes a one-click option to clear all stored prompts and responses when needed."
-          ]}
-          skills={[
-            "react.js",
-            "javascript",
-            "tailwindcss",
-            "node.js",
-            "express.js",
-            "mongodb",
-            "google ai sdk",
-            "gemini 1.5"
-          ]}
-          image="/chatyhb-demo.png"
         />
 
         <ProjectCard

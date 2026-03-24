@@ -15,9 +15,9 @@ export default function ProjectListItem({
     >
       <div className="hidden lg:block lg:col-span-2">{year}</div>
 
-      <div className="col-span-4 lg:col-span-6 w-4/5 text-xs lg:text-base font-medium">{name}</div>
+      <div className="col-span-4 lg:col-span-5 w-4/5 text-xs lg:text-base font-medium">{name}</div>
 
-      <div className="col-span-8 lg:col-span-4">
+      <div className="col-span-8 lg:col-span-5">
         <div className="flex gap-1 gap-y-2 flex-wrap">
           {skills.map((skill, index) => (
             <div

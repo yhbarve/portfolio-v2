@@ -8,14 +8,32 @@ export default function Home() {
         <div className="hidden lg:block lg:col-span-2 lg:px-2 text-xs lg:text-sm text-left">
           Year
         </div>
-        <div className="col-span-4 lg:col-span-6 text-xs lg:text-sm px-2 ">
+        <div className="col-span-4 lg:col-span-5 text-xs lg:text-sm px-2 ">
           Project
         </div>
-        <div className="col-span-8 lg:col-span-4 text-xs lg:text-sm px-2">
+        <div className="col-span-8 lg:col-span-5 text-xs lg:text-sm px-2">
           Built with
         </div>
       </div>
       <div className="flex flex-col">
+      <ProjectListItem
+            year="2026"
+            name="WatDFS - Distributed File System"
+            skills={[
+              "c++",
+              "distributed systems",
+              "fuse",
+              "rpc",
+              "linux",
+              "concurrency",
+              "sockets",
+              "file systems",
+              "cache consistency",
+              "make/cmake",
+              "multithreading"
+            ]}
+            url="https://drive.google.com/file/d/1Z14nWh6FLG-L847TwjiappyPKTWj7A97/view?usp=sharing"
+          />
           <ProjectListItem
             year="2025"
             name="Fit4Me – Personalized Fitness Tracking App (In Development)"
