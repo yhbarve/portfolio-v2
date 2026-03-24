@@ -3,7 +3,7 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export default function Footer() {
   return (
-    <footer className="mt-8 lg:mt-16 border-t border-border/20 py-4 bg-background-1">
+    <footer className="mt-4 lg:mt-16 border-t border-border/20 py-4 bg-background-1">
       <div className="flex flex-col gap-3 lg:gap-6 md:flex-row md:items-center md:justify-between max-w-screen-xl mx-auto">
         <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 lg:gap-x-5 text-sm text-text-1/80">
           <Link href="/" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
@@ -17,9 +17,6 @@ export default function Footer() {
           </Link>
           <Link href="/reading" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
             Bookshelf
-          </Link>
-          <Link href="/gallery" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
-            Gallery
           </Link>
           <span className="hidden md:inline text-border">•</span>
           <span>©{new Date().getFullYear()}, Yash Harshal Barve</span>

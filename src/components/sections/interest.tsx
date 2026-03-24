@@ -33,8 +33,21 @@ const INTEREST_DETAILS: InterestInfo[] = [
   },
   {
     label: "Music",
-    description:
-      "Don't think I could live without music. Almost always plugged in to my headphones. My go-to genres are lofi hip-hop, movie scores, classical, and Arijit Singh. Love to curate my own playlists for every mood.",
+    description: (
+      <>
+        Don&apos;t think I could live without music. Almost always plugged in to my headphones. My go-to
+        genres are lofi hip-hop, movie scores, classical, and Arijit Singh. Love to curate my own playlists
+        for every mood — see{" "}
+        <Link
+          href="/music"
+          className="underline underline-offset-4 hover:text-accent"
+          target="_blank"
+        >
+          Music
+        </Link>{" "}
+        for my current favorite songs.
+      </>
+    ),
   },
   {
     label: "Movies & TV",
