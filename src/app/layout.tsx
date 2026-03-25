@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 
 import { Providers } from "./providers";
@@ -9,7 +9,11 @@ import { CommandMenu } from "@/lib/CommandMenu";
 import { ThemeProvider } from "@/components/theme-provider";
 import SplashScreen from "@/components/SplashScreen";
 
-const inter = Inter({ subsets: ["latin"] });
+const interTight = Inter_Tight({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter-tight",
+});
 
 export const metadata: Metadata = {
   title: "Yash Barve",
@@ -48,7 +52,9 @@ export default function RootLayout({
         <meta property="twitter:description" content={metadata.description as string} />
         <meta property="twitter:image" content="https://yhbarve.me/yb-bg-logo.png" />
       </head>
-      <body className={`${inter.className} bg-gradient-to-tr from-background-1 via-background-2 to-background-3`}>
+      <body
+        className={`${interTight.variable} ${interTight.className} bg-gradient-to-tr from-background-1 via-background-2 to-background-3`}
+      >
         <ThemeProvider>
           <SplashScreen holdMs={2000} />
           {/* <Banner /> */}

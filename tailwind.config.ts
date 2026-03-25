@@ -19,6 +19,12 @@ const config = {
     },
     extend: {
       fontFamily: {
+        sans: [
+          "var(--font-inter-tight)",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+        ],
         "xanh-mono": ['"Xanh Mono"', "monospace"],
         "instrument-serif": ['"Instrument Serif"', "serif"],
         "space-mono": ['"Space Mono"', "monospace"],
