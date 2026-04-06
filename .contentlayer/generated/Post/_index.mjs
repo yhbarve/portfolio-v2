@@ -10,5 +10,6 @@ import pragmaticExcellenceMd from './pragmatic-excellence.md.json' with { type: 
 import projectManagersMd from './project-managers.md.json' with { type: 'json' }
 import selectiveRegulatoryTransparencyMd from './selective-regulatory-transparency.md.json' with { type: 'json' }
 import socialNetworkingTechnologiesMd from './social-networking-technologies.md.json' with { type: 'json' }
+import whenShouldAiExplainItselfMd from './when-should-ai-explain-itself.md.json' with { type: 'json' }
 
-export const allPosts = [aiDatingPlatformsMd, illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, newcombsParadoxMd, nextjsAndMdMd, oopWithCppMd, outsourcingTheMindMd, pragmaticExcellenceMd, projectManagersMd, selectiveRegulatoryTransparencyMd, socialNetworkingTechnologiesMd]
+export const allPosts = [aiDatingPlatformsMd, illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, newcombsParadoxMd, nextjsAndMdMd, oopWithCppMd, outsourcingTheMindMd, pragmaticExcellenceMd, projectManagersMd, selectiveRegulatoryTransparencyMd, socialNetworkingTechnologiesMd, whenShouldAiExplainItselfMd]
