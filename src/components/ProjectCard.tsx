@@ -12,13 +12,42 @@ type ProjectCardProps = {
   url?: string;
 };
 
+function hashString(input: string) {
+  // Simple deterministic hash for stable per-card styling (server + client safe).
+  let hash = 0;
+  for (let i = 0; i < input.length; i += 1) {
+    hash = (hash << 5) - hash + input.charCodeAt(i);
+    hash |= 0; // force 32-bit
+  }
+  return Math.abs(hash);
+}
+
 export default function ProjectCard(props: ProjectCardProps) {
   const { year, link, name, desc, skills, image, youtube, github, url } = props;
+
+  const seed = hashString(`${year}-${name}-${image}`);
+  const circleSizePercent = 31; // 28..42
+  const circleXPercent = 25 + ((seed >> 3) % 51); // 25..75
+  const circleYPercent = 25 + ((seed >> 6) % 51); // 25..75
+  const circleStyle = {
+    left: `${circleXPercent}%`,
+    top: `${circleYPercent}%`,
+    width: `${circleSizePercent}%`,
+    height: `${circleSizePercent}%`,
+    transform: "translate(-50%, -50%)",
+  };
+
   return (
-    <div>
+    <div className="relative overflow-hidden rounded-md">
+      {/* Decorative per-card background glow */}
       <div
-        className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
-        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-5 cursor-default lg:hover:backdrop-blur-2xl hover:shadow-lg"
+        aria-hidden
+        className="pointer-events-none absolute rounded-full bg-accent/25 blur-2xl"
+        style={circleStyle}
+      />
+      <div
+        className="relative z-10 grid grid-cols-5 border border-border/20 bg-surface-1/60 backdrop-blur-2xl backdrop-saturate-150
+        hover:bg-surface-2/50 hover:text-text-1 transition duration-200 ease-in-out rounded-md p-5 cursor-default shadow-sm hover:shadow-lg"
       >
         <div className="col-span-1 flex flex-col">
           <a href={link || url || github || youtube} target="_blank">

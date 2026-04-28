@@ -1,10 +1,13 @@
-import { useState } from "react";
-import { ThemeSwitcher } from "../ThemeSwitcher";
+import { fetchGithubContributions } from "@/lib/github-contributions";
 import AboutMe from "../AboutMe";
-import Socials from "../Socials";
 import Navigation from "../Navigation";
+import Socials from "../Socials";
 
-export default function LeftSide() {
+const GITHUB_USERNAME = process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "yhbarve";
+
+export default async function LeftSide() {
+  const githubActivity = await fetchGithubContributions(GITHUB_USERNAME);
+
   return (
     <div className="">
       <div className="lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:justify-between lg:py-16 mt-8 lg:mt-0">
@@ -14,7 +17,7 @@ export default function LeftSide() {
             <Navigation />
           </div>
           <div className="lg:block hidden lg:mt-[4vh]">
-            <Socials />
+            <Socials githubActivity={githubActivity} />
           </div>
         </div>
       </div>

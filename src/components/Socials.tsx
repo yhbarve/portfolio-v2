@@ -1,8 +1,16 @@
-import Link from "next/link";
-import { ThemeSwitcher } from "./ThemeSwitcher";
+import GithubContributionMini from "@/components/GithubContributionMini";
+import type { GithubActivityData } from "@/lib/github-contributions";
 import Watering from "@/lib/Watering";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
-export default function Socials() {
+export default function Socials({
+  githubActivity,
+}: Readonly<{
+  githubActivity?: GithubActivityData | null;
+}>) {
+  const ghUser = process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "yhbarve";
+  const profileUrl = `https://github.com/${ghUser}`;
+
   return (
     <div className="flex flex-col items-center lg:items-start text-socials-foreground mt-4 lg:mt-0">
       <div className="flex gap-4 lg:gap-0 justify-center lg:justify-start">
@@ -24,24 +32,53 @@ export default function Socials() {
             />
           </svg>
         </a>
-        <a
-          href="https://github.com/yhbarve"
-          target="_blank"
-          aria-label="Visit my GitHub profile"
-          className="hover:text-accent p-2 rounded-md transition ease-in-out"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1em"
-            height="1em"
-            fill={"currentColor"}
-            viewBox="0 0 24 24"
+        {githubActivity && githubActivity.weeks.length > 0 ? (
+          <div className="relative inline-flex group/gh">
+            <a
+              href={profileUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit my GitHub profile"
+              aria-describedby="github-activity-tooltip"
+              className="hover:text-accent p-2 rounded-md transition ease-in-out relative z-10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
+              </svg>
+            </a>
+            <div
+              id="github-activity-tooltip"
+              role="tooltip"
+              className="pointer-events-none absolute bottom-full left-1/2 z-[80] mb-1.5 w-max max-w-[min(calc(100vw-2rem),720px)] -translate-x-1/2 overflow-hidden rounded-md border border-border bg-surface-1/95 p-1 shadow-lg backdrop-blur-sm opacity-0 invisible translate-y-0.5 transition-all duration-150 ease-out group-hover/gh:pointer-events-auto group-hover/gh:opacity-100 group-hover/gh:visible group-hover/gh:translate-y-0 group-focus-within/gh:pointer-events-auto group-focus-within/gh:opacity-100 group-focus-within/gh:visible group-focus-within/gh:translate-y-0 [@media(hover:none)]:hidden"
+            >
+              <GithubContributionMini weeks={githubActivity.weeks} />
+            </div>
+          </div>
+        ) : (
+          <a
+            href={profileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my GitHub profile"
+            className="hover:text-accent p-2 rounded-md transition ease-in-out"
           >
-            <path
-              d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
-            />
-          </svg>
-        </a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
+            </svg>
+          </a>
+        )}
         <a
           href="mailto:yhbarve@uwaterloo.ca"
           target="_blank"
