@@ -4,6 +4,7 @@ import remarkGfm from "remark-gfm"
 import rehypeSlug from "rehype-slug"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import rehypePrettyCode from "rehype-pretty-code"
+import rehypeExternalLinks from "rehype-external-links"
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
@@ -37,6 +38,7 @@ export default makeSource({
     rehypePlugins: [
       rehypeSlug,
       [rehypeAutolinkHeadings, { behavior: "wrap" }],
+      [rehypeExternalLinks, { target: "_blank", rel: ["noopener", "noreferrer"] }],
       [rehypePrettyCode, { theme: "github-dark" }],
     ],
   },

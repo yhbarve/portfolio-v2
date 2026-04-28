@@ -4,16 +4,9 @@ import Education from "@/components/sections/education";
 import Experience from "@/components/sections/experience";
 import Interest from "@/components/sections/interest";
 import LeftSide from "@/components/sections/left-side";
-import MainNav from "@/components/sections/main-navbar";
 import Projects from "@/components/sections/projects";
 import Skills from "@/components/sections/skills";
 import Writings from "@/components/sections/writings";
-import Socials from "@/components/Socials";
-import { ThemeProvider } from "@/components/theme-provider";
-import { ThemeSwitcher } from "@/components/ThemeSwitcher";
-import Banner from "@/components/ui/Banner";
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div>

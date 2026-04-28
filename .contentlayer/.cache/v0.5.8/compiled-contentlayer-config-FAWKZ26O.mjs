@@ -4,6 +4,7 @@ import remarkGfm from "remark-gfm";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
+import rehypeExternalLinks from "rehype-external-links";
 var Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `**/*.md`,
@@ -40,6 +41,7 @@ var contentlayer_config_default = makeSource({
     rehypePlugins: [
       rehypeSlug,
       [rehypeAutolinkHeadings, { behavior: "wrap" }],
+      [rehypeExternalLinks, { target: "_blank", rel: ["noopener", "noreferrer"] }],
       [rehypePrettyCode, { theme: "github-dark" }]
     ]
   }
@@ -48,4 +50,4 @@ export {
   Post,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-6A5OZM67.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-FAWKZ26O.mjs.map
