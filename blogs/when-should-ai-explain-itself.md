@@ -1,7 +1,7 @@
 ---
 title: "When Should AI Explain Itself?"
 date: "2026-04-06"
-summary: "When AI operates as a supervised tool, human professionals retain full accountability and can demand explanations as needed. However, autonomous AI agents in high-stakes domains must be architecturally required to document their reasoning, serving as a substitute accountability mechanism and enabling error detection and correction."
+summary: "When AI operates as a supervised tool, human professionals retain full accountability and can demand explanations as needed. However, autonomous AI agents in high-stakes domains must be architecturally required to document their reasoning, serving as a substitute accountability mechanism and enabling error detection and correction. Note: This paper was written for CS492, a CS ethics course at the University of Waterloo."
 tags:
   [
   "artificial intelligence",

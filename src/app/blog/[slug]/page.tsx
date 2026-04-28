@@ -131,6 +131,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               prose-a:underline-offset-4
               prose-a:decoration-1
               prose-a:break-words
+              prose-a:font-normal
 
               /* lists */
               prose-ul:my-3 prose-ol:my-3

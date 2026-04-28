@@ -1,6 +1,6 @@
 ---
 title: "Course Notes Collection"
-date: "2025-08-09"
+date: "2026-04-28"
 summary: "Over five years at the University of Waterloo and Wilfrid Laurier University, I’ve completed 50+ courses across Maths, Computer Science, and Business. For most of these, I developed detailed technical notes while preparing for exams. I have hosted these notes on GitHub and Notion as a resource for future students and a personal reference for my own work."
 tags:
   [

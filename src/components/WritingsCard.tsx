@@ -52,12 +52,12 @@ export default function WritingsCard({
           >
             {title}
           </a>
-          <div className="mb-1 font-normal text-base text-accent lg:text-left hidden lg:block">{formatDateWithOrdinal(date).toUpperCase()}</div>
+          {/* <div className="mb-1 font-normal text-base text-accent lg:text-left hidden lg:block">{formatDateWithOrdinal(date).toUpperCase()}</div> */}
           <div className="font-normal lg:font-light text-xs lg:text-sm text-justify lg:text-left">
-            <div className="font-semibold inline">Summary: </div>
+            <div className="font-semibold inline text-accent">Summary: </div>
             {summary}
           </div>
-          <div className="flex gap-1 gap-y-2 mt-4 flex-wrap justify-center lg:justify-start">
+          {/* <div className="flex gap-1 gap-y-2 mt-4 flex-wrap justify-center lg:justify-start">
             {tags.map((key, item) => (
               <div
                 key={item}
@@ -66,7 +66,7 @@ export default function WritingsCard({
                 {key}
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -416,7 +416,7 @@
     "university-course-notes.md": {
       "document": {
         "title": "Course Notes Collection",
-        "date": "2025-08-09T00:00:00.000Z",
+        "date": "2026-04-28T00:00:00.000Z",
         "summary": "Over five years at the University of Waterloo and Wilfrid Laurier University, I’ve completed 50+ courses across Maths, Computer Science, and Business. For most of these, I developed detailed technical notes while preparing for exams. I have hosted these notes on GitHub and Notion as a resource for future students and a personal reference for my own work.",
         "published": true,
         "tags": [
@@ -452,7 +452,7 @@
         "type": "Post",
         "slug": "university-course-notes"
       },
-      "documentHash": "1777416575371",
+      "documentHash": "1777418229911",
       "hasWarnings": false,
       "documentTypeName": "Post"
     },
@@ -460,7 +460,7 @@
       "document": {
         "title": "When Should AI Explain Itself?",
         "date": "2026-04-06T00:00:00.000Z",
-        "summary": "When AI operates as a supervised tool, human professionals retain full accountability and can demand explanations as needed. However, autonomous AI agents in high-stakes domains must be architecturally required to document their reasoning, serving as a substitute accountability mechanism and enabling error detection and correction.",
+        "summary": "When AI operates as a supervised tool, human professionals retain full accountability and can demand explanations as needed. However, autonomous AI agents in high-stakes domains must be architecturally required to document their reasoning, serving as a substitute accountability mechanism and enabling error detection and correction. Note: This paper was written for CS492, a CS ethics course at the University of Waterloo.",
         "published": true,
         "tags": [
           "artificial intelligence",
@@ -495,7 +495,7 @@
         "type": "Post",
         "slug": "when-should-ai-explain-itself"
       },
-      "documentHash": "1775514252009",
+      "documentHash": "1777418446378",
       "hasWarnings": false,
       "documentTypeName": "Post"
     }
