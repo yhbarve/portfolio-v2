@@ -38,16 +38,16 @@ export default function ProjectCard(props: ProjectCardProps) {
   };
 
   return (
-    <div className="relative overflow-hidden rounded-md">
+    <div className="relative overflow-hidden rounded-md transition duration-200 ease-in-out hover:shadow-lg hover:backdrop-blur-2xl">
       {/* Decorative per-card background glow */}
-      <div
+      {/* <div
         aria-hidden
         className="pointer-events-none absolute rounded-full bg-accent/25 blur-2xl"
-        style={circleStyle}
-      />
+        // style={circleStyle}
+      /> */}
       <div
-        className="relative z-10 grid grid-cols-5 border border-border/20 bg-surface-1/60 backdrop-blur-2xl backdrop-saturate-150
-        hover:bg-surface-2/50 hover:text-text-1 transition duration-200 ease-in-out rounded-md p-5 cursor-default shadow-sm hover:shadow-lg"
+        className="grid grid-cols-5 border border-border/5 bg-surface-1 hover:bg-surface-2
+        hover:text-text-1 transition duration-200 ease-in-out rounded-md p-5 cursor-default"
       >
         <div className="col-span-1 flex flex-col">
           <a href={link || url || github || youtube} target="_blank">
