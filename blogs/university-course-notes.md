@@ -32,7 +32,7 @@ coverImageCreditLink: ""
 | Course | Topic | Link |
 | :--- | :--- | :--- |
 | **CS 454** | Distributed Systems | [View](https://drive.google.com/drive/folders/1glLNCOek00VKC3U8zRXi-pD3VwL8FV3E?usp=sharing) |
-| **CS 456** | Computer Networks | Coming Soon |
+| **CS 456** | Computer Networks | [View](https://drive.google.com/drive/folders/1GDc34AVItvaHr0GBL9-vEs01yY2H8kXo?usp=sharing) |
 | **CS 490** | Information Systems Management | Coming Soon |
 | **CS 446** | Software Architecture & Design | Coming Soon |
 | **CS 350** | Operating Systems | Coming Soon |
