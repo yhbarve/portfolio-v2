@@ -6,10 +6,10 @@ function formatDateWithOrdinal(dateString: string) {
     day % 10 === 1 && day !== 11
       ? "st"
       : day % 10 === 2 && day !== 12
-      ? "nd"
-      : day % 10 === 3 && day !== 13
-      ? "rd"
-      : "th";
+        ? "nd"
+        : day % 10 === 3 && day !== 13
+          ? "rd"
+          : "th";
 
   const formatted = date.toLocaleDateString("en-US", {
     month: "short",
@@ -25,13 +25,15 @@ export default function WritingsCard({
   summary,
   date,
   tags,
-  slug
+  slug,
+  category,
 }: {
   title: string;
   summary: string;
   date: string;
   tags: string[];
   slug: string;
+  category: string;
 }) {
   return (
     <div>
@@ -51,6 +53,9 @@ export default function WritingsCard({
             className="lg:hover:translate-x-1 transition-transform ease-in-out font-medium mb-1 text-accent lg:text-text-1 text-base text-center lg:text-left"
           >
             {title}
+            {/* <div className="hidden lg:inline-block font-semibold text-[10px] bg-accent mx-4 w-fit rounded-2xl text-accent-foreground px-2">
+              {category}
+            </div> */}
           </a>
           {/* <div className="mb-1 font-normal text-base text-accent lg:text-left hidden lg:block">{formatDateWithOrdinal(date).toUpperCase()}</div> */}
           <div className="font-normal lg:font-light text-xs lg:text-sm text-justify lg:text-left">

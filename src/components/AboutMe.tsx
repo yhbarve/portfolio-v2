@@ -74,14 +74,12 @@ export default function AboutMe() {
         {curVal}
       </h1>
 
-      <div className="w-full text-xs font-medium mt-8 lg:mt-4 text-text-1 cursor-default text-justify px-3 lg:text-left lg:px-0">
+      <div className="w-full text-xs font-normal mt-8 lg:mt-4 text-text-1 cursor-default text-justify px-3 lg:text-left lg:px-0">
         I&apos;m a fifth-year Computer Science student at the University of Waterloo and a Business student at
-        Wilfrid Laurier University. Since starting my full-stack development journey in 2021, I have grown especially
-        passionate about backend technologies and scalable systems. I am currently on my 4th work term working as a Software Engineer at Nokia.<br /><br />
-        As I continue to deepen my expertise in web development, I&apos;m also exploring emerging fields like Web3 and
-        Machine Learning. I&apos;m eager to keep learning, collaborate with brilliant minds, and gain meaningful work
-        experience along the way.<br /><br />
-        Beyond tech, I&apos;m an avid reader and a huge Formula 1 fan - delusionally cheering for Scuderia Ferrari and
+        Wilfrid Laurier University. Since starting my development journey in 2021, I have grown especially
+        passionate about system design and architecture. I care about distributed systems thinking, reliability, and using the right design patterns to keep codebases clean as they scale.<br /><br />
+        Having completed my final work term at Nokia as a Software Engineer, I am now seeking new-grad software engineering roles.<br /><br />
+        Beyond tech, I&apos;m an avid reader and a huge Formula 1 fan, delusionally cheering for Scuderia Ferrari and
         Charles Leclerc every race weekend.
       </div>
 

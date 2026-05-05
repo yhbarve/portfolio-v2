@@ -22,7 +22,7 @@ export default function Writings() {
       </div>
       <div className="flex flex-col gap-4 text-text-1 hover:text-text-1">
         {posts.map((p, key) => {
-            return (<WritingsCard key={key} title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} />)
+            return (<WritingsCard key={key} title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} category={p.category!} />)
         })}
       </div>
       <div className="transition duration-200 ease-in-out text-text-1 mt-4 block lg:hidden text-center">

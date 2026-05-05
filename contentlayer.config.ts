@@ -1,10 +1,12 @@
 // contentlayer.config.ts
 import { defineDocumentType, makeSource } from "contentlayer2/source-files"
 import remarkGfm from "remark-gfm"
+import remarkMath from "remark-math"
 import rehypeSlug from "rehype-slug"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import rehypePrettyCode from "rehype-pretty-code"
 import rehypeExternalLinks from "rehype-external-links"
+import rehypeKatex from "rehype-katex"
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
@@ -34,11 +36,12 @@ export default makeSource({
   contentDirPath: "blogs",          // your Markdown folder
   documentTypes: [Post],
   markdown: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [remarkGfm, remarkMath],
     rehypePlugins: [
       rehypeSlug,
       [rehypeAutolinkHeadings, { behavior: "wrap" }],
       [rehypeExternalLinks, { target: "_blank", rel: ["noopener", "noreferrer"] }],
+      rehypeKatex,
       [rehypePrettyCode, { theme: "github-dark" }],
     ],
   },

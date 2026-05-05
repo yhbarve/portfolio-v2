@@ -103,6 +103,11 @@ html {
   body {
     @apply bg-background-1 text-text-1;
   }
+
+  ::selection {
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
+  }
 }
 
 @layer utilities {
