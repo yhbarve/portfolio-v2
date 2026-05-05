@@ -26,21 +26,21 @@ coverImageCreditLink: "https://gemini.google.com/app"
 ---
 
 ## Context
-Routing is a fundamental building block of modern day computer networking. There are billions of devices and servers around the world. So when two devices wish to communicate with each other, how does the data travel between them? The data is first broken into chunks, called packets, and each packet is transported one by one between the two devices. We cannot have a direct communication link between the two devices. Think about it. With billions of existing devices, and many more being added daily, it would be nearly impossible and super inefficient to have direct links between every pair of devices.
+Routing is a fundamental building block of modern day computer networking. There are billions of devices and servers around the world. So when two devices wish to communicate with each other, how does data travel between them? The data is first broken into chunks, called packets, and each packet is transported one by one. We cannot have a direct communication link between the two devices. Think about it. With billions of existing devices, and many more being added daily, it would be nearly impossible and super inefficient to have direct links between each pair of devices.
 
-So how do two devices transfer data between each other? The answer is switches. Switches are of two types: packet switches and routers. These form the core of the internet, with the host devices and servers running on the edge. Routers, like the term suggests, route incoming data packets to the next router, and eventually to the destination. Each data packet has some metadata using which the router decides which output port the packet should be forwarded to. But, how does the router come up with the metadata-output port mapping? Before we answer this question, allow me to quickly introduce you to the layered architecture of the internet.
+So how do two devices transfer data between each other? The answer is through switches. Switches are of two types: packet switches and routers. These form the core of the internet, with the host devices and servers running on the edge. Routers, like the term suggests, route incoming data packets to the next router, and eventually to the destination. Each data packet has some metadata using which the router decides which output port it should be forwarded to. But, how does the router come up with the metadata-to-output port mapping? Before we answer this question, allow me to quickly introduce you to the internet's layered architecture.
 
-Modern-day internet communication works in a layered manner. By the TCP/IP model, there are 5 main layers: Application layer, Transport layer, Network layer, Link layer, Physical layer. For communication to happen, there has to be a sender and a receiver. On the sender side, data flows down the layers. Each layer adds its own headers or metadata before passing to the layer below. The physical layer is responsible for actually transferring the data to the receiver's physical layer. On the receiver end, the data flows upwards. Each layer reads its metadata, and passes the data to the appropriate location in the layer above.
+Modern-day internet communication works in a layered manner. According to the TCP/IP model, there are 5 main layers: Application layer, Transport layer, Network layer, Link layer, and Physical layer. For communication to happen, there has to be a sender and a receiver. On the sender side, data flows down the layers. Each layer adds its own headers or metadata to the packet before passing ir to the layer below. The physical layer is responsible for actually transferring the data to the receiver's physical layer through a transmission medium. On the receiver end, data flows upwards. Each layer reads its metadata, and passes the packet to the appropriate location in the layer above.
 
-Routers are part of the Network layer. The two primary functions this layer serves are forwarding and routing. Forwarding is a local operation that happens at each router. This ties back to our earlier example about a router receiving a data packet, reading the metadata, and 'forwarding' it to the correct output port. Routing, on the other hand, is a global operation. It is more about deciding what is the most optimal path between two devices. This is how a router knows the mapping between a packet's metadata and the correct output port. The resulting mapping after routing is stored in a router's forwarding table. The next time it receives a new data packet, it refers the forwarding table and forwards the packet to the correct output port.
+Routers are part of the Network layer. The two primary functions this layer serves are forwarding and routing. Forwarding is a local operation that happens at each router. This ties back to our earlier example about a router receiving a data packet, reading the metadata, and 'forwarding' it to the correct output port. Routing, on the other hand, is a global operation. It is more about deciding what is the most optimal path between two devices. This is how a router knows the mapping between a packet's metadata and the correct output port. The resulting mapping that a routing algorithm creates is stored in a router's forwarding table. The next time it receives a new data packet, it refers to the forwarding table and forwards the packet to the correct output port.
 
 ---
 
 ## Routing Algorithms
 
-There are two types of routing - classical destination based routing, and SDN (Software Defined Networking) based routing. Destination based routing, as the name suggests, maps the destination IP address and destination port number to an output port. There are two common types of destination-based routing algorithms - Link State Algorithm and Distance Vector Algorithm. SDN based routing on the other hand can use several other metadata like the source IP address, source port number, transport protocol (TCP/UDP), etc. for mapping. In other words, destination-based routing is a specialized version of SDN-based routing.
+There are ways in which routing can be done: classical destination based routing, and SDN (Software Defined Networking) based routing. Destination based routing, as the name suggests, maps a packet's destination IP address and destination port number to an output port. There are two common types of destination-based routing algorithms - Link State Algorithm and Distance Vector Algorithm. SDN based routing on the other hand uses other metadata like the source IP address, source port number, transport protocol (TCP/UDP), etc. for mapping. In other words, destination-based routing is a specialized version of SDN-based routing.
 
-In this blog, we'll concentrate on destination-based routing, specifically on the Distance Vector algorithm. We'll quickly see how the algorithm works, and then look at the Count-To-Infinity problem, something that I found quite fascinating while learning this.
+In this blog, we'll concentrate on destination-based routing, specifically the Distance Vector algorithm. We'll first see how the algorithm works, and then look at the Count To Infinity problem, something that I found quite fascinating when I first learnt about it.
 
 ---
 
@@ -49,12 +49,12 @@ In this blog, we'll concentrate on destination-based routing, specifically on th
 The distance vector algorithm is based on the Bellman-Ford equation:
 
 $$
-D_x(y) = \min_v\{ c_{x,v} + D_v(y) \}
+D_X(Y) = \min_V\{ c_{X,V} + D_V(Y) \}
 $$
 
-To simplify, the source looks at all its neighbors, compares their distances to the destination, and chooses the neighbor for which the distance from the source to the neighbor plus the distance from the neighbor to the destination is the least.
+To simplify, the source X looks at all its neighbors, compares their distances to the destination, and chooses the neighbor for which the distance from the source to the neighbor plus the distance from the neighbor to the destination is the least.
 
-Each node (router) in the network maintains a distance vector, which is a list of its distances from its neighbors. From time to time, each node sends its own distance vector to its neighbors. When a node X receives new distance vector estimates from its neighbor Y, it updates its own distance vector using the Bellman-Ford equation. Basically, X checks if it can reach other nodes via Y with a shorter path, and if so it updates its own distance vector. Under natural conditions, the distance vector estimates converge to the actual least costs.
+Each node (router) in the network maintains a distance vector, which is a list of its distances to other nodes in the network. From time to time, each node sends its own distance vector to its neighbors. When a node X receives new distance vector estimates from its neighbor Y, it updates its own distance vector using the Bellman-Ford equation. Basically, X checks if it can reach other nodes via Y with a lesser total cost, and if so, updates its own distance vector. Under natural conditions, the distance vector estimates converge to the actual least costs.
 
 The following series of images demonstrate how the distance vector algorithm works over a very simple example.
 
@@ -76,9 +76,9 @@ The following series of images demonstrate how the distance vector algorithm wor
 
 ## The Count-To-Infinity Problem
 
-In the above example, the algorithm only took two steps to converge to the optimal costs. Even in more complicated examples, the algorithm converges pretty quickly because each node advertises its distance vectors to every other node. This phenomenon can be summarized by the phrase *good news travels fast.*
+In the above example, the algorithm only took two steps to converge to the optimal distance vector estimates. Even in other complicated examples, the algorithm converges pretty quickly because each node advertises its distance vectors to its neighbors; so information about a low-cost link spreads quickly. This phenomenon is called *"good news travels fast."*
 
-But, what happens if a link cost suddenly increases? Does this also travel as quickly? Not quite. Let's look at an example:
+But, what happens if a link cost suddenly increases? Does this information also travel as quickly? Not quite. Let's look at an example:
 
 **Step 0:** Consider another 3 node network. Currently, all the routers have the optimal distance vectors.
 ![Count to Infinity problem step 0](/blog/distance-vector-algorithm/CTI-1.png)
@@ -101,20 +101,20 @@ In this example, even though it takes a long time, the algorithm still converges
 
 ## How To Mitigate the Count to Infinity Problem?
 
-In practice, there are three common practices used to prevent the count to infinity problem:
+There are three common practices used to prevent the count to infinity problem:
 
-1. **Split Horizon:** Never advertise a route back to the neighbor you learned it from. In our example, Z learned about X via Y, so when Z advertises to Y it sets $D_Z(X) = \infty$. Y can no longer use Z as a fake shortcut and immediately accepts the true cost. This solution is simple and cheap, but only works for loops involving 2 nodes. It breaks down in larger loops (e.g. X→Y→Z→X).
+1. **Split Horizon:** Never advertise a route back to the neighbor you learned it from. In our example, Z learned about X via Y, so when Z advertises to Y it sets $D_Z(X) = \infty$. Y can no longer use Z as a fake shortcut and immediately accepts the true cost to X (direct link). This solution is simple and cheap, but only works for loops involving 2 nodes. It breaks down in larger loops (e.g. X→Y→Z→X).
 
 2. **Split Horizon with Poison Reverse:** This is a stronger version of split horizon. Instead of simply omitting the route, Z actively advertises $D_Z(X) = \infty$ back to Y, i.e. "poisons" it. The result is the same, but the explicit poisoning makes convergence faster because Y immediately knows the route is dead rather than waiting for a timeout. This solution still doesn't solve loops of 3 or more nodes.
 
-3. **Maximum Hop Count (Count to Infinity Bound):** Define a maximum cost and treat anything at or above it as infinity (i.e. unreachable). This doesn't prevent the counting, but it limits how long it goes on. Instead of counting forever, nodes converge after hitting the ceiling. The downside is it caps the size of networks you can use the protocol in. Eg: RIP (a routing protocol) can't support paths longer than 15 hops.
+3. **Maximum Hop Count (Count to Infinity Bound):** Define a maximum cost and treat anything at or above it as infinity (i.e. unreachable). This doesn't prevent the counting, but it limits how long it goes on. Instead of counting forever, nodes converge after hitting the ceiling. The downside is that it caps the size of networks you can use the protocol in. Eg: RIP, a routing protocol can't support paths longer than 15 hops.
 
-In practice, real protocols combine these. Modern protocols like OSPF and BGP avoid the problem entirely by using link-state or path-vector algorithms instead of distance vectors, so nodes have full topology knowledge and can detect loops before they form.
+In practice, real protocols combine all of these solutions. Modern protocols like OSPF and BGP avoid the problem entirely by using link-state or path-vector algorithms instead of distance vectors, so nodes have full topology knowledge and can detect loops before they form.
 
 ---
 
 ## Conclusion
 
-The count-to-infinity problem is a great example of how a theoretically sound algorithm can run into very real practical challenges. The distance vector algorithm is elegant in its simplicity. But that same locality of knowledge becomes its Achilles' heel when bad news strikes. A single link cost change can send routers into a prolonged disagreement, counting upward while real packets are silently dropped in the process. The mitigations chip away at the problem, but none fully solve it. This is ultimately why modern large-scale routing protocols like OSPF and BGP moved away from distance vectors entirely. Sometimes the cleanest fix is to rethink the foundation.
+The count to infinity problem is a great example of how a theoretically sound algorithm can run into very real practical challenges. The distance vector algorithm is elegant in its simplicity. But the locality of knowledge becomes its Achilles' heel when bad news strikes. A single link cost change can send routers into a prolonged disagreement, counting upward while real packets are silently dropped in the process. The mitigations chip away at the problem, but none fully solve it. This is ultimately why modern large-scale routing protocols like OSPF and BGP moved away from distance vectors entirely. Sometimes the cleanest fix is to rethink the foundation.
 
-If you found this interesting, the broader world of routing algorithms is well worth exploring. I intend to cover more routing (and other networking concepts) in future blogs. Until then, may your packets always find their paths.
+If you found this blog interesting, the broader world of routing algorithms is well worth exploring. I intend to cover more routing algorithms and other networking concepts in future blogs. Until then, may your packets always find their paths.
