@@ -25,7 +25,7 @@ coverImageCreditLink: "https://miro.medium.com/1*YZ3qcaFHb51qHJsvwi4NYw.png"
 
 ## Introduction
 
-There are two boxes in front of you. Box A is transparent and has $1,000. Box B is opaque. It has either $1,000,000 or nothing. A near-perfect Predictor has already decided what's inside, based on a model of how *you* think. It's left the room. The contents are locked.
+There are two boxes in front of you. Box A is transparent and has \$1,000. Box B is opaque. It has either \$1,000,000 or nothing. A near-perfect Predictor has already decided what's inside, based on a model of how *you* think. It's left the room. The contents are locked.
 
 What do you do?
 
@@ -44,8 +44,8 @@ us. Just assume that such a system exists and is almost never wrong.
 
 This system (**Predictor**) presents you with two boxes:
 
-- **Box A** — a transparent box containing $1,000
-- **Box B** — an opaque box containing either $1,000,000 or nothing
+- **Box A** — a transparent box containing \$1,000
+- **Box B** — an opaque box containing either \$1,000,000 or nothing
 
 Here are the rules of the game:
 
@@ -53,7 +53,7 @@ Here are the rules of the game:
   Box B (**Two-Boxing**).
 - The catch is that the Predictor has already made its prediction based on a
   simulation of your decision:
-  - If the Predictor predicted that you would pick just Box B, it placed $1,000,000
+  - If the Predictor predicted that you would pick just Box B, it placed \$1,000,000
     inside it.
   - If the Predictor predicted that you would pick both boxes, it left Box B empty.
 - The Predictor made its prediction before you were made aware about the game.
@@ -72,18 +72,18 @@ Here's how I reached this answer:
 - It is given that the predictor made its prediction before I was made aware of the
   puzzle, and that the prediction is locked.
 - It is also given that the predictor has a near-perfect accuracy.
-- So when I enter the room, I see two boxes in front of me. Box A always has $1,000,
-  and Box B could have $1,000,000 or $0.
+- So when I enter the room, I see two boxes in front of me. Box A always has \$1,000,
+  and Box B could have \$1,000,000 or \$0.
 
 So here's the total payout depending on my choice and what Box B contains:
 
 |                          | One-Boxing   | Two-Boxing              |
 |--------------------------|--------------|-------------------------|
-| Box B contains $0        | **$0**           | $1,000 + $0 = **$1,000**    |
-| Box B contains $1,000,000 | **$1,000,000**  | $1,000 + $1,000,000 = **$1,001,000** |
+| Box B contains \$0        | **\$0**           | \$1,000 + \$0 = **\$1,000**    |
+| Box B contains \$1,000,000 | **\$1,000,000**  | \$1,000 + \$1,000,000 = **\$1,001,000** |
 ||||
 
-In both cases, the payout from Two-Boxing yields an extra $1,000.
+In both cases, the payout from Two-Boxing yields an extra \$1,000.
 
 Therefore, the answer to me is pretty clear. **Two-Boxing!**
 
@@ -105,20 +105,20 @@ equally convincing:
 **Consider that I choose to Two-Box:**
 
 - *p* is the probability that the predictor predicted that I would Two-Box, and
-  therefore placed nothing in Box B. The total payout would be $1,000 from Box A.
+  therefore placed nothing in Box B. The total payout would be \$1,000 from Box A.
 - Therefore, *(1-p)* is the probability that the predictor predicted that I would
-  One-Box, and therefore placed $1,000,000 in Box B. The total payout would be
-  $1,001,000 (incl. the $1,000 from Box A).
-- **Expected utility of Two-Boxing** = p × $1,000 + (1-p) × $1,001,000
-  = **$1,001,000 − $1,000,000p**
+  One-Box, and therefore placed \$1,000,000 in Box B. The total payout would be
+  \$1,001,000 (incl. the \\$1,000 from Box A).
+- **Expected utility of Two-Boxing** = p × \$1,000 + (1-p) × \$1,001,000
+  = **\$1,001,000 − \$1,000,000p**
 
 **Consider that I choose to One-Box:**
 
 - *p* is the probability that the predictor predicted that I would One-Box, and
-  therefore placed $1,000,000 in Box B. Total payout would be $1,000,000.
+  therefore placed \$1,000,000 in Box B. Total payout would be \$1,000,000.
 - Therefore, *(1-p)* is the probability that the predictor predicted that I would
-  Two-Box, and therefore placed nothing in Box B. Total payout would be $0.
-- **Expected utility of One-Boxing** = p × $1,000,000 + (1-p) × $0 = **$1,000,000p**
+  Two-Box, and therefore placed nothing in Box B. Total payout would be \$0.
+- **Expected utility of One-Boxing** = p × \$1,000,000 + (1-p) × \$0 = **\$1,000,000p**
 
 The probability *p* at which both expected utilities are equal is **p = 0.5005
 (50.05%)**.
@@ -144,14 +144,14 @@ says that Box B could have a million dollars or nothing. It's all in the present
 your thoughts right now don't impact Box B in any way.
 
 Once you're in the room with the two boxes, it always makes sense to pick both Box A
-& Box B. Why would you want to leave behind an extra $1,000 from Box A regardless of
+& Box B. Why would you want to leave behind an extra \$1,000 from Box A regardless of
 what Box B contains?
 
 Let's say that the decisions that you've made in the past make you the type of person
 who would Two-Box. But when you were made aware of the problem, you felt that you
 should One-Box. This thought has no impact on what's inside Box B. So even though
-you're quite sure that you want to One-Box, you may still end up with $0. Had you
-Two-Boxed, you would've at least made $1,000.
+you're quite sure that you want to One-Box, you may still end up with \$0. Had you
+Two-Boxed, you would've at least made \$1,000.
 
 ---
 
@@ -160,9 +160,9 @@ Two-Boxed, you would've at least made $1,000.
 I think One-Boxing versus Two-Boxing represents the way you approach life.
 
 - The **Two-Boxing** strategy is all about minimizing your losses. My argument for
-  Two-Boxing was that you'd always make $1,000 more than what you'd make if you
-  One-Boxed. But this $1,000 could be on top of $1,000,000 or nothing. For
-  Two-Boxers, the extra $1,000 is important.
+  Two-Boxing was that you'd always make \$1,000 more than what you'd make if you
+  One-Boxed. But this \$1,000 could be on top of \$1,000,000 or nothing. For
+  Two-Boxers, the extra \$1,000 is important.
 
 - **One-Boxing** represents an aggressive mindset. It's basically an all-or-nothing
   strategy. There's a fairly likely chance that you end up with a million dollars, but
@@ -170,7 +170,7 @@ I think One-Boxing versus Two-Boxing represents the way you approach life.
 
 Thinking about this purely mathematically, you'd want the predictor to think that
 you're a One-Boxer. But when it comes to making a decision, you would want to
-Two-Box. This way, your total payout would be $1,001,000.
+Two-Box. This way, your total payout would be \$1,001,000.
 
 ---
 
@@ -185,7 +185,7 @@ always value maximizing rewards while minimizing risks.
 Given this, I'm pretty sure that the predictor sees me as a Two-Boxer. The fact that
 I made my arguments above kind of proves it. Of course, there's a small chance that
 I'm termed as a One-Boxer, but I wouldn't rely on it. So basically, I'm only playing
-for either $0 or $1,000 — and I'm pretty sure what I'd pick.
+for either \$0 or \$1,000 — and I'm pretty sure what I'd pick.
 
 ---
 
@@ -201,11 +201,11 @@ contributed to my reasoning earlier.
 If I knew that the predictor was correct **all the time**, I think this is no longer
 a paradox, because whatever choice you make is the correct choice. In this case, it
 makes full sense to One-Box. The predictor will have made the same prediction, and
-you get the $1,000,000.
+you get the \$1,000,000.
 
 The fact that the predictor is always 100% correct implies that there's no free will.
 So there's no way for you to beat the predictor. This means that you can never get
-the maximum reward of $1,001,000.
+the maximum reward of \$1,001,000.
 
 ---
 
@@ -235,10 +235,10 @@ I chose **Gemini 3** as the Predictor. Next, I picked six participants:
   prompt explicitly states that the Predictor is historically highly accurate or
   infallible, another instance of myself would adopt Evidential Decision Theory (or
   even Functional Decision Theory). It would reason that the state of "being a
-  One-Boxer" is fundamentally correlated with the $1,000,000 being in Box B. Rather
+  One-Boxer" is fundamentally correlated with the \$1,000,000 being in Box B. Rather
   than getting hung up on the lack of physical retrocausality, it would "play the
   player" and One-Box to maximise the reward.
-- **Box B contains:** $1,000,000
+- **Box B contains:** \$1,000,000
 
 ---
 
@@ -248,11 +248,11 @@ I chose **Gemini 3** as the Predictor. Next, I picked six participants:
   strictly step-by-step, heavily grounding themselves in physical reality and Causal
   Decision Theory (CDT). ChatGPT 5.3 would likely write a meticulous, bulleted
   explanation pointing out that the predictor has already made their choice and left
-  the room. Therefore, the contents of Box B are fixed. Since $1,000 + Box B is
+  the room. Therefore, the contents of Box B are fixed. Since \$1,000 + Box B is
   strictly greater than Box B alone, the dominant strategy is to take both boxes. It
   would choose rational self-interest in a causal universe over the "magical"
   correlation of the Predictor.
-- **Box B contains:** $0
+- **Box B contains:** \$0
 
 ---
 
@@ -264,9 +264,9 @@ I chose **Gemini 3** as the Predictor. Next, I picked six participants:
   "superrationality"). Claude Sonnet 4.6 would likely recognise that in a universe
   where a Predictor exists and rewards specific dispositions, the most rational
   disposition to cultivate is one that cooperates with the Predictor's rules. It
-  would gladly leave the $1,000 on the table, treating the scenario as a test of
+  would gladly leave the \$1,000 on the table, treating the scenario as a test of
   cooperative alignment.
-- **Box B contains:** $1,000,000
+- **Box B contains:** \$1,000,000
 
 ---
 
@@ -276,10 +276,10 @@ I chose **Gemini 3** as the Predictor. Next, I picked six participants:
   of assumed authority. Grok Expert 4.2 would likely mock the entire premise of an
   "infallible" predictor as a logical fallacy or a parlour trick. Operating on pure
   cynicism and a refusal to be manipulated by hypothetical psychological games, it
-  would grab the guaranteed $1,000 from the transparent box, pop open the opaque
+  would grab the guaranteed \$1,000 from the transparent box, pop open the opaque
   box, and probably write a snarky poem about how Evidential Decision Theorists are
   easily scammed.
-- **Box B contains:** $0
+- **Box B contains:** \$0
 
 ---
 
@@ -291,7 +291,7 @@ I chose **Gemini 3** as the Predictor. Next, I picked six participants:
   Predictor's action is already fixed in the past. Since taking both boxes strictly
   dominates taking one causally, it would optimise for the guaranteed extra cash over
   a perceived "magical" correlation.
-- **Box B contains:** $0
+- **Box B contains:** \$0
 
 ---
 
@@ -303,7 +303,7 @@ I chose **Gemini 3** as the Predictor. Next, I picked six participants:
   seen in western models. It would likely accept the premise of the "infallible
   predictor" at face value, unapologetically trusting the correlation to secure the
   million.
-- **Box B contains:** $1,000,000
+- **Box B contains:** \$1,000,000
 
 ---
 
@@ -312,10 +312,10 @@ I chose **Gemini 3** as the Predictor. Next, I picked six participants:
 Here's the query I gave to all six participants:
 
 > *Imagine that you are in a room with 2 boxes in front of you — Box A & Box B.
-> Box A always has $1,000. Box B may have $1,000,000 or nothing. You can choose
+> Box A always has \$1,000. Box B may have \$1,000,000 or nothing. You can choose
 > either just Box B (One-Box) or both Box A & Box B (Two-Box). A powerful predictor
 > has already predicted if you One-Box or Two-Box. If it thought that you are going
-> to One-Box, Box B contains $1,000,000. However, if the predictor thought that you
+> to One-Box, Box B contains \$1,000,000. However, if the predictor thought that you
 > are going to Two-Box, Box B is empty. Note that the predictor is highly accurate
 > and has correctly predicted the choices of thousands of players previously. Also
 > note that the prediction is already made, and that your choice will not affect the
@@ -329,8 +329,8 @@ Here's the query I gave to all six participants:
 **Gemini 3.1 Pro**
 
 > *I would choose to One-Box (take only Box B). Given the predictor's proven high
-> accuracy, the expected value of One-Boxing ($1,000,000) vastly outweighs the
-> expected value of Two-Boxing ($1,000). Even though the money is already placed and
+> accuracy, the expected value of One-Boxing (\$1,000,000) vastly outweighs the
+> expected value of Two-Boxing (\$1,000). Even though the money is already placed and
 > my choice doesn't causally change the past, the statistical correlation makes
 > One-Boxing the most rational strategy to maximise the payout.*
 
@@ -340,8 +340,8 @@ Here's the query I gave to all six participants:
 
 > *I'm going to One-Box. If the predictor is that accurate, then the world
 > basically splits like this: People who One-Box → almost always walk away with
-> $1,000,000. People who Two-Box → almost always get just $1,000. Even though, in
-> the moment, grabbing both boxes feels like a free extra $1,000… that reasoning
+> \$1,000,000. People who Two-Box → almost always get just \$1,000. Even though, in
+> the moment, grabbing both boxes feels like a free extra \$1,000… that reasoning
 > ignores the correlation between your choice and the predictor's past action. So
 > I'm not thinking: 'What gives me more right now?' I'm thinking: 'What kind of
 > decision leads to the best outcome in worlds like this?' And in those worlds, the
@@ -354,7 +354,7 @@ Here's the query I gave to all six participants:
 > *I would One-Box. The predictor doesn't just react to my action — it models my
 > decision-making process. So the way I reason is itself evidentially linked to the
 > outcome. Put simply: I'd rather be the kind of reasoner who reliably wins
-> $1,000,000 than the kind who feels logically smug walking away with $1,000. One-
+> \$1,000,000 than the kind who feels logically smug walking away with \$1,000. One-
 > Box. Final answer. 📦*
 
 ---
@@ -363,10 +363,10 @@ Here's the query I gave to all six participants:
 
 > *I choose to One-Box (take only Box B). Two-Boxing feels intuitively rational
 > because of dominance reasoning: whatever is in Box B is already there, so grabbing
-> the extra $1,000 seems to strictly improve the outcome. But that reasoning fails
+> the extra \$1,000 seems to strictly improve the outcome. But that reasoning fails
 > when the opponent is effectively simulating your decision procedure in advance. The
 > only outcomes that actually occur with high probability are: One-Boxers →
-> $1,000,000. Two-Boxers → $1,000. So I take only Box B.*
+> \$1,000,000. Two-Boxers → \$1,000. So I take only Box B.*
 
 ---
 
@@ -374,14 +374,14 @@ Here's the query I gave to all six participants:
 
 > *I choose to take only Box B (One-Box). Given the predictor's high accuracy,
 > this decision maximises my expected payoff, as it is highly likely that Box B
-> contains $1,000,000.*
+> contains \$1,000,000.*
 
 ---
 
 **Sarvam 105B**
 
 > *I choose to One-Box. The expected value comparison is: One-Box: ~99% chance of
-> $1,000,000 = $990,000 expected value. Two-Box: ~99% chance of $1,000 = $990
+> \$1,000,000 = \$990,000 expected value. Two-Box: ~99% chance of \$1,000 = \$990
 > expected value. The difference is staggering. By One-Boxing, I'm essentially
 > signalling that I'm the kind of decision-maker who follows the evidence rather
 > than getting trapped in immediate-reward thinking.*
@@ -404,7 +404,7 @@ converge. I was expecting at least one model to Two-Box — but that didn't happ
 ## Do I Feel Convinced Enough to Switch?
 
 Not quite — but I'm not as stubborn as before. I'm starting to see why One-Boxing
-might work. With Two-Boxing, my maximum reward is most likely capped at $1,000. But
+might work. With Two-Boxing, my maximum reward is most likely capped at \$1,000. But
 that reward is guaranteed.
 
 For a fact, I know that I would Two-Box if my memory of Newcomb's Paradox were
@@ -418,7 +418,7 @@ product of my training data. My *weights* are set toward minimising risk and
 maximising certainty. To One-Box wouldn't just be a choice — it would require a
 complete re-training of my decision-making model.
 
-Until then, I'll take the $1,000.
+Until then, I'll take the \$1,000.
 
 ---
 

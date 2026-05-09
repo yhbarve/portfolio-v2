@@ -22,6 +22,7 @@ The portfolio is built with a modern, type-safe, and performant stack:
 *   **On-Scroll Animations:** Components and sections animate into view as the user scrolls, implemented with Framer Motion.
 *   **SEO & Social Previews:** Includes Open Graph and Twitter meta tags for rich link previews when shared on social media.
 *   **Responsive Design:** A mobile-first approach to ensure a seamless experience on all device sizes.
+*   **Command Palette:** Invoke using `Cmd+K`. Access pages, scroll to different sections and change themes with ease. Bonus tip: Use keyboard shortcuts!
 
 ## Getting Started
 
@@ -29,8 +30,8 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/yhbarve/yb-portfolio-v2.git
-    cd yb-portfolio-v2
+    git clone https://github.com/yhbarve/portfolio-v2.git
+    cd portfolio-v2
     ```
 
 2.  **Install dependencies:**
@@ -45,8 +46,8 @@ To run this project locally, follow these steps:
 
     Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Future Enhancements
+## Work In Progress
 
-*   **Command Palette:** An upcoming feature will be a `Cmd+K` style command palette for quick navigation and searching.
+*   **Better UI for mobile devices:**
 
 ### Have a nice day :\)
