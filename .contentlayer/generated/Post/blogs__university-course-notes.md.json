@@ -1,0 +1,38 @@
+{
+  "title": "Course Notes Collection",
+  "date": "2026-04-28T00:00:00.000Z",
+  "summary": "Over five years at the University of Waterloo and Wilfrid Laurier University, I’ve completed 50+ courses across Maths, Computer Science, and Business. For most of these, I developed detailed technical notes while preparing for exams. I have hosted these notes on GitHub and Notion as a resource for future students and a personal reference for my own work.",
+  "published": true,
+  "tags": [
+    "large language models",
+    "artificial intelligence",
+    "prompt engineering",
+    "natural language processing",
+    "product design",
+    "responsible AI",
+    "case study",
+    "GPT-4o",
+    "Claude",
+    "Gemini",
+    "social implications of cs"
+  ],
+  "author": "Yash Barve",
+  "category": "Explore",
+  "coverImage": "",
+  "coverImageCreditText": "",
+  "coverImageCreditLink": "",
+  "body": {
+    "raw": "\n---\n\n\n## University of Waterloo Courses\n\n| Course | Topic | Link |\n| :--- | :--- | :--- |\n| **CS 454** | Distributed Systems | [View](https://drive.google.com/drive/folders/1glLNCOek00VKC3U8zRXi-pD3VwL8FV3E?usp=sharing) |\n| **CS 456** | Computer Networks | [View](https://drive.google.com/drive/folders/1GDc34AVItvaHr0GBL9-vEs01yY2H8kXo?usp=sharing) |\n| **CS 490** | Information Systems Management | Coming Soon |\n| **CS 446** | Software Architecture & Design | Coming Soon |\n| **CS 350** | Operating Systems | Coming Soon |\n| **CS 349** | User Interfaces | Coming Soon |\n| More course notes coming soon |\n\n---\n\n## Wilfrid Laurier University Courses\n\n| Course | Topic | Link |\n| :--- | :--- | :--- |\n| **BU 413** | Personal Financial Planning | Coming Soon |\n| **BU 423** | Futures, Options, and Swaps  | Coming Soon |\n| More course notes coming soon |",
+    "html": "<hr>\n<h2 id=\"university-of-waterloo-courses\"><a href=\"#university-of-waterloo-courses\">University of Waterloo Courses</a></h2>\n<table>\n<thead>\n<tr>\n<th align=\"left\">Course</th>\n<th align=\"left\">Topic</th>\n<th align=\"left\">Link</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"left\"><strong>CS 454</strong></td>\n<td align=\"left\">Distributed Systems</td>\n<td align=\"left\"><a href=\"https://drive.google.com/drive/folders/1glLNCOek00VKC3U8zRXi-pD3VwL8FV3E?usp=sharing\" rel=\"noopener noreferrer\" target=\"_blank\">View</a></td>\n</tr>\n<tr>\n<td align=\"left\"><strong>CS 456</strong></td>\n<td align=\"left\">Computer Networks</td>\n<td align=\"left\"><a href=\"https://drive.google.com/drive/folders/1GDc34AVItvaHr0GBL9-vEs01yY2H8kXo?usp=sharing\" rel=\"noopener noreferrer\" target=\"_blank\">View</a></td>\n</tr>\n<tr>\n<td align=\"left\"><strong>CS 490</strong></td>\n<td align=\"left\">Information Systems Management</td>\n<td align=\"left\">Coming Soon</td>\n</tr>\n<tr>\n<td align=\"left\"><strong>CS 446</strong></td>\n<td align=\"left\">Software Architecture &#x26; Design</td>\n<td align=\"left\">Coming Soon</td>\n</tr>\n<tr>\n<td align=\"left\"><strong>CS 350</strong></td>\n<td align=\"left\">Operating Systems</td>\n<td align=\"left\">Coming Soon</td>\n</tr>\n<tr>\n<td align=\"left\"><strong>CS 349</strong></td>\n<td align=\"left\">User Interfaces</td>\n<td align=\"left\">Coming Soon</td>\n</tr>\n<tr>\n<td align=\"left\">More course notes coming soon</td>\n<td align=\"left\"></td>\n<td align=\"left\"></td>\n</tr>\n</tbody>\n</table>\n<hr>\n<h2 id=\"wilfrid-laurier-university-courses\"><a href=\"#wilfrid-laurier-university-courses\">Wilfrid Laurier University Courses</a></h2>\n<table>\n<thead>\n<tr>\n<th align=\"left\">Course</th>\n<th align=\"left\">Topic</th>\n<th align=\"left\">Link</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"left\"><strong>BU 413</strong></td>\n<td align=\"left\">Personal Financial Planning</td>\n<td align=\"left\">Coming Soon</td>\n</tr>\n<tr>\n<td align=\"left\"><strong>BU 423</strong></td>\n<td align=\"left\">Futures, Options, and Swaps</td>\n<td align=\"left\">Coming Soon</td>\n</tr>\n<tr>\n<td align=\"left\">More course notes coming soon</td>\n<td align=\"left\"></td>\n<td align=\"left\"></td>\n</tr>\n</tbody>\n</table>"
+  },
+  "_id": "blogs/university-course-notes.md",
+  "_raw": {
+    "sourceFilePath": "blogs/university-course-notes.md",
+    "sourceFileName": "university-course-notes.md",
+    "sourceFileDir": "blogs",
+    "contentType": "markdown",
+    "flattenedPath": "blogs/university-course-notes"
+  },
+  "type": "Post",
+  "slug": "university-course-notes"
+}

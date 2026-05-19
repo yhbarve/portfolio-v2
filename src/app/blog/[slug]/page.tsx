@@ -138,7 +138,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               prose-li:my-0.5
 
               /* code */
-              prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+              prose-code:px-1 prose-code:py-1 prose-code:rounded
+              prose-code:before:content-none prose-code:after:content-none
               prose-pre:rounded-lg prose-pre:p-4 prose-pre:overflow-x-auto
 
               /* media & tables */

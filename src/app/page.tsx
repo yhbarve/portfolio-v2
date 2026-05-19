@@ -34,7 +34,7 @@ export default function Home() {
                 <Writings />
               </AnimatedSection>
               <AnimatedSection>
-                <Interest interests={["Reading", "Formula 1", "Music", "Movies & TV", "Sports", "Graphic Design", "Photography"]} />
+                <Interest interests={["Reading", "Puzzles", "Photography", "Formula 1", "Music", "Movies & TV", "Sports", "Graphic Design"]} />
               </AnimatedSection>
             </div>
             <div className="lg:hidden block mx-auto w-full">

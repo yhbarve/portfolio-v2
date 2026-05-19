@@ -82,6 +82,14 @@ const INTEREST_DETAILS: InterestInfo[] = [
       </>
     ),
   },
+  {
+    label: "Puzzles",
+    description: (
+      <>
+        I began solving data structure and algorithms problems to prepare for interviews. But I really enjoyed the process, and it became a hobby of mine. Check out my <Link href="/puzzles" className="underline underline-offset-4 hover:text-accent" target="_blank">Puzzles</Link> page for some of my favorite problems.
+      </>
+    ),
+  },
 ];
 
 export default function Interest({

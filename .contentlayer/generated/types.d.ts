@@ -26,6 +26,21 @@ export type Post = {
   /** Markdown file body */
   body: Markdown
   slug: string
+}
+
+export type Puzzle = {
+  /** File path relative to `contentDirPath` */
+  _id: string
+  _raw: Local.RawDocumentData
+  type: 'Puzzle'
+  title: string
+  date: IsoDateTimeString
+  difficulty?: string | undefined
+  published: boolean
+  tags?: string[] | undefined
+  /** Markdown file body */
+  body: Markdown
+  slug: string
 }  
 
 /** Nested types */
@@ -36,8 +51,8 @@ export type Post = {
 export type AllTypes = DocumentTypes | NestedTypes
 export type AllTypeNames = DocumentTypeNames | NestedTypeNames
 
-export type DocumentTypes = Post
-export type DocumentTypeNames = 'Post'
+export type DocumentTypes = Post | Puzzle
+export type DocumentTypeNames = 'Post' | 'Puzzle'
 
 export type NestedTypes = never
 export type NestedTypeNames = never
@@ -45,6 +60,7 @@ export type NestedTypeNames = never
 export type DataExports = {
   allDocuments: DocumentTypes[]
   allPosts: Post[]
+  allPuzzles: Puzzle[]
 }
 
 
@@ -65,6 +81,7 @@ declare global {
 
 export type DocumentTypeMap = {
   Post: Post
+  Puzzle: Puzzle
 }
 
 export type NestedTypeMap = {

@@ -10,7 +10,7 @@ import rehypeKatex from "rehype-katex"
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
-  filePathPattern: `**/*.md`,       // use *.mdx later if you want MDX
+  filePathPattern: `blogs/**/*.md`,       // use *.mdx later if you want MDX
   contentType: "markdown",
   fields: {
     title: { type: "string", required: true },
@@ -27,14 +27,33 @@ export const Post = defineDocumentType(() => ({
   computedFields: {
     slug: {
       type: "string",
-      resolve: (doc) => doc._raw.flattenedPath, // e.g. "my-first-post"
+      resolve: (doc) => doc._raw.flattenedPath.replace(/^blogs\//, ""), // e.g. "my-first-post"
     },
   },
 }))
 
+export const Puzzle = defineDocumentType(() => ({
+  name: "Puzzle",
+  filePathPattern: `puzzles/**/*.md`,
+  contentType: "markdown",
+  fields: {
+    title: { type: "string", required: true },
+    date: { type: "date", required: true },
+    difficulty: { type: "string" },
+    published: { type: "boolean", default: true },
+    tags: { type: "list", of: { type: "string" } },
+  },
+  computedFields: {
+    slug: {
+      type: "string",
+      resolve: (doc) => doc._raw.flattenedPath.replace(/^puzzles\//, ""),
+    },
+  },
+}));
+
 export default makeSource({
-  contentDirPath: "blogs",          // your Markdown folder
-  documentTypes: [Post],
+  contentDirPath: ".",
+  documentTypes: [Post, Puzzle],
   markdown: {
     remarkPlugins: [remarkGfm, remarkMath],
     rehypePlugins: [
@@ -45,4 +64,4 @@ export default makeSource({
       [rehypePrettyCode, { theme: "github-dark" }],
     ],
   },
-})
+});

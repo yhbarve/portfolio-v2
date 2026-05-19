@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How the Blog Works</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #0f172a;
+        --panel: #111827;
+        --text: #e5e7eb;
+        --muted: #9ca3af;
+        --accent: #38bdf8;
+        --border: #334155;
+        --code: #020617;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      main {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+
+      article {
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        background: linear-gradient(180deg, rgba(17, 24, 39, 0.96), rgba(15, 23, 42, 0.96));
+        padding: 32px;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        letter-spacing: -0.04em;
+      }
+
+      h2 {
+        margin-top: 40px;
+        color: var(--accent);
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        margin-top: 28px;
+        font-size: 1.1rem;
+      }
+
+      p,
+      li {
+        color: var(--text);
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 1.1rem;
+        margin-bottom: 28px;
+      }
+
+      code {
+        border-radius: 6px;
+        background: var(--code);
+        padding: 0.15rem 0.35rem;
+        color: #bae6fd;
+      }
+
+      pre {
+        overflow-x: auto;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        background: var(--code);
+        padding: 18px;
+      }
+
+      pre code {
+        padding: 0;
+        background: transparent;
+        color: #e5e7eb;
+      }
+
+      .flow {
+        display: grid;
+        gap: 12px;
+        margin: 24px 0;
+      }
+
+      .step {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 14px 16px;
+        background: rgba(2, 6, 23, 0.45);
+      }
+
+      .step strong {
+        color: var(--accent);
+      }
+
+      .note {
+        border-left: 4px solid var(--accent);
+        border-radius: 12px;
+        background: rgba(56, 189, 248, 0.08);
+        padding: 14px 16px;
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>How the Blog Works</h1>
+        <p class="lede">
+          This portfolio uses Markdown files as the source of truth, Contentlayer as the build-time
+          content compiler, and a Next.js App Router page to render each post.
+        </p>
+
+        <h2>The Short Version</h2>
+        <div class="flow" aria-label="Blog rendering flow">
+          <div class="step">
+            <strong>1. You write a Markdown file</strong> in <code>blogs/</code>, such as
+            <code>blogs/nextjs-and-md.md</code>.
+          </div>
+          <div class="step">
+            <strong>2. Contentlayer reads it</strong> using <code>contentlayer.config.ts</code>.
+            The config says that every <code>**/*.md</code> file under <code>blogs</code> is a
+            <code>Post</code>.
+          </div>
+          <div class="step">
+            <strong>3. Contentlayer generates data</strong> in <code>.contentlayer/generated</code>,
+            including typed exports like <code>allPosts</code> and per-post JSON files.
+          </div>
+          <div class="step">
+            <strong>4. Next.js imports <code>allPosts</code></strong> in the writings list and in
+            <code>src/app/blog/[slug]/page.tsx</code>.
+          </div>
+          <div class="step">
+            <strong>5. The blog page renders prebuilt HTML</strong> by placing
+            <code>post.body.html</code> into the page with <code>dangerouslySetInnerHTML</code>.
+          </div>
+        </div>
+
+        <h2>Where the Markdown Lives</h2>
+        <p>
+          Blog posts are plain Markdown files in the root-level <code>blogs/</code> directory. Each
+          file starts with frontmatter, which is the metadata between the opening and closing
+          <code>---</code> lines.
+        </p>
+
+        <pre><code>---
+title: "Building a Markdown Blog with Next.js and Contentlayer"
+date: "2025-08-15"
+summary: "..."
+tags: ["nextjs", "markdown", "contentlayer"]
+published: true
+author: "Yash Barve"
+category: "Build"
+coverImage: "/blog/markdown-blog.jpg"
+---
+
+## Introduction
+
+Markdown content starts here.</code></pre>
+
+        <p>
+          Contentlayer separates that file into two broad pieces: frontmatter fields like
+          <code>title</code>, <code>date</code>, <code>summary</code>, and <code>tags</code>, plus the
+          Markdown body that becomes HTML.
+        </p>
+
+        <h2>How Contentlayer Knows What to Read</h2>
+        <p>
+          The important setup is in <code>contentlayer.config.ts</code>. The project defines one
+          document type named <code>Post</code>:
+        </p>
+
+        <pre><code>export const Post = defineDocumentType(() =&gt; ({
+  name: "Post",
+  filePathPattern: `**/*.md`,
+  contentType: "markdown",
+  fields: {
+    title: { type: "string", required: true },
+    date: { type: "date", required: true },
+    summary: { type: "string" },
+    published: { type: "boolean", default: true },
+    tags: { type: "list", of: { type: "string" } },
+    author: { type: "string" },
+    category: { type: "string" },
+    coverImage: { type: "string" },
+  },
+  computedFields: {
+    slug: {
+      type: "string",
+      resolve: (doc) =&gt; doc._raw.flattenedPath,
+    },
+  },
+}))</code></pre>
+
+        <p>
+          The <code>makeSource</code> call points Contentlayer at <code>blogs</code>. That means the
+          pattern <code>**/*.md</code> is evaluated inside the <code>blogs/</code> directory, not
+          across the whole repository.
+        </p>
+
+        <pre><code>export default makeSource({
+  contentDirPath: "blogs",
+  documentTypes: [Post],
+})</code></pre>
+
+        <p>
+          The computed <code>slug</code> comes from <code>doc._raw.flattenedPath</code>. For example,
+          <code>blogs/nextjs-and-md.md</code> becomes the slug <code>nextjs-and-md</code>, which maps
+          to the URL <code>/blog/nextjs-and-md</code>.
+        </p>
+
+        <h2>How Markdown Becomes HTML</h2>
+        <p>
+          Contentlayer runs the Markdown body through a unified Markdown pipeline. In this project,
+          that pipeline is customized with remark and rehype plugins:
+        </p>
+
+        <pre><code>markdown: {
+  remarkPlugins: [remarkGfm, remarkMath],
+  rehypePlugins: [
+    rehypeSlug,
+    [rehypeAutolinkHeadings, { behavior: "wrap" }],
+    [rehypeExternalLinks, { target: "_blank", rel: ["noopener", "noreferrer"] }],
+    rehypeKatex,
+    [rehypePrettyCode, { theme: "github-dark" }],
+  ],
+}</code></pre>
+
+        <p>
+          The remark plugins operate while the content is still Markdown. <code>remark-gfm</code>
+          adds GitHub-flavored Markdown features like tables and task lists, while
+          <code>remark-math</code> understands math syntax. The rehype plugins operate after Markdown
+          has become an HTML tree. They add heading IDs, wrap headings with anchor links, make
+          external links open in a new tab, render math with KaTeX, and syntax-highlight code blocks.
+        </p>
+
+        <p>
+          The generated JSON shows the result clearly. A post gets a <code>body.raw</code> field with
+          the original Markdown body and a <code>body.html</code> field with the final HTML string.
+        </p>
+
+        <pre><code>{
+  "title": "Building a Markdown Blog with Next.js and Contentlayer",
+  "date": "2025-08-15T00:00:00.000Z",
+  "body": {
+    "raw": "\\n## Introduction\\n\\nFor my very first...",
+    "html": "&lt;h2 id=\\"introduction\\"&gt;&lt;a href=\\"#introduction\\"&gt;Introduction&lt;/a&gt;&lt;/h2&gt;..."
+  },
+  "slug": "nextjs-and-md"
+}</code></pre>
+
+        <h2>What Next.js Imports</h2>
+        <p>
+          Contentlayer generates TypeScript definitions and data exports under
+          <code>.contentlayer/generated</code>. The key export is <code>allPosts</code>, typed as an
+          array of <code>Post</code> objects.
+        </p>
+
+        <pre><code>export declare const allPosts: Post[]</code></pre>
+
+        <p>
+          The generated <code>Post</code> type includes the metadata fields and the compiled Markdown
+          body:
+        </p>
+
+        <pre><code>export type Post = {
+  title: string
+  date: IsoDateTimeString
+  summary?: string
+  published: boolean
+  tags?: string[]
+  category?: string
+  coverImage?: string
+  body: Markdown
+  slug: string
+}</code></pre>
+
+        <h2>How the Writings List Works</h2>
+        <p>
+          The writings page imports <code>allPosts</code>, filters out unpublished posts, optionally
+          filters by category, sorts newest first, and links each row to <code>/blog/{slug}</code>.
+        </p>
+
+        <pre><code>const posts = allPosts
+  .filter((p) =&gt; p.published)
+  .filter((p) =&gt; {
+    if (!categoryFilter) return true;
+    return p.category === categoryFilter;
+  })
+  .sort((a, b) =&gt; +new Date(b.date) - +new Date(a.date));</code></pre>
+
+        <p>
+          The homepage writings section does a similar thing, but only shows the five newest
+          published posts.
+        </p>
+
+        <h2>How an Individual Blog Page Works</h2>
+        <p>
+          The route <code>src/app/blog/[slug]/page.tsx</code> is the dynamic route for individual
+          posts. It uses the generated slugs to tell Next.js which static pages can be built:
+        </p>
+
+        <pre><code>export const generateStaticParams = () =&gt;
+  allPosts.map((p) =&gt; ({ slug: p.slug }));</code></pre>
+
+        <p>
+          When someone visits <code>/blog/nextjs-and-md</code>, the page reads the route param,
+          finds the matching post in <code>allPosts</code>, and returns a 404 if no post exists.
+        </p>
+
+        <pre><code>const { slug } = await params;
+const post = allPosts.find((p) =&gt; p.slug === slug);
+if (!post) return notFound();</code></pre>
+
+        <p>
+          The page then renders the title, summary, date, optional cover image, and finally the
+          compiled HTML:
+        </p>
+
+        <pre><code>&lt;div
+  id="blog-content"
+  className="prose prose-base md:prose-lg ..."
+  dangerouslySetInnerHTML={{ __html: post.body.html }}
+/&gt;</code></pre>
+
+        <p>
+          The <code>prose</code> classes come from Tailwind Typography. They do not convert Markdown
+          to HTML. They style the already-generated HTML tags, such as <code>&lt;h2&gt;</code>,
+          <code>&lt;p&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;pre&gt;</code>, and
+          <code>&lt;table&gt;</code>.
+        </p>
+
+        <h2>Why <code>dangerouslySetInnerHTML</code> Is Used</h2>
+        <p>
+          By the time the page renders, Contentlayer has already produced a trusted HTML string from
+          local Markdown files in the repository. React normally escapes strings, so rendering
+          <code>post.body.html</code> directly would show the HTML as text. The
+          <code>dangerouslySetInnerHTML</code> prop tells React to insert that string as real DOM
+          nodes.
+        </p>
+
+        <p class="note">
+          This is reasonable here because the content is local, version-controlled Markdown. If the
+          HTML came from arbitrary user input, it would need a much stricter sanitization story.
+        </p>
+
+        <h2>How the Table of Contents Works</h2>
+        <p>
+          The page also renders <code>ContentTimeline</code> beside the article on large screens.
+          That component runs in the browser, finds <code>h2</code> and <code>h3</code> elements
+          inside <code>#blog-content</code>, and builds a list of anchor links from their generated
+          IDs. Those IDs exist because <code>rehype-slug</code> added them during the Contentlayer
+          compile step.
+        </p>
+
+        <h2>The Full Pipeline</h2>
+        <ol>
+          <li>Add or edit a Markdown file in <code>blogs/</code>.</li>
+          <li>Run the app or build. The Next config wraps the app with <code>withContentlayer</code>.</li>
+          <li>Contentlayer reads files matching <code>**/*.md</code> under <code>blogs/</code>.</li>
+          <li>Frontmatter is validated against the <code>Post</code> schema.</li>
+          <li>The filename becomes the computed <code>slug</code>.</li>
+          <li>The Markdown body is converted into an HTML string using the configured plugins.</li>
+          <li>Generated data and types are written into <code>.contentlayer/generated</code>.</li>
+          <li>Next.js imports <code>allPosts</code> for listing pages and blog detail pages.</li>
+          <li>The detail page finds the matching post by slug.</li>
+          <li>The rendered article injects <code>post.body.html</code> and styles it with Tailwind Typography.</li>
+        </ol>
+
+        <h2>Key Takeaway</h2>
+        <p>
+          The blog is not reading Markdown from disk at request time. The Markdown is compiled at
+          development/build time into typed JavaScript data and pre-rendered HTML. The runtime page is
+          mostly doing lookup and presentation: find the post by slug, render metadata, inject the
+          compiled HTML, and let Tailwind style the resulting elements.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
