@@ -73,4 +73,10 @@ public:
 ```
 ---
 
+## Why I Like This Problem
+
+When you first look at this problem, an `O(n)` & `O(1)` solution feels impossible. But if you give it some thought, you realize that such a solution actually exists. I also love this problem because the solution is very simple to implement, being hardly 5 lines of code.
+
+---
+
 *Link to LeetCode problem: https://leetcode.com/problems/increasing-triplet-subsequence/*
