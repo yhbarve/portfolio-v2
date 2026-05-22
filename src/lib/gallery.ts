@@ -8,6 +8,27 @@ export interface GalleryItem {
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
+    "src": "/gallery/20260317_01.jpg",
+    "alt": "20260317_01.jpg",
+    "caption": "UWDP",
+    "date": "March 17, 2026",
+    "layout": "normal"
+  },
+  {
+    "src": "/gallery/20251013_01.jpg",
+    "alt": "20251013_01.jpg",
+    "caption": "Fire In The Sky",
+    "date": "October 13, 2025",
+    "layout": "normal"
+  },
+  {
+    "src": "/gallery/20260517_01.jpg",
+    "alt": "20260505_17.jpg",
+    "caption": "Summerloo 2026",
+    "date": "May 17, 2026",
+    "layout": "tall"
+  },
+  {
     "src": "/gallery/20260505_01.jpeg",
     "alt": "20260505_01.jpeg",
     "caption": "Twilight Zone",
