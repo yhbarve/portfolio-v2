@@ -13,5 +13,6 @@ import blogs__selectiveRegulatoryTransparencyMd from './blogs__selective-regulat
 import blogs__socialNetworkingTechnologiesMd from './blogs__social-networking-technologies.md.json' with { type: 'json' }
 import blogs__universityCourseNotesMd from './blogs__university-course-notes.md.json' with { type: 'json' }
 import blogs__whenShouldAiExplainItselfMd from './blogs__when-should-ai-explain-itself.md.json' with { type: 'json' }
+import blogs__buildingMyWebsiteMd from './blogs__building-my-website.md.json' with { type: 'json' }
 
-export const allPosts = [blogs__aiDatingPlatformsMd, blogs__countToInfinityProblemMd, blogs__illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, blogs__newcombsParadoxMd, blogs__nextjsAndMdMd, blogs__oopWithCppMd, blogs__outsourcingTheMindMd, blogs__pragmaticExcellenceMd, blogs__projectManagersMd, blogs__selectiveRegulatoryTransparencyMd, blogs__socialNetworkingTechnologiesMd, blogs__universityCourseNotesMd, blogs__whenShouldAiExplainItselfMd]
+export const allPosts = [blogs__aiDatingPlatformsMd, blogs__countToInfinityProblemMd, blogs__illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, blogs__newcombsParadoxMd, blogs__nextjsAndMdMd, blogs__oopWithCppMd, blogs__outsourcingTheMindMd, blogs__pragmaticExcellenceMd, blogs__projectManagersMd, blogs__selectiveRegulatoryTransparencyMd, blogs__socialNetworkingTechnologiesMd, blogs__universityCourseNotesMd, blogs__whenShouldAiExplainItselfMd, blogs__buildingMyWebsiteMd]

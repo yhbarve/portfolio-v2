@@ -4,22 +4,22 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Yash's Puzzles",
+  title: "Yash's Favorite Puzzles",
   description:
-    "Explore Yash Barve's puzzles collection — puzzles, insights, and reflections on technology, development, design, and personal growth.",
+    "Explore Yash Barve's favorite coding puzzles! It's mostly just Leetcode problems.",
   openGraph: {
-    title: "Yash's Puzzles",
+    title: "Yash's Favorite Puzzles",
     description:
-      "Explore Yash Barve's puzzles collection — puzzles, insights, and reflections on technology, development, design, and personal growth.",
+      "Explore Yash Barve's favorite coding puzzles! It's mostly just Leetcode problems.",
     url: "https://yashbarve.vercel.app/puzzles",
     siteName: "Yash Barve",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Yash's Puzzles",
+    title: "Yash's Favorite Puzzles",
     description:
-      "Explore Yash Barve's puzzles collection — puzzles, insights, and reflections on technology, development, design, and personal growth.",
+      "Explore Yash Barve's favorite coding puzzles! It's mostly just Leetcode problems.",
   },
 };
 
@@ -38,7 +38,7 @@ export default function PuzzlesLayout({ children }: { children: ReactNode }) {
             </a>
           </div>
           <h1 className="text-3xl lg:text-5xl font-semibold text-page-titleForeground inline-block pb-3 mt-2">
-            Puzzles Collection
+            Favorite Puzzles
           </h1>
         </div>
 
