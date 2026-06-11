@@ -42,7 +42,7 @@ export default function Projects() {
             "websockets"
           ]}
 
-          image="/fit4me-demo.png" // Replace with your actual demo image path
+          image="/projects/fit4me.png" // Replace with your actual demo image path
         />
 
 <ProjectCard
@@ -93,7 +93,7 @@ export default function Projects() {
             "imagekit",
             "jwt"
           ]}
-          image="/portolio-demo.png"
+          image="/projects/portolio.png"
         />
 
         <ProjectCard
@@ -125,7 +125,7 @@ export default function Projects() {
         <ProjectCard
           year="2025"
           github="https://github.com/yhbarve/crop-yield-and-risk-mitigation"
-          name="Crop Yield Prediction & Risk Mitigation (BU425 Final Project)"
+          name="Crop Yield Prediction & Risk Mitigation Using Deep Learning"
           desc={[
             "Built a machine learning framework to predict crop yields and assess agricultural risk using real-world climate and farming inputs (rainfall, temperature, pesticide use, crop type).",
             "Trained interpretable yield models using Random Forest and Lasso Regression for feature selection and prediction.",
@@ -145,7 +145,7 @@ export default function Projects() {
             "rnn",
             "data visualization"
           ]}
-          image="/laz-logo.png" // Replace with your actual demo image path
+          image="/projects/laz.png" // Replace with your actual demo image path
         />
 
         <ProjectCard
@@ -169,7 +169,7 @@ export default function Projects() {
             "ffmpeg",
             "ffmpeg.wasm"
           ]}
-          image="/scriptsync-demo.png"
+          image="/projects/script-sync.png"
         />
       </div>
       

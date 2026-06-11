@@ -16,10 +16,22 @@ export default function Experience() {
         </div>
       </div>
       <div className="lg:flex flex-col gap-4 text-text-1 hover:text-text-1 hidden">
+        {/* <ExperienceCard
+            year="SEP 2026"
+            title="Incoming Associate Software Engineer"
+            org="Capital One"
+            coverImage="/experience/capital-one.png"
+            desc={[
+              "Starting September 2026, I will be joining Capital One as an Associate Software Engineer at their Toronto office."
+            ]}
+            skills={[]}
+
+        /> */}
         <ExperienceCard
           year="SEP — DEC '25"
           title="Software Engineering Intern"
           org="Nokia"
+          coverImage="/experience/nokia.png"
           desc={[
             "Built an LLM-based evaluation service (React, FastAPI, Celery, MySQL) with parallel async processing and a multi-step evaluation pipeline.",
             "Shipped a user/admin settings service by designing React + MUI flows, exposing 10+ FastAPI CRUD endpoints, and modeling a scalable MySQL schema.",
@@ -48,6 +60,7 @@ export default function Experience() {
           year="SEP '25 — PRESENT"
           title="Engineering Director"
           org="UW Product Management Club"
+          coverImage="/experience/uwpm.png"
           desc={[
             "Built an application submission platform for exec and event applications using Next.js, TypeScript, and TailwindCSS.",
             "Designed a PostgreSQL database on Supabase to support application forms, applicant records, and reviewer workflows.",
@@ -67,6 +80,7 @@ export default function Experience() {
           year="SEP — DEC '24"
           title="Software Engineering Intern"
           org="AutoTrader.ca"
+          coverImage="/experience/autotrader.png"
           desc={[
             "Profiled and optimized frontend performance for a high-traffic marketplace, reducing Largest Contentful Paint (LCP) by 28% through JavaScript refactoring, async asset loading, and image compression.",
             "Improved Core Web Vitals to enhance user experience and SEO performance across key pages.",
@@ -90,6 +104,7 @@ export default function Experience() {
           year="JAN — APR '24"
           title="Software Development Intern"
           org="Petrovision International LLC"
+          coverImage="/experience/petrovision.png"
           desc={[
             "Built reusable React components (banners, images, layouts) for a website redesign to improve UI consistency across pages.",
             "Integrated REST APIs to power dynamic content and supported SEO improvements during the rebuild.",
@@ -109,6 +124,7 @@ export default function Experience() {
           year="MAR — MAY '23"
           title="Data Insights Specialist Intern"
           org="Lazaridis School of Business and Economics"
+          coverImage="/experience/laz.png"
           desc={[
             "Collected, cleaned, and analyzed marketing data using Microsoft Excel and Python to support campaign decisions.",
             "Built Tableau dashboards to visualize performance, surface trends, and track KPIs for stakeholders.",
@@ -128,6 +144,7 @@ export default function Experience() {
           year="OCT '22 — AUG '23"
           title="Web Designer Executive"
           org="UW Data Science Club"
+          coverImage="/experience/uwdsc.png"
           desc={[
             "Partnered with event organizers to gather requirements and translate them into clear, on-brand designs.",
             "Designed promotional creatives for Instagram, LinkedIn, Facebook, and 𝕏 using Canva.",
