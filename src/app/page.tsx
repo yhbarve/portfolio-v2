@@ -19,10 +19,10 @@ export default function Home() {
             </div>
             <div className="lg:w-7/12 lg:py-16 pt-8 flex flex-col px-3">
               <AnimatedSection>
-                <Projects />
+                <Experience />
               </AnimatedSection>
               <AnimatedSection>
-                <Experience />
+                <Projects />
               </AnimatedSection>
               <AnimatedSection>
                 <Skills />

@@ -4,7 +4,7 @@ import ExperienceCardMobile from "../ExperienceCardMobile";
 
 export default function Experience() {
   return (
-    <div id="experiences" className="pt-12">
+    <div id="experiences" className="">
       <div className="flex items-center pb-2 justify-between">
         <div className="text-accent-foreground lg:text-accent font-black lg:font-bold cursor-default bg-accent lg:bg-transparent p-1 lg:p-0 rounded-lg lg:rounded-none w-full lg:w-auto text-center lg:text-left">
           EXPERIENCE

@@ -3,7 +3,7 @@ import ProjectCardMobile from "../ProjectCardMobile";
 
 export default function Projects() {
   return (
-    <div id="projects" className="">
+    <div id="projects" className="pt-12">
       <div className="flex items-center pb-2 justify-between">
         <div className="text-accent-foreground lg:text-accent font-black lg:font-bold cursor-default bg-accent lg:bg-transparent p-1 lg:p-0 rounded-lg lg:rounded-none w-full lg:w-auto text-center lg:text-left">
           PROJECTS
