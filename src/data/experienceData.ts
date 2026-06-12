@@ -8,16 +8,16 @@ export interface ExperienceItem {
 }
 
 export const EXPERIENCE_ITEMS: ExperienceItem[] = [
-    {
-        title: "Incoming Associate Software Engineer",
-        org: "Capital One",
-        year: "SEP '26",
-        desc: [
-            "Starting September 2026, I will be joining Capital One as an Associate Software Engineer at their Toronto office."
-        ],
-        skills: [],
-        coverImage: "/experience/capital-one.png"
-    },
+    // {
+    //     title: "Incoming Associate Software Engineer",
+    //     org: "Capital One",
+    //     year: "SEP '26",
+    //     desc: [
+    //         "Starting September 2026, I will be joining Capital One as an Associate Software Engineer at their Toronto office."
+    //     ],
+    //     skills: [],
+    //     coverImage: "/experience/capital-one.png"
+    // },
     {
         title: "Software Engineering Intern",
         org: "Nokia",
