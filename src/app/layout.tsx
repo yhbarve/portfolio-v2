@@ -54,10 +54,11 @@ export default function RootLayout({
         <meta property="twitter:image" content="https://yhbarve.me/yb-bg-logo.png" />
       </head>
       <body
+        suppressHydrationWarning
         className={`${interTight.variable} ${interTight.className} bg-gradient-to-tr from-background-1 via-background-2 to-background-3`}
       >
         <ThemeProvider>
-          <SplashScreen holdMs={2000} />
+          {/* <SplashScreen holdMs={2000} /> */}
           {/* <Banner /> */}
           <CommandMenu />
           <Providers>

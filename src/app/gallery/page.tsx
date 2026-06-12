@@ -1,4 +1,4 @@
-import { GALLERY_ITEMS } from "@/lib/gallery";
+import { GALLERY_ITEMS } from "@/data/galleryData";
 import GalleryGrid from "@/components/gallery/GalleryGrid";
 
 export default function GalleryPage() {

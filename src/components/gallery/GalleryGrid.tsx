@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 
-import type { GalleryItem } from "@/lib/gallery";
+import type { GalleryItem } from "@/data/galleryData";
 import { cn } from "@/lib/utils";
 
 export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
