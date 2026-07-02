@@ -44,7 +44,7 @@ export const EDUCATION_ITEMS: EducationItem[] = [
     {
         year: "2021 - 2026",
         name: "Wilfrid Laurier University",
-        program: "Bachelor of Business Administration (Finance Concentration)",
+        program: "Bachelor of Business Administration",
         courses: [
             "Functional Areas of an Organization",
             "Business Environment",
@@ -69,7 +69,7 @@ export const EDUCATION_ITEMS: EducationItem[] = [
     {
         year: "2023 — 2024",
         name: "100xDevs",
-        program: "Full Stack Web Development Cohort",
+        program: "Full Stack Development Cohort",
         coverImage: "/education/100xdevs.png",
         desc: [
             "This 8-month cohort transformed me from a 1x engineer to a 100x engineer.",

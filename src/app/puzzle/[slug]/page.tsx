@@ -48,20 +48,20 @@ export default async function PuzzlePage({
             ← All Puzzles
           </Link>
         </div>
-        <h1 className="text-2xl md:text-5xl text-puzzle-titleForeground inline-block mb-8 text-center md:text-left">
+        <h1 className="text-5xl font-normal pt-2 lg:font-semibold text-puzzle-titleForeground inline-block mb-4">
           {puzzle.title}
         </h1>
-        <div className="flex flex-col mb-8 gap-8">
-          <div className="flex flex-wrap items-center justify-center gap-2 md:justify-start">
+        <div className="flex flex-col mb-4">
+          <div className="flex flex-wrap gap-2">
             {puzzle.difficulty ? (
-              <span className="rounded-full bg-accent-soft px-3 py-1 text-sm font-medium text-accent-foreground">
+              <span className="rounded-full bg-accent-soft px-2 lg:px-3 lg:py-1 text-xs lg:text-sm font-medium text-accent-foreground">
                 Difficulty: {puzzle.difficulty}
               </span>
             ) : null}
             {puzzle.tags?.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-accent/40 px-3 py-1 text-sm font-medium text-foreground"
+                className="rounded-full border border-accent/40 px-2 lg:px-3 lg:py-1 text-xs lg:text-sm font-medium text-foreground"
               >
                 {tag}
               </span>
@@ -92,8 +92,8 @@ export default async function PuzzlePage({
               prose-h3:mt-6 prose-h3:mb-2
 
               /* body text */
-              lg:prose-p:leading-7 lg:prose-p:my-3
-              prose-p:text-text-1 text-justify lg:text-left
+              prose-p:leading-6 lg:prose-p:leading-7 prose-p:my-2 lg:prose-p:my-3
+              prose-p:text-text-1
               text-sm lg:text-lg
 
               /* links */
@@ -107,14 +107,9 @@ export default async function PuzzlePage({
               prose-li:my-0.5
 
               /* code */
+              prose-code:px-1 prose-code:py-1 prose-code:rounded
               prose-code:before:content-none prose-code:after:content-none
-              [&_p_code]:rounded-md [&_p_code]:border [&_p_code]:border-border/30
-              [&_p_code]:bg-surface-2/70 [&_p_code]:px-1.5 [&_p_code]:py-0.5
-              [&_p_code]:font-normal [&_p_code]:text-accent-soft
-              [&_li_code]:rounded-md [&_li_code]:border [&_li_code]:border-border/30
-              [&_li_code]:bg-surface-2/70 [&_li_code]:px-1.5 [&_li_code]:py-0.5
-              [&_li_code]:font-normal [&_li_code]:text-accent-soft
-              prose-pre:rounded-lg prose-pre:px-6 prose-pre:py-4 prose-pre:overflow-x-auto
+              prose-pre:rounded-lg prose-pre:p-4 prose-pre:overflow-x-auto
 
               /* media & tables */
               prose-img:rounded-lg
@@ -127,7 +122,7 @@ export default async function PuzzlePage({
               /* dividers */
               prose-hr:my-8
             "
-          dangerouslySetInnerHTML={{ __html: puzzle.body.html }}
+            dangerouslySetInnerHTML={{ __html: puzzle.body.html }}
         />
       </article>
 

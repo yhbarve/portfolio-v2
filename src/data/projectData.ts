@@ -1,6 +1,7 @@
 export interface ProjectItem {
     year: string;
-    name: string;
+    title: string;
+    subtitle: string;
     skills: string[];
     coverImage: string;
     desc: string[];
@@ -10,7 +11,8 @@ export interface ProjectItem {
 export const PROJECT_ITEMS: ProjectItem[] = [
     {
         year: "2026",
-        name: "WatDFS - Distributed File System",
+        title: "WatDFS",
+        subtitle: "Distributed File System",
         skills: [
             "c++",
             "distributed systems",
@@ -35,7 +37,8 @@ export const PROJECT_ITEMS: ProjectItem[] = [
     },
     {
         year: "2025",
-        name: "Fit4Me – Personalized Fitness Tracking App",
+        title: "Fit4Me",
+        subtitle: "Personalized Fitness Tracking App",
         skills: [
             "android",
             "jetpack compose",
@@ -51,7 +54,7 @@ export const PROJECT_ITEMS: ProjectItem[] = [
             "websockets"
         ],
         desc: [
-            "Full-stack Android fitness app (team project) built with Kotlin + Jetpack Compose and a Node.js/Express backend with PostgreSQL.",
+            "Full-stack Android fitness app (team project) built with Kotlin, Jetpack Compose and a Node.js/Express backend with PostgreSQL.",
             "Delivers personalized workout planning and session tracking with a focus on a smooth, user-centric experience.",
             "Includes real-time chat using Socket.IO alongside REST APIs for core app functionality.",
             "Implements intelligent matchmaking based on user goals, availability, and experience level.",
@@ -91,7 +94,8 @@ export const PROJECT_ITEMS: ProjectItem[] = [
     // },
     {
         year: "2025",
-        name: "Portolio - Your Online Photos Portfolio",
+        title: "Portolio",
+        subtitle: "Your Online Photos Portfolio",
         skills: [
             "react.js",
             "javascript",
@@ -115,7 +119,8 @@ export const PROJECT_ITEMS: ProjectItem[] = [
     },
     {
         year: "2025",
-        name: "Deep Features for Interactive Segmentation",
+        title: "Deep Features for Interactive Segmentation",
+        subtitle: "Image Segmentation Tool",
         skills: [
             "python",
             "pytorch",
@@ -143,7 +148,8 @@ export const PROJECT_ITEMS: ProjectItem[] = [
     },
     {
         year: "2025",
-        name: "Crop Yield Prediction & Risk Mitigation",
+        title: "Crop Yield Prediction & Risk Mitigation",
+        subtitle: "RNN-based ML Pipeline",
         skills: [
             "python",
             "pandas",
@@ -171,7 +177,8 @@ export const PROJECT_ITEMS: ProjectItem[] = [
     },
     {
         year: "2024",
-        name: "Scriptsync - Add transcriptions to your videos",
+        title: "Scriptsync",
+        subtitle: "Captioning Tool for Videos",
         skills: [
             "next.js",
             "typescript",

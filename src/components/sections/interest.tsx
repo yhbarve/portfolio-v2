@@ -112,12 +112,12 @@ export default function Interest({
   const [active, setActive] = useState<InterestInfo | null>(() => items[0] ?? null);
 
   return (
-    <div id="interests" className="mt-12">
-      <div className="text-accent-foreground lg:text-accent font-black lg:font-bold cursor-default bg-accent lg:bg-transparent p-1 lg:p-0 rounded-lg lg:rounded-none w-full lg:w-auto text-center lg:text-left mb-4 lg:mb-0 flex items-center justify-center lg:justify-start">
+    <div id="interests" className="mt-8 lg:mt-12">
+      <div className="text-accent font-bold text-left mb-2 lg:mb-0 flex items-center gap-2">
         <span className="lg:pr-3">HOBBIES & INTERESTS</span>
-        <span className="text-xs font-normal text-text-1 lg:text-left hidden lg:inline-block">(Click to view more)</span>
+        <span className="text-xs font-normal text-text-1">(Click to view more)</span>
       </div>
-      <div className="flex flex-wrap gap-2 text-text-1 mt-4">
+      <div className="flex flex-wrap gap-2 text-text-1 mt-2">
         {items.map((interest) => {
           const isActive = active?.label === interest.label;
           return (
@@ -140,7 +140,7 @@ export default function Interest({
       </div>
 
       {active && (
-        <div className="mt-4 w-full max-w-xl rounded-lg border border-border/30 bg-surface-1/80 p-4 text-sm text-text-1 shadow-md backdrop-blur-sm">
+        <div className="my-4 lg:mt-4 lg:mb-0 w-full max-w-xl rounded-lg border border-border/30 bg-surface-1/80 p-4 text-sm text-text-1 shadow-md backdrop-blur-sm">
           <div className="mb-1 lg:text-xs text-xs font-semibold tracking-wide text-accent">
             {active.label.toUpperCase()}
           </div>

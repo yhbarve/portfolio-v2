@@ -7,17 +7,19 @@ import LeftSide from "@/components/sections/left-side";
 import Projects from "@/components/sections/projects";
 import Skills from "@/components/sections/skills";
 import Writings from "@/components/sections/writings";
+import MobileNavbar from "@/components/MobileNavbar";
 export default function Home() {
   return (
     <div>
+      <MobileNavbar />
       <div className="bg-gradient-to-br from-background-1 via-background-2 to-background-3 transition duration-200 ease-in-out">
         {/* <MainNav /> */}
-        <div className="mx-auto min-h-screen max-w-screen-xl font-sans pt-8 md:pt-0 md:px-12 lg:px-24">
+        <div className="mx-auto min-h-screen max-w-screen-xl font-sans pt-2 md:pt-0 md:px-12 lg:px-24">
           <div className="lg:flex lg:justify-between lg:gap-4">
-            <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:w-4/12 mt-8 lg:mt-0">
+            <div className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:w-4/12">
               <LeftSide />
             </div>
-            <div className="lg:w-7/12 lg:py-16 pt-8 flex flex-col px-3">
+            <div className="lg:w-7/12 lg:py-16 flex flex-col px-4 lg:px-0">
               <AnimatedSection>
                 <Experience />
               </AnimatedSection>

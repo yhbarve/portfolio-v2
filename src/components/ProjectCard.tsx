@@ -3,7 +3,8 @@ import Image from "next/image";
 type ProjectItem = {
   year: string;
   link?: string;
-  name: string;
+  title: string;
+  subtitle: string;
   desc: Array<string>;
   skills: Array<string>;
   coverImage: string;
@@ -11,7 +12,7 @@ type ProjectItem = {
 };
 
 export default function ProjectCard(props: ProjectItem) {
-  const { year, name, desc, skills, coverImage, links } = props;
+  const { year, title, subtitle, desc, skills, coverImage, links } = props;
 
   return (
     <div className="relative overflow-hidden rounded-md transition duration-200 ease-in-out hover:shadow-lg hover:backdrop-blur-2xl">
@@ -29,7 +30,7 @@ export default function ProjectCard(props: ProjectItem) {
           <a target="_blank">
             <Image
               src={coverImage}
-              alt={name}
+              alt={title}
               width={100}
               height={100}
               className="rounded-md mt-1 brightness-[0.95] hover:brightness-[0.90] transition ease-in-out border border-border/50"
@@ -37,9 +38,10 @@ export default function ProjectCard(props: ProjectItem) {
           </a>
         </div>
         <div className="col-span-4 flex flex-col">
-          <div className="transition-transform ease-in-out font-medium mb-1 text-text-1">
-            {name}
+          <div className="transition-transform ease-in-out font-medium text-text-1">
+            {title}
           </div>
+          <div className="font-light text-accent mb-2">{subtitle}</div>
           {/* <div className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 inline-block mb-2 w-fit">{year}</div> */}
           <div className="font-light text-sm flex flex-col gap-2">{desc.map((d, item) => <div key={item} className="flex gap-2 text-accent">· <div className="text-text-1">{d}</div></div>)}</div>
           <div className="flex gap-1 gap-y-2 mt-4 flex-wrap">

@@ -25,7 +25,7 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
 
   return (
     <div className="lg:pb-24">
-      <div className="flex flex-wrap gap-2 pb-6 pt-2">
+      <div className="flex flex-wrap gap-2 pb-6 pt-4 lg:pt-2">
         <Link
           href="/writings"
           className={cn(
@@ -52,9 +52,9 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
           </Link>
         ))}
       </div>
-      <div className="grid grid-cols-12 p-4 pb-2 pt-2 text-accent font-semibold">
-        <div className="col-span-2 md:col-span-2 text-xs lg:text-base">Date</div>
-        <div className="col-span-8 md:col-span-8 text-xs lg:text-base">Title</div>
+      <div className="grid grid-cols-12 p-2 text-accent font-semibold">
+        <div className="hidden lg:block col-span-0 md:col-span-2 text-xs lg:text-base">Date</div>
+        <div className="col-span-10 md:col-span-8 text-xs lg:text-base">Title</div>
         <div className="col-span-2 md:col-span-2 mx-auto text-xs lg:text-base">Category</div>
         {/* <div className="col-span-1 mx-auto">Read</div> */}
       </div>
@@ -64,20 +64,20 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
           return (
             <div
               key={p.slug}
-              className="grid grid-cols-12 p-4 my-2 font-light text-base
-                items-start
+              className="grid grid-cols-12 p-2 my-2 font-light text-base
+                items-center
                 text-text-1 lg:hover:shadow-lg bg-surface-1
                 lg:hover:border-page-itemHoverBorder cursor-default rounded-md border border-border/5
                 transition duration-200 ease-in-out"
             >
-              <div className="text-xs lg:text-base col-span-2 md:col-span-2">
+              <div className="hidden lg:block text-xs lg:text-base col-span-2 md:col-span-2">
                 {new Date(p.date).toLocaleDateString("en-US", {
                   month: "short",
                   day: "numeric",
                   year: "numeric",
                 })}
               </div>
-              <div className="no-underline col-span-8 md:col-span-8 pr-2 text-xs lg:text-base font-medium lg:font-medium">
+              <div className="no-underline col-span-10 md:col-span-8 pr-2 text-xs lg:text-base font-medium lg:font-medium">
                 <a
                   href={`/blog/${p.slug}`}
                   className="m-0 lg:hover:text-accent"

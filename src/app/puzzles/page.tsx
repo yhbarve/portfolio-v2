@@ -41,7 +41,7 @@ export default async function PuzzlesPage({ searchParams }: PuzzlesPageProps) {
             key={cat}
             href={`/puzzles?category=${encodeURIComponent(cat)}`}
             className={cn(
-              "rounded-full px-4 py-1 lg:py-2 text-xs lg:text-sm font-medium transition-colors",
+              "rounded-full px-2 lg:px-4 py-1 lg:py-2 text-xs lg:text-sm font-medium transition-colors",
               categoryFilter === cat
                 ? "text-accent border border-accent"
                 : "text-text-1 bg-surface-1 border border-border/30 lg:hover:text-accent-soft lg:hover:bg-surface-2 lg:hover:border-accent/60"
@@ -52,8 +52,8 @@ export default async function PuzzlesPage({ searchParams }: PuzzlesPageProps) {
         ))}
       </div>
       <div className="grid grid-cols-12 p-4 pb-2 pt-2 text-accent font-semibold">
-        <div className="col-span-2 md:col-span-2 text-xs lg:text-base">Date</div>
-        <div className="col-span-8 md:col-span-8 text-xs lg:text-base">Title</div>
+        <div className="hidden md:block col-span-2 md:col-span-2 text-xs lg:text-base">Date</div>
+        <div className="col-span-10 md:col-span-8 text-xs lg:text-base">Title</div>
         <div className="col-span-2 md:col-span-2 mx-auto text-xs lg:text-base">Difficulty</div>
         {/* <div className="col-span-1 mx-auto">Read</div> */}
       </div>
@@ -68,14 +68,14 @@ export default async function PuzzlesPage({ searchParams }: PuzzlesPageProps) {
                 lg:hover:border-page-itemHoverBorder cursor-default rounded-md border border-border/5
                 transition duration-200 ease-in-out"
             >
-              <div className="text-xs lg:text-base col-span-2 md:col-span-2">
+              <div className="text-xs lg:text-base hidden md:block col-span-2 md:col-span-2">
                 {new Date(p.date).toLocaleDateString("en-US", {
                   month: "short",
                   day: "numeric",
                   year: "numeric",
                 })}
               </div>
-              <div className="no-underline col-span-8 md:col-span-8 pr-2 text-xs lg:text-base font-medium lg:font-medium">
+              <div className="no-underline col-span-10 md:col-span-8 pr-2 text-xs lg:text-base font-medium lg:font-medium">
                 <Link
                   href={`/puzzle/${p.slug}`}
                   className="m-0 lg:hover:text-accent"

@@ -66,19 +66,19 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               ← All Blogs
             </a>
           </div>
-          <h1 className="text-2xl md:text-5xl text-blog-titleForeground inline-block mb-8 text-center md:text-left">
+          <h1 className="text-4xl lg:text-5xl font-normal lg:font-semibold text-blog-titleForeground inline-block mb-4 lg:mb-8">
             {post.title}
           </h1>
-          <div className="flex flex-col mb-8 gap-8">
-            <div className="text-sm md:text-lg text-accent-soft text-justify lg:text-left">
+          <div className="flex flex-col mb-4 gap-4 lg:gap-8">
+            <div className="text-base lg:text-lg text-accent-soft">
               {post.summary}
             </div>
-            <div className="text-sm md:text-md lg:w-fit text-text-1 text-center lg:text-left">
+            <div className="text-sm lg:text-md lg:w-fit text-text-1">
               {formatDateWithOrdinal(post.date)}
             </div>
           </div>
           {coverImage ? (
-            <div className="relative mb-8 w-full overflow-hidden rounded-xl border border-border/20 bg-surface-1 shadow-sm">
+            <div className="relative mb-4 lg:mb-8 w-full overflow-hidden rounded-xl border border-border/20 bg-surface-1 shadow-sm">
               <div className="relative h-[200px] lg:h-[300px] w-full">
                 <Image
                   src={coverImage}
@@ -123,8 +123,8 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               prose-h3:mt-6 prose-h3:mb-2
 
               /* body text */
-              lg:prose-p:leading-7 lg:prose-p:my-3
-              prose-p:text-text-1 text-justify lg:text-left
+              prose-p:leading-6 lg:prose-p:leading-7 prose-p:my-2 lg:prose-p:my-3
+              prose-p:text-text-1
               text-sm lg:text-lg
 
               /* links */

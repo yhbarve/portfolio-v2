@@ -3,23 +3,27 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export default function Footer() {
   return (
-    <footer className="mt-4 lg:mt-16 border-t border-border/20 py-4 bg-background-1">
+    <footer className="mt-4 lg:mt-16 border-t border-border/20 py-4 bg-background-1 hidden md:block">
       <div className="flex flex-col gap-3 lg:gap-6 md:flex-row md:items-center md:justify-between max-w-screen-xl mx-auto">
-        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 lg:gap-x-5 text-sm text-text-1/80">
-          <Link href="/" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
+        <div className="flex flex-wrap items-center justify-between px-4 md:px-0 lg:justify-start gap-3 lg:gap-x-5 text-sm text-text-1/80">
+          <Link href="/" className="lg:hover:text-accent transition-colors">
             Home
           </Link>
-          <Link href="/projects" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
+          {/* <Link href="/projects" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
             Projects
-          </Link>
-          <Link href="/writings" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
+          </Link> */}
+          <Link href="/writings" className="lg:hover:text-accent transition-colors">
             Writings
           </Link>
-          <Link href="/reading" className="lg:hover:text-accent transition-colors underline-offset-2 underline lg:no-underline">
+          <Link href="/reading" className="lg:hover:text-accent transition-colors">
             Bookshelf
           </Link>
           <span className="hidden md:inline text-border">•</span>
-          <span>©{new Date().getFullYear()}, Yash Harshal Barve</span>
+          <span className="hidden md:inline">©{new Date().getFullYear()}, Yash Harshal Barve</span>
+        </div>
+
+        <div className="text-sm text-text-1/80 text-center md:text-left md:hidden">
+        <span>©{new Date().getFullYear()}, Yash Harshal Barve</span>
         </div>
 
         <div className="flex items-center gap-3 text-text-1/80 justify-center lg:justify-start">

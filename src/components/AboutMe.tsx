@@ -2,7 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Navigation from "./Navigation"; // (if you use a desktop nav)
-import MobileSidebarNav from "./MobileSideNavbar";
+import { ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 // Small helper: detect reduced motion
 function usePrefersReducedMotion() {
@@ -31,6 +32,7 @@ export default function AboutMe() {
 
   const [curVal, setCurVal] = useState(roles[0]);
   const [isFading, setIsFading] = useState(false);
+  const [isAboutExpanded, setIsAboutExpanded] = useState(false);
   const reducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
@@ -61,31 +63,26 @@ export default function AboutMe() {
   }, [curVal, roles, reducedMotion]);
 
   return (
-    <div className="flex flex-col items-center lg:items-start">
-      <h1 className="text-5xl font-semibold inline-block text-accent-foreground lg:text-text-1 bg-accent lg:bg-transparent p-2 lg:p-0 lg:rounded-none w-full lg:w-auto text-center lg:text-start">
+    <div className="flex flex-col items-start px-4 lg:px-0">
+      <h1 className="lg:text-5xl text-5xl lg:font-semibold font-normal inline-block text-text-1 lg:rounded-none w-full lg:w-auto text-start">
         Yash H. Barve
       </h1>
 
       <h1
-        className={`text-3xl font-medium text-accent mt-4 transition-opacity duration-300 ${
+        className={`lg:text-3xl text-3xl lg:font-medium font-normal text-accent lg:mt-4 mt-2 transition-opacity duration-300 ${
           isFading ? "opacity-0" : "opacity-100"
         }`}
       >
         {curVal}
       </h1>
 
-      <div className="w-full text-xs font-normal mt-8 lg:mt-4 text-text-1 cursor-default text-justify px-3 lg:text-left lg:px-0">
+      <div className="w-full text-sm lg:text-xs font-normal mt-8 lg:mt-8 text-text-1 cursor-default">
         I&apos;m a fifth-year Computer Science student at the University of Waterloo and a Business student at
         Wilfrid Laurier University. Since starting my development journey in 2021, I have grown especially
         passionate about system design and architecture. I care about distributed systems thinking, reliability, and using the right design patterns to keep codebases clean as they scale.<br /><br />
         Having completed my final work term at Nokia as a Software Engineer, I am now seeking new-grad software engineering roles.<br /><br />
         Beyond tech, I&apos;m an avid reader and a huge Formula 1 fan, delusionally cheering for Scuderia Ferrari and
         Charles Leclerc every race weekend.
-      </div>
-
-      {/* Mobile menu (phones & small screens) */}
-      <div className="lg:hidden">
-        <MobileSidebarNav key="mobile-nav" />
       </div>
 
       {/* Optional: desktop nav (if you want something visible on lg+) */}

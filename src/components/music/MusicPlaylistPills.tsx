@@ -43,7 +43,7 @@ export default function MusicPlaylistPills({
               aria-controls={`music-panel-${p.id}`}
               onClick={() => setActiveId(p.id)}
               className={[
-                "rounded-full border px-4 py-2 text-sm font-medium shadow-sm transition-colors",
+                "rounded-full border px-4 py-2 text-xs lg:text-sm font-medium shadow-sm transition-colors",
                 "focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background-3",
                 isActive
                   ? "border-accent text-accent"

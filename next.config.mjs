@@ -7,6 +7,7 @@ import { withContentlayer } from "next-contentlayer2"
 const projectRoot = path.dirname(fileURLToPath(import.meta.url))
 
 export default withContentlayer({
+  allowedDevOrigins: ['355a-99-209-52-138.ngrok-free.app'],
   experimental: { mdxRs: true }, // fine even if we're starting with .md
   images: {
     remotePatterns: [

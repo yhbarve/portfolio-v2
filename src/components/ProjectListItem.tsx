@@ -22,7 +22,7 @@ export default function ProjectListItem({
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="text-xs lg:text-sm bg-surface-3 text-accent-soft border border-border/20 rounded-2xl px-2"
+              className="text-[10px] lg:text-sm bg-surface-3 text-accent-soft border border-border/20 rounded-2xl px-1"
             >
               {skill}
             </div>
