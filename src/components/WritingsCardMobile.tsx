@@ -27,6 +27,7 @@ function formatDateWithOrdinal(dateString: string) {
 }
 
 export default function WritingsCardMobile({
+  index,
   title,
   summary,
   date,
@@ -34,6 +35,7 @@ export default function WritingsCardMobile({
   slug,
   category,
 }: {
+  index: number;
   title: string;
   summary: string;
   date: string;
@@ -49,12 +51,14 @@ export default function WritingsCardMobile({
         className="flex flex-col border border-border/5 bg-surface-1 transition duration-200 ease-in-out rounded-md p-2 cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <div className="flex flex-col pr-2">
-          <div className="text-text-1 font-medium text-sm text-start">{title}</div>
+        <div className="flex items-center gap-2">
+          {/* <div className="bg-accent text-accent-foreground text-4xl rounded-md flex items-center justify-center w-10 h-10 shrink-0">{index}</div> */}
+          <div className="flex flex-col pr-2">
+            <div className="text-text-1 font-medium text-sm text-start">{title}</div>
+            <div className="font-light text-accent text-sm text-start">{formatDateWithOrdinal(date).toUpperCase()}</div>
+          </div>
         </div>
-        <div className="font-light text-sm text-accent w-fit">
-          {formatDateWithOrdinal(date).toUpperCase()}
-        </div>
+    
         <AnimatePresence>
           {isExpanded && (
             <motion.div

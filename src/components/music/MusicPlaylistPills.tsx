@@ -25,7 +25,7 @@ export default function MusicPlaylistPills({
   }
 
   return (
-    <div className="mt-6">
+    <div className="mt-2">
       <div
         role="tablist"
         aria-label="Playlists"

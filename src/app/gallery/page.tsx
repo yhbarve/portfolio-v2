@@ -8,7 +8,7 @@ export default function GalleryPage() {
   return (
     <div className="pb-12 lg:pt-2">
       {!hasItems ? (
-        <div className="mt-2 lg:mt-8">
+        <div className="mt-2 lg:mt-2">
           <div className="font-medium lg:text-sm text-xs">No images yet.</div>
           <div className="mt-2 lg:text-sm text-xs font-light text-text-1/80">
             Add files to `public/gallery/` (example: `/gallery/my-shot.jpg`) and

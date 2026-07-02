@@ -33,12 +33,12 @@ export default function PuzzlesLayout({ children }: { children: ReactNode }) {
           <div className="hover:translate-x-1 transition-all ease-in-out hidden lg:block">
             <a
               href="/"
-              className="text-3xl font-medium text-page-nameForeground"
+              className="text-3xl text-page-nameForeground"
             >
               ← Yash Barve
             </a>
           </div>
-          <h1 className="text-5xl font-normal lg:font-semibold text-page-titleForeground inline-block pb-3 lg:pt-2">
+          <h1 className="text-5xl font-normal text-accent inline-block pb-3 lg:pt-2 lg:mr-4">
             Favorite Puzzles
           </h1>
         </div>

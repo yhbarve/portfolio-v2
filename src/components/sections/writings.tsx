@@ -32,7 +32,7 @@ export default function Writings() {
       {/* MOBILE CARDS */}
       <div className="lg:hidden flex flex-col gap-4 text-text-1 hover:text-text-1">
         {posts.map((p, key) => {
-            return (<WritingsCardMobile key={key} title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} category={p.category!} />)
+            return (<WritingsCardMobile key={key} index={key + 1} title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} category={p.category!} />)
         })}
       </div>
 

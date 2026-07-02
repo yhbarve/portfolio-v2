@@ -94,6 +94,28 @@ html {
     --accent-foreground: 351 100% 28%;
     --shadow: 0 0% 100%;
   }
+
+  html.sapphire {
+    --background-1: 226 60% 8%;
+    --background-2: 226 60% 8%;
+    --background-3: 226 60% 8%;
+
+    --border: 193 80% 35%;
+    --ring: 193 80% 50%;
+
+    --surface-1: 226 60% 10%;
+    --surface-2: 226 60% 10%;
+    --surface-3: 226 60% 15%;
+
+    --text-1: 20 60% 99%;
+    --text-2: 0 100% 30%;
+    --text-3: 0 0% 20%;
+
+    --accent: 193 80% 50%;
+    --accent-soft: 193 80% 50%;
+    --accent-foreground: 20 60% 99%;
+    --shadow: 193 80% 35%;
+  }
 }
 
 @layer base {

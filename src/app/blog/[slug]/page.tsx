@@ -66,10 +66,10 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               ← All Blogs
             </a>
           </div>
-          <h1 className="text-4xl lg:text-5xl font-normal lg:font-semibold text-blog-titleForeground inline-block mb-4 lg:mb-8">
+          <h1 className="text-4xl lg:text-5xl font-normal text-blog-titleForeground inline-block mb-4 lg:mb-8 lg:mr-4">
             {post.title}
           </h1>
-          <div className="flex flex-col mb-4 gap-4 lg:gap-8">
+          <div className="flex flex-col mb-4 gap-4 lg:gap-4">
             <div className="text-base lg:text-lg text-accent-soft">
               {post.summary}
             </div>
@@ -138,8 +138,9 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
               prose-li:my-0.5
 
               /* code */
-              prose-code:px-1 prose-code:py-1 prose-code:rounded
+              prose-code:bg-accent/10 prose-code:text-accent-soft prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md
               prose-code:before:content-none prose-code:after:content-none
+              [&_pre_code]:bg-transparent [&_pre_code]:text-inherit [&_pre_code]:p-0 [&_pre_code]:rounded-none
               prose-pre:rounded-lg prose-pre:p-4 prose-pre:overflow-x-auto
 
               /* media & tables */
@@ -157,7 +158,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           />
       </article>
 
-      <aside className="hidden lg:block lg:fixed lg:top-24 lg:left-[calc(55%+408px)] lg:w-[350px] lg:pr-4">
+      <aside className="hidden lg:block lg:fixed lg:top-24 lg:left-[calc(50%+425px)] lg:right-4 lg:max-w-[350px] lg:pr-4">
         <ContentTimeline rootId="blog-content" />
       </aside>
     </div>

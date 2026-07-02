@@ -19,37 +19,39 @@ export const CommandMenu = () => {
 
     const commandGroups = {
         'Quick Navigation': [
-            { text: '🏠 Go Home', shortcut: 'H', action: () => router.push('/') },
-            { text: '🧑🏻‍💻 Go to Projects', shortcut: 'P', action: () => router.push('/projects') },
-            { text: '✍️ Go to Writings', shortcut: 'W', action: () => router.push('/writings') },
+            { text: '🏠 Go Home', shortcut: 'Q', action: () => router.push('/') },
+            { text: '🧑🏻‍💻 Go to Projects', shortcut: 'W', action: () => router.push('/projects') },
+            { text: '✍️ Go to Writings', shortcut: 'E', action: () => router.push('/writings') },
             { text: '📄 Go to Resume*', shortcut: 'R', action: () => router.push(RESUME_URL) },
-            { text: '📚 Go to Bookshelf', shortcut: 'B', action: () => router.push('/reading') },   
-            { text: '📸 Go to Gallery', shortcut: 'A', action: () => router.push('/gallery') },
+            { text: '📚 Go to Bookshelf', shortcut: 'T', action: () => router.push('/reading') },   
+            { text: '📸 Go to Gallery', shortcut: 'Y', action: () => router.push('/gallery') },
             { text: '🎵 Go to Music', shortcut: 'U', action: () => router.push('/music') },
+            { text: '💻 Go to Puzzles', shortcut: 'I', action: () => router.push('/puzzles') },
         ],
         'Actions': [
-            { text: '🎨 Switch to Neon Theme', shortcut: 'N', action: () => setTimeout(() => setTheme('neon'), 0) },
-            { text: '🎨 Switch to Quartz Theme', shortcut: 'Q', action: () => setTimeout(() => setTheme('quartz'), 0) },
-            { text: '🎨 Switch to Ferrari HP Theme', shortcut: 'F', action: () => setTimeout(() => setTheme('ferrari-hp'), 0) },
-            { text: '✉️ Copy Email Address', shortcut: 'M', action: () => {
+            { text: '🎨 Switch to Neon Theme', shortcut: '1', action: () => setTimeout(() => setTheme('neon'), 0) },
+            { text: '🎨 Switch to Quartz Theme', shortcut: '2', action: () => setTimeout(() => setTheme('quartz'), 0) },
+            { text: '🎨 Switch to Ferrari HP Theme', shortcut: '3', action: () => setTimeout(() => setTheme('ferrari-hp'), 0) },
+            { text: '🎨 Switch to Sapphire Theme', shortcut: '4', action: () => setTimeout(() => setTheme('sapphire'), 0) },
+            { text: '✉️ Copy Email Address', shortcut: '0', action: () => {
                 navigator.clipboard.writeText('yhbarve@uwaterloo.ca');
                 alert('Email address copied to clipboard!'); // Provide feedback to the user
             } },
         ],
         'Navigation': [
-            { text: '💻 See Projects', shortcut: 'K', action: () => router.push('/#projects') },
-            { text: '💼 See Experience', shortcut: 'E', action: () => router.push('/#experiences') },
-            { text: '💡 See Skills', shortcut: 'S', action: () => router.push('/#skills') },
-            { text: '🎓 See Education', shortcut: 'D', action: () => router.push('/#education') },
-            { text: '✍🏻 See Writings', shortcut: 'T', action: () => router.push('/#writings') },
-            { text: '♥️ See Interests', shortcut: 'I', action: () => router.push('/#interests') },
+            { text: '💻 See Projects', shortcut: 'A', action: () => router.push('/#projects') },
+            { text: '💼 See Experience', shortcut: 'S', action: () => router.push('/#experiences') },
+            { text: '💡 See Skills', shortcut: 'D', action: () => router.push('/#skills') },
+            { text: '🎓 See Education', shortcut: 'F', action: () => router.push('/#education') },
+            { text: '✍🏻 See Writings', shortcut: 'G', action: () => router.push('/#writings') },
+            { text: '♥️ See Interests', shortcut: 'H', action: () => router.push('/#interests') },
         ],
         'Socials': [
-            { text: '🔗 Visit GitHub*', shortcut: 'G', action: () => window.open('https://github.com/yhbarve', '_blank') },
-            { text: '🔗 Visit LinkedIn*', shortcut: 'L', action: () => window.open('https://www.linkedin.com/in/yhbarve/', '_blank') },
-            { text: '🔗 Visit X (Twitter)*', shortcut: 'X', action: () => window.open('https://x.com/yhbarve', '_blank') },
+            { text: '🔗 Visit GitHub*', shortcut: 'Z', action: () => window.open('https://github.com/yhbarve', '_blank') },
+            { text: '🔗 Visit LinkedIn*', shortcut: 'X', action: () => window.open('https://www.linkedin.com/in/yhbarve/', '_blank') },
+            { text: '🔗 Visit X (Twitter)*', shortcut: 'C', action: () => window.open('https://x.com/yhbarve', '_blank') },
             // { text: '🔗 Visit Instagram*', shortcut: 'I', action: () => window.open('https://www.instagram.com/yhbarve/', '_blank') },
-            { text: '🔗 Visit LeetCode*', shortcut: 'C', action: () => window.open('https://leetcode.com/u/yhbarve/', '_blank') },
+            { text: '🔗 Visit LeetCode*', shortcut: 'V', action: () => window.open('https://leetcode.com/u/yhbarve/', '_blank') },
         ]
     };
 

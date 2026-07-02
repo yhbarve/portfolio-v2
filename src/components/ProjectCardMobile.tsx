@@ -42,7 +42,8 @@ export default function ProjectCardMobile(props: ProjectItem) {
               transition={{ duration: 0.3, ease: "easeInOut" }}
               className="overflow-hidden"
             >
-              <div className="pt-4">
+              <div className="pt-2">
+                <div className="mb-2 font-normal text-xs text-accent text-start italic">{year}</div>
                 <div className="font-normal text-xs flex flex-col gap-1">
                   {desc.map((d, item) => (
                     <div key={item} className="flex gap-2 text-accent">

@@ -29,12 +29,7 @@ export default function GalleryLayout({ children }: { children: ReactNode }) {
     <div className="scroll-smooth bg-gradient-to-tr from-background-1 via-background-2 to-background-3 transition duration-200 ease-in-out">
       <div className="mx-auto min-h-screen max-w-screen-xl p-2 font-sans md:px-12 md:py-12 lg:px-24 lg:py-0">
         <div className="pt-2 lg:pt-12">
-          <div className="hidden lg:block hover:translate-x-1 transition-all ease-in-out">
-            <a href="/" className="text-2xl lg:text-3xl font-medium text-page-nameForeground">
-              ← Yash Barve
-            </a>
-          </div>
-          <h1 className="text-5xl font-normal lg:font-semibold text-page-titleForeground inline-block pb-3 lg:pt-2">
+          <h1 className="text-5xl font-normal text-accent inline-block pb-3 lg:mr-4">
             Gallery
           </h1>
         </div>

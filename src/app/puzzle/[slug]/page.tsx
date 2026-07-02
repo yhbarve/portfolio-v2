@@ -48,7 +48,7 @@ export default async function PuzzlePage({
             ← All Puzzles
           </Link>
         </div>
-        <h1 className="text-5xl font-normal pt-2 lg:font-semibold text-puzzle-titleForeground inline-block mb-4">
+        <h1 className="text-5xl font-normal text-puzzle-titleForeground inline-block mb-4 lg:mr-4">
           {puzzle.title}
         </h1>
         <div className="flex flex-col mb-4">
@@ -107,8 +107,9 @@ export default async function PuzzlePage({
               prose-li:my-0.5
 
               /* code */
-              prose-code:px-1 prose-code:py-1 prose-code:rounded
+              prose-code:bg-accent/10 prose-code:text-accent-soft prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md
               prose-code:before:content-none prose-code:after:content-none
+              [&_pre_code]:bg-transparent [&_pre_code]:text-inherit [&_pre_code]:p-1 [&_pre_code]:rounded-md
               prose-pre:rounded-lg prose-pre:p-4 prose-pre:overflow-x-auto
 
               /* media & tables */

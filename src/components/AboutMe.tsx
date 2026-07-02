@@ -64,12 +64,12 @@ export default function AboutMe() {
 
   return (
     <div className="flex flex-col items-start px-4 lg:px-0">
-      <h1 className="lg:text-5xl text-5xl lg:font-semibold font-normal inline-block text-text-1 lg:rounded-none w-full lg:w-auto text-start">
+      <h1 className="text-5xl font-normal inline-block text-text-1 lg:rounded-none w-full lg:w-auto text-start">
         Yash H. Barve
       </h1>
 
       <h1
-        className={`lg:text-3xl text-3xl lg:font-medium font-normal text-accent lg:mt-4 mt-2 transition-opacity duration-300 ${
+        className={`lg:text-3xl text-3xl font-normal text-accent lg:mt-4 mt-2 transition-opacity duration-300 ${
           isFading ? "opacity-0" : "opacity-100"
         }`}
       >

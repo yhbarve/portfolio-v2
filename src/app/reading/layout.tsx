@@ -29,15 +29,7 @@ export default function ReadingLayout({ children }: { children: ReactNode }) {
       <div className="mx-auto min-h-screen max-w-screen-xl p-2 font-sans md:px-12 md:py-12 lg:px-24 lg:py-0">
         {/* Top nav/header */}
         <div className="pt-2 lg:pt-12">
-          <div className="hover:translate-x-1 transition-all ease-in-out hidden lg:block">
-            <a
-              href="/"
-              className="text-3xl font-medium text-page-nameForeground"
-            >
-              ← Yash Barve
-            </a>
-          </div>
-          <h1 className="text-5xl font-normal lg:font-semibold text-page-titleForeground inline-block pb-3 lg:pt-2">
+          <h1 className="text-5xl font-normal text-accent inline-block pb-3 lg:pt-2 lg:mr-4">
             Bookshelf
           </h1>
         </div>

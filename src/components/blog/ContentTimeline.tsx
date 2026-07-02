@@ -68,7 +68,7 @@ export default function ContentTimeline({
     <div className="lg:sticky lg:top-24">
       <div className="">
         <div className="mb-3 text-sm font-regular tracking-wide text-accent">CONTENTS</div>
-        <nav className="space-y-1 border-l-2 border-border pl-4">
+        <nav className="space-y-2">
           {headings.map((h) => {
             const isActive = h.id === activeId;
             return (
@@ -76,7 +76,7 @@ export default function ContentTimeline({
                 key={h.id}
                 href={`#${h.id}`}
                 className={[
-                  "block text-sm font-light text-text-1/90 hover:text-accent-soft transition-colors",
+                  "block text-xs font-light tracking-wide text-text-1/90 hover:text-accent-soft transition-colors break-words uppercase",
                   h.level === 3 ? "pl-3" : "pl-0",
                   isActive
                     ? "text-accent-soft"
@@ -85,10 +85,11 @@ export default function ContentTimeline({
               >
                 <span
                   className={[
-                    "inline-flex items-center gap-2",
-                    isActive ? "font-regular text-accent-soft" : "",
+                    "inline-block",
+                    isActive ? "text-accent-soft flex gap-2" : "flex gap-2",
                   ].join(" ")}
                 >
+                  <span className="text-xs">— </span>
                   {h.label}
                 </span>
               </a>

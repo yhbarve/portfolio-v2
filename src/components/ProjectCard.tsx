@@ -41,7 +41,7 @@ export default function ProjectCard(props: ProjectItem) {
           <div className="transition-transform ease-in-out font-medium text-text-1">
             {title}
           </div>
-          <div className="font-light text-accent mb-2">{subtitle}</div>
+          <div className="font-light text-accent mb-2">{subtitle} <span className="text-accent border border-accent/20 text-xs rounded-2xl px-1 py-0.5 inline-block ml-2">{year}</span></div>
           {/* <div className="text-sm bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-2 inline-block mb-2 w-fit">{year}</div> */}
           <div className="font-light text-sm flex flex-col gap-2">{desc.map((d, item) => <div key={item} className="flex gap-2 text-accent">· <div className="text-text-1">{d}</div></div>)}</div>
           <div className="flex gap-1 gap-y-2 mt-4 flex-wrap">
