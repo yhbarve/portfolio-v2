@@ -5,7 +5,7 @@ import { EXPERIENCE_ITEMS } from "../../data/experienceData";
 
 export default function Experience() {
   return (
-    <div id="experiences" className="pt-8 lg:pt-12">
+    <div id="experiences" className="pt-8 lg:mt-0 lg:pt-0">
       <div className="flex items-center pb-2 justify-between">
         <div className="text-accent font-bold cursor-default">
           EXPERIENCE
