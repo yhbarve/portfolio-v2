@@ -9,7 +9,7 @@ export default function SkillsCardMobile({category, skills}: {category: string, 
                     {skills.map((key, item) => (
                         <div 
                             key={item} 
-                            className="text-[10px] bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-1"
+                            className="text-xs bg-surface-3 border border-accent/20 text-accent-soft rounded-2xl px-1"
                         >
                             {key}
                         </div>
