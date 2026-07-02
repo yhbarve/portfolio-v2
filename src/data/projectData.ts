@@ -149,7 +149,7 @@ export const PROJECT_ITEMS: ProjectItem[] = [
     {
         year: "2025",
         title: "Crop Yield Prediction & Risk Mitigation",
-        subtitle: "RNN-based ML Pipeline",
+        subtitle: "Agricultural Risk Analysis Framework",
         skills: [
             "python",
             "pandas",
