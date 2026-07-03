@@ -44,14 +44,14 @@ export default function RootLayout({
         <meta property="og:title" content={metadata.title as string} />
         <meta property="og:description" content={metadata.description as string} />
         {/* Make sure to replace with a full URL to your image */}
-        <meta property="og:image" content="https://yhbarve.me/yb-bg-logo.png" />
+        <meta property="og:image" content="https://yhbarve.me/metadata/yb-og-image.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://yhbarve.me/" />
         <meta property="twitter:title" content={metadata.title as string} />
         <meta property="twitter:description" content={metadata.description as string} />
-        <meta property="twitter:image" content="https://yhbarve.me/yb-bg-logo.png" />
+        <meta property="twitter:image" content="https://yhbarve.me/metadata/yb-og-image.png" />
       </head>
       <body
         suppressHydrationWarning
