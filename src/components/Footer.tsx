@@ -15,6 +15,9 @@ export default function Footer() {
           <Link href="/writings" className="lg:hover:text-accent transition-colors">
             Writings
           </Link>
+          <Link href="/puzzles" className="lg:hover:text-accent transition-colors">
+            LeetCode
+          </Link>
           <Link href="/reading" className="lg:hover:text-accent transition-colors">
             Bookshelf
           </Link>

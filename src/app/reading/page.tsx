@@ -5,7 +5,7 @@ import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 export default function Home() {
   return (
     <div className="lg:pb-24">
-      <div className="grid grid-cols-12 p-2 text-accent font-semibold">
+      <div className="grid grid-cols-12 p-4 text-accent font-semibold">
         <div className="hidden lg:block lg:col-span-1 text-xs lg:text-sm">
           Sr.
         </div>

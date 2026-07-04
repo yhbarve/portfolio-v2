@@ -52,9 +52,9 @@ export default async function PuzzlesPage({ searchParams }: PuzzlesPageProps) {
         ))}
       </div>
       <div className="grid grid-cols-12 p-4 pb-2 pt-2 text-accent font-semibold">
-        <div className="hidden md:block col-span-2 md:col-span-2 text-xs lg:text-base">Date</div>
-        <div className="col-span-10 md:col-span-8 text-xs lg:text-base">Title</div>
-        <div className="col-span-2 md:col-span-2 mx-auto text-xs lg:text-base">Difficulty</div>
+        <div className="hidden md:block col-span-2 md:col-span-2 text-xs lg:text-sm">Date</div>
+        <div className="col-span-10 md:col-span-8 text-xs lg:text-sm">Title</div>
+        <div className="col-span-2 md:col-span-2 mx-auto text-xs lg:text-sm">Difficulty</div>
         {/* <div className="col-span-1 mx-auto">Read</div> */}
       </div>
       <div className="flex flex-col mb-12">

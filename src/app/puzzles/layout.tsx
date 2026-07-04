@@ -29,16 +29,8 @@ export default function PuzzlesLayout({ children }: { children: ReactNode }) {
     <div className="scroll-smooth bg-gradient-to-tr from-background-1 via-background-2 to-background-3 transition duration-200 ease-in-out">
       <div className="mx-auto min-h-screen max-w-screen-xl p-2 font-sans md:px-12 md:py-12 lg:px-24 lg:py-0">
         {/* Top nav/header */}
-        <div className="pt-2 lg:pt-12">
-          <div className="hover:translate-x-1 transition-all ease-in-out hidden lg:block">
-            <a
-              href="/"
-              className="text-3xl text-page-nameForeground"
-            >
-              ← Yash Barve
-            </a>
-          </div>
-          <h1 className="text-5xl font-normal text-accent inline-block pb-3 lg:pt-2 lg:mr-4">
+        <div className="pt-2 lg:pt-8">
+          <h1 className="text-5xl font-normal text-accent inline-block pb-3 lg:mr-4">
             Favorite Puzzles
           </h1>
         </div>

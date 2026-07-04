@@ -52,10 +52,10 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
           </Link>
         ))}
       </div>
-      <div className="grid grid-cols-12 p-2 text-accent font-semibold">
-        <div className="hidden lg:block col-span-0 md:col-span-2 text-xs lg:text-base">Date</div>
-        <div className="col-span-10 md:col-span-8 text-xs lg:text-base">Title</div>
-        <div className="col-span-2 md:col-span-2 mx-auto text-xs lg:text-base">Category</div>
+      <div className="grid grid-cols-12 p-4 text-accent font-semibold">
+        <div className="hidden lg:block col-span-0 md:col-span-2 text-xs lg:text-sm">Date</div>
+        <div className="col-span-10 md:col-span-8 text-xs lg:text-sm">Title</div>
+        <div className="col-span-2 md:col-span-2 mx-auto text-xs lg:text-sm">Category</div>
         {/* <div className="col-span-1 mx-auto">Read</div> */}
       </div>
       <div className="flex flex-col mb-12">
@@ -64,11 +64,11 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
           return (
             <div
               key={p.slug}
-              className="grid grid-cols-12 p-2 my-2 font-light text-base
+              className="grid grid-cols-12 p-4 my-2 font-light text-base
                 items-center
                 text-text-1 lg:hover:shadow-lg bg-surface-1
                 lg:hover:border-page-itemHoverBorder cursor-default rounded-md border border-border/5
-                transition duration-200 ease-in-out"
+                transition duration-200 ease-in-out transition-all ease-in-out"
             >
               <div className="hidden lg:block text-xs lg:text-base col-span-2 md:col-span-2">
                 {new Date(p.date).toLocaleDateString("en-US", {

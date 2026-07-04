@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import type { Metadata } from "next";
 
 import SimpleMobileNavbar from "@/components/SimpleMobileNavbar";
-
+import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Yash's Bookshelf",
   description:
@@ -29,7 +29,7 @@ export default function ReadingLayout({ children }: { children: ReactNode }) {
       <div className="mx-auto min-h-screen max-w-screen-xl p-2 font-sans md:px-12 md:py-12 lg:px-24 lg:py-0">
         {/* Top nav/header */}
         <div className="pt-2 lg:pt-12">
-          <h1 className="text-5xl font-normal text-accent inline-block pb-3 lg:pt-2 lg:mr-4">
+          <h1 className="text-5xl font-normal text-accent inline-block pb-3 lg:mr-4">
             Bookshelf
           </h1>
         </div>
@@ -39,6 +39,7 @@ export default function ReadingLayout({ children }: { children: ReactNode }) {
 
       </div>
       <SimpleMobileNavbar />
+      <Footer />
     </div>
   );
 }

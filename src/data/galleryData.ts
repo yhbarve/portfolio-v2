@@ -8,6 +8,13 @@ export interface GalleryItem {
 
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
+    "src": "/gallery/20260619_01.jpg",
+    "alt": "20260619_01.jpg",
+    "caption": "The 6ix",
+    "date": "June 19, 2026",
+    "layout": "tall"
+  },
+  {
     "src": "/gallery/20260317_01.jpg",
     "alt": "20260317_01.jpg",
     "caption": "UWDP",

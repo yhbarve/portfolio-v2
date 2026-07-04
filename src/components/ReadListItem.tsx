@@ -13,7 +13,7 @@ export default function ReadListItem({
 }) {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer"
-      className="grid grid-cols-12 p-2 my-2 font-light text-base
+      className="grid grid-cols-12 p-4 my-2 font-light text-base
               items-center
               text-text-1 hover:shadow-lg bg-surface-1
               hover:border-page-itemHoverBorder cursor-pointer rounded-md border border-border/5

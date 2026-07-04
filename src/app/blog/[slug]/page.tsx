@@ -58,15 +58,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
     <div className="relative">
       <article className="mx-auto max-w-3xl px-1 lg:px-0 lg:py-12 text-page-itemForeground">
           {/* <div className="pl-4 flex gap-1 font-light mb-4">/<a className="hover:underline transition-all ease-in-out" href="/blogs">blogs</a>/<span className="italic">{post.title}</span></div> */}
-          <div className="hover:translate-x-1 transition-all ease-in-out mb-4 hidden md:block">
-            <a
-              href="/writings"
-              className="text-3xl text-page-nameForeground lg:text-left"
-            >
-              ← All Blogs
-            </a>
-          </div>
-          <h1 className="text-4xl lg:text-5xl font-normal text-blog-titleForeground inline-block mb-4 lg:mb-8 lg:mr-4">
+          <h1 className="text-4xl lg:text-5xl font-normal text-blog-titleForeground inline-block mb-4 lg:mb-4 lg:mr-4">
             {post.title}
           </h1>
           <div className="flex flex-col mb-4 gap-4 lg:gap-4">
@@ -158,7 +150,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           />
       </article>
 
-      <aside className="hidden lg:block lg:fixed lg:top-24 lg:left-[calc(50%+425px)] lg:right-4 lg:max-w-[350px] lg:pr-4">
+      <aside className="hidden lg:block lg:fixed lg:top-14 lg:left-[calc(50%+425px)] lg:right-2 lg:max-w-[350px] lg:pr-4">
         <ContentTimeline rootId="blog-content" />
       </aside>
     </div>

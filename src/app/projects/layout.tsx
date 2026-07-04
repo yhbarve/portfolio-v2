@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import type { Metadata } from "next";
 
 import SimpleMobileNavbar from "@/components/SimpleMobileNavbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Yash's Projects",
@@ -38,6 +39,7 @@ export default function ProjectsLayout({ children }: { children: ReactNode }) {
         {children}
 
       </div>
+      <Footer />
       <SimpleMobileNavbar />
     </div>
   );
