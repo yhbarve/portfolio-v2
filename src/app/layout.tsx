@@ -49,6 +49,7 @@ export default function RootLayout({
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://yhbarve.me/" />
+        <meta property="twitter:site" content="@yhbarve" />
         <meta property="twitter:title" content={metadata.title as string} />
         <meta property="twitter:description" content={metadata.description as string} />
         <meta property="twitter:image" content="https://yhbarve.me/metadata/yb-og-image.png" />
