@@ -95,6 +95,52 @@ html {
     --shadow: 0 0% 100%;
   }
 
+  /* Fable — the cloth cover of a fairy-tale hardcover: deep enchanted-forest emerald, gilded gold lettering */
+  html.fable {
+    --background-1: 160 52% 14%;
+    --background-2: 162 48% 16%;
+    --background-3: 170 45% 20%;
+
+    --border: 42 55% 52%;
+    --ring: 42 70% 60%;
+
+    --surface-1: 160 42% 19%;
+    --surface-2: 160 42% 19%;
+    --surface-3: 164 38% 24%;
+
+    --text-1: 42 60% 92%;
+    --text-2: 0 100% 30%;
+    --text-3: 0 0% 20%;
+
+    --accent: 42 88% 60%;
+    --accent-soft: 42 88% 60%;
+    --accent-foreground: 160 52% 12%;
+    --shadow: 42 80% 48%;
+  }
+
+  /* Slushie — raspberry-blue gas-station slush at 2am: magenta→indigo sweep, banana text, cyan fizz, pink rims */
+  /* html.slushie {
+    --background-1: 315 85% 20%;
+    --background-2: 285 75% 19%;
+    --background-3: 248 70% 24%;
+
+    --border: 330 100% 62%;
+    --ring: 330 100% 70%;
+
+    --surface-1: 305 70% 25%;
+    --surface-2: 305 70% 25%;
+    --surface-3: 275 65% 30%;
+
+    --text-1: 55 100% 87%;
+    --text-2: 0 100% 30%;
+    --text-3: 0 0% 20%;
+
+    --accent: 178 100% 55%;
+    --accent-soft: 178 100% 55%;
+    --accent-foreground: 315 85% 15%;
+    --shadow: 178 100% 45%;
+  } */
+
   html.sapphire {
     --background-1: 226 60% 8%;
     --background-2: 226 60% 8%;

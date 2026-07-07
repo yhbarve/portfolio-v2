@@ -8,12 +8,12 @@ import blogs__newcombsParadoxMd from './blogs__newcombs-paradox.md.json' with { 
 import blogs__nextjsAndMdMd from './blogs__nextjs-and-md.md.json' with { type: 'json' }
 import blogs__oopWithCppMd from './blogs__oop-with-cpp.md.json' with { type: 'json' }
 import blogs__outsourcingTheMindMd from './blogs__outsourcing-the-mind.md.json' with { type: 'json' }
+import blogs__paradoxOfNostalgiaMd from './blogs__paradox-of-nostalgia.md.json' with { type: 'json' }
 import blogs__pragmaticExcellenceMd from './blogs__pragmatic-excellence.md.json' with { type: 'json' }
 import blogs__projectManagersMd from './blogs__project-managers.md.json' with { type: 'json' }
 import blogs__selectiveRegulatoryTransparencyMd from './blogs__selective-regulatory-transparency.md.json' with { type: 'json' }
 import blogs__socialNetworkingTechnologiesMd from './blogs__social-networking-technologies.md.json' with { type: 'json' }
 import blogs__universityCourseNotesMd from './blogs__university-course-notes.md.json' with { type: 'json' }
 import blogs__whenShouldAiExplainItselfMd from './blogs__when-should-ai-explain-itself.md.json' with { type: 'json' }
-import blogs__paradoxOfNostalgiaMd from './blogs__paradox-of-nostalgia.md.json' with { type: 'json' }
 
-export const allPosts = [blogs__aiDatingPlatformsMd, blogs__buildingMyWebsiteMd, blogs__countToInfinityProblemMd, blogs__illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, blogs__newcombsParadoxMd, blogs__nextjsAndMdMd, blogs__oopWithCppMd, blogs__outsourcingTheMindMd, blogs__pragmaticExcellenceMd, blogs__projectManagersMd, blogs__selectiveRegulatoryTransparencyMd, blogs__socialNetworkingTechnologiesMd, blogs__universityCourseNotesMd, blogs__whenShouldAiExplainItselfMd, blogs__paradoxOfNostalgiaMd]
+export const allPosts = [blogs__aiDatingPlatformsMd, blogs__buildingMyWebsiteMd, blogs__countToInfinityProblemMd, blogs__illusionOfOwnershipAndTheRiseOfDigitalGatekeepersMd, blogs__newcombsParadoxMd, blogs__nextjsAndMdMd, blogs__oopWithCppMd, blogs__outsourcingTheMindMd, blogs__paradoxOfNostalgiaMd, blogs__pragmaticExcellenceMd, blogs__projectManagersMd, blogs__selectiveRegulatoryTransparencyMd, blogs__socialNetworkingTechnologiesMd, blogs__universityCourseNotesMd, blogs__whenShouldAiExplainItselfMd]

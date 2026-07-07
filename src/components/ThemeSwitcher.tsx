@@ -27,6 +27,7 @@ export function ThemeSwitcher() {
       <option value="quartz">Quartz</option>
       <option value="ferrari-hp">Ferrari HP</option>
       <option value="sapphire">Sapphire</option>
+      <option value="fable">Fable</option>
     </select>
   );
 }

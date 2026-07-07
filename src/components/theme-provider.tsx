@@ -10,7 +10,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
       defaultTheme="neon"
       enableSystem={false}
       enableColorScheme={false}
-      themes={["neon", "quartz", "ferrari-hp", "sapphire"]}
+      themes={["neon", "quartz", "ferrari-hp", "sapphire", "fable"]}
       {...props}
     >
       {children}

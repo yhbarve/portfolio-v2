@@ -33,6 +33,8 @@ export const CommandMenu = () => {
             { text: '🎨 Switch to Quartz Theme', shortcut: '2', action: () => setTimeout(() => setTheme('quartz'), 0) },
             { text: '🎨 Switch to Ferrari HP Theme', shortcut: '3', action: () => setTimeout(() => setTheme('ferrari-hp'), 0) },
             { text: '🎨 Switch to Sapphire Theme', shortcut: '4', action: () => setTimeout(() => setTheme('sapphire'), 0) },
+            { text: '🎨 Switch to Fable Theme', shortcut: '5', action: () => setTimeout(() => setTheme('fable'), 0) },
+            // { text: '🎨 Switch to Slushie Theme', shortcut: '6', action: () => setTimeout(() => setTheme('slushie'), 0) },
             { text: '✉️ Copy Email Address', shortcut: '0', action: () => {
                 navigator.clipboard.writeText('yhbarve@uwaterloo.ca');
                 alert('Email address copied to clipboard!'); // Provide feedback to the user
