@@ -44,7 +44,7 @@ export default function RootLayout({
         <meta property="og:title" content={metadata.title as string} />
         <meta property="og:description" content={metadata.description as string} />
         {/* Make sure to replace with a full URL to your image */}
-        <meta property="og:image" content="https://yhbarve.me/metadata/yb-og-image.png" />
+        <meta property="og:image" content="https://yhbarve.me/metadata/yb-og-image-2.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
