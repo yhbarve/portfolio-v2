@@ -18,7 +18,7 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: "Yash Barve",
-  description: "The official webpage of Yash H. Barve. Designed, developed, and occasionally debugged by yours truly.",
+  description: "Yash's personal website.",
 };
 
 export default function RootLayout({
