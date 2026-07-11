@@ -34,7 +34,7 @@ export default function MusicTopTracksSection({
     <>
       {playlist ? (
         <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4 rounded-lg bg-surface-1/80 p-4 shadow-sm backdrop-blur-sm sm:items-stretch">
-          {playlist.thumbnailUrl ? (
+          {/* {playlist.thumbnailUrl ? (
             <div className="relative mx-auto h-40 w-40 shrink-0 overflow-hidden rounded-md border border-border/20 bg-surface-2 sm:mx-0 sm:h-36 sm:w-36">
               <Image
                 src={playlist.thumbnailUrl}
@@ -44,11 +44,11 @@ export default function MusicTopTracksSection({
                 sizes="(max-width: 640px) 160px, 144px"
               />
             </div>
-          ) : null}
+          ) : null} */}
           <div className="flex flex-col sm:flex-row min-w-0 flex-1 gap-2 sm:gap-4 items-center justify-between">
             <div className="flex flex-col justify-center items-center sm:items-start">
-              <h3 className="text-xl font-semibold leading-tight text-page-titleForeground">{playlist.title}</h3>
-              <p className="mt-1 text-base text-text-1/65">
+              <h3 className="text-3xl font-normal leading-tight text-page-titleForeground">{playlist.title.split(" ").slice(1).join(" ")}</h3>
+              <p className="mt-1 font-light text-xl text-text-1/65">
                 {playlist.trackCount} {playlist.trackCount === 1 ? "track" : "tracks"}
               </p>
             </div>
@@ -56,7 +56,7 @@ export default function MusicTopTracksSection({
               href={playlist.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 inline-flex text-sm font-medium text-accent underline-offset-4 hover:underline"
+              className="mt-3 font-light text-large inline-flex font-medium text-accent underline-offset-4 hover:underline"
             >
               Open in YouTube Music
             </a>

@@ -27,7 +27,7 @@ export default function MusicPlaylistSection({
             rel="noopener noreferrer"
             className="group flex gap-4 rounded-md border border-border/20 bg-surface-1/80 px-4 py-3 transition duration-200 ease-in-out hover:border-accent/40 hover:shadow-md lg:hover:shadow-lg"
           >
-            {item.thumbnailUrl ? (
+            {/* {item.thumbnailUrl ? (
               <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-md border border-border/15 bg-surface-2">
                 <Image
                   src={item.thumbnailUrl}
@@ -37,7 +37,7 @@ export default function MusicPlaylistSection({
                   sizes="64px"
                 />
               </div>
-            ) : null}
+            ) : null} */}
             <div className="min-w-0 flex-1">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <span className="text-sm font-medium text-text-1 group-hover:text-accent lg:text-base">
