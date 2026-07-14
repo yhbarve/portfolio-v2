@@ -17,7 +17,7 @@ tags:
     ]
 published: true
 author: "Yash Barve"
-category: "Explore"
+category: "Build"
 coverImage: "/blog/automate-youtube-metadata.png"
 coverImageCreditText: "Gemini"
 coverImageCreditLink: "https://gemini.google.com/app"

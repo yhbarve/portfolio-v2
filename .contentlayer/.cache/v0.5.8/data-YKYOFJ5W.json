@@ -62,7 +62,7 @@
           "software engineering"
         ],
         "author": "Yash Barve",
-        "category": "Explore",
+        "category": "Build",
         "coverImage": "/blog/automate-youtube-metadata.png",
         "coverImageCreditText": "Gemini",
         "coverImageCreditLink": "https://gemini.google.com/app",
@@ -81,7 +81,7 @@
         "type": "Post",
         "slug": "automating-youtube-metadata"
       },
-      "documentHash": "1783993343245",
+      "documentHash": "1783993696736",
       "hasWarnings": false,
       "documentTypeName": "Post"
     },
