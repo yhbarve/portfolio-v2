@@ -1,5 +1,5 @@
 ---
-title: "Automating YouTube Metadata with GitHub Actions and Gemini"
+title: "Automating YouTube Metadata Generation with GitHub Actions and Gemini"
 date: "2026-07-14"
 summary: "To eliminate the tedious work of writing metadata after every upload, I built a serverless pipeline that automates YouTube descriptions and timestamps for small channels. A Python script runs every 12 hours on GitHub Actions and checks a channel for new uploads using the YouTube Data API. When it finds a new video, it sends the URL directly to Gemini. The AI watches the video and writes custom metadata which is inserted directly in YouTube."
 tags:
