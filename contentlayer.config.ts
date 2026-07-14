@@ -7,6 +7,8 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import rehypePrettyCode from "rehype-pretty-code"
 import rehypeExternalLinks from "rehype-external-links"
 import rehypeKatex from "rehype-katex"
+import { rehypeMermaid } from "./rehype-mermaid"
+import type { Element } from "hast"
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
@@ -61,7 +63,22 @@ export default makeSource({
       [rehypeAutolinkHeadings, { behavior: "wrap" }],
       [rehypeExternalLinks, { target: "_blank", rel: ["noopener", "noreferrer"] }],
       rehypeKatex,
-      [rehypePrettyCode, { theme: "github-dark" }],
+      rehypeMermaid,
+      [
+        rehypePrettyCode,
+        {
+          theme: "github-dark",
+          filterNodes: (node: Element) => {
+            const className = node.properties?.className;
+            const classes = Array.isArray(className)
+              ? className.map(String)
+              : className
+                ? [String(className)]
+                : [];
+            return !classes.includes("mermaid");
+          },
+        },
+      ],
     ],
   },
 });

@@ -2,6 +2,7 @@ import { allPuzzles, type Puzzle } from "../../../../.contentlayer/generated";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ContentTimeline from "@/components/blog/ContentTimeline";
+import MermaidInit from "@/components/blog/MermaidInit";
 
 export const generateStaticParams = () =>
   allPuzzles.map((p: Puzzle) => ({ slug: p.slug }));
@@ -125,6 +126,7 @@ export default async function PuzzlePage({
             "
             dangerouslySetInnerHTML={{ __html: puzzle.body.html }}
         />
+        <MermaidInit rootId="puzzle-content" />
       </article>
 
       <aside className="hidden lg:block lg:fixed lg:top-24 lg:left-[calc(55%+408px)] lg:w-[350px] lg:pr-4">

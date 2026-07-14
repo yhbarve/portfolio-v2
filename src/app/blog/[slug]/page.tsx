@@ -2,6 +2,7 @@ import { allPosts } from "../../../../.contentlayer/generated";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import ContentTimeline from "@/components/blog/ContentTimeline";
+import MermaidInit from "@/components/blog/MermaidInit";
 
 export const generateStaticParams = () =>
   allPosts.map((p) => ({ slug: p.slug }));
@@ -148,6 +149,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             "
             dangerouslySetInnerHTML={{ __html: post.body.html }}
           />
+          <MermaidInit rootId="blog-content" />
       </article>
 
       <aside className="hidden lg:block lg:fixed lg:top-14 lg:left-[calc(50%+425px)] lg:right-2 lg:max-w-[350px] lg:pr-4">

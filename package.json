@@ -25,6 +25,7 @@
     "framer-motion": "^12.29.2",
     "locomotive-scroll": "^4.1.4",
     "lucide-react": "^0.419.0",
+    "mermaid": "^11.16.0",
     "next": "^16.2.1",
     "next-themes": "^0.4.6",
     "react": "^18",
@@ -35,12 +36,14 @@
   },
   "devDependencies": {
     "@iconify/tailwind": "^1.1.2",
+    "@types/hast": "^3.0.5",
     "@types/node": "^20",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "contentlayer2": "^0.5.8",
     "eslint": "^9.15.0",
     "eslint-config-next": "^16.2.1",
+    "hast-util-to-string": "^3.0.1",
     "katex": "^0.16.45",
     "next-contentlayer2": "^0.5.8",
     "postcss": "^8",
@@ -52,6 +55,7 @@
     "remark-gfm": "^4.0.1",
     "remark-math": "^6.0.0",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "unist-util-visit": "^5.1.0"
   }
 }

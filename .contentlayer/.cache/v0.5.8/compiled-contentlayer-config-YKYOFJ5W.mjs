@@ -7,6 +7,36 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeExternalLinks from "rehype-external-links";
 import rehypeKatex from "rehype-katex";
+
+// rehype-mermaid.ts
+import { visit } from "unist-util-visit";
+import { toString } from "hast-util-to-string";
+function isMermaidCodeBlock(node) {
+  const code = node.children[0];
+  if (!code || code.type !== "element" || code.tagName !== "code") return false;
+  const className = code.properties?.className;
+  const classes = Array.isArray(className) ? className.map(String) : className ? [String(className)] : [];
+  return classes.some((value) => value.includes("language-mermaid"));
+}
+function rehypeMermaid() {
+  return (tree) => {
+    visit(tree, "element", (node, index, parent) => {
+      if (index == null || !parent || node.tagName !== "pre" || !isMermaidCodeBlock(node)) {
+        return;
+      }
+      const source = toString(node).trim();
+      const replacement = {
+        type: "element",
+        tagName: "div",
+        properties: { className: ["mermaid", "not-prose"] },
+        children: [{ type: "text", value: source }]
+      };
+      parent.children[index] = replacement;
+    });
+  };
+}
+
+// contentlayer.config.ts
 var Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `blogs/**/*.md`,
@@ -62,7 +92,18 @@ var contentlayer_config_default = makeSource({
       [rehypeAutolinkHeadings, { behavior: "wrap" }],
       [rehypeExternalLinks, { target: "_blank", rel: ["noopener", "noreferrer"] }],
       rehypeKatex,
-      [rehypePrettyCode, { theme: "github-dark" }]
+      rehypeMermaid,
+      [
+        rehypePrettyCode,
+        {
+          theme: "github-dark",
+          filterNodes: (node) => {
+            const className = node.properties?.className;
+            const classes = Array.isArray(className) ? className.map(String) : className ? [String(className)] : [];
+            return !classes.includes("mermaid");
+          }
+        }
+      ]
     ]
   }
 });
@@ -71,4 +112,4 @@ export {
   Puzzle,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-VY3S5QCN.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-YKYOFJ5W.mjs.map
