@@ -35,7 +35,8 @@
       "flattenedPath": "blogs/ai-dating-platforms"
     },
     "type": "Post",
-    "slug": "ai-dating-platforms"
+    "slug": "ai-dating-platforms",
+    "readingTime": "7 min read"
   },
   {
     "title": "Automating YouTube Metadata Generation with GitHub Actions and Gemini",
@@ -72,7 +73,8 @@
       "flattenedPath": "blogs/automating-youtube-metadata"
     },
     "type": "Post",
-    "slug": "automating-youtube-metadata"
+    "slug": "automating-youtube-metadata",
+    "readingTime": "4 min read"
   },
   {
     "title": "Building my website (yes, this one!)",
@@ -107,7 +109,8 @@
       "flattenedPath": "blogs/building-my-website"
     },
     "type": "Post",
-    "slug": "building-my-website"
+    "slug": "building-my-website",
+    "readingTime": "2 min read"
   },
   {
     "title": "Distance Vector Routing Algorithms & The Count To Infinity Problem",
@@ -146,7 +149,8 @@
       "flattenedPath": "blogs/count-to-infinity-problem"
     },
     "type": "Post",
-    "slug": "count-to-infinity-problem"
+    "slug": "count-to-infinity-problem",
+    "readingTime": "8 min read"
   },
   {
     "title": "The Illusion of Ownership & The Rise of Digital Gatekeepers",
@@ -183,7 +187,8 @@
       "flattenedPath": "blogs/illusion-of-ownership-and-the-rise-of-digital-gatekeepers"
     },
     "type": "Post",
-    "slug": "illusion-of-ownership-and-the-rise-of-digital-gatekeepers"
+    "slug": "illusion-of-ownership-and-the-rise-of-digital-gatekeepers",
+    "readingTime": "7 min read"
   },
   {
     "title": "Newcomb’s Paradox: The Wrong Choice I’d Still Make",
@@ -220,7 +225,8 @@
       "flattenedPath": "blogs/newcombs-paradox"
     },
     "type": "Post",
-    "slug": "newcombs-paradox"
+    "slug": "newcombs-paradox",
+    "readingTime": "15 min read"
   },
   {
     "title": "Building a Markdown Blog with Next.js and Contentlayer",
@@ -256,7 +262,8 @@
       "flattenedPath": "blogs/nextjs-and-md"
     },
     "type": "Post",
-    "slug": "nextjs-and-md"
+    "slug": "nextjs-and-md",
+    "readingTime": "6 min read"
   },
   {
     "title": "Object-Oriented Programming in C++: A Complete Guide",
@@ -292,7 +299,8 @@
       "flattenedPath": "blogs/oop-with-cpp"
     },
     "type": "Post",
-    "slug": "oop-with-cpp"
+    "slug": "oop-with-cpp",
+    "readingTime": "20 min read"
   },
   {
     "title": "Outsourcing the Mind: Cognitive Friction and the Evolution of Human Intelligence",
@@ -329,7 +337,8 @@
       "flattenedPath": "blogs/outsourcing-the-mind"
     },
     "type": "Post",
-    "slug": "outsourcing-the-mind"
+    "slug": "outsourcing-the-mind",
+    "readingTime": "7 min read"
   },
   {
     "title": "The Paradox of Nostalgia",
@@ -362,7 +371,8 @@
       "flattenedPath": "blogs/paradox-of-nostalgia"
     },
     "type": "Post",
-    "slug": "paradox-of-nostalgia"
+    "slug": "paradox-of-nostalgia",
+    "readingTime": "5 min read"
   },
   {
     "title": "Pragmatic Excellence: Applying the ACM Code to Modern-Day Tech",
@@ -397,7 +407,8 @@
       "flattenedPath": "blogs/pragmatic-excellence"
     },
     "type": "Post",
-    "slug": "pragmatic-excellence"
+    "slug": "pragmatic-excellence",
+    "readingTime": "6 min read"
   },
   {
     "title": "The Role of a Project Manager: Responsibilities, Skills, and the Impact of AI",
@@ -432,7 +443,8 @@
       "flattenedPath": "blogs/project-managers"
     },
     "type": "Post",
-    "slug": "project-managers"
+    "slug": "project-managers",
+    "readingTime": "5 min read"
   },
   {
     "title": "Position Paper: Defense of Proprietary AI-Trading Algorithms Against Mandatory Disclosure",
@@ -467,7 +479,8 @@
       "flattenedPath": "blogs/selective-regulatory-transparency"
     },
     "type": "Post",
-    "slug": "selective-regulatory-transparency"
+    "slug": "selective-regulatory-transparency",
+    "readingTime": "7 min read"
   },
   {
     "title": "Social Networking Technologies: Business Applications, Risks, and Governance",
@@ -504,7 +517,8 @@
       "flattenedPath": "blogs/social-networking-technologies"
     },
     "type": "Post",
-    "slug": "social-networking-technologies"
+    "slug": "social-networking-technologies",
+    "readingTime": "11 min read"
   },
   {
     "title": "Course Notes Collection",
@@ -542,7 +556,8 @@
       "flattenedPath": "blogs/university-course-notes"
     },
     "type": "Post",
-    "slug": "university-course-notes"
+    "slug": "university-course-notes",
+    "readingTime": "1 min read"
   },
   {
     "title": "When Should AI Explain Itself?",
@@ -580,6 +595,7 @@
       "flattenedPath": "blogs/when-should-ai-explain-itself"
     },
     "type": "Post",
-    "slug": "when-should-ai-explain-itself"
+    "slug": "when-should-ai-explain-itself",
+    "readingTime": "8 min read"
   }
 ]

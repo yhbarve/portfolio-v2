@@ -32,5 +32,6 @@
     "flattenedPath": "blogs/oop-with-cpp"
   },
   "type": "Post",
-  "slug": "oop-with-cpp"
+  "slug": "oop-with-cpp",
+  "readingTime": "20 min read"
 }

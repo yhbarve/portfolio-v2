@@ -35,5 +35,6 @@
     "flattenedPath": "blogs/count-to-infinity-problem"
   },
   "type": "Post",
-  "slug": "count-to-infinity-problem"
+  "slug": "count-to-infinity-problem",
+  "readingTime": "8 min read"
 }

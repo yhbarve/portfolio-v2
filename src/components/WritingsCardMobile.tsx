@@ -34,6 +34,7 @@ export default function WritingsCardMobile({
   tags,
   slug,
   category,
+  readingTime,
 }: {
   index: number;
   title: string;
@@ -42,6 +43,7 @@ export default function WritingsCardMobile({
   tags: string[];
   slug: string;
   category: string;
+  readingTime: string;
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -55,7 +57,10 @@ export default function WritingsCardMobile({
           {/* <div className="bg-accent text-accent-foreground text-4xl rounded-md flex items-center justify-center w-10 h-10 shrink-0">{index}</div> */}
           <div className="flex flex-col pr-2">
             <div className="text-text-1 font-medium text-sm text-start">{title}</div>
-            <div className="font-light text-accent text-sm text-start">{formatDateWithOrdinal(date).toUpperCase()}</div>
+            <div className="font-light text-accent text-sm text-start">
+              {formatDateWithOrdinal(date).toUpperCase()}
+              <span className="text-text-1/50"> · {readingTime}</span>
+            </div>
           </div>
         </div>
     

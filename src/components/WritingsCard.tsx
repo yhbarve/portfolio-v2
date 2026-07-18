@@ -27,6 +27,7 @@ export default function WritingsCard({
   tags,
   slug,
   category,
+  readingTime,
 }: {
   title: string;
   summary: string;
@@ -34,6 +35,7 @@ export default function WritingsCard({
   tags: string[];
   slug: string;
   category: string;
+  readingTime: string;
 }) {
   return (
     <div>
@@ -44,6 +46,9 @@ export default function WritingsCard({
         <div className="hidden lg:col-span-1 lg:flex flex-col">
           <div className="font-light max-w-[90%] text-sm lg:text-base text-center lg:text-left">
             {formatDateWithOrdinal(date).toUpperCase()}
+          </div>
+          <div className="font-light text-xs text-text-1/60 mt-1 text-center lg:text-left">
+            {readingTime}
           </div>
         </div>
         <div className="col-span-4 flex flex-col">

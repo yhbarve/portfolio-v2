@@ -33,5 +33,6 @@
     "flattenedPath": "blogs/social-networking-technologies"
   },
   "type": "Post",
-  "slug": "social-networking-technologies"
+  "slug": "social-networking-technologies",
+  "readingTime": "11 min read"
 }

@@ -32,5 +32,6 @@
     "flattenedPath": "blogs/nextjs-and-md"
   },
   "type": "Post",
-  "slug": "nextjs-and-md"
+  "slug": "nextjs-and-md",
+  "readingTime": "6 min read"
 }

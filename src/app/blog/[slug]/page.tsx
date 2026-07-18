@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import ContentTimeline from "@/components/blog/ContentTimeline";
 import MermaidInit from "@/components/blog/MermaidInit";
+import { ViewCounter } from "@/components/ViewCounter";
 
 export const generateStaticParams = () =>
   allPosts.map((p) => ({ slug: p.slug }));
@@ -66,8 +67,16 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             <div className="text-base lg:text-lg text-accent-soft">
               {post.summary}
             </div>
-            <div className="text-sm lg:text-md lg:w-fit text-text-1">
-              {formatDateWithOrdinal(post.date)}
+            <div className="flex items-center gap-3 text-sm lg:text-md lg:w-fit text-text-1">
+              <span>{formatDateWithOrdinal(post.date)}</span>
+              <span className="text-text-1/40" aria-hidden>
+                ·
+              </span>
+              <span className="text-text-1/60">{post.readingTime}</span>
+              <span className="text-text-1/40" aria-hidden>
+                ·
+              </span>
+              <ViewCounter slug={post.slug} />
             </div>
           </div>
           {coverImage ? (

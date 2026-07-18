@@ -29,5 +29,6 @@
     "flattenedPath": "blogs/paradox-of-nostalgia"
   },
   "type": "Post",
-  "slug": "paradox-of-nostalgia"
+  "slug": "paradox-of-nostalgia",
+  "readingTime": "5 min read"
 }

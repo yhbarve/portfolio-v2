@@ -25,14 +25,14 @@ export default function Writings() {
       {/* DESKTOP CARDS */}
       <div className="hidden lg:flex flex-col gap-4 text-text-1 hover:text-text-1">
         {posts.map((p, key) => {
-            return (<WritingsCard key={key} title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} category={p.category!} />)
+            return (<WritingsCard key={key} title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} category={p.category!} readingTime={p.readingTime} />)
         })}
       </div>
 
       {/* MOBILE CARDS */}
       <div className="lg:hidden flex flex-col gap-4 text-text-1 hover:text-text-1">
         {posts.map((p, key) => {
-            return (<WritingsCardMobile key={key} index={key + 1} title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} category={p.category!} />)
+            return (<WritingsCardMobile key={key} index={key + 1} title={p.title} summary={p.summary!} date={new Date(p.date).toDateString()} tags={p.tags!} slug={p.slug} category={p.category!} readingTime={p.readingTime} />)
         })}
       </div>
 

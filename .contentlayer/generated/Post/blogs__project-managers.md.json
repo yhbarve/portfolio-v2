@@ -31,5 +31,6 @@
     "flattenedPath": "blogs/project-managers"
   },
   "type": "Post",
-  "slug": "project-managers"
+  "slug": "project-managers",
+  "readingTime": "5 min read"
 }

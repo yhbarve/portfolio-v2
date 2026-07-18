@@ -26,6 +26,7 @@ export type Post = {
   /** Markdown file body */
   body: Markdown
   slug: string
+  readingTime: string
 }
 
 export type Puzzle = {

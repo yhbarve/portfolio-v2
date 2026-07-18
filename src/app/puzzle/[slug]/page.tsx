@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import ContentTimeline from "@/components/blog/ContentTimeline";
 import MermaidInit from "@/components/blog/MermaidInit";
+import { ViewCounter } from "@/components/ViewCounter";
 
 export const generateStaticParams = () =>
   allPuzzles.map((p: Puzzle) => ({ slug: p.slug }));
@@ -52,7 +53,7 @@ export default async function PuzzlePage({
         <h1 className="text-5xl font-normal text-puzzle-titleForeground inline-block mb-4 lg:mr-4">
           {puzzle.title}
         </h1>
-        <div className="flex flex-col mb-4">
+        <div className="flex flex-col mb-4 gap-3">
           <div className="flex flex-wrap gap-2">
             {puzzle.difficulty ? (
               <span className="rounded-full bg-accent-soft px-2 lg:px-3 lg:py-1 text-xs lg:text-sm font-medium text-accent-foreground">
@@ -68,13 +69,7 @@ export default async function PuzzlePage({
               </span>
             ))}
           </div>
-          {/* <div className="text-sm md:text-md lg:w-fit text-text-1 text-center lg:text-left">
-            {new Date(puzzle.date).toLocaleDateString("en-US", {
-              month: "long",
-              day: "numeric",
-              year: "numeric",
-            })}
-          </div> */}
+          <ViewCounter slug={puzzle.slug} />
         </div>
         <div
           id="puzzle-content"

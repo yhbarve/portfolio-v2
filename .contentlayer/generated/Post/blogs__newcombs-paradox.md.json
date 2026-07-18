@@ -33,5 +33,6 @@
     "flattenedPath": "blogs/newcombs-paradox"
   },
   "type": "Post",
-  "slug": "newcombs-paradox"
+  "slug": "newcombs-paradox",
+  "readingTime": "15 min read"
 }

@@ -31,5 +31,6 @@
     "flattenedPath": "blogs/pragmatic-excellence"
   },
   "type": "Post",
-  "slug": "pragmatic-excellence"
+  "slug": "pragmatic-excellence",
+  "readingTime": "6 min read"
 }

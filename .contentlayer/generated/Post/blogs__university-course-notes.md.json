@@ -34,5 +34,6 @@
     "flattenedPath": "blogs/university-course-notes"
   },
   "type": "Post",
-  "slug": "university-course-notes"
+  "slug": "university-course-notes",
+  "readingTime": "1 min read"
 }

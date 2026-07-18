@@ -2,9 +2,33 @@ import Link from "next/link";
 import { allPosts } from "../../../.contentlayer/generated";
 import { cn } from "@/lib/utils";
 import { WRITING_CATEGORIES, type WritingCategory } from "@/lib/writings";
+import { getTopViews } from "@/lib/views";
 
 interface WritingsPageProps {
   searchParams: Promise<{ category?: string }>;
+}
+
+async function getPopularPosts() {
+  try {
+    const views = await getTopViews(5);
+    if (views.length === 0) return [];
+
+    const bySlug = new Map(
+      allPosts.filter((p) => p.published).map((p) => [p.slug, p])
+    );
+
+    return views
+      .map((v) => {
+        const post = bySlug.get(v.slug);
+        if (!post) return null;
+        return { post, count: v.count };
+      })
+      .filter((item): item is { post: (typeof allPosts)[number]; count: number } =>
+        item !== null
+      );
+  } catch {
+    return [];
+  }
 }
 
 export default async function BlogsPage({ searchParams }: WritingsPageProps) {
@@ -23,8 +47,46 @@ export default async function BlogsPage({ searchParams }: WritingsPageProps) {
     })
     .sort((a, b) => +new Date(b.date) - +new Date(a.date));
 
+  const popular = await getPopularPosts();
+
   return (
     <div className="lg:pb-24">
+      {popular.length > 0 ? (
+        <section className="pb-6 pt-4 lg:pt-2">
+          <h2 className="text-sm font-semibold text-accent mb-3">Popular</h2>
+          <div className="flex flex-col gap-2">
+            {popular.map(({ post, count }) => {
+              const postCategory = (post as { category?: string }).category;
+              return (
+                <div
+                  key={post.slug}
+                  className="grid grid-cols-12 p-4 font-light text-base items-center
+                    text-text-1 lg:hover:shadow-lg bg-surface-1
+                    lg:hover:border-page-itemHoverBorder cursor-default rounded-md border border-border/5
+                    transition duration-200 ease-in-out"
+                >
+                  <div className="col-span-10 md:col-span-9 pr-2 text-xs lg:text-base font-medium">
+                    <a
+                      href={`/blog/${post.slug}`}
+                      className="m-0 lg:hover:text-accent"
+                    >
+                      {post.title}
+                    </a>
+                  </div>
+                  <div className="col-span-2 md:col-span-3 text-xs lg:text-sm text-text-1/60 text-right">
+                    {count.toLocaleString()} views
+                    {postCategory ? (
+                      <span className="hidden md:inline text-accent font-medium ml-2">
+                        · {postCategory}
+                      </span>
+                    ) : null}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      ) : null}
       <div className="flex flex-wrap gap-2 pb-6 pt-4 lg:pt-2">
         <Link
           href="/writings"

@@ -31,5 +31,6 @@
     "flattenedPath": "blogs/building-my-website"
   },
   "type": "Post",
-  "slug": "building-my-website"
+  "slug": "building-my-website",
+  "readingTime": "2 min read"
 }

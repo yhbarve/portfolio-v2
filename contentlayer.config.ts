@@ -31,6 +31,14 @@ export const Post = defineDocumentType(() => ({
       type: "string",
       resolve: (doc) => doc._raw.flattenedPath.replace(/^blogs\//, ""), // e.g. "my-first-post"
     },
+    readingTime: {
+      type: "string",
+      resolve: (doc) => {
+        const words = doc.body.raw.trim().split(/\s+/).filter(Boolean).length;
+        const minutes = Math.max(1, Math.round(words / 200));
+        return `${minutes} min read`;
+      },
+    },
   },
 }))
 

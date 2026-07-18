@@ -163,7 +163,7 @@ export default function Socials({
       </div>
       <div className="flex items-center gap-1 mt-2 lg:mt-[3vh]">
         <ThemeSwitcher />
-        <div className="text-sm cursor-default text-text-1">©2026, Yash Harshal Barve</div>
+        <div className="text-sm cursor-default text-text-1 ml-2">©2026, Yash Harshal Barve</div>
       </div>
     </div>
   );
