@@ -3,6 +3,7 @@ import ExperienceCard from "../ExperienceCard";
 import SkillsCard from "../SkillsCard";
 import SkillsCardMobile from "../SkillsCardMobile";
 import { SKILL_ITEMS } from "../../data/skillData";
+import GithubContributionMini from "../GithubContributionMini";
 
 type SkillItem = {
     name: string;
@@ -17,6 +18,8 @@ export default function Skills() {
           TECHNICAL SKILLS & TOOLS
         </div>
       </div>
+
+      {/* <GithubContributionMini /> */}
 
       {/* DESKTOP CARDS */}
       <div className="hidden lg:flex flex-col gap-4 text-text-1 hover:text-text-1">
