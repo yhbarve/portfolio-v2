@@ -287,7 +287,7 @@ export function GithubGraph({
   variant = "github",
   animation = "wave",
   animationSpeed = 1,
-  cellSize = 18,
+  cellSize = 10,
   cellGap = 4,
   cellRadius = 3,
   showLegend = false,
