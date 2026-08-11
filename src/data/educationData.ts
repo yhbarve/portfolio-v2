@@ -38,6 +38,8 @@ export const EDUCATION_ITEMS: EducationItem[] = [
             "Distributed Systems",
             "Computer Networks",
             "The Social Implications of Computing",
+            "Privacy, Crypto, Network, Data Security",
+            "Coding with AI"
         ],
         coverImage: "/education/uw-math-logo.png"
     },
@@ -63,6 +65,8 @@ export const EDUCATION_ITEMS: EducationItem[] = [
             "Risk Management & Insurance",
             "Options, Futures and Swaps",
             "Personal Finance Management",
+            "Management of Financial Institutions",
+            "Property and Liability Insurance Management",
         ],
         coverImage: "/education/laz.png"
     },
