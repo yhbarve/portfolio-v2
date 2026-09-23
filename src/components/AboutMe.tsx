@@ -77,12 +77,11 @@ export default function AboutMe() {
       </h1>
 
       <div className="w-full text-sm lg:text-xs font-normal mt-8 lg:mt-8 text-text-1 cursor-default">
-        I&apos;m a fifth-year Computer Science student at the University of Waterloo and a Business student at
-        Wilfrid Laurier University. Since starting my development journey in 2021, I have grown especially
-        passionate about system design and architecture. I care about distributed systems thinking, reliability, and using the right design patterns to keep codebases clean as they scale.<br /><br />
-        Having completed my final work term at Nokia as a Software Engineer, I am now seeking new-grad software engineering roles.<br /><br />
-        Beyond tech, I&apos;m an avid reader and a huge Formula 1 fan, delusionally cheering for Scuderia Ferrari and
-        Charles Leclerc every race weekend.
+        I&apos;m a software engineer at Capital One Canada. I studied Computer Science at the University of Waterloo and Business at Wilfrid Laurier University. <br /><br />
+        Since starting my development journey in 2021, I have grown especially passionate about system design and architecture. I care about distributed systems thinking, reliability, and using the right design patterns to keep codebases clean as they scale.<br /><br />
+        Outside of work, I&apos;m a huge Formula 1 fan, delusionally cheering for Scuderia Ferrari and
+        Charles Leclerc every race weekend. I also love watching movies and TV shows, and listening to music. <br /><br />
+        I'm currently working towards becoming the best version of myself across various domains of life.
       </div>
 
       {/* Optional: desktop nav (if you want something visible on lg+) */}
